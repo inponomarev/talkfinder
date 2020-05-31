@@ -6,6 +6,7 @@ services:
 
 before_install:
   - docker pull lihame/course-doc
+  - chmod +x _compile_doc.sh
 
 script:
   - ./_compile_doc.sh
