@@ -1,0 +1,42 @@
+{% set commaspace = joiner(", ") %}
+{% macro output_i8n_text(i8n_node, lang, syntax) -%}
+  {% set found = false %}
+  {% for item in i8n_node -%}
+    {% if item.language == lang -%}
+      {% if syntax == 'md' %}{{item.text | md2asciidoc}}{% else %}{{ item.text }}{% endif %}
+      {%- set found = true -%}
+    {% endif %}
+  {% endfor %}
+  {% if found == false %}
+    {% for item in i8n_node -%}
+      {% if item.language == 'en' -%}
+        {% if syntax == 'md' %}{{item.text | md2asciidoc}}{% else %}{{ item.text }}{% endif %}
+        {%- set found = true -%}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  {% if found == false %}
+    {% for item in i8n_node -%}
+      {% if item.language == 'ru' -%}
+        {% if syntax == 'md' %}{{item.text | md2asciidoc}}{% else %}{{ item.text }}{% endif %}
+        {%- set found = true -%}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endmacro %}
+
+{% set lang = 'ru' %}
+
+{% for talk in talks -%}
+  ==  {{ output_i8n_text(talk.name, lang, 'text') }}
+  {{- '\n\n' }}
+  {%- for speaker_item in talk.speakerIds -%}
+    {%- if loop.first -%}{%- else -%}, {% endif -%}
+    {{- '_' -}}{{- output_i8n_text(speakers[speaker_item].name, lang, 'text') -}}_
+  {%- endfor -%}
+  {{- '\n\n' }}
+  {{- output_i8n_text(talk.shortDescription, lang, 'md') }}
+  {{- '\n\n' }}
+  {{- output_i8n_text(talk.longDescription, lang, 'md') }}
+  {{- '\n\n' }}
+{% endfor %}

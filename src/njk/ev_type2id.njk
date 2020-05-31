@@ -1,0 +1,11 @@
+{% set comma = joiner() %}
+{ 
+  "ev_types": { 
+  {% for ev_type_item in eventTypes %}
+    {{ comma() }}
+    "{{ ev_type_item.id }}": 
+      {{ev_type_item | dump (4) | safe }} 
+    
+  {% endfor %} 
+  }
+}

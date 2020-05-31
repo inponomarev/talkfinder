@@ -1,0 +1,11 @@
+{% set comma = joiner() %}
+{ 
+  "speakers": { 
+  {% for speaker_item in speakers %}
+    {{ comma() }}
+    "{{ speaker_item.id }}": 
+      {{speaker_item | dump (4) | safe }} 
+    
+  {% endfor %} 
+  }
+}

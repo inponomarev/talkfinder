@@ -1,0 +1,122 @@
+{% set lang = 'ru' %}
+{% set commaspace = joiner(", ") %}
+
+{% macro translate(text, lang) %}
+  {%- if lang == 'ru' %}
+    {%- if text == 'Links' %}Ссылки{% endif %}
+    {%- if text == 'Video links' %}Ссылки на видео{% endif %}
+  {%- else %}
+    {{ text }}
+  {% endif %}
+{% endmacro %}
+
+{% macro output_i18n_text(i18n_node, lang, syntax) -%}
+  {% set found = false %}
+  {% for item in i18n_node -%}
+    {% if item.language == lang -%}
+      {% if syntax == 'md' %}{{item.text | md2asciidoc | safe}}{% else %}{{ item.text }}{% endif %}
+      {%- set found = true -%}
+    {% endif %}
+  {% endfor %}
+  {% if found == false %}
+    {% for item in i18n_node -%}
+      {% if item.language == 'en' -%}
+        {% if syntax == 'md' %}{{item.text | md2asciidoc | safe}}{% else %}{{ item.text }}{% endif %}
+        {%- set found = true -%}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+  {% if found == false %}
+    {% for item in i18n_node -%}
+      {% if item.language == 'ru' -%}
+        {% if syntax == 'md' %}{{item.text | md2asciidoc | safe}}{% else %}{{ item.text }}{% endif %}
+        {%- set found = true -%}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endmacro %}
+
+
+{% macro output_talk(talk) -%}
+  ====  {{ output_i18n_text(talk.name, lang, 'text') }}
+  {{- '\n\n' }}
+  {%- for speaker_item in talk.speakerIds -%}
+    {%- if loop.first -%}{%- else -%}, {% endif -%}
+    {{- '_' -}}{{- output_i18n_text(speakers[speaker_item].name, lang, 'text') -}}_
+  {%- endfor -%}
+  {{- '\n\n' }}
+  {{- output_i18n_text(talk.shortDescription, lang, 'md') }}
+  {{- '\n\n' }}
+  {{- output_i18n_text(talk.longDescription, lang, 'md') }}
+  {{- '\n\n' }}
+  {%- for pres_link in talk.presentationLinks %}
+    {%- if loop.first %}
+      {{- '.'}}{{ translate('Links', lang) }}:
+    {% endif %}
+    {{- '* '}}{{pres_link}}
+  {% endfor %}
+  {{- '\n\n' }}
+  {%- for video_link in talk.videoLinks %}
+    {%- if loop.first %}
+      {{- '.'}}{{ translate('Video links', lang) }}:
+    {% endif %}
+    {{- '* '}}{{video_link}}
+  {% endfor %}
+  {{- '\n\n' }}
+{% endmacro %}
+
+{% macro output_event(event_item) %}
+  {{- '' }}===  {{ output_i18n_text(event_item.name, lang, 'text') }}
+  {%- if event_item.startDate == event_item.endDate %}
+    {{- " (" }}{{- event_item.startDate | ansiToGerman }})
+  {%- else %}
+    {{- " (" }}{{- event_item.startDate | ansiToGerman }} -- {{ event_item.endDate | ansiToGerman }})
+  {% endif %}
+  {{- '\n\n' }}
+  {%- for talk_id in event_item.talkIds -%}
+    {{ output_talk(talks[talk_id]) }}
+  {%- endfor -%}
+{% endmacro %}
+
+{% macro output_ev_type(ev_type_item) %}
+  {{- '' }}== {{ output_i18n_text(ev_type_item.name, lang, 'text') }} 
+  {{- '\n\n' }}
+  {{- '' }}image::images/events/{{ ev_type_item.logoFileName }}[]
+  {{- '\n\n' }}
+  {{- output_i18n_text(ev_type_item.description, lang, 'text') }}
+  {{- '\n\n' }}
+  {%- if ev_type_item.siteLink %}
+    {{- '* '}}{{ output_i18n_text(ev_type_item.siteLink, lang, 'text') }}
+    {{- '\n' }}
+  {% endif %}
+  {%- if ev_type_item.vkLink %}
+    {{- '* '}}{{ ev_type_item.vkLink }}
+    {{- '\n' }}
+  {% endif %}
+  {%- if ev_type_item.twitterLink%}
+    {{- '* '}}{{ ev_type_item.twitterLink}}
+    {{- '\n' }}
+    {% endif %}
+  {%- if ev_type_item.facebookLink %}
+    {{- '* '}}{{ ev_type_item.facebookLink }}
+    {{- '\n' }}
+  {% endif %}
+  {%- if ev_type_item.youtubeLink %}
+    {{- '* '}}{{ ev_type_item.youtubeLink }}
+    {{- '\n' }}
+  {% endif %}
+  {%- if ev_type_item.telegramLink %}
+    {{- '* '}}{{ ev_type_item.telegramLink }}
+    {{- '\n' }}
+  {% endif %}
+  {{- '\n\n' }}
+
+{% endmacro %}
+
+{% for ev_type_id, ev_type_events in ev_type2ev %}
+  {{- output_ev_type(ev_types[ev_type_id]) }}
+  {{- '\n\n' }}
+  {%- for event_item in ev_type_events | sort(true, true, "startDate")   %}
+    {{- output_event(event_item) }}
+  {% endfor %}
+{% endfor %}

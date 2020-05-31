@@ -1,0 +1,11 @@
+{% set comma = joiner() %}
+{ 
+  "talks": { 
+  {% for talk_item in talks %}
+    {{ comma() }}
+    "{{ talk_item.id }}": 
+      {{talk_item | dump (4) | safe }} 
+    
+  {% endfor %} 
+  }
+}
