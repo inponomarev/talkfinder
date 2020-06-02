@@ -128,13 +128,94 @@ places:
     mapCoordinates: "60.1704769, 24.8279349"
   - id: 16
     city:
+      - {language: en, text: Novosibirsk}
+      - {language: ru, text: Новосибирск}
+    venueAddress:
+      - {language: en, text: "Karl Marx Square, 7, Sun City, 2GIS office"}
+      - {language: ru, text: "площадь Карла Маркса, 7, Сан Сити, Офис компании 2ГИС"}
+    mapCoordinates: "54.980394, 82.897882"
+  - id: 17
+    city:
+      - {language: en, text: Novosibirsk}
+      - {language: ru, text: Новосибирск}
+    venueAddress:
+      - {language: en, text: "Deputatskaya St., 46, conference room «Potok»"}
+      - {language: ru, text: "Депутатская ул., 46, конференц-зал «Поток»"}
+    mapCoordinates: "55.028888, 82.926484"
+  - id: 18
+    city:
       - {language: en, text: "Saint Petersburg"}
       - {language: ru, text: Санкт-Петербург}
     venueAddress:
-      - {language: en, text: Online}
-  - id: 17
+      - {language: en, text: "Piskarevsky Prospekt, 2, litera Shch, building 2"}
+      - {language: ru, text: "Пискаревский проспект, 2, литера Щ, корп.2"}
+    mapCoordinates: "59.958606, 30.405313"
+  - id: 19
     city:
-      - {language: en, text: Moscow}
-      - {language: ru, text: Москва}
+      - {language: en, text: "Saint Petersburg"}
+      - {language: ru, text: Санкт-Петербург}
     venueAddress:
+      - {language: en, text: "Sverdlovskaya nab., 44, litera Ya, Luxoft office"}
+      - {language: ru, text: "Свердловская наб., дом 44, литера Я, Офис компании Luxoft"}
+    mapCoordinates: "59.961674, 30.403121"
+  - id: 20
+    city:
+      - {language: en, text: "Saint Petersburg"}
+      - {language: ru, text: Санкт-Петербург}
+    venueAddress:
+      - {language: en, text: "13th line of Vasilyevsky island, 14, T-Systems office"}
+      - {language: ru, text: "13-я линия Васильевского острова, 14, Офис компании T-Systems"}
+    mapCoordinates: "59.936106, 30.276118"
+  - id: 21
+    city:
+      - {language: en, text: "Saint Petersburg"}
+      - {language: ru, text: Санкт-Петербург}
+    venueAddress:
+      - {language: en, text: "Yakornaya St., 7, Business Center \"Anchor\", SEMrush office"}
+      - {language: ru, text: "ул. Якорная, дом 7, БЦ \"Анкор\", Офис компании SEMrush"}
+    mapCoordinates: "59.942475, 30.422094"
+  - id: 22
+    city:
+      - {language: en, text: "Saint Petersburg"}
+      - {language: ru, text: Санкт-Петербург}
+    venueAddress:
+      - {language: en, text: "Kronverksky Prospekt, 49, ITMO University"}
+      - {language: ru, text: "Кронверкский проспект, дом 49, Университет ИТМО"}
+    mapCoordinates: "59.956160, 30.309373"
+  - id: 23
+    city:
+      - {language: en, text: "Saint Petersburg"}
+      - {language: ru, text: Санкт-Петербург}
+    venueAddress:
+      - {language: en, text: "Zastavskaya St., 22 k2, Business Center \"Megapark\", SEMrush office"}
+      - {language: ru, text: "Заставская ул., 22 к2, БЦ \"Мегапарк\", Офис компании SEMrush"}
+    mapCoordinates: "59.888564, 30.327735"
+  - id: 24
+    city:
       - {language: en, text: Online}
+      - {language: ru, text: Онлайн}
+    venueAddress: []
+  - id: 25
+    city:
+      - {language: en, text: Novosibirsk}
+      - {language: ru, text: Новосибирск}
+    venueAddress:
+      - {language: en, text: "Blucher St., 32, NSTU, Boiling Point"}
+      - {language: ru, text: "Блюхера ул., 32, НГТУ, Точка кипения"}
+    mapCoordinates: "54.989538, 82.900568"
+  - id: 26
+    city:
+      - {language: en, text: "Saint Petersburg"}
+      - {language: ru, text: Санкт-Петербург}
+    venueAddress:
+      - {language: en, text: "Bataysky per., 3A"}
+      - {language: ru, text: "Батайский пер., 3А"}
+    mapCoordinates: "59.913541, 30.320638"
+  - id: 27
+    city:
+      - {language: en, text: "Saint Petersburg"}
+      - {language: ru, text: Санкт-Петербург}
+    venueAddress:
+      - {language: en, text: "9th line of Vasilyevsky island, 34, BC Magnus, office 303, JUG Ru Group office"}
+      - {language: ru, text: "9-я линия Васильевского острова, 34, БЦ Магнус, офис 303, Офис компании JUG Ru Group"}
+    mapCoordinates: "59.941087, 30.277097"

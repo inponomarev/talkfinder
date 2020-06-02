@@ -34,9 +34,9 @@ events:
     siteLink:
       - {language: en, text: "https://cppconf-moscow.ru/en/"}
       - {language: ru, text: "https://cppconf-moscow.ru/"}
-    placeId: 17
-    talkIds: [1438, 1440, 1448, 1449, 1458, 1451, 1460, 1454, 1444, 1442, 1447, 1446, 1461, 1441, 1456, 1450, 1455, 1443,
-              1445, 1452, 1457, 1459, 1462, 1453, 1463, 1464]
+    placeId: 24
+    talkIds: [1438, 1440, 1448, 1449, 1458, 1451, 1460, 2353, 2111, 1442, 1447, 1446, 1459, 1461, 1456, 1441, 1455, 1443,
+              1445, 1450, 1452, 2112, 1453, 1463, 2354, 1457, 2114, 1464]
   # DevOops
   - eventTypeId: 1
     name:
@@ -77,13 +77,14 @@ events:
     name:
       - {language: en, text: "DevOops 2020 Msc"}
       - {language: ru, text: "DevOops 2020 Мск"}
-    startDate: "2020-07-12"
-    endDate: "2020-07-13"
+    startDate: "2020-07-06"
+    endDate: "2020-07-09"
     siteLink:
       - {language: en, text: "https://devoops-moscow.ru/en/"}
       - {language: ru, text: "https://devoops-moscow.ru/"}
-    placeId: 11
-    talkIds: []
+    placeId: 24
+    talkIds: [2115, 2116, 2117, 2118, 2131, 2120, 2122, 2124, 2136, 2127, 2128, 2130, 2125, 2143, 2355, 2356, 2133, 2138,
+              2357, 2139, 2126, 2141, 2142, 2119, 2140, 2129, 2262, 2121, 2135]
   # DotNext
   - eventTypeId: 2
     name:
@@ -255,9 +256,9 @@ events:
     siteLink:
       - {language: en, text: "https://dotnext-piter.ru/en/"}
       - {language: ru, text: "https://dotnext-piter.ru/"}
-    placeId: 16
-    talkIds: [1371, 1355, 1362, 1351, 1347, 1349, 1632, 1358, 1361, 1955, 1372, 1845, 1360, 1374, 1366, 1356, 1348, 1357,
-              1352, 1369, 1367, 1375, 1350, 1956, 1359, 1913]
+    placeId: 24
+    talkIds: [1371, 1352, 1362, 2221, 2309, 1349, 1632, 1358, 1347, 1845, 1372, 2339, 1374, 1366, 1351, 1348, 1375, 1361,
+              1367, 1356, 2222, 1350, 1359, 1355, 1369, 1913]
   # Heisenbug
   - eventTypeId: 3
     name:
@@ -357,9 +358,9 @@ events:
     siteLink:
       - {language: en, text: "https://heisenbug-piter.ru/en/"}
       - {language: ru, text: "https://heisenbug-piter.ru/"}
-    placeId: 16
-    talkIds: [1379, 1633, 1383, 1385, 1381, 1382, 1384, 1392, 1754, 1840, 1399, 1841, 1378, 1638, 1637, 1843, 1396, 1397,
-              1844, 1636, 1635, 1395, 1390, 1398]
+    placeId: 24
+    talkIds: [1379, 2223, 1383, 1385, 1381, 1382, 1384, 1392, 1754, 1840, 1399, 1841, 2340, 1638, 1637, 2310, 2311, 1636,
+              2341, 1844, 1397, 2342, 1396, 2224, 1635, 1395, 2343, 1398, 1390, 1843, 2344]
   # HolyJS
   - eventTypeId: 4
     name:
@@ -469,13 +470,14 @@ events:
       - {language: en, text: "HolyJS 2020 SPb"}
       - {language: ru, text: "HolyJS 2020 СПб"}
     startDate: "2020-06-22"
-    endDate: "2020-06-25"
+    endDate: "2020-06-26"
     siteLink:
       - {language: en, text: "https://holyjs-piter.ru/en/"}
       - {language: ru, text: "https://holyjs-piter.ru"}
-    placeId: 16
-    talkIds: [1433, 1640, 1410, 1957, 1419, 1432, 1409, 1415, 1434, 1435, 1420, 1427, 1406, 1757, 1418, 1428, 1421, 1414,
-              1426, 1958, 1405, 1959, 1643, 1412, 1755, 1425, 1430, 1642, 1756, 1403, 1422, 1413, 1416]
+    youtubeLink: https://www.youtube.com/playlist?list=PL8sJahqnzh8Kcwgsbyu7Z894llQjg_RJO
+    placeId: 24
+    talkIds: [1957, 1432, 1434, 2345, 2346, 1756, 1433, 1409, 1415, 1757, 1405, 1414, 1428, 1435, 1419, 1959, 1426, 1643,
+              1422, 1640, 2103, 1406, 1421, 1410, 1412, 2347, 1420, 1413, 1755, 1403, 1430, 1416, 2348, 2349, 1640, 1427]
   # Hydra
   - eventTypeId: 5
     name:
@@ -487,6 +489,16 @@ events:
     youtubeLink: https://www.youtube.com/playlist?list=PLC5OGTO4dWxYuuASJMj1xePLQjNg05HzT
     placeId: 4
     talkIds: [226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243]
+  - eventTypeId: 5
+    name:
+      - {language: en, text: "Hydra 2020"}
+    startDate: "2020-07-06"
+    endDate: "2020-07-09"
+    siteLink:
+      - {language: en, text: "https://hydraconf.com/"}
+    placeId: 24
+    talkIds: [2319, 2266, 2269, 2358, 2267, 2282, 2359, 2271, 2321, 2320, 2360, 2361, 2362, 2275, 2363, 2278, 2364, 2274,
+              2277, 2365, 2281, 2366]
   # JBreak
   - eventTypeId: 6
     name:
@@ -568,6 +580,17 @@ events:
               1705, 1706, 1707, 1708, 1709, 1710, 1711, 1712, 1713, 1714, 1715, 1716, 1717]
   - eventTypeId: 7
     name:
+      - {language: en, text: "JPoint 2016 Student Day"}
+    startDate: "2016-04-24"
+    endDate: "2016-04-24"
+    siteLink:
+      - {language: en, text: "https://2016.jpoint.ru/en/"}
+      - {language: ru, text: "https://2016.jpoint.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-Q2Rs5OxSzh15DttbIhJKk
+    placeId: 11
+    talkIds: [2283, 2284, 2285, 2286, 2287, 2288, 2289, 2290, 2291, 2292, 2293, 2294, 2295, 2296, 2297, 2298, 2299]
+  - eventTypeId: 7
+    name:
       - {language: en, text: "JPoint 2017"}
     startDate: "2017-04-07"
     endDate: "2017-04-08"
@@ -605,13 +628,14 @@ events:
   - eventTypeId: 7
     name:
       - {language: en, text: "JPoint 2020"}
-    startDate: "2020-06-26"
-    endDate: "2020-06-27"
+    startDate: "2020-06-29"
+    endDate: "2020-07-02"
     siteLink:
       - {language: en, text: "https://jpoint.ru/en/"}
       - {language: ru, text: "https://jpoint.ru/"}
-    placeId: 10
-    talkIds: []
+    placeId: 24
+    talkIds: [2246, 2243, 2232, 2233, 2313, 2234, 2235, 2236, 2237, 2252, 2239, 2240, 2241, 2242, 2231, 2244, 2245, 2230,
+              2247, 2248, 2249, 2251, 2250, 2238, 2253, 2254, 2255, 2256, 2257, 2258, 2338, 2259, 2260, 2261, 2314]
   # Joker
   - eventTypeId: 8
     name:
@@ -645,6 +669,14 @@ events:
               1614, 1615, 1616, 1617, 1618, 1619, 1620, 1621, 1622, 1623, 1624, 1625, 1626, 1627, 1628, 1629, 1630, 1631]
   - eventTypeId: 8
     name:
+      - {language: en, text: "Joker 2015 University Day"}
+    startDate: "2015-10-18"
+    endDate: "2015-10-18"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9rmcHD9w5Az5-otb4_V5D-
+    placeId: 4
+    talkIds: [2199, 2200, 2201, 2202, 2203, 2204, 2205, 2206, 2207, 2208, 2209, 2210, 2211, 2212, 2213]
+  - eventTypeId: 8
+    name:
       - {language: en, text: "Joker 2016"}
     startDate: "2016-10-14"
     endDate: "2016-10-15"
@@ -655,6 +687,17 @@ events:
     placeId: 2
     talkIds: [285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306,
               307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327]
+  - eventTypeId: 8
+    name:
+      - {language: en, text: "Joker 2016 Student Edition"}
+    startDate: "2016-10-15"
+    endDate: "2016-10-15"
+    siteLink:
+      - {language: en, text: "https://2016.jokerconf.com/en/"}
+      - {language: ru, text: "https://2016.jokerconf.com/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8IFOCtl2iP9djzjC7cbgNw
+    placeId: 2
+    talkIds: [2300, 2301, 2302, 2303, 2304, 2305, 2306, 2307]
   - eventTypeId: 8
     name:
       - {language: en, text: "Joker 2017"}
@@ -815,8 +858,9 @@ events:
     siteLink:
       - {language: en, text: "https://mobius-piter.ru/en/"}
       - {language: ru, text: "https://mobius-piter.ru/"}
-    placeId: 16
-    talkIds: [1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975]
+    placeId: 24
+    talkIds: [1963, 1965, 1972, 1963, 2104, 2109, 1973, 2312, 2350, 2228, 1964, 1971, 1961, 2107, 2108, 2351, 1967, 1966,
+              2105, 2227, 1974, 2226, 1969, 2352, 2110, 2229, 1962]
   # SPTDC
   - eventTypeId: 10
     name:
@@ -827,7 +871,16 @@ events:
       - {language: en, text: "https://sptdc.ru/"}
     youtubeLink: https://www.youtube.com/playlist?list=PL_5iU_mKtf3tVGo_x8XO0J8SEr32BxYjv
     placeId: 4
-    talkIds: [244, 1309, 245, 251, 246, 1310, 247, 1311, 248, 1312, 249, 1313, 250, 1314, 252, 1315, 253, 1316]
+    talkIds: [244, 245, 251, 246, 247, 248, 249, 250, 252, 253]
+  - eventTypeId: 10
+    name:
+      - {language: en, text: "SPTDC 2020"}
+    startDate: "2020-07-06"
+    endDate: "2020-07-09"
+    siteLink:
+      - {language: en, text: "https://sptdc.ru/"}
+    placeId: 24
+    talkIds: [2367, 2330, 2368, 2333, 2369, 2335, 2370, 2371, 2372, 2220]
   # SmartData
   - eventTypeId: 11
     name:
@@ -864,6 +917,16 @@ events:
     placeId: 2
     talkIds: [1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325, 1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333, 1334,
               1335, 1336, 1337, 1338, 1339, 1340, 1341, 1342, 1343, 1344]
+  - eventTypeId: 12
+    name:
+      - {language: en, text: "TechTrain 2020"}
+    startDate: "2020-06-06"
+    endDate: "2020-06-06"
+    siteLink:
+      - {language: en, text: "https://techtrain.ru/en/"}
+      - {language: ru, text: "https://techtrain.ru/"}
+    placeId: 24
+    talkIds: [2373, 2374, 2375, 2376, 2377, 2378, 2379, 2380, 2381, 2382]
   # JUG.MSK
   - eventTypeId: 13
     name:
@@ -1216,9 +1279,677 @@ events:
     endDate: "2012-07-25"
     placeId: 0
     talkIds: [2006]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2012"}
+    startDate: "2012-08-23"
+    endDate: "2012-08-23"
+    placeId: 0
+    talkIds: [2007, 2008, 2009]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2012"}
+    startDate: "2012-09-11"
+    endDate: "2012-09-11"
+    placeId: 0
+    talkIds: [2010]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2012"}
+    startDate: "2012-09-29"
+    endDate: "2012-09-29"
+    placeId: 18
+    talkIds: [2011]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2012"}
+    startDate: "2012-10-17"
+    endDate: "2012-10-17"
+    placeId: 0
+    talkIds: [2012]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2012"}
+    startDate: "2012-11-22"
+    endDate: "2012-11-22"
+    placeId: 0
+    talkIds: [2013]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2012"}
+    startDate: "2012-12-24"
+    endDate: "2012-12-24"
+    placeId: 0
+    talkIds: [2014]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-01-24"
+    endDate: "2013-01-24"
+    placeId: 0
+    talkIds: [2015]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-02-28"
+    endDate: "2013-02-28"
+    placeId: 0
+    talkIds: [2016]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-03-28"
+    endDate: "2013-03-28"
+    placeId: 0
+    talkIds: [2017, 2018, 2019]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-04-16"
+    endDate: "2013-04-16"
+    placeId: 0
+    talkIds: [2020]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-05-30"
+    endDate: "2013-05-30"
+    placeId: 0
+    talkIds: [2021]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-06-27"
+    endDate: "2013-06-27"
+    placeId: 0
+    talkIds: [2022]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-07-11"
+    endDate: "2013-07-11"
+    placeId: 0
+    talkIds: [2023, 2024]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-08-07"
+    endDate: "2013-08-07"
+    placeId: 0
+    talkIds: [2025]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "OpenJDK TestFest Russia 2013"}
+    startDate: "2013-08-17"
+    endDate: "2013-08-17"
+    placeId: 0
+    talkIds: [2177, 2178, 2179, 2180]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-08-31"
+    endDate: "2013-08-31"
+    placeId: 1
+    talkIds: [2026, 2027, 2028, 2029]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-09-02"
+    endDate: "2013-09-05"
+    placeId: 0
+    talkIds: [2175]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-10-14"
+    endDate: "2013-10-14"
+    placeId: 5
+    talkIds: [2176, 2181, 2182, 2183, 2184, 2185]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-10-17"
+    endDate: "2013-10-17"
+    placeId: 0
+    talkIds: [2030]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-11-20"
+    endDate: "2013-11-20"
+    placeId: 0
+    talkIds: [2031]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2013"}
+    startDate: "2013-12-12"
+    endDate: "2013-12-12"
+    placeId: 0
+    talkIds: [2032, 2033]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-02-06"
+    endDate: "2014-02-06"
+    placeId: 0
+    talkIds: [2034]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-02-26"
+    endDate: "2014-02-26"
+    placeId: 0
+    talkIds: [2035]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "Java 8 Launch Party"}
+    startDate: "2014-04-03"
+    endDate: "2014-04-03"
+    placeId: 0
+    talkIds: [2036, 2037, 2038, 2039, 2040, 2041]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-04-10"
+    endDate: "2014-04-10"
+    placeId: 0
+    talkIds: [2042]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-04-17"
+    endDate: "2014-04-17"
+    placeId: 11
+    talkIds: [2186, 2187]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-06-05"
+    endDate: "2014-06-05"
+    placeId: 0
+    talkIds: [2043]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-06-24"
+    endDate: "2014-06-25"
+    placeId: 26
+    talkIds: [2188, 2189]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-06-26"
+    endDate: "2014-06-26"
+    placeId: 19
+    talkIds: [2044]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-07-24"
+    endDate: "2014-07-24"
+    placeId: 20
+    talkIds: [2045]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-08-07"
+    endDate: "2014-08-07"
+    placeId: 19
+    talkIds: [2046, 2047]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-09-17"
+    endDate: "2014-09-17"
+    placeId: 0
+    talkIds: [2048]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-10-18"
+    endDate: "2014-10-19"
+    placeId: 4
+    talkIds: [2190]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-10-22"
+    endDate: "2014-10-22"
+    placeId: 4
+    talkIds: [2191, 2049]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-10-23"
+    endDate: "2014-10-24"
+    placeId: 4
+    talkIds: [2192, 2193]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2014"}
+    startDate: "2014-12-22"
+    endDate: "2014-12-22"
+    placeId: 0
+    talkIds: [2050]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2015"}
+    startDate: "2015-02-05"
+    endDate: "2015-02-05"
+    placeId: 19
+    talkIds: [2051]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2015"}
+    startDate: "2015-03-11"
+    endDate: "2015-03-11"
+    placeId: 0
+    talkIds: [2052]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2015"}
+    startDate: "2015-04-22"
+    endDate: "2015-04-22"
+    placeId: 19
+    talkIds: [2053]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2015"}
+    startDate: "2015-05-14"
+    endDate: "2015-05-14"
+    placeId: 20
+    talkIds: [2054]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "Java: 20 years of innovation"}
+      - {language: ru, text: "Java: 20 лет инноваций"}
+    startDate: "2015-06-30"
+    endDate: "2015-06-30"
+    placeId: 0
+    talkIds: [2055, 2056, 2057, 2058, 2059]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2015"}
+    startDate: "2015-10-14"
+    endDate: "2015-10-14"
+    placeId: 0
+    talkIds: [2060]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2015"}
+    startDate: "2015-10-14"
+    endDate: "2015-10-15"
+    placeId: 4
+    talkIds: [2194]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2015"}
+    startDate: "2015-10-18"
+    endDate: "2015-10-18"
+    placeId: 4
+    talkIds: [2195]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2015"}
+    startDate: "2015-12-03"
+    endDate: "2015-12-03"
+    placeId: 0
+    talkIds: [2061]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2015"}
+    startDate: "2015-12-17"
+    endDate: "2015-12-17"
+    placeId: 19
+    talkIds: [2062]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2016"}
+    startDate: "2016-01-21"
+    endDate: "2016-01-21"
+    placeId: 20
+    talkIds: [2063]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2016"}
+    startDate: "2016-02-26"
+    endDate: "2016-02-26"
+    placeId: 0
+    talkIds: [2064, 2065, 2066, 2067]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2016"}
+    startDate: "2016-05-26"
+    endDate: "2016-05-26"
+    placeId: 19
+    talkIds: [2068]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2016"}
+    startDate: "2016-06-30"
+    endDate: "2016-06-30"
+    placeId: 19
+    talkIds: [2069]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2016"}
+    startDate: "2016-07-06"
+    endDate: "2016-07-06"
+    placeId: 0
+    talkIds: [2070]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2016"}
+    startDate: "2016-08-31"
+    endDate: "2016-08-31"
+    placeId: 21
+    talkIds: [2071]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2016"}
+    startDate: "2016-09-14"
+    endDate: "2016-09-14"
+    placeId: 21
+    talkIds: [2072]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2016"}
+    startDate: "2016-10-12"
+    endDate: "2016-10-12"
+    placeId: 19
+    talkIds: [2073]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2016"}
+    startDate: "2016-12-01"
+    endDate: "2016-12-01"
+    placeId: 21
+    talkIds: [2074]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2016"}
+    startDate: "2016-12-22"
+    endDate: "2016-12-22"
+    placeId: 0
+    talkIds: [2075]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2017"}
+    startDate: "2017-02-25"
+    endDate: "2017-02-25"
+    placeId: 0
+    talkIds: [2076, 2077, 2078]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2017"}
+    startDate: "2017-04-19"
+    endDate: "2017-04-19"
+    placeId: 0
+    talkIds: [2079]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2017"}
+    startDate: "2017-07-06"
+    endDate: "2017-07-06"
+    placeId: 22
+    talkIds: [2080]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2017"}
+    startDate: "2017-08-02"
+    endDate: "2017-08-02"
+    placeId: 21
+    talkIds: [2081]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2017"}
+    startDate: "2017-08-30"
+    endDate: "2017-08-30"
+    placeId: 0
+    talkIds: [2082]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2017"}
+    startDate: "2017-10-11"
+    endDate: "2017-10-11"
+    placeId: 0
+    talkIds: [2083]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2017"}
+    startDate: "2017-10-25"
+    endDate: "2017-10-25"
+    placeId: 23
+    talkIds: [2084]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2017"}
+    startDate: "2017-11-02"
+    endDate: "2017-11-02"
+    placeId: 23
+    talkIds: [2085]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2017"}
+    startDate: "2017-12-04"
+    endDate: "2017-12-04"
+    placeId: 0
+    talkIds: [2086]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2017"}
+    startDate: "2017-12-25"
+    endDate: "2017-12-25"
+    placeId: 0
+    talkIds: [2087]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2018"}
+    startDate: "2018-02-28"
+    endDate: "2018-02-28"
+    placeId: 20
+    talkIds: [2088]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2018"}
+    startDate: "2018-04-11"
+    endDate: "2018-04-11"
+    placeId: 20
+    talkIds: [2089]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2018"}
+    startDate: "2018-05-15"
+    endDate: "2018-05-15"
+    placeId: 20
+    talkIds: [2090]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2018"}
+    startDate: "2018-06-05"
+    endDate: "2018-06-05"
+    placeId: 0
+    talkIds: [2091]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2018"}
+    startDate: "2018-08-09"
+    endDate: "2018-08-09"
+    placeId: 0
+    talkIds: [2092]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2018"}
+    startDate: "2018-10-18"
+    endDate: "2018-10-18"
+    placeId: 0
+    talkIds: [2093]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2019"}
+    startDate: "2019-01-29"
+    endDate: "2019-01-29"
+    placeId: 0
+    talkIds: [2094]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2019"}
+    startDate: "2019-03-21"
+    endDate: "2019-03-21"
+    placeId: 0
+    talkIds: [2095, 2096]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2019"}
+    startDate: "2019-05-30"
+    endDate: "2019-05-30"
+    placeId: 0
+    talkIds: [2097]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2019"}
+    startDate: "2019-07-09"
+    endDate: "2019-07-09"
+    placeId: 4
+    talkIds: [2098]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2019"}
+    startDate: "2019-08-27"
+    endDate: "2019-08-27"
+    placeId: 0
+    talkIds: [2099]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2019"}
+    startDate: "2019-09-05"
+    endDate: "2019-09-05"
+    placeId: 27
+    talkIds: [2196]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2019"}
+    startDate: "2019-10-23"
+    endDate: "2019-10-24"
+    placeId: 27
+    talkIds: [2198]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2020"}
+    startDate: "2020-04-17"
+    endDate: "2020-04-17"
+    placeId: 24
+    talkIds: [2100]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2020"}
+    startDate: "2020-05-11"
+    endDate: "2020-05-11"
+    placeId: 24
+    talkIds: [2197]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru 2020"}
+    startDate: "2020-05-22"
+    endDate: "2020-05-22"
+    placeId: 24
+    talkIds: [2308]
   # JUGNsk
   - eventTypeId: 15
     name:
-      - {language: en, text: "JUGNsk"}
+      - {language: en, text: "JUGNsk Meetup #1"}
+    startDate: "2018-05-24"
+    endDate: "2018-05-24"
     placeId: 12
-    talkIds: []
+    talkIds: [2144, 2145]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #2"}
+    startDate: "2018-06-21"
+    endDate: "2018-06-21"
+    placeId: 12
+    talkIds: [2146, 2147]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #3"}
+    startDate: "2018-08-23"
+    endDate: "2018-08-23"
+    placeId: 16
+    talkIds: [2148, 2149]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #4"}
+    startDate: "2018-10-11"
+    endDate: "2018-10-11"
+    placeId: 12
+    talkIds: [2150, 2151]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #5"}
+    startDate: "2018-12-15"
+    endDate: "2018-12-15"
+    placeId: 12
+    talkIds: [2152, 2153, 2154, 2155]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #6"}
+    startDate: "2019-02-27"
+    endDate: "2019-02-27"
+    placeId: 12
+    talkIds: [2156, 2157, 2158, 2159]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #7"}
+    startDate: "2019-03-29"
+    endDate: "2019-03-29"
+    placeId: 16
+    talkIds: [2160, 2161]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #8"}
+    startDate: "2019-05-16"
+    endDate: "2019-05-16"
+    placeId: 12
+    talkIds: [2162, 2163]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #9"}
+    startDate: "2019-06-13"
+    endDate: "2019-06-13"
+    placeId: 17
+    talkIds: [2164, 2165, 2166]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #10"}
+    startDate: "2019-08-27"
+    endDate: "2019-08-27"
+    placeId: 12
+    talkIds: [2167, 2168]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #11"}
+    startDate: "2019-10-29"
+    endDate: "2019-10-29"
+    placeId: 25
+    talkIds: [2169, 2170]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #12"}
+    startDate: "2019-11-19"
+    endDate: "2019-11-19"
+    placeId: 12
+    talkIds: [2171, 2172]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #13"}
+    startDate: "2020-02-28"
+    endDate: "2020-02-28"
+    placeId: 12
+    talkIds: [2173]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #14"}
+    startDate: "2020-04-24"
+    endDate: "2020-04-24"
+    placeId: 24
+    talkIds: [2174]
