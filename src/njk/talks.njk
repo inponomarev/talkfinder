@@ -1,4 +1,4 @@
-{% set lang = 'ru' %}
+{% set lang = env.output_lang %}
 {% set commaspace = joiner(", ") %}
 
 {% macro translate(text, lang) %}

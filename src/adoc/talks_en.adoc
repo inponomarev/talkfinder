@@ -1,8 +1,8 @@
-= События JUG
-:lang: ru
+= JUG Events
+:lang: en
 include::_doc_general_attributes.adoc[]
 :toclevels: 2
 :doctype: book
 :toc: left
 
-include::talks_pre.adoc[]
+include::talks_pre_en.adoc[]

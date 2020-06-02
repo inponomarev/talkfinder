@@ -2,6 +2,7 @@ rm -r -f target
 mkdir -p target
 cp ./src/adoc/* ./target -r
 cp ./jugdata/descriptions/*.yml ./target -r
+
 echo Копирование изображений
 cp ./jugdata/assets/images ./target -r
 
@@ -17,7 +18,8 @@ find . -type f -name '*.yml' -exec  sh -c \
   sh {}  +
 
 cd ..
-# Подготовка json-файлов с нужной иерархией
+
+echo Подготовка json-файлов с нужной иерархией
 docker run --rm -v $(pwd):/documents/ lihame/course-doc \
   nunjucks src/njk/talk2id.njk target/talks.json -p . -e json -o target
 cp target/src/njk/talk2id.json ./target/talks-by-id.json;
@@ -38,19 +40,27 @@ docker run --rm -v $(pwd):/documents/ lihame/course-doc \
   jq -s '.[0] * .[1] * .[2] * .[3]' target/ev_types-by-id.json target/speakers-by-id.json \
   target/talks-by-id.json target/ev_type2ev.json >target/combined.json
 
-# Сборка
-docker run --rm -v $(pwd):/documents/ lihame/course-doc \
+echo Сборка
+docker run --env output_lang=en --rm -v $(pwd):/documents/ lihame/course-doc \
   nunjucks src/njk/talks.njk ./target/combined.json -p . -e adoc -o target
-cp target/src/njk/talks.adoc ./target/talks_pre.adoc;
+cp target/src/njk/talks.adoc ./target/talks_pre_en.adoc;
+
+docker run --env output_lang=ru --rm -v $(pwd):/documents/ lihame/course-doc \
+  nunjucks src/njk/talks.njk ./target/combined.json -p . -e adoc -o target
+cp target/src/njk/talks.adoc ./target/talks_pre_ru.adoc;
 
 docker run --rm -v $(pwd):/documents/ lihame/course-doc \
   asciidoctor -r ./src/extensions/feat-1338.rb \
   -r ./src/extensions/multirow-table-head-tree-processor.rb \
-  -v -w ./target/talks.adoc
+  -v -w ./target/talks_ru.adoc
 
-# Подготовка статического сайта
+docker run --rm -v $(pwd):/documents/ lihame/course-doc \
+  asciidoctor -r ./src/extensions/feat-1338.rb \
+  -r ./src/extensions/multirow-table-head-tree-processor.rb \
+  -v -w ./target/talks_en.adoc
 
+echo Подготовка статического сайта
 rm -r -f out
 mkdir out
-cp target/talks.html out
+cp target/*.html out
 cp target/images out -r
