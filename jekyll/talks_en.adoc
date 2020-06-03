@@ -1,0 +1,8 @@
+= JUG Events
+:lang: en
+include::_doc_general_attributes.adoc[]
+:toclevels: 2
+:doctype: book
+:!toc:
+
+include::talks_pre_en.adoc[]

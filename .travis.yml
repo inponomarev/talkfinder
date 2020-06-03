@@ -4,6 +4,11 @@ dist: bionic
 services:
   - docker
 
+language: ruby
+rvm:
+  - 2.6
+gemfile: jekyll/Gemfile
+
 before_install:
   - docker pull lihame/course-doc
   - chmod +x _compile_doc.sh
@@ -15,6 +20,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GH_TOKEN
-  local_dir: out
+  local_dir: jekyll/_site
   on:
     branch: master

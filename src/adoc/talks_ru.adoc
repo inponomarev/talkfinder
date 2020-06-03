@@ -1,8 +1,0 @@
-= События JUG
-:lang: ru
-include::_doc_general_attributes.adoc[]
-:toclevels: 2
-:doctype: book
-:toc: left
-
-include::talks_pre_ru.adoc[]

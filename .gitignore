@@ -1,2 +1,6 @@
 target/
-out/
+jekyll/_site/
+jekyll/images/
+jekyll/Gemfile.lock
+jekyll/talks_pre_en.adoc
+jekyll/talks_pre_ru.adoc

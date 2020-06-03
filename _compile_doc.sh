@@ -1,10 +1,10 @@
 rm -r -f target
 mkdir -p target
-cp ./src/adoc/* ./target -r
+
 cp ./jugdata/descriptions/*.yml ./target -r
 
 echo Копирование изображений
-cp ./jugdata/assets/images ./target -r
+cp ./jugdata/assets/images ./jekyll -r
 
 echo Генерация json-файлов
 cd target
@@ -43,24 +43,12 @@ docker run --rm -v $(pwd):/documents/ lihame/course-doc \
 echo Сборка
 docker run --env output_lang=en --rm -v $(pwd):/documents/ lihame/course-doc \
   nunjucks src/njk/talks.njk ./target/combined.json -p . -e adoc -o target
-cp target/src/njk/talks.adoc ./target/talks_pre_en.adoc;
+cp target/src/njk/talks.adoc ./jekyll/talks_pre_en.adoc;
 
 docker run --env output_lang=ru --rm -v $(pwd):/documents/ lihame/course-doc \
   nunjucks src/njk/talks.njk ./target/combined.json -p . -e adoc -o target
-cp target/src/njk/talks.adoc ./target/talks_pre_ru.adoc;
-
-docker run --rm -v $(pwd):/documents/ lihame/course-doc \
-  asciidoctor -r ./src/extensions/feat-1338.rb \
-  -r ./src/extensions/multirow-table-head-tree-processor.rb \
-  -v -w ./target/talks_ru.adoc
-
-docker run --rm -v $(pwd):/documents/ lihame/course-doc \
-  asciidoctor -r ./src/extensions/feat-1338.rb \
-  -r ./src/extensions/multirow-table-head-tree-processor.rb \
-  -v -w ./target/talks_en.adoc
+cp target/src/njk/talks.adoc ./jekyll/talks_pre_ru.adoc;
 
 echo Подготовка статического сайта
-rm -r -f out
-mkdir out
-cp target/*.html out
-cp target/images out -r
+cd jekyll
+bundle exec jekyll build

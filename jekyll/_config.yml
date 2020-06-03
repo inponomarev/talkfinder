@@ -1,0 +1,19 @@
+title: JUG Events and Talks
+description: JUG Talks Finder
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - talks_pre_en.adoc
+  - talks_pre_ru.adoc
+
+keep_files:
+  - images
+asciidoc: {}
+asciidoctor:
+  base_dir: :docdir
+  safe: unsafe
+  attributes:
+    - idseparator=_
+    - source-highlighter=coderay
+    - icons=font
+    - imagesdir=/images

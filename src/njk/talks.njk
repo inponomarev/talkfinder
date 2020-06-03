@@ -81,7 +81,7 @@
 {% macro output_ev_type(ev_type_item) %}
   {{- '' }}== {{ output_i18n_text(ev_type_item.name, lang, 'text') }} 
   {{- '\n\n' }}
-  {{- '' }}image::images/events/{{ ev_type_item.logoFileName }}[]
+  {{- '' }}image::events/{{ ev_type_item.logoFileName }}[]
   {{- '\n\n' }}
   {{- output_i18n_text(ev_type_item.description, lang, 'text') }}
   {{- '\n\n' }}
