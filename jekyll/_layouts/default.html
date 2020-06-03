@@ -8,20 +8,20 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="Ivan Ponomarev">
   <meta name="robots" content="noindex">
-  <link rel="stylesheet" href="/css/foundation.css">
-  <link rel="stylesheet" href="/css/font-awesome.css">
-  <link rel="stylesheet" href="/css/coderay.css">
-  <link rel="stylesheet" href="/css/asciidoctor.css">
-  <script src="/js/vendor/modernizr.js"></script>
-  <script src="/js/toc.js"></script>
+  <link rel="stylesheet" href="{{page.root}}css/foundation.css">
+  <link rel="stylesheet" href="{{page.root}}css/font-awesome.css">
+  <link rel="stylesheet" href="{{page.root}}css/coderay.css">
+  <link rel="stylesheet" href="{{page.root}}css/asciidoctor.css">
+  <script src="{{page.root}}js/vendor/modernizr.js"></script>
+  <script src="{{page.root}}js/toc.js"></script>
 </head>
 <body>
   <nav class="top-bar">
     <ul class="title-area">
       <li class="name">
         <h1>
-          <a href="/talks_ru.html" {% if page.url == "/talks_ru.html" or page.url == "/" %}style="color: red;" {% endif %}>RU</a>
-          <a href="/talks_en.html" {% if page.url == "/talks_en.html" %}style="color: red;" {% endif %}>EN</a>
+          <a href="{{page.root}}talks_ru.html" {% if page.url == "{{page.root}}talks_ru.html" or page.url == "{{page.root}}" %}style="color: red;" {% endif %}>RU</a>
+          <a href="{{page.root}}talks_en.html" {% if page.url == "{{page.root}}talks_en.html" %}style="color: red;" {% endif %}>EN</a>
         </h1>
       </li>
     </ul>
