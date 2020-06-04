@@ -5,6 +5,7 @@ exclude:
   - Gemfile.lock
   - talks_pre_en.adoc
   - talks_pre_ru.adoc
+  - vendor/
 
 keep_files:
   - images

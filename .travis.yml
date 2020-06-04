@@ -1,9 +1,6 @@
 ---
 dist: bionic
 
-services:
-  - docker
-
 language: ruby
 rvm:
   - 2.6
