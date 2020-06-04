@@ -6,7 +6,7 @@ const yaml = require('js-yaml');
 
 console.log('Подготовка json-файлов с нужной иерархией');
 
-const inputDir = resolve(process.cwd(), './src/njk') || '';
+const inputDir = resolve(process.cwd(), './njk') || '';
 
 const nunjucksEnv = nunjucks.configure(inputDir, { trimBlocks: true, lstripBlocks: true, noCache: true });
 nunjucksEnv.addFilter('md2asciidoc', function (a) {
@@ -86,8 +86,8 @@ nunjucksEnv.addFilter('from_translit', function (a) {
 });
 
 const transform = (template, dataFile) => {
-  console.log(chalk.blue('  ' + template + ' <- ' + dataFile));
-  const fileContents = readFileSync('./jugdata/descriptions/' + dataFile, 'utf8');
+  console.log(chalk.blue(`  ${template} <- ${dataFile}`));
+  const fileContents = readFileSync(`./jugdata/descriptions/${dataFile}`, 'utf8');
   const data = yaml.loadAll(fileContents);
   return nunjucksEnv.render(template, data[0]);
 }
@@ -104,16 +104,14 @@ const combined = {
   ev_type2ev: ev_type2ev.ev_type2ev
 };
 
-
-
-writeFileSync('./combined.json', JSON.stringify(combined));
-
 console.log('Сборка ADOC');
 
-nunjucksEnv.addGlobal('lang', 'ru');
-writeFileSync('./jekyll/talks_pre_ru.adoc',
-  nunjucksEnv.render('talks.njk', combined));
+var lang;
 
-nunjucksEnv.addGlobal('lang', 'en');
-writeFileSync('./jekyll/talks_pre_en.adoc',
-  nunjucksEnv.render('talks.njk', combined));
+for (lang of ['ru', 'en']) {
+  nunjucksEnv.addGlobal('lang', lang);
+
+  //here we procude all the files for the given language
+  writeFileSync(`./jekyll/talks_pre_${lang}.adoc`,
+    nunjucksEnv.render('talks.njk', combined));
+}
