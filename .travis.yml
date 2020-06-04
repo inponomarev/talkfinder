@@ -9,8 +9,12 @@ rvm:
   - 2.6
 gemfile: jekyll/Gemfile
 
+cache:
+  - bundler
+  - npm
+
 before_install:
-  - docker pull lihame/course-doc
+  - npm install
   - chmod +x _compile_doc.sh
 
 script:

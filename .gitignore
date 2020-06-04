@@ -1,6 +1,7 @@
-target/
+node_modules/
+package-lock.json
 jekyll/_site/
-jekyll/images/
+jekyll/images
 jekyll/Gemfile.lock
 jekyll/talks_pre_en.adoc
 jekyll/talks_pre_ru.adoc
