@@ -1,5 +1,7 @@
 title: JUG Events and Talks
 description: JUG Talks Finder
+root: /talkfinder
+
 exclude:
   - Gemfile
   - Gemfile.lock

@@ -150,18 +150,18 @@ var lang;
 
 for (lang of ['ru', 'en']) {
   nunjucksEnv.addGlobal('lang', lang);
-
+  console.log(chalk.blue(`  ${lang}`));
   //here we procude all the files for the given language
   //writeFileSync(`./jekyll/${lang}/talks_pre.adoc`,
   //  nunjucksEnv.render('talks.njk', combined));
 
-  //Event types + events list
+  console.log(chalk.blue(`    Event types and events list...`));
   mkdirp.sync(`./jekyll/${lang}`);
   writeFileSync(`./jekyll/${lang}/events.adoc`,
     nunjucksEnv.render('events.njk', combined));
 
 
-  //Event type cards
+  console.log(chalk.blue(`    Event type cards...`));
   mkdirp.sync(`./jekyll/${lang}/evttype`);
   for (ev_type_id of Object.keys(combined.ev_types)) {
     nunjucksEnv.addGlobal('ev_type_id', ev_type_id);
@@ -169,7 +169,7 @@ for (lang of ['ru', 'en']) {
       nunjucksEnv.render('evttype.njk', combined));
   }
 
-  //Event cards
+  console.log(chalk.blue(`    Event cards...`));
   mkdirp.sync(`./jekyll/${lang}/event`);
   for (event_type of Object.values(combined.ev_type2ev))
     for (event of event_type) {
@@ -178,7 +178,7 @@ for (lang of ['ru', 'en']) {
         nunjucksEnv.render('event_card.njk', combined));
     }
 
-  //Speaker cards
+  console.log(chalk.blue(`    Speaker cards...`));
   mkdirp.sync(`./jekyll/${lang}/speaker`);
   for (speaker of Object.values(combined.speakers)) {
     nunjucksEnv.addGlobal('speaker', speaker);
@@ -186,11 +186,14 @@ for (lang of ['ru', 'en']) {
       nunjucksEnv.render('speaker_card.njk', combined));
   }
 
-  //Talk cards
+  console.log(chalk.blue(`    Talk cards...`));
   mkdirp.sync(`./jekyll/${lang}/talk`);
   for (talk of Object.values(combined.talks)) {
     nunjucksEnv.addGlobal('talk', talk);
     writeFileSync(`./jekyll/${lang}/talk/${talk.id}.adoc`,
       nunjucksEnv.render('talk_card.njk', combined));
   }
+
 }
+
+console.log('Done.');
