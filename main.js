@@ -11,8 +11,6 @@ const inputDir = resolve(process.cwd(), './njk') || '';
 
 const nunjucksEnv = nunjucks.configure(inputDir, { trimBlocks: true, lstripBlocks: true, noCache: true });
 
-nunjucksEnv.addGlobal('site_root', '/talkfinder/');
-
 nunjucksEnv.addFilter('md2asciidoc', function (a) {
   a = a.replace(/C\+\+/g, '{cpp}');
   a = a.replace(/С\+\+/g, '{cpp}');
@@ -163,6 +161,9 @@ for (lang of ['ru', 'en']) {
   writeFileSync(`./jekyll/${lang}/events.adoc`,
     nunjucksEnv.render('events.njk', combined));
 
+  console.log(chalk.blue(`    Speakers list...`));
+  writeFileSync(`./jekyll/${lang}/speakers.adoc`,
+    nunjucksEnv.render('speakers.njk', combined));
 
   console.log(chalk.blue(`    Event type cards...`));
   mkdirp.sync(`./jekyll/${lang}/evttype`);

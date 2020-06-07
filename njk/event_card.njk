@@ -36,7 +36,7 @@
 {% endmacro %}
 
 {% macro output_talk(talk) -%}
-  {{- '' }}*  link:{{ site_root }}talk/{{ talk.id }}.html[{{ output_i18n_text(talk.name, lang, 'text') }}]
+  {{- '' }}*  link:../talk/{{ talk.id }}.html[{{ output_i18n_text(talk.name, lang, 'text') }}]
 {% endmacro %}
 
 {% macro output_event(event_item) %}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="Ivan Ponomarev">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="{{site.root}}css/foundation.css">
+  <link rel="stylesheet" href="{{site.root}}css/font-awesome.css">
+  <link rel="stylesheet" href="{{site.root}}css/coderay.css">
+  <link rel="stylesheet" href="{{site.root}}css/asciidoctor.css">
+  <script src="{{site.root}}js/vendor/modernizr.js"></script>
+  <script src="{{site.root}}js/toc.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="{{site.root}}en/events.html">Events</a>
+          <a href="{{site.root}}en/speakers.html">Speakers</a>
+          <a href="{{site.root}}{{page.rupath}}">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  {{ content }}
+</body>
+</html>
