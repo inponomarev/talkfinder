@@ -4,6 +4,7 @@ rupath: ru/events.html
 enpath: en/events.html
 ---
 
+
 {% set commaspace = joiner(", ") %}
 
 {% macro translate(text, lang) %}
@@ -80,9 +81,8 @@ enpath: en/events.html
 {% endmacro %}
 
 {% macro output_ev_type(ev_type_item) %}
-  {{- '' }}== {{ output_i18n_text(ev_type_item.name, lang, 'text') }} 
   {{- '\n\n' }}
-  {{- '' }}image::events/{{ ev_type_item.logoFileName }}[]
+  {{- '' }}image::events/{{ ev_type_item.logoFileName }}[[link="evttype/{{ ev_type_item.id }}.html"]]
   {{- '\n\n' }}
 
 {% endmacro %}
