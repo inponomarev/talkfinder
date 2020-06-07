@@ -19,4 +19,4 @@ asciidoctor:
     - idseparator=_
     - source-highlighter=coderay
     - icons=font
-    - imagesdir=images
+    - imagesdir=/talkfinder/images

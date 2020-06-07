@@ -1,3 +1,9 @@
+---
+layout: {{ lang }}
+rupath: ../ru/speaker/{{ speaker.id }}.html
+enpath: ../en/speaker/{{ speaker.id }}.html
+---
+
 {% set commaspace = joiner(", ") %}
 
 {% macro translate(text, lang) %}
@@ -91,11 +97,13 @@
 
 {{- '' }}===  {{ output_i18n_text(speaker.name, lang, 'text') }}
 
+image::speakers/{{ speaker.fileName }}[]
+
 *{{ output_i18n_text(speaker.company, lang, 'text') }}*
 
-{{ output_i18n_text(speaker.bio, lang, 'text') }}
-
 Twitter: {{ speaker.twitter }}
+
+{{ output_i18n_text(speaker.bio, lang, 'text') }}
 
 {{- '\n\n' }}
 

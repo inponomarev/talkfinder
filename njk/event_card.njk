@@ -1,3 +1,9 @@
+---
+layout: {{ lang }}
+rupath: ../ru/events/{{ event_item.id }}.html
+enpath: ../en/events/{{ event_item.id }}.html
+---
+
 {% set commaspace = joiner(", ") %}
 
 {% macro translate(text, lang) %}

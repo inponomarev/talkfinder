@@ -1,6 +1,0 @@
----
-layout: default
-title: Talks
----
-
-include::talks_ru.adoc[]
