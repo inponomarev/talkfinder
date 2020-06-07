@@ -36,31 +36,7 @@
 {% endmacro %}
 
 {% macro output_talk(talk) -%}
-  ====  {{ output_i18n_text(talk.name, lang, 'text') }}
-  {{- '\n\n' }}
-  {%- for speaker_item in talk.speakerIds -%}
-    {%- if loop.first -%}{%- else -%}, {% endif -%}
-    {{- '_' -}}{{- output_i18n_text(speakers[speaker_item].name, lang, 'text') -}}_
-  {%- endfor -%}
-  {{- '\n\n' }}
-  {{- output_i18n_text(talk.shortDescription, lang, 'md') }}
-  {{- '\n\n' }}
-  {{- output_i18n_text(talk.longDescription, lang, 'md') }}
-  {{- '\n\n' }}
-  {%- for pres_link in talk.presentationLinks %}
-    {%- if loop.first %}
-      {{- '.'}}{{ translate('Links', lang) }}:
-    {% endif %}
-    {{- '* '}}{{pres_link}}
-  {% endfor %}
-  {{- '\n\n' }}
-  {%- for video_link in talk.videoLinks %}
-    {%- if loop.first %}
-      {{- '.'}}{{ translate('Video links', lang) }}:
-    {% endif %}
-    {{- '* '}}{{video_link}}
-  {% endfor %}
-  {{- '\n\n' }}
+  {{- '' }}*  link:talk/{{ talk.id }}.html[{{ output_i18n_text(talk.name, lang, 'text') }}]
 {% endmacro %}
 
 {% macro output_event(event_item) %}
@@ -111,10 +87,23 @@
 
 {% endmacro %}
 
-{% for ev_type_id, ev_type_events in ev_type2ev %}
-  {{- output_ev_type(ev_types[ev_type_id]) }}
-  {{- '\n\n' }}
-  {%- for event_item in ev_type_events | sort(true, true, "startDate")   %}
-    {{- output_event(event_item) }}
-  {% endfor %}
-{% endfor %}
+{% macro output_speaker(speaker) %}
+
+{{- '' }}===  {{ output_i18n_text(speaker.name, lang, 'text') }}
+
+*{{ output_i18n_text(speaker.company, lang, 'text') }}*
+
+{{ output_i18n_text(speaker.bio, lang, 'text') }}
+
+Twitter: {{ speaker.twitter }}
+
+{{- '\n\n' }}
+
+  {%- for talk_id in speaker.talks -%}
+     {{ output_talk(talks[talk_id]) }}
+  {%- endfor -%}
+
+{% endmacro %}
+
+{{ output_speaker(speaker) }}
+

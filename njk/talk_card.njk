@@ -40,7 +40,7 @@
   {{- '\n\n' }}
   {%- for speaker_item in talk.speakerIds -%}
     {%- if loop.first -%}{%- else -%}, {% endif -%}
-    {{- '_' -}}{{- output_i18n_text(speakers[speaker_item].name, lang, 'text') -}}_
+    {{- '_' -}}link:speaker/{{ speaker_item }}.html[{{- output_i18n_text(speakers[speaker_item].name, lang, 'text') -}}]_
   {%- endfor -%}
   {{- '\n\n' }}
   {{- output_i18n_text(talk.shortDescription, lang, 'md') }}
@@ -111,10 +111,4 @@
 
 {% endmacro %}
 
-{% for ev_type_id, ev_type_events in ev_type2ev %}
-  {{- output_ev_type(ev_types[ev_type_id]) }}
-  {{- '\n\n' }}
-  {%- for event_item in ev_type_events | sort(true, true, "startDate")   %}
-    {{- output_event(event_item) }}
-  {% endfor %}
-{% endfor %}
+{{ output_talk(talk) }}

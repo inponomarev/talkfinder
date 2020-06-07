@@ -85,17 +85,53 @@ nunjucksEnv.addFilter('from_translit', function (a) {
   return a;
 });
 
-const transform = (template, dataFile) => {
+const transform = (template, dataFile, mapFunc = x => x) => {
   console.log(chalk.blue(`  ${template} <- ${dataFile}`));
   const fileContents = readFileSync(`./jugdata/descriptions/${dataFile}`, 'utf8');
-  const data = yaml.loadAll(fileContents);
-  return nunjucksEnv.render(template, data[0]);
+  const data = yaml.loadAll(fileContents)[0];
+  return nunjucksEnv.render(template, mapFunc(data));
 }
 
-const talks = JSON.parse(transform('talk2id.njk', 'talks.yml'));
-const speakers = JSON.parse(transform('author2id.njk', 'speakers.yml'));
+/* During the parsing we collect speaker -> talks map */
+const speakerTalks = {};
+const talks = JSON.parse(transform('talk2id.njk', 'talks.yml',
+  data => {
+    for (talk of data.talks) {
+      for (speakerid of talk.speakerIds) {
+        if (speakerTalks[speakerid] == undefined) {
+          speakerTalks[speakerid] = [talk.id];
+        } else {
+          speakerTalks[speakerid].push(talk.id);
+        }
+      }
+    }
+    return data;
+  }
+));
+
+/* Here we also enrich each speaker's profile with their talks */
+const speakers = JSON.parse(transform('author2id.njk', 'speakers.yml',
+  data => {
+    for (speaker of data.speakers) {
+      speaker.talks = speakerTalks[speaker.id];
+    }
+    return data;
+  }
+));
+
+
 const ev_types = JSON.parse(transform('ev_type2id.njk', 'event-types.yml'));
-const ev_type2ev = JSON.parse(transform('ev_type2ev.njk', 'events.yml'));
+
+const ev_type2ev = JSON.parse(transform('ev_type2ev.njk', 'events.yml',
+  /*here we generate event ids for cross-references */
+  data => {
+    var i = 0;
+    for (event of data.events) {
+      i++;
+      event.event_id = i;
+    }
+    return data;
+  }));
 
 const combined = {
   talks: talks.talks,
@@ -103,6 +139,9 @@ const combined = {
   ev_types: ev_types.ev_types,
   ev_type2ev: ev_type2ev.ev_type2ev
 };
+
+
+//writeFileSync('combined.json', JSON.stringify(combined, null, 2));
 
 console.log('Сборка ADOC');
 
@@ -112,6 +151,40 @@ for (lang of ['ru', 'en']) {
   nunjucksEnv.addGlobal('lang', lang);
 
   //here we procude all the files for the given language
-  writeFileSync(`./jekyll/talks_pre_${lang}.adoc`,
-    nunjucksEnv.render('talks.njk', combined));
+  //writeFileSync(`./jekyll/${lang}/talks_pre.adoc`,
+  //  nunjucksEnv.render('talks.njk', combined));
+
+  //Event types + events list
+  writeFileSync(`./jekyll/${lang}/events.adoc`,
+    nunjucksEnv.render('events.njk', combined));
+
+
+  //Event type cards
+  for (ev_type_id of Object.keys(combined.ev_types)) {
+    nunjucksEnv.addGlobal('ev_type_id', ev_type_id);
+    writeFileSync(`./jekyll/${lang}/evttype/${ev_type_id}.adoc`,
+      nunjucksEnv.render('evttype.njk', combined));
+  }
+
+  //Event cards
+  for (event_type of Object.values(combined.ev_type2ev))
+    for (event of event_type) {
+      nunjucksEnv.addGlobal('event_item', event);
+      writeFileSync(`./jekyll/${lang}/event/${event.event_id}.adoc`,
+        nunjucksEnv.render('event_card.njk', combined));
+    }
+
+  //Speaker cards
+  for (speaker of Object.values(combined.speakers)) {
+    nunjucksEnv.addGlobal('speaker', speaker);
+    writeFileSync(`./jekyll/${lang}/speaker/${speaker.id}.adoc`,
+      nunjucksEnv.render('speaker_card.njk', combined));
+  }
+
+  //Talk cards
+  for (talk of Object.values(combined.talks)) {
+    nunjucksEnv.addGlobal('talk', talk);
+    writeFileSync(`./jekyll/${lang}/talk/${talk.id}.adoc`,
+      nunjucksEnv.render('talk_card.njk', combined));
+  }
 }

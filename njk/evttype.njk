@@ -111,10 +111,10 @@
 
 {% endmacro %}
 
-{% for ev_type_id, ev_type_events in ev_type2ev %}
-  {{- output_ev_type(ev_types[ev_type_id]) }}
-  {{- '\n\n' }}
-  {%- for event_item in ev_type_events | sort(true, true, "startDate")   %}
-    {{- output_event(event_item) }}
-  {% endfor %}
+{{- output_ev_type(ev_types[ev_type_id]) }}
+{{- '\n\n' }}
+
+{%- for event_item in ev_type2ev[ev_type_id].ev_type_events | sort(true, true, "startDate")   %}
+  {{ event_item}}
+  {{- output_event(event_item) }}
 {% endfor %}

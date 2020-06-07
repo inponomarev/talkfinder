@@ -4,7 +4,6 @@
 {
   "ev_type2ev": {
   {% for event_item in events | sort(false,false,"eventTypeId") %}
-    
     {% if event_item.eventTypeId != prev_ev_type %}
       {% if first_prev_ev_type %}{% else %}],{% endif %}
       {% set first_prev_ev_type = false %}
