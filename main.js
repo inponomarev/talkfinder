@@ -10,6 +10,9 @@ console.log('Подготовка json-файлов с нужной иерарх
 const inputDir = resolve(process.cwd(), './njk') || '';
 
 const nunjucksEnv = nunjucks.configure(inputDir, { trimBlocks: true, lstripBlocks: true, noCache: true });
+
+nunjucksEnv.addGlobal('site_root', '/talkfinder/');
+
 nunjucksEnv.addFilter('md2asciidoc', function (a) {
   a = a.replace(/C\+\+/g, '{cpp}');
   a = a.replace(/С\+\+/g, '{cpp}');
