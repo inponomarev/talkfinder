@@ -45,59 +45,12 @@ enpath: en/speaker/{{ speaker.id }}.html
   {{- '' }}*  link:../talk/{{ talk.id }}.html[{{ output_i18n_text(talk.name, lang, 'text') }}]
 {% endmacro %}
 
-{% macro output_event(event_item) %}
-  {{- '' }}===  {{ output_i18n_text(event_item.name, lang, 'text') }}
-  {%- if event_item.startDate == event_item.endDate %}
-    {{- " (" }}{{- event_item.startDate | ansiToGerman }})
-  {%- else %}
-    {{- " (" }}{{- event_item.startDate | ansiToGerman }} -- {{ event_item.endDate | ansiToGerman }})
-  {% endif %}
-  {{- '\n\n' }}
-  {%- for talk_id in event_item.talkIds -%}
-    {{ output_talk(talks[talk_id]) }}
-  {%- endfor -%}
-{% endmacro %}
-
-{% macro output_ev_type(ev_type_item) %}
-  {{- '' }}== {{ output_i18n_text(ev_type_item.name, lang, 'text') }} 
-  {{- '\n\n' }}
-  {{- '' }}image::events/{{ ev_type_item.logoFileName }}[]
-  {{- '\n\n' }}
-  {{- output_i18n_text(ev_type_item.description, lang, 'text') }}
-  {{- '\n\n' }}
-  {%- if ev_type_item.siteLink %}
-    {{- '* '}}{{ output_i18n_text(ev_type_item.siteLink, lang, 'text') }}
-    {{- '\n' }}
-  {% endif %}
-  {%- if ev_type_item.vkLink %}
-    {{- '* '}}{{ ev_type_item.vkLink }}
-    {{- '\n' }}
-  {% endif %}
-  {%- if ev_type_item.twitterLink%}
-    {{- '* '}}{{ ev_type_item.twitterLink}}
-    {{- '\n' }}
-    {% endif %}
-  {%- if ev_type_item.facebookLink %}
-    {{- '* '}}{{ ev_type_item.facebookLink }}
-    {{- '\n' }}
-  {% endif %}
-  {%- if ev_type_item.youtubeLink %}
-    {{- '* '}}{{ ev_type_item.youtubeLink }}
-    {{- '\n' }}
-  {% endif %}
-  {%- if ev_type_item.telegramLink %}
-    {{- '* '}}{{ ev_type_item.telegramLink }}
-    {{- '\n' }}
-  {% endif %}
-  {{- '\n\n' }}
-
-{% endmacro %}
 
 {% macro output_speaker(speaker) %}
 
 {{- '' }}===  {{ output_i18n_text(speaker.name, lang, 'text') }}
 
-image::speakers/{{ speaker.fileName }}[]
+image::speakers/{{ speaker.fileName }}[width=300]
 
 *{{ output_i18n_text(speaker.company, lang, 'text') }}*
 
