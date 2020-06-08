@@ -58,10 +58,15 @@ Twitter: {{ speaker.twitter }}
 
 {{ output_i18n_text(speaker.bio, lang, 'text') }}
 
-{{- '\n\n' }}
 
-  {%- for talk_id in speaker.talks -%}
-     {{ output_talk(talks[talk_id]) }}
+
+  {%- for event_type, speaker_talks in speaker.talks -%}
+     {{- '\n\n' }}
+image:events/{{ ev_types[event_type].logoFileName }}[width=80,link="../evttype/{{ event_type }}.html"]
+     {{- '\n\n' }}
+     {%- for talk_id in speaker_talks -%}
+       {{ output_talk(talks[talk_id]) }}
+     {%- endfor -%}
   {%- endfor -%}
 
 {% endmacro %}

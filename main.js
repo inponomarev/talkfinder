@@ -141,6 +141,20 @@ const ev_type2ev = JSON.parse(transform('ev_type2ev.njk', 'events.yml',
 
 const places = yaml.loadAll(readFileSync('./jugdata/descriptions/places.yml', 'utf8'))[0];
 
+/* Group speaker talks by type */
+for (speaker of Object.values(speakers.speakers)) {
+  speaker.talks = {}
+  if (speakerTalks[speaker.id])
+    for (talk_id of speakerTalks[speaker.id]) {
+      const event = talks.talks[talk_id].event;
+      if (speaker.talks[event.eventTypeId]) {
+        speaker.talks[event.eventTypeId].push(talk_id);
+      } else {
+        speaker.talks[event.eventTypeId] = [talk_id];
+      }
+    }
+}
+
 const combined = {
   talks: talks.talks,
   speakers: speakers.speakers,
@@ -148,6 +162,7 @@ const combined = {
   ev_type2ev: ev_type2ev.ev_type2ev,
   places: places.places
 };
+
 
 
 writeFileSync('combined.json', JSON.stringify(combined, null, 2));

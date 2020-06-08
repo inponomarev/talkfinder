@@ -43,7 +43,7 @@ enpath: en/talk/{{ talk.id }}.html
 
 {% macro output_talk(talk) -%}
 
-image:events/{{ ev_types[talk.event.eventTypeId].logoFileName }}[width=80,link="evttype/{{ talk.event.eventTypeId }}.html"]link:../event/{{ talk.event.event_id }}.html[{{ output_i18n_text(talk.event.name, lang, 'text') }}
+image:events/{{ ev_types[talk.event.eventTypeId].logoFileName }}[width=80,link="../evttype/{{ talk.event.eventTypeId }}.html"]link:../event/{{ talk.event.event_id }}.html[{{ output_i18n_text(talk.event.name, lang, 'text') }}
 {%- if event_item.startDate == event_item.endDate %}
     {{- " (" }}{{- talk.event.startDate | ansiToGerman }})
   {%- else %}
