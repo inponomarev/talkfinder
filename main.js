@@ -181,11 +181,13 @@ for (lang of ['ru', 'en']) {
   nunjucksEnv.addGlobal('lang', lang);
   console.log(chalk.blue(`  ${lang}`));
   //here we procude all the files for the given language
-  //writeFileSync(`./jekyll/${lang}/talks_pre.adoc`,
-  //  nunjucksEnv.render('talks.njk', combined));
+
+  console.log(chalk.blue("    'About' page..."));
+  mkdirp.sync(`./jekyll/${lang}`);
+  writeFileSync(`./jekyll/${lang}/about.adoc`,
+    nunjucksEnv.render(`about_${lang}.njk`, combined));
 
   console.log(chalk.blue(`    Event types and events list...`));
-  mkdirp.sync(`./jekyll/${lang}`);
   writeFileSync(`./jekyll/${lang}/events.adoc`,
     nunjucksEnv.render('events.njk', combined));
 
