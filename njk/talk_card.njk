@@ -55,7 +55,7 @@ image:events/{{ ev_types[talk.event.eventTypeId].logoFileName }}[width=80,link="
   {{- '\n\n'  }}
 
   {%- for video_link in talk.videoLinks %}
-    {{- '' }}video::{{ video_link | youtube_id }}[youtube,width=640,height=480]
+    {{- '' }}video::{{ video_link | youtube_id }}[youtube,width=645,height=430]
   {% endfor %}
 
 {% for speakerId in talk.speakerIds %}image:speakers/{{ speakers[speakerId].fileName }}[img,100,100,link="../speaker/{{ speakerId }}.html"] {% endfor %}

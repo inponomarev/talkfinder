@@ -3,6 +3,7 @@ layout: {{ lang }}
 rupath: ru/speaker/{{ speaker.id }}.html
 enpath: en/speaker/{{ speaker.id }}.html
 ---
+:icons: font
 
 {% set commaspace = joiner(", ") %}
 
@@ -59,11 +60,9 @@ image::speakers/{{ speaker.fileName }}[width=300]
 
 *{{ output_i18n_text(speaker.company, lang, 'text') }}*
 
-Twitter: {{ speaker.twitter }}
-
+{% if speaker.twitter %}icon:twitter[size=lg] https://twitter.com/{{ speaker.twitter }}[{{ speaker.twitter }}]{% endif %}
+{{- '\n\n' }}
 {{ output_i18n_text(speaker.bio, lang, 'text') }}
-
-
 
   {%- for event_type, speaker_talks in speaker.talks -%}
      {{- '\n\n' }}
