@@ -43,10 +43,13 @@ enpath: en/talk/{{ talk.id }}.html
 
 {% macro output_talk(talk) -%}
   ====  {{ output_i18n_text(talk.name, lang, 'text') }}
+  {{- '\n\n'  }}
+{% for speakerId in talk.speakerIds %}image:speakers/{{ speakers[speakerId].fileName }}[img,100,100,link="../speaker/{{ speakerId }}.html"] {% endfor %}
   {{- '\n\n' }}
+  {{- '' }}* 
   {%- for speaker_item in talk.speakerIds -%}
     {%- if loop.first -%}{%- else -%}, {% endif -%}
-    {{- '_' -}}link:../speaker/{{ speaker_item }}.html[{{- output_i18n_text(speakers[speaker_item].name, lang, 'text') -}}]_
+    {{- ' _' -}}link:../speaker/{{ speaker_item }}.html[{{- output_i18n_text(speakers[speaker_item].name, lang, 'text') -}}]_
   {%- endfor -%}
   {{- '\n\n' }}
   {{- output_i18n_text(talk.shortDescription, lang, 'md') }}
@@ -67,54 +70,6 @@ enpath: en/talk/{{ talk.id }}.html
     {{- '* '}}{{video_link}}
   {% endfor %}
   {{- '\n\n' }}
-{% endmacro %}
-
-{% macro output_event(event_item) %}
-  {{- '' }}===  {{ output_i18n_text(event_item.name, lang, 'text') }}
-  {%- if event_item.startDate == event_item.endDate %}
-    {{- " (" }}{{- event_item.startDate | ansiToGerman }})
-  {%- else %}
-    {{- " (" }}{{- event_item.startDate | ansiToGerman }} -- {{ event_item.endDate | ansiToGerman }})
-  {% endif %}
-  {{- '\n\n' }}
-  {%- for talk_id in event_item.talkIds -%}
-    {{ output_talk(talks[talk_id]) }}
-  {%- endfor -%}
-{% endmacro %}
-
-{% macro output_ev_type(ev_type_item) %}
-  {{- '' }}== {{ output_i18n_text(ev_type_item.name, lang, 'text') }} 
-  {{- '\n\n' }}
-  {{- '' }}image::events/{{ ev_type_item.logoFileName }}[]
-  {{- '\n\n' }}
-  {{- output_i18n_text(ev_type_item.description, lang, 'text') }}
-  {{- '\n\n' }}
-  {%- if ev_type_item.siteLink %}
-    {{- '* '}}{{ output_i18n_text(ev_type_item.siteLink, lang, 'text') }}
-    {{- '\n' }}
-  {% endif %}
-  {%- if ev_type_item.vkLink %}
-    {{- '* '}}{{ ev_type_item.vkLink }}
-    {{- '\n' }}
-  {% endif %}
-  {%- if ev_type_item.twitterLink%}
-    {{- '* '}}{{ ev_type_item.twitterLink}}
-    {{- '\n' }}
-    {% endif %}
-  {%- if ev_type_item.facebookLink %}
-    {{- '* '}}{{ ev_type_item.facebookLink }}
-    {{- '\n' }}
-  {% endif %}
-  {%- if ev_type_item.youtubeLink %}
-    {{- '* '}}{{ ev_type_item.youtubeLink }}
-    {{- '\n' }}
-  {% endif %}
-  {%- if ev_type_item.telegramLink %}
-    {{- '* '}}{{ ev_type_item.telegramLink }}
-    {{- '\n' }}
-  {% endif %}
-  {{- '\n\n' }}
-
 {% endmacro %}
 
 {{ output_talk(talk) }}
