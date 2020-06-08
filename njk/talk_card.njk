@@ -53,7 +53,11 @@ image:events/{{ ev_types[talk.event.eventTypeId].logoFileName }}[width=80,link="
 
 ====  {{ output_i18n_text(talk.name, lang, 'text') }}
   {{- '\n\n'  }}
-  
+
+  {%- for video_link in talk.videoLinks %}
+    {{- '' }}video::{{ video_link | youtube_id }}[youtube]
+  {% endfor %}
+
 {% for speakerId in talk.speakerIds %}image:speakers/{{ speakers[speakerId].fileName }}[img,100,100,link="../speaker/{{ speakerId }}.html"] {% endfor %}
   {{- '\n\n' }}
   {{- '' }}* 
@@ -73,13 +77,7 @@ image:events/{{ ev_types[talk.event.eventTypeId].logoFileName }}[width=80,link="
     {{- '* '}}{{pres_link}}
   {% endfor %}
   {{- '\n\n' }}
-  {%- for video_link in talk.videoLinks %}
-    {%- if loop.first %}
-      {{- '.'}}{{ translate('Video links', lang) }}:
-    {% endif %}
-    {{- '* '}}{{video_link}}
-  {% endfor %}
-  {{- '\n\n' }}
+  
 {% endmacro %}
 
 {{ output_talk(talk) }}

@@ -87,6 +87,12 @@ nunjucksEnv.addFilter('from_translit', function (a) {
   return a;
 });
 
+nunjucksEnv.addFilter('youtube_id', function (a) {
+  var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#&?]*).*/;
+  var match = a.match(regExp);
+  return (match && match[7].length == 11) ? match[7] : false;
+});
+
 const transform = (template, dataFile, mapFunc = x => x) => {
   console.log(chalk.blue(`  ${template} <- ${dataFile}`));
   const fileContents = readFileSync(`./jugdata/descriptions/${dataFile}`, 'utf8');
