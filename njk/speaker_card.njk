@@ -42,7 +42,12 @@ enpath: en/speaker/{{ speaker.id }}.html
 {% endmacro %}
 
 {% macro output_talk(talk) -%}
-  {{- '' }}*  link:../talk/{{ talk.id }}.html[{{ output_i18n_text(talk.name, lang, 'text') }}]
+  {{- '' }}*  link:../talk/{{ talk.id }}.html[{{ output_i18n_text(talk.name, lang, 'text') }}] link:../event/{{ talk.event.event_id }}.html[({{ output_i18n_text(talk.event.name, lang, 'text') }}
+{%- if event_item.startDate == event_item.endDate %}
+    {{- ", " }}{{- talk.event.startDate | ansiToGerman }})
+  {%- else %}
+    {{- ", " }}{{- talk.event.startDate | ansiToGerman }} -- {{ talk.event.endDate | ansiToGerman }})
+  {% endif %}]
 {% endmacro %}
 
 
