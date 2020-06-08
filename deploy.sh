@@ -8,6 +8,6 @@ ssh -i deploy_rsa -o "StrictHostKeyChecking no" root@jugspeakers.online "mkdir -
 
 scp -i deploy_rsa -o "StrictHostKeyChecking no" talkfinder.tgz root@jugspeakers.online:/opt/talkfinder/talkfinder-${TRAVIS_BUILD_NUMBER}/talkfinder.tgz
 
-ssh -i deploy_rsa root@jugspeakers.online "tar xzf /opt/talkfinder/talkfinder-${TRAVIS_BUILD_NUMBER}/talkfinder.tgz --strip-components=2 -C /opt/talkfinder/talkfinder-${TRAVIS_BUILD_NUMBER}"
+ssh -i deploy_rsa root@jugspeakers.online "cd /opt/talkfinder/talkfinder-${TRAVIS_BUILD_NUMBER}; tar xzf talkfinder.tgz --strip-components=2; rm talkfinder.tgz; cd ..; ln -sf talkfinder-${TRAVIS_BUILD_NUMBER} talkfinder"
 
 rm -f deploy_rsa
