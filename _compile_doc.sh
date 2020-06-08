@@ -1,4 +1,4 @@
-ln -s `pwd`/jugdata/assets/images ./jekyll/images
+ln -sfn `pwd`/jugdata/assets/images ./jekyll/images
 
 npm run builder
 
