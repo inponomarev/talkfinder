@@ -131,6 +131,10 @@ const ev_type2ev = JSON.parse(transform('ev_type2ev.njk', 'events.yml',
     for (event of data.events) {
       i++;
       event.event_id = i;
+      /* add links from talk to event */
+      for (talk_id of event.talkIds) {
+        talks.talks[talk_id].event = event;
+      }
     }
     return data;
   }));
