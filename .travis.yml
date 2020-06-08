@@ -18,9 +18,14 @@ script:
   - ./_compile_doc.sh
 
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GH_TOKEN
-  local_dir: jekyll/_site
-  on:
-    branch: master
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GH_TOKEN
+    local_dir: jekyll/_site
+    on:
+      branch: master
+  - provider: script
+    script: bash deploy.sh
+    skip_cleanup: true
+    on:
+      branch: master

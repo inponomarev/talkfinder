@@ -5,3 +5,5 @@ jekyll/images
 jekyll/Gemfile.lock
 jekyll/**/*.adoc
 combined.json
+deploy_rsa
+talkfinder.tgz
