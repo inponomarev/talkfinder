@@ -135,15 +135,18 @@ const ev_type2ev = JSON.parse(transform('ev_type2ev.njk', 'events.yml',
     return data;
   }));
 
+const places = yaml.loadAll(readFileSync('./jugdata/descriptions/places.yml', 'utf8'))[0];
+
 const combined = {
   talks: talks.talks,
   speakers: speakers.speakers,
   ev_types: ev_types.ev_types,
-  ev_type2ev: ev_type2ev.ev_type2ev
+  ev_type2ev: ev_type2ev.ev_type2ev,
+  places: places.places
 };
 
 
-//writeFileSync('combined.json', JSON.stringify(combined, null, 2));
+writeFileSync('combined.json', JSON.stringify(combined, null, 2));
 
 console.log('Сборка ADOC');
 
