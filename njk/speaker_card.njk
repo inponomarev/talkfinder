@@ -60,7 +60,8 @@ image::speakers/{{ speaker.fileName }}[width=300]
 
 *{{ output_i18n_text(speaker.company, lang, 'text') }}*
 
-{% if speaker.twitter %}icon:twitter[size=lg] https://twitter.com/{{ speaker.twitter }}[{{ speaker.twitter }}]{% endif %}
+{% if speaker.twitter %}icon:twitter[size=lg] https://twitter.com/{{ speaker.twitter }}[{{ speaker.twitter }}] {% endif %}
+{% if speaker.gitHub %}icon:github[size=lg] https://github.com/{{ speaker.gitHub }}[{{ speaker.gitHub }}]{% endif %}
 {{- '\n\n' }}
 {% if speaker.javaChampion %}
 _Java Champion_
