@@ -11,6 +11,7 @@ cache:
   - npm
 
 before_install:
+  - sudo apt-get -y install graphicsmagick
   - npm install
   - chmod +x _compile_doc.sh
 

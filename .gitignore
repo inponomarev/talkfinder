@@ -7,3 +7,4 @@ jekyll/**/*.adoc
 combined.json
 deploy_rsa
 talkfinder.tgz
+jugdata/assets/images/small/

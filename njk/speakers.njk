@@ -118,5 +118,5 @@ enpath: en/speakers.html
 {% endmacro %}
 
 {% for speaker_id, speaker in speakers %}
-  {{- '' }}*  image:speakers/{{ speaker.fileName }}[img,35,35] link:speaker/{{ speaker.id }}.html[{{ output_i18n_text(speaker.name, lang, 'text') }} {% if speaker.company.length %}({{ output_i18n_text(speaker.company, lang, 'text')}}){% endif %}]
+  {{- '' }}*  image:small/{{ speaker.fileName }}[img,35,35] link:speaker/{{ speaker.id }}.html[{{ output_i18n_text(speaker.name, lang, 'text') }} {% if speaker.company.length %}({{ output_i18n_text(speaker.company, lang, 'text')}}){% endif %}]
 {% endfor %}

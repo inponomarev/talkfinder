@@ -82,7 +82,7 @@ enpath: en/events.html
 
 {% macro output_ev_type(ev_type_item) %}
   {{- '\n\n' }}
-  {{- '' }}image::events/{{ ev_type_item.logoFileName }}[link="evttype/{{ ev_type_item.id }}.html"]
+  {{- '' }}image::events/{{ ev_type_item.logoFileName }}[width=200,link="evttype/{{ ev_type_item.id }}.html"]
   {{- '\n\n' }}
 
 {% endmacro %}

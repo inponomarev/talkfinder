@@ -1,9 +1,24 @@
-const { readFileSync, writeFileSync } = require('fs');
+const { readFileSync, writeFileSync, readdirSync } = require('fs');
 const { resolve, basename, dirname } = require('path');
 const nunjucks = require('nunjucks');
 const mkdirp = require('mkdirp');
 const chalk = require('chalk').default;
 const yaml = require('js-yaml');
+const gm = require('gm');
+
+console.log('Image resizing');
+mkdirp.sync(`./jugdata/assets/images/small`);
+
+const imgDir = resolve(process.cwd(), './jugdata/assets/images') || '';
+const files = readdirSync(`${imgDir}/speakers`);
+for (img of files) {
+  gm(`${imgDir}/speakers/${img}`)
+    .resize(35, 35)
+    .noProfile()
+    .write(`${imgDir}/small/${img}`, err => {
+    });
+}
+console.log('Resizing done');
 
 console.log('Подготовка json-файлов с нужной иерархией');
 
@@ -94,7 +109,7 @@ nunjucksEnv.addFilter('youtube_id', function (a) {
 });
 
 const transform = (template, dataFile, mapFunc = x => x) => {
-  console.log(chalk.blue(`  ${template} <- ${dataFile}`));
+  console.log(chalk.blue(`  ${template} < - ${dataFile}`));
   const fileContents = readFileSync(`./jugdata/descriptions/${dataFile}`, 'utf8');
   const data = yaml.loadAll(fileContents)[0];
   return nunjucksEnv.render(template, mapFunc(data));
