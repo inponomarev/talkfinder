@@ -121,6 +121,5 @@ enpath: en/evttype/{{ ev_type_id }}.html
 {{- '\n\n' }}
 
 {%- for event_item in ev_type2ev[ev_type_id] | sort(true, true, "startDate")   %}
-  {{ event_item}}
   {{- output_event(event_item) }}
 {% endfor %}

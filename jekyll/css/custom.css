@@ -22,6 +22,11 @@ table.talk-list img {
     margin-right: 10px;
 }
 
+.event-speakers img {
+    border-radius: 30px;
+    margin-right: 5px;
+}
+
 
 .author-big-image img {
     border-radius: 30px;
@@ -57,4 +62,17 @@ table.talk-list {
 table.talk-list td {
     border: none;
     background-color: white;
+}
+
+div.event-image-in-events:not(:first-of-type) {
+
+    border-top: 1px dotted #DDD;
+    margin-top: 80px;
+}
+
+div.event-image-in-events>.content img {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
