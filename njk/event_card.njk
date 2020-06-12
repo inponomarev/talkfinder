@@ -62,9 +62,13 @@ _{{ output_i18n_text(places[event_item.placeId].city, lang, 'text') }}_
 
   {{- '\n\n' }}
 
+  {{- '' }}[.talk-list]
+  {{- '' }}[cols="1"]
+  {{- '' }}|===
   {%- for talk_id in event_item.talkIds -%}
     {{ output_talk(talks[talk_id]) }}
   {%- endfor -%}
+  {{- '' }}|===
 {% endmacro %}
 
 {{- output_event(event_item) }}
