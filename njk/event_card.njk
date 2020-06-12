@@ -44,7 +44,6 @@ enpath: en/event/{{ event_item.event_id }}.html
 {% macro output_talk(talk) -%}
   {{- '' }}| {% for speakerId in talk.speakerIds %} image:small/{{ speakers[speakerId].fileName }}[img,35,35]{% endfor %} link:../talk/{{ talk.id }}.html[{{ output_i18n_text(talk.name, lang, 'text') }}]
 {% endmacro %}
-|===
 
 {% macro output_event(event_item) %}
   {{- '' }}image::events/{{ ev_types[event_item.eventTypeId].logoFileName }}[link="../evttype/{{ event_item.eventTypeId }}.html"]
@@ -63,13 +62,9 @@ _{{ output_i18n_text(places[event_item.placeId].city, lang, 'text') }}_
 
   {{- '\n\n' }}
 
-  {{- '' }}[.talk-list]
-  {{- '' }}[cols="1"]
-  {{- '' }}|===
   {%- for talk_id in event_item.talkIds -%}
     {{ output_talk(talks[talk_id]) }}
   {%- endfor -%}
-  {{- '' }}|===
 {% endmacro %}
 
 {{- output_event(event_item) }}
