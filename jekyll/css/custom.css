@@ -12,11 +12,12 @@ div.main-content {
     border-right: 1px dotted #E3E3E3;
 }
 
-li img {
+table.author-list img {
     border-radius: 500px;
+    margin-right: 10px;
 }
 
-img {
+.author-big-image img {
     border-radius: 30px;
 }
 
@@ -32,4 +33,13 @@ img {
 }
 .title-area {
     width: 100%;
+}
+
+table.author-list {
+    border: none;
+}
+
+table.author-list td {
+    border: none;
+    background-color: white;
 }
