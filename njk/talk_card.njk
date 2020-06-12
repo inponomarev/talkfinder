@@ -61,7 +61,7 @@ image:events/{{ ev_types[talk.event.eventTypeId].logoFileName }}[width=80,link="
 [.event-speakers]
 {% for speakerId in talk.speakerIds %}image:speakers/{{ speakers[speakerId].fileName }}[img,100,100,link="../speaker/{{ speakerId }}.html"] {% endfor %}
   {{- '\n\n' }}
-  {{- '' }}* 
+  {{- '' }} 
   {%- for speaker_item in talk.speakerIds -%}
     {%- if loop.first -%}{%- else -%}, {% endif -%}
     {{- ' _' -}}link:../speaker/{{ speaker_item }}.html[{{- output_i18n_text(speakers[speaker_item].name, lang, 'text') -}}]_
