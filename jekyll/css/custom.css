@@ -1,0 +1,35 @@
+body {
+    background-color: #FAFAFA
+}
+
+div.content {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 30px;
+    border-left: 1px dotted #E3E3E3;
+    border-right: 1px dotted #E3E3E3;
+}
+
+li img {
+    border-radius: 500px;
+}
+
+img {
+    border-radius: 30px;
+}
+
+.top-bar {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lang {
+    position:absolute;
+    right: 0px;
+}
+.title-area {
+    width: 100%;
+}
