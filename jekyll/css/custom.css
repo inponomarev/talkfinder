@@ -17,6 +17,12 @@ table.author-list img {
     margin-right: 10px;
 }
 
+table.talk-list img {
+    border-radius: 500px;
+    margin-right: 10px;
+}
+
+
 .author-big-image img {
     border-radius: 30px;
 }
@@ -40,6 +46,15 @@ table.author-list {
 }
 
 table.author-list td {
+    border: none;
+    background-color: white;
+}
+
+table.talk-list {
+    border: none;
+}
+
+table.talk-list td {
     border: none;
     background-color: white;
 }

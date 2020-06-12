@@ -58,6 +58,7 @@ image:events/{{ ev_types[talk.event.eventTypeId].logoFileName }}[width=80,link="
     {{- '' }}video::{{ video_link | youtube_id }}[youtube,width=645,height=430]
   {% endfor %}
 
+[.event-speakers]
 {% for speakerId in talk.speakerIds %}image:speakers/{{ speakers[speakerId].fileName }}[img,100,100,link="../speaker/{{ speakerId }}.html"] {% endfor %}
   {{- '\n\n' }}
   {{- '' }}* 
