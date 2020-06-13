@@ -5,7 +5,7 @@ const mkdirp = require('mkdirp');
 const chalk = require('chalk').default;
 const yaml = require('js-yaml');
 const gm = require('gm');
-
+/*
 console.log('Image resizing');
 mkdirp.sync(`./jugdata/assets/images/small`);
 
@@ -19,7 +19,7 @@ for (img of files) {
     });
 }
 console.log('Resizing done');
-
+*/
 console.log('Подготовка json-файлов с нужной иерархией');
 
 const inputDir = resolve(process.cwd(), './njk') || '';
@@ -186,7 +186,26 @@ const combined = {
 
 
 
-writeFileSync('combined.json', JSON.stringify(combined, null, 2));
+//writeFileSync('combined.json', JSON.stringify(combined, null, 2));
+
+const translate = (item, lang) => {
+  const map = {};
+  let result;
+  if (item) {
+    for (l of item) {
+      map[l.language] = l.text;
+    }
+    if (map[lang])
+      result = map[lang];
+    else if (map['en'])
+      result = map['en'];
+    else
+      result = map['ru'];
+  } else result = '';
+  if (result)
+    return result;//TODO: strip /r/n etc
+  else return '';
+}
 
 console.log('Сборка ADOC');
 
@@ -195,10 +214,39 @@ var lang;
 for (lang of ['ru', 'en']) {
   nunjucksEnv.addGlobal('lang', lang);
   console.log(chalk.blue(`  ${lang}`));
+
   //here we procude all the files for the given language
+  console.log(chalk.blue("    search.json..."));
+  mkdirp.sync(`./jekyll/${lang}`);
+  const search = [];
+  for (speaker of Object.values(combined.speakers)) {
+    const item = {
+      title: translate(speaker.name, lang),
+      content: translate(speaker.bio, lang),
+      url: `speaker/${speaker.id}.html`
+    }
+    search.push(item);
+  }
+  for (talk of Object.values(combined.talks)) {
+    const item = {
+      title: translate(talk.name, lang),
+      content: translate(talk.shortDescription, lang) + translate(talk.longDescription, lang),
+      url: `talk/${talk.id}.html`
+    }
+    search.push(item);
+  }
+  for (ev_type of Object.values(combined.ev_types)) {
+    const item = {
+      title: translate(ev_type.name, lang),
+      content: translate(ev_type.description, lang),
+      url: `evttype/${ev_type.id}.html`
+    }
+    search.push(item);
+  }
+  writeFileSync(`./jekyll/${lang}/search.json`, JSON.stringify(search, null, 2));
 
   console.log(chalk.blue("    'About' page..."));
-  mkdirp.sync(`./jekyll/${lang}`);
+
   writeFileSync(`./jekyll/${lang}/about.adoc`,
     nunjucksEnv.render(`about_${lang}.njk`, combined));
 
