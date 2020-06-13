@@ -83,7 +83,7 @@ enpath: en/evttype/{{ ev_type_id }}.html
 {% endmacro %}
 
 {% macro output_ev_type(ev_type_item) %}
-  {{- '' }}== {{ output_i18n_text(ev_type_item.name, lang, 'text') }} 
+  {{- '' }}= {{ output_i18n_text(ev_type_item.name, lang, 'text') }} 
   {{- '\n\n' }}
   {{- '' }}image::events/{{ ev_type_item.logoFileName }}[]
   {{- '\n\n' }}

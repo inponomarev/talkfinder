@@ -246,9 +246,12 @@ for (lang of ['ru', 'en']) {
   writeFileSync(`./jekyll/${lang}/search.json`, JSON.stringify(search, null, 2));
 
   console.log(chalk.blue("    'About' page..."));
-
   writeFileSync(`./jekyll/${lang}/about.adoc`,
     nunjucksEnv.render(`about_${lang}.njk`, combined));
+
+  console.log(chalk.blue("    'Search' page..."));
+  writeFileSync(`./jekyll/${lang}/search.adoc`,
+    nunjucksEnv.render(`search.njk`, combined));
 
   console.log(chalk.blue(`    Event types and events list...`));
   writeFileSync(`./jekyll/${lang}/events.adoc`,
