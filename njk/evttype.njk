@@ -42,35 +42,11 @@ enpath: en/evttype/{{ ev_type_id }}.html
 {% endmacro %}
 
 {% macro output_talk(talk) -%}
-  ====  {{ output_i18n_text(talk.name, lang, 'text') }}
-  {{- '\n\n' }}
-  {%- for speaker_item in talk.speakerIds -%}
-    {%- if loop.first -%}{%- else -%}, {% endif -%}
-    {{- '_' -}}{{- output_i18n_text(speakers[speaker_item].name, lang, 'text') -}}_
-  {%- endfor -%}
-  {{- '\n\n' }}
-  {{- output_i18n_text(talk.shortDescription, lang, 'md') }}
-  {{- '\n\n' }}
-  {{- output_i18n_text(talk.longDescription, lang, 'md') }}
-  {{- '\n\n' }}
-  {%- for pres_link in talk.presentationLinks %}
-    {%- if loop.first %}
-      {{- '.'}}{{ translate('Links', lang) }}:
-    {% endif %}
-    {{- '* '}}{{pres_link}}
-  {% endfor %}
-  {{- '\n\n' }}
-  {%- for video_link in talk.videoLinks %}
-    {%- if loop.first %}
-      {{- '.'}}{{ translate('Video links', lang) }}:
-    {% endif %}
-    {{- '* '}}{{video_link}}
-  {% endfor %}
-  {{- '\n\n' }}
+  {{- '' }}* {% for speakerId in talk.speakerIds %} image:small/{{ speakers[speakerId].fileName }}[img,35,35]{% endfor %} link:../talk/{{ talk.id }}.html[{{ output_i18n_text(talk.name, lang, 'text') }}]
 {% endmacro %}
 
 {% macro output_event(event_item) %}
-  {{- '' }}===  {{ output_i18n_text(event_item.name, lang, 'text') }}
+  {{- '' }}===  link:event/{{ event_item.event_id }}.html[{{ output_i18n_text(event_item.name, lang, 'text') }}]
   {%- if event_item.startDate == event_item.endDate %}
     {{- " (" }}{{- event_item.startDate | ansiToGerman }})
   {%- else %}
