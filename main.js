@@ -219,14 +219,7 @@ for (lang of ['ru', 'en']) {
   console.log(chalk.blue("    search.json..."));
   mkdirp.sync(`./jekyll/${lang}`);
   const search = [];
-  for (speaker of Object.values(combined.speakers)) {
-    const item = {
-      title: translate(speaker.name, lang),
-      content: translate(speaker.bio, lang),
-      url: `speaker/${speaker.id}.html`
-    }
-    search.push(item);
-  }
+
   for (talk of Object.values(combined.talks)) {
     const talkSpeakers = [];
     for (speakerid of talk.speakerIds) {
@@ -239,6 +232,20 @@ for (lang of ['ru', 'en']) {
     }
     search.push(item);
   }
+
+  for (speaker of Object.values(combined.speakers)) {
+    const item = {
+      title: `${translate(speaker.name, lang)} (${translate(speaker.company, lang)})`,
+      content: translate(speaker.bio, lang),
+      url: `speaker/${speaker.id}.html`
+    }
+    if (speaker.twitter)
+      item.content = `${item.content} ${speaker.twitter}`;
+    if (speaker.gitHub)
+      item.content = `${item.content} ${speaker.gitHub}`;
+    search.push(item);
+  }
+
   for (ev_type of Object.values(combined.ev_types)) {
     const item = {
       title: translate(ev_type.name, lang),
@@ -255,7 +262,7 @@ for (lang of ['ru', 'en']) {
 
   console.log(chalk.blue("    'Search' page..."));
   writeFileSync(`./jekyll/${lang}/search.adoc`,
-    nunjucksEnv.render(`search.njk`, combined));
+    nunjucksEnv.render(`search_${lang}.njk`, combined));
 
   console.log(chalk.blue(`    Event types and events list...`));
   writeFileSync(`./jekyll/${lang}/events.adoc`,

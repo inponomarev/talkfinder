@@ -1,0 +1,21 @@
+---
+layout: {{ lang }}
+rupath: ru/search.html
+enpath: en/search.html
+---
+
+= Search
+
+++++
+<input type="text" id="search-input" placeholder="Search...">
+<ul id="results-container"></ul>
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: 'search.json',
+  limit: 255,
+  noResultsText: 'No results found'
+});
+</script>
+++++

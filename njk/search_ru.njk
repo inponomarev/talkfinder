@@ -4,16 +4,18 @@ rupath: ru/search.html
 enpath: en/search.html
 ---
 
-== Search
+= Поиск
 
 ++++
-<input type="text" id="search-input" placeholder="Search...">
+<input type="text" id="search-input" placeholder="Поиск...">
 <ul id="results-container"></ul>
 <script>
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
-  json: 'search.json'
+  json: 'search.json',
+  limit: 255,
+  noResultsText: 'Ничего не найдено'
 });
 </script>
 ++++
