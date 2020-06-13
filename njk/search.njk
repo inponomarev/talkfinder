@@ -7,7 +7,14 @@ enpath: en/search.html
 == Search
 
 ++++
-
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: 'search.json',
+  fuzzy: true
+});
+</script>
 <input type="text" id="search-input" placeholder="Search...">
 <ul id="results-container"></ul>
 
