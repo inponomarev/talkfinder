@@ -5,7 +5,7 @@ const mkdirp = require('mkdirp');
 const chalk = require('chalk').default;
 const yaml = require('js-yaml');
 const gm = require('gm');
-/*
+
 console.log('Image resizing');
 mkdirp.sync(`./jugdata/assets/images/small`);
 
@@ -19,7 +19,7 @@ for (img of files) {
     });
 }
 console.log('Resizing done');
-*/
+
 console.log('Подготовка json-файлов с нужной иерархией');
 
 const inputDir = resolve(process.cwd(), './njk') || '';
