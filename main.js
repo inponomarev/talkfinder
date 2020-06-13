@@ -228,8 +228,12 @@ for (lang of ['ru', 'en']) {
     search.push(item);
   }
   for (talk of Object.values(combined.talks)) {
+    const talkSpeakers = [];
+    for (speakerid of talk.speakerIds) {
+      talkSpeakers.push(translate(combined.speakers[speakerid].name, lang));
+    }
     const item = {
-      title: translate(talk.name, lang),
+      title: talkSpeakers.join(',') + '. ' + translate(talk.name, lang),
       content: translate(talk.shortDescription, lang) + translate(talk.longDescription, lang),
       url: `talk/${talk.id}.html`
     }
