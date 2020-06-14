@@ -2,77 +2,120 @@ body {
     background-color: #FAFAFA
 }
 
-div.main-content {
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    padding: 30px;
-    border-left: 1px dotted #E3E3E3;
-    border-right: 1px dotted #E3E3E3;
+@media screen and (max-device-width:960px) {
+    body * {
+        font-size: 0.95em;
+    }
+    body div.main-content {    
+            width: 100%;
+            max-width: inherit;
+            margin-left: inherit;
+            margin-right: inherit;
+            padding: 20px;            
+
+    }
+    body .top-bar {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }    
+
+
+    body .lang {
+        position:relative;
+    }
+
+    body nav a {
+        font-size: 0.7em !important;
+    }
+
+    body nav.top-bar .name h1 {
+        line-height: 2.3em;
+    }
+
 }
 
-table.author-list img {
-    border-radius: 500px;
-    margin-right: 10px;
-}
-
-table.talk-list img {
-    border-radius: 500px;
-    margin-right: 10px;
-}
-
-.event-speakers img {
-    border-radius: 30px;
-    margin-right: 5px;
-}
 
 
-.author-big-image img {
-    border-radius: 30px;
-}
 
-.top-bar {
-    width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-}
+@media screen {
 
-.lang {
-    position:absolute;
-    right: 0px;
-}
-.title-area {
-    width: 100%;
-}
+    div.main-content {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        padding: 30px;
+        border-left: 1px dotted #E3E3E3;
+        border-right: 1px dotted #E3E3E3;
+        min-height: calc(100% - 46px);
 
-table.author-list {
-    border: none;
-}
+    }
 
-table.author-list td {
-    border: none;
-    background-color: white;
-}
+    table.author-list img {
+        border-radius: 500px;
+        margin-right: 10px;
+    }
 
-table.talk-list {
-    border: none;
-}
+    table.talk-list img {
+        border-radius: 500px;
+        margin-right: 10px;
+    }
 
-table.talk-list td {
-    border: none;
-    background-color: white;
-}
+    .event-speakers img {
+        border-radius: 30px;
+        margin-right: 5px;
+    }
 
-div.event-image-in-events:not(:first-of-type) {
 
-    border-top: 1px dotted #DDD;
-    margin-top: 80px;
-}
+    .author-big-image img {
+        border-radius: 30px;
+    }
 
-div.event-image-in-events>.content img {
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    .top-bar {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 45px;
+    }
+
+    .lang {
+        position:absolute;
+        right: 0px;
+    }
+    .title-area {
+        width: 100%;
+    }
+
+    table.author-list {
+        border: none;
+    }
+
+    table.author-list td {
+        border: none;
+        background-color: white;
+    }
+
+    table.talk-list {
+        border: none;
+    }
+
+    table.talk-list td {
+        border: none;
+        background-color: white;
+    }
+
+    div.event-image-in-events:not(:first-of-type) {
+
+        border-top: 1px dotted #DDD;
+        margin-top: 80px;
+    }
+
+    div.event-image-in-events>.content img {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
