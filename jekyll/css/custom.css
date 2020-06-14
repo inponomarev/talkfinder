@@ -33,6 +33,12 @@ body {
     body nav.top-bar .name h1 {
         line-height: 2.3em;
     }
+    body .top-bar .name h1 a {
+        padding: 0px 0px 0px 10px
+    }
+    body .top-bar .name h1 a:nth-of-type(1) {
+        padding: 0px 0px 0px 20px
+    }    
 
 }
 
