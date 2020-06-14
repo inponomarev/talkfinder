@@ -42,7 +42,7 @@ enpath: en/evttype/{{ ev_type_id }}.html
 {% endmacro %}
 
 {% macro output_talk(talk) -%}
-  {{- '' }}* {% for speakerId in talk.speakerIds %} image:small/{{ speakers[speakerId].fileName }}[img,35,35]{% endfor %} link:../talk/{{ talk.id }}.html[{{ output_i18n_text(talk.name, lang, 'text') }}]
+  {{- '' }}| {% for speakerId in talk.speakerIds %} image:small/{{ speakers[speakerId].fileName }}[img,35,35]{% endfor %} link:../talk/{{ talk.id }}.html[{{ output_i18n_text(talk.name, lang, 'text') }}]
 {% endmacro %}
 
 {% macro output_event(event_item) %}
@@ -53,9 +53,15 @@ enpath: en/evttype/{{ ev_type_id }}.html
     {{- " (" }}{{- event_item.startDate | ansiToGerman }} -- {{ event_item.endDate | ansiToGerman }})
   {% endif %}
   {{- '\n\n' }}
+  {{- '' }}[.talk-list]
+  {{- '\n' }}[cols="1"]
+  {{- '\n' }}|===
+  {{- '\n' }}
   {%- for talk_id in event_item.talkIds -%}
     {{ output_talk(talks[talk_id]) }}
   {%- endfor -%}
+  {{- '\n' }}
+  {{- '' }}|===
 {% endmacro %}
 
 {% macro output_ev_type(ev_type_item) %}
