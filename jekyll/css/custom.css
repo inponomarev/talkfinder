@@ -1,3 +1,4 @@
+
 body {
     background-color: #FAFAFA
 }
@@ -124,4 +125,28 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .talk-list td p {
+        display: flex;
+    }
+
+    .talk-list td p img {
+
+        flex-basis: 0 0;
+    }
+    .talk-list td p a {
+        flex: 1 1;
+    }
+
+    .author-list td p {
+        display: flex;
+    }
+
+    .author-list td p img {
+
+        flex-basis: 0 0;
+    }
+    .author-list td p a {
+        flex: 1 1;
+    }    
 }
