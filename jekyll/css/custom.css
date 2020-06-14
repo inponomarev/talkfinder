@@ -43,7 +43,7 @@ body {
     }    
 
     body .events-list.ulist {
-        column-count: 2;
+        column-count: 1;
     }    
 
 }
