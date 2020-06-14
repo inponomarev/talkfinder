@@ -41,6 +41,10 @@ body {
         padding: 0px 0px 0px 20px
     }    
 
+    body .events-list .ulist {
+        column-count: 2;
+    }    
+
 }
 
 
@@ -149,4 +153,8 @@ body {
     .author-list td p a {
         flex: 1 1;
     }    
+
+    .events-list .ulist {
+        column-count: 2;
+    }
 }

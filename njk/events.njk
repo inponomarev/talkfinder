@@ -90,7 +90,8 @@ enpath: en/events.html
 
 {% for ev_type_id, ev_type_events in ev_type2ev %}
   {{- output_ev_type(ev_types[ev_type_id]) }}
-  {{- '\n\n' }}
+  {{- '\n\n' }}[.events-list]
+  {{- '\n' }}
   {%- for event_item in ev_type_events | sort(true, true, "startDate")   %}
     {{- output_event(event_item) }}
   {% endfor %}
