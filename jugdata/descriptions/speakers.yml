@@ -1819,7 +1819,6 @@ speakers:
             \ JavaOne and QCon. He co-leads Shanghai Java User Group and co-chairs APMCon. He has authored over 10 technical\
             \ papers and a number of technical patents."
     twitter: sanhong_li
-    javaChampion: true
   - id: 106
     fileName: 0106.jpg
     name:
@@ -3780,6 +3779,7 @@ speakers:
     name:
       - {language: en, text: "Dmitry Naydanov"}
       - {language: ru, text: "Дмитрий Найданов"}
+    gitHub: Lugzan
   - id: 251
     fileName: 0251.jpg
     name:
@@ -3789,6 +3789,8 @@ speakers:
     bio:
       - {language: en, text: "Partner Manager, General Vaadin Specialist. Working with the web and user interfaces since\
       \ the 20th century. Still concerned about end-user experience, simple APIs and web security."}
+    twitter: samiekblad
+    gitHub: samie
   - id: 252
     fileName: 0252.jpg
     name:
@@ -3827,6 +3829,7 @@ speakers:
     bio:
       - {language: ru, text: "Инженер-программист, работает в компании Oracle (Sun  Microsystems) с 2005. Большую часть\
       \ времени участвовал в проектах AWT, JavaFX Glass. В настоящее время работает в группе Java Deployment."}
+    gitHub: dimitryc
   - id: 255
     fileName: 0255.jpg
     name:
@@ -3843,6 +3846,7 @@ speakers:
       - {language: ru, text: "Тимлид QA/Release команды в Azul Systems, отвечающей за Zulu OpenJDK. До этого долгое время\
             \ проработал в Oracle, где занимался QA JavaFX и Java2D. Любит делиться своим опытом на конференциях и stackoverflow.com"}
     twitter: SergeyGrinev
+    gitHub: sgrinev
   - id: 256
     fileName: 0256.jpg
     name:
@@ -3864,6 +3868,8 @@ speakers:
             и российских сегментов сети Интернет (Релком) и Фидонет. Издавал онлайн-журнал «dz online». Предпринимательски\
             й опыт — 15 лет. \n\nВ 2006 году создал компанию Digital Zone, которая объявила о начале разработки уникальной\
             \ (то есть — не являющейся концептуальной копией Unix/Windows) операционной системы Фантом."
+    twitter: dzavalishin
+    gitHub: dzavalishin
   - id: 257
     fileName: 0257.jpg
     name:
@@ -3898,6 +3904,7 @@ speakers:
             да» за книгу «Бизнес как игра» (в соавторстве с Д. Кибкало и Д. Борисовым). Учредитель пиар-агентства Loft. Ко\
             нсультировал ряд компаний из Топ-20 российского рынка. Премии «Лучшая маркетинговая компания года» и «Лучший к\
             лиентский опыт»."}
+    twitter: milfgard
   - id: 259
     fileName: 0259.jpg
     name:
@@ -3925,6 +3932,8 @@ speakers:
             \ и использованием информационных технологий, в частности, баз данных, в астрономии. Начал использовать PostgreSQL\
             \ в 1995 году при решении астрономических задач. Первым его вкладом в проект стала работа по локализации PostgreSQL\
             \ в 1997 году, которая сделала Постгрес более доступным для неанглоязычных пользователей."
+    twitter: obartunov
+    gitHub: obartunov
   - id: 260
     fileName: 0260.jpg
     name:
@@ -3969,6 +3978,7 @@ speakers:
             а. В полнолуние превращается в нудного ботана: его интересует возможность докопаться до сути вещей и процессов\
             , с которыми он работает."}
     twitter: mishunov
+    gitHub: mishunov
   - id: 262
     fileName: 0262.jpg
     name:
@@ -3977,11 +3987,11 @@ speakers:
     company:
       - {language: en, text: "ABBYY, Max Planck Institute for Mathematics in the Sciences"}
     bio:
-      - {language: en, text: "Got Ph.D. in applied mathematics at Brandenburg University of Technology (Cottbus, Germany).\
-            \ He is currently a research associate at Max Planck Institute (Leipzig, Germany) and an AI-evangelist at ABBYY.\
-            \ Ivan is studying new AI work principles which could help us to understand how our brain works."}
-      - {language: ru, text: "Получил Ph.D. по прикладной математике в Бранденбургском Технологическом университете (Котбу\
-            с, Германия). В данный момент — научный сотрудник Института Макса Планка (Лейпциг, Германия) и AI-евангелист ABBYY.\
+      - {language: en, text: "Got PhD in applied mathematics at Brandenburg University of Technology (Cottbus, Germany). Is\
+            \ currently a research associate at Max Planck Institute (Leipzig, Germany) and an AI-evangelist at ABBYY. Ivan\
+            \ is studying new AI work principles which could help us to understand how our brain works."}
+      - {language: ru, text: "Получил PhD по прикладной математике в Бранденбургском Технологическом университете (Котбус\
+            , Германия). В данный момент — научный сотрудник Института Макса Планка (Лейпциг, Германия) и AI-евангелист ABBYY.\
             \ Иван исследует новые принципы работы искусственного интеллекта, которые могли бы помочь понять, как работает\
             \ наш мозг."}
     twitter: kr0niker
@@ -4019,6 +4029,7 @@ speakers:
             инга видео. Более 6 лет профессионально учит людей (в двух вузах и на собственных курсах), кандидат технически\
             х наук. Сейчас занимается фронтом в GitLab."}
     twitter: xanf_ua
+    gitHub: xanf
   - id: 265
     fileName: 0265.jpg
     name:
@@ -4089,6 +4100,7 @@ speakers:
     name:
       - {language: en, text: "Kirill Karmakulov"}
       - {language: ru, text: "Кирилл Кармакулов"}
+    gitHub: kkarmakul
   - id: 270
     fileName: 0270.jpg
     name:
@@ -4133,6 +4145,7 @@ speakers:
             никами агильной разработки. Активный спикер и участник технических конференций Европы и России. В свободное вр\
             емя — фотограф, музыкант и сумасшедший путешественник."}
     twitter: filippkeks
+    gitHub: taphos
   - id: 273
     fileName: 0273.jpg
     name:
@@ -4169,6 +4182,7 @@ speakers:
             \ 2011.\n\nВ последние годы отвечал за работу с рядом ключевых партнеров Microsoft по разработке в регионе и з\
             анимался выпуском популярных игр и приложений."
     twitter: zdebskiy
+    gitHub: rzdebskiy
   - id: 275
     fileName: 0275.jpg
     name:
@@ -4215,6 +4229,7 @@ speakers:
             ужбе из всех виденных им — 2ГИС. Эта компания разрабатывает цифровые карты и путеводители по городам. Когда Ро\
             ман не пишет код, он поет в рок-группе. Он играет на гитаре, пианино и немного на барабанах."}
     twitter: rayproud
+    gitHub: RayProud
   - id: 279
     fileName: 0279.jpg
     name:
@@ -4235,17 +4250,12 @@ speakers:
       - {language: en, text: "Dmitriy Yakin"}
       - {language: ru, text: "Дмитрий Якин"}
     company:
+      - {language: en, text: Kontur}
       - {language: ru, text: Контур}
     bio:
-      - language: ru
-        text: "Обучался в Уральском федеральном университете. По образованию инженер-физик, специализирующийся на контроле\
-            \ качества физических объектов. \n\n4,5 года занимается тестированием. \n\nТестировал государственные веб-серв\
-            исы в компании «Центр ИТ». \nУчаствовал в разработке ПО для Евразийской экономической комиссии, Министерства о\
-            бразования, Федерального дорожного агентства. \n\nВ «Контур» пришел заниматься тестированием интеграций. Начин\
-            ал с тестирования интеграции сервиса Контур.Бухгалтерия с банками Альфа-Банк, УБРиР, Точка. \nПерешел в другой\
-            \ продукт Контур.Маркет и занимается тестированием кассового ПО. \nСпециализируется на интеграции веб-сервиса\
-            \ с десктопным и мобильным приложениями и интеграции десктопного и мобильного приложений с прикассовым «железо\
-            м» (принтер чеков, терминал оплаты, прикассовые весы)."
+      - {language: en, text: "Работает тестировщиком в Контуре, занимался тестированием интеграций, мобильным тестирование\
+            м. Параллельно с работой тестировщика занимается техническим пиаром профессии, читает лекции в университете и\
+            \ преподаёт на курсе по тестированию."}
   - id: 281
     fileName: 0281.jpg
     name:
@@ -4274,6 +4284,7 @@ speakers:
             \ и паттернам проектирования. Интересуется разработкой в сфере вычислений, численных финансов и алгоритмическо\
             й торговли. Интересуется C# и C++, а также технологиями высокопроизводительных вычислений, такими как CUDA и FPGA."}
     twitter: dnesteruk
+    gitHub: nesteruk
   - id: 283
     fileName: 0283.jpg
     name:
@@ -4309,6 +4320,7 @@ speakers:
             о государственного технического университета. Также он является генеральным директором небольшой ИТ-компании,\
             \ которая решает проблемы коммуникации людей, предлагая самые лучшие в сегменте сервисы."}
     twitter: RomaGordeev
+    gitHub: rgordeev
   - id: 285
     fileName: 0285.jpg
     name:
@@ -4333,6 +4345,7 @@ speakers:
             \ Days, Agile Days, IT Week, IT Subbotnik и EuroStar. Автор нескольких open source-фреймворков для автоматизир\
             ованного тестирования: VIQA, JDI UI, JDI Light, JDI Dark, FlashPages. Роман старается улучшить мир вокруг, пом\
             очь коллегам в проектах научиться тестировать в удовольствие: быстро, дешево, качественно."}
+    gitHub: epam-roman-iovlev
   - id: 287
     fileName: 0287.jpg
     name:
@@ -4361,6 +4374,7 @@ speakers:
             ых и интересных проектов, общей архитектурой и инфраструктурой. В основном мультимедиа-бэкендом — фото, аудио\
             , видео, upload и подобные смежные области. Активный участник сообщества GolangRU."}
     twitter: AterCattus
+    gitHub: atercattus
   - id: 289
     fileName: 0289.jpg
     name:
@@ -4461,6 +4475,7 @@ speakers:
             \ contributor) ядра WordPress и других компонентов экосистемы. Участник всех конференций WordCamp в России с 2013\
             \ года и многих WordPress-митапов в разных городах."}
     twitter: soulseekah
+    gitHub: soulseekah
   - id: 295
     fileName: 0295.jpg
     name:
@@ -4476,6 +4491,7 @@ speakers:
             \ Haskell, и множества других интересных вещей. Любит изучать новые области и языки, а потом рассказывать о ни\
             х на конференциях и по необходимости использовать в продакшне."}
     twitter: nevoroman
+    gitHub: nevoroman
   - id: 296
     fileName: 0296.jpg
     name:
@@ -4493,6 +4509,7 @@ speakers:
             ревается в организации Kotlin User Group в Питере и школ Android Academy в Питере и Москве, был замечен в проп\
             аганде Kotlin и Android."}
     twitter: colriot
+    gitHub: colriot
   - id: 297
     fileName: 0297.jpg
     name:
@@ -4507,6 +4524,7 @@ speakers:
             \ than it had ever been. Now he is focused on helping others to discover the significant advantages and joys of\
             \ building responsive, resilient, elastic, message-driven applications."}
     twitter: mckeeh3
+    gitHub: mckeeh3
   - id: 298
     fileName: 0298.jpg
     name:
@@ -4519,6 +4537,7 @@ speakers:
             \ with the CACAO and GNU Classpath projects, the focus shifted to OpenJDK as soon as Sun Microsystems made the\
             \ JDK open-source. Ever since Chris has worked on the HotSpot JVM at Sun, Oracle and now at Twitter."}
     twitter: christhalinger
+    gitHub: christhalinger
     javaChampion: true
   - id: 299
     fileName: 0299.jpg
@@ -4682,6 +4701,7 @@ speakers:
     bio:
       - {language: ru, text: "Руководит компанией EmDev, партнером Liferay в России, которая занимается разработкой и\
       \ внедрением порталов на Liferay."}
+    gitHub: akakunin
   - id: 309
     fileName: 0309.jpg
     name:
@@ -4690,6 +4710,7 @@ speakers:
       - {language: en, text: "I’m a quality maniac with passion about Java, Groovy, JVM and fancy tools that help to test\
       \ code in smart, fluent and expressive way. I love bringing feedback loops to the micro-level. my main area of\
       \ interest is Agile Testing."}
+    gitHub: mkordas
   - id: 310
     fileName: 0310.jpg
     name:
@@ -4703,6 +4724,7 @@ speakers:
       \ compiler и Intel Compiler Perfomance Team. Проходил стажировку в Microsoft в команде Phoenix compiler infrastructure\
       \ и LLILC (LLVM based MSIL Compiler). Последние 2 года работает в компании Унипро над проектом JVM для Эльбруса.\
       \ Разрабатывает и поддерживает внутри- и межблоковое планирование инструкций."}
+    gitHub: sandreenko
   - id: 311
     fileName: 0311.jpg
     name:
@@ -4871,6 +4893,7 @@ speakers:
             ному федеральному округу, в Юго-Западном банке Сбербанка России, ведущим разработчиком веб-студии QSoft и глав\
             ой отдела разработки компании Софтлайн Интернет Трейд."
     twitter: AlexSerbul
+    gitHub: AlexanderSerbul
   - id: 322
     fileName: 0322.jpg
     name:
@@ -5473,13 +5496,12 @@ speakers:
     company:
       - {language: en, text: "Otomato Software"}
     bio:
-      - {language: en, text: "The co-owner of Otomato Software technological consulting, has got over 15 years of experience\
-            \ in cutting-edge technologies. An expert in technical coaching, the initiator and co-author of the first Israeli\
-            \ DevOps certification course. Anton takes part in international conferences and is known as a great speaker."}
-      - {language: ru, text: "Совладелец технологического консалтинга Otomato Software, обладатель более чем 15-летнего оп\
-            ыта в области высоких технологий. Является экспертом по техническому преподаванию, инициатором и соавтором пер\
-            вого в Израиле курса DevOps-сертификации. Антон участвует в международных конференциях и известен как крутой д\
-            окладчик."}
+      - {language: en, text: "The founder of Otomato Software, has got over 20 years of experience in cutting-edge technologies.\
+            \ An expert in technical coaching, the initiator and co-author of the first Israeli DevOps certification course.\
+            \ Anton takes part in international conferences and is known as a great speaker."}
+      - {language: ru, text: "Основатель Otomato Software, обладатель более чем 20-летнего опыта в области высоких техноло\
+            гий. Является экспертом по техническому преподаванию, инициатором и соавтором первого в Израиле курса DevOps-с\
+            ертификации. Антон участвует в международных конференциях и известен как крутой докладчик."}
     twitter: antweiss
   - id: 363
     fileName: 0363.jpg
@@ -6302,7 +6324,8 @@ speakers:
             \ blogger, speaker, and fan of Twitter. He also shares his passion as a trainer at Bottega IT Solutions in the\
             \ area of .NET, especially about application performance and diagnostics. Founder of the Warsaw Web Performance\
             \ group. Microsoft MVP in the Visual Studio and Development Tools category. Co-founder of <a href=\"https://dotnetos.org\"\
-            \ target=\"_blank\">https://dotnetos.org</a> initiative."}
+            \ target=\"_blank\">https://dotnetos.org</a> initiative and [asyncexpert.com](https://asyncexpert.com/) course\
+            \ co-author."}
     twitter: konradkokosa
     mvp: true
   - id: 417
@@ -6821,19 +6844,17 @@ speakers:
       - {language: en, text: "Elizaveta Golenok"}
       - {language: ru, text: "Елизавета Голенок"}
     company:
-      - {language: en, text: "MTS IT"}
-      - {language: ru, text: "МТС ИТ"}
+      - {language: en, text: MTS}
+      - {language: ru, text: МТС}
     bio:
-      - language: en
-        text: "Elizaveta is a leading developer at MTS Information Technologies.\nHas got experience in developing and designing\
-            \ systems both in C/C++ and C# ASP.NET, Mono (from navigation systems to enterprise solutions).\nIs into route\
-            \ planning and multi-agent systems, compilation, LLVM, Clang, low-level debugging of applications, P/Invoke and\
-            \ Mono."
-      - language: ru
-        text: "Елизавета – ведущий разработчик в компании МТС Информационные Технологии. \nИмеет опыт разработки и проекти\
-            рования систем как на С/С++, так и на C# ASP.NET, Mono (от навигационных систем до enterprise-решений).\nОблас\
-            ть интересов — планирование маршрутов и многоагентные системы, компиляция, LLVM, Clang, низкоуровневая отладка\
-            \ приложений, P/Invoke и Mono."
+      - {language: en, text: "Elizaveta is a leading developer at MTS Information Technologies. She has got experience in\
+            \ developing and designing systems both in C/C++ and C# ASP.NET, Mono (from navigation systems to enterprise solutions).\
+            \ She's into route planning and multi-agent systems, compilation, LLVM, Clang, low-level debugging of applications."}
+      - {language: ru, text: "Елизавета — ведущий разработчик в компании «МТС Информационные Технологии». Имеет опыт разра\
+            ботки и проектирования систем как на С/С++, так и на C# ASP.NET, Mono (от навигационных систем до enterprise-р\
+            ешений). Область интересов — планирование маршрутов и многоагентные системы, компиляция, LLVM, Clang, низкоуро\
+            вневая отладка приложений."}
+    twitter: marmothetka
   - id: 452
     fileName: 0452.jpg
     name:
@@ -7026,15 +7047,15 @@ speakers:
       - {language: en, text: "Nikita Tsukanov"}
       - {language: ru, text: "Никита Цуканов"}
     company:
-      - {language: en, text: "ANNA Systems"}
+      - {language: en, text: "Avalonia OÜ"}
     bio:
       - {language: en, text: "Nikita has a vast experience developing for a broad spectrum of platforms (starting with WinCE)\
             \ using a whole zoo of technologies and is happy to share that experience."}
       - {language: ru, text: "Начинал в Навителе с разработки под WinCE/Mobile на C/C++. В дальнейшем занимался разработко\
             й VPN-сервиса с кросс-платформенным клиентом на GTK#, торговой площадки Promarket, мейнтейнил Mono для Nokia N900,\
-            \ делал инструментарий для чип-тюнинга автомобилей, мобильный мессенджер с End2End-шифрованием, платёжную сист\
-            ему и ещё кучу всякого по мелочи. Имеет обширный опыт разработки подо всё подряд на зоопарке технологий, котор\
-            ым рад поделиться."}
+            \ делал инструментарий для чип-тюнинга автомобилей, мобильный мессенджер с end-to-end-шифрованием, платёжную с\
+            истему и ещё кучу всякого по мелочи. Имеет обширный опыт разработки подо всё подряд на зоопарке технологий, ко\
+            торым рад поделиться."}
     twitter: kekekeks
   - id: 464
     fileName: 0464.jpg
@@ -7156,7 +7177,8 @@ speakers:
             ическая биология и теория бифуркаций. Раньше он работал постдоком в Институте Вейцмана и научным сотрудником в\
             \ Институте математики СО РАН."}
     twitter: andrey_akinshin
-    mvp: true
+    gitHub: AndreyAkinshin
+    mvpReconnect: true
   - id: 472
     fileName: 0472.jpg
     name:
@@ -7574,17 +7596,17 @@ speakers:
     name:
       - {language: en, text: "Mikhail Yarichuk"}
       - {language: ru, text: "Михаил Ярийчук"}
-    company: []
+    company:
+      - {language: en, text: Gigya-SAP}
     bio:
-      - {language: en, text: "Michael is an experienced full-stack developer with background in development of applications\
-            \ and distributed systems. By day, as member of RavenDB Core Team he works mostly on the server side of things,\
-            \ currently participates in development of a new, cross-platform version of RavenDB. By night he becomes a tinkerer\
-            \ with passion for new technologies, new ideas and coding in general, creating lots of different pet projects\
-            \ along the way."}
-      - {language: ru, text: "Разработчик Fullstack с большим опытом работы над приложениями и распределенными системами.\
-            \ На данный момент член RavenDB Core Team. Участвует в разработке новой, кроссплатформенной версии RavenDB. В\
-            \ свободное время любит экспериментировать, исследовать новые идеи и технологии — чем сложнее задача, тем инте\
-            реснее."}
+      - {language: en, text: "Michael is an experienced full-stack developer with a background in the development of applications\
+            \ and distributed systems. By day, he works at Gigya-SAP on a large scale distributed system. By night he becomes\
+            \ a tinkerer with a passion for new technologies, new ideas, and coding in general, creating lots of different\
+            \ pet projects along the way."}
+      - language: ru
+        text: "Fullstack-разработчик с большим опытом работы над приложениями и распределенными системами. На данный работ\
+            ает в компании Gigya-SAP над масштабной распределенной системой.\n\nВ свободное время любит экспериментировать\
+            , исследовать новые идеи и технологии — чем сложнее задача, тем интереснее."
     twitter: Myarichuk
   - id: 497
     fileName: 0497.jpg
@@ -7616,16 +7638,15 @@ speakers:
   - id: 499
     fileName: 0499.jpg
     name:
-      - {language: en, text: "Sergey Vasiliev"}
+      - {language: en, text: "Sergey Vasilev"}
       - {language: ru, text: "Сергей Васильев"}
     company:
-      - {language: en, text: SiProVer}
-      - {language: ru, text: СиПроВер}
+      - {language: en, text: PVS-Studio}
     bio:
-      - {language: en, text: "Leading developer at PVS-Studio. He was engaged in the development of C++ and C# parser cores.\
-            \ Sergey is focused on the direction of the Tools & DevOps. Author of articles on the audit of open-source projects."}
-      - {language: ru, text: "Ведущий разработчик в PVS-Studio. Занимался разработкой С++ и C# ядер анализатора. Сосредото\
-            чен на направлении Tools & DevOps. Автор статей о проверке open-source проектов."}
+      - {language: en, text: "Тимлид направления разработки C# анализатора в команде PVS-Studio. В недалёком прошлом – тим\
+            лид команды Tools & DevOps, в более отдалённом - участвовал в разработке и поддержке C# и C++ анализаторов. Пе\
+            риодически пишет статьи (в том числе о проверке проектов, например – исходного кода библиотек .NET Core) и выс\
+            тупает на конференциях с докладами, где также проводит митапы."}
     twitter: CPP_Coder
   - id: 500
     fileName: 0500.jpg
@@ -8059,8 +8080,8 @@ speakers:
       - {language: en, text: "Vyacheslav Smirnov"}
       - {language: ru, text: "Вячеслав Смирнов"}
     company:
-      - {language: en, text: Raiffeisenbank}
-      - {language: ru, text: Райффайзенбанк}
+      - {language: en, text: VTB}
+      - {language: ru, text: ВТБ}
     bio:
       - {language: en, text: "Vyacheslav works in testing for 10 years, he's a performance testing expert. He was improving\
             \ quality in document flow, digital accounting, government services projects. Currently Vyacheslav is developing\
@@ -8451,10 +8472,12 @@ speakers:
     fileName: 0567.jpg
     name:
       - {language: en, text: "Andrey Lushnikov"}
+      - {language: ru, text: "Андрей Лушников"}
     company:
       - {language: en, text: Microsoft}
     bio:
       - {language: en, text: "Former Chrome Puppeteer TL. Currently in Microsoft Playwright team."}
+      - {language: ru, text: "Бывший технический руководитель проекта Chrome Puppeteer. Член команды Microsoft Playwright"}
     twitter: aslushnikov
   - id: 568
     fileName: 0568.jpg
@@ -9045,16 +9068,12 @@ speakers:
       - {language: en, text: "Igor Balagurov"}
       - {language: ru, text: "Игорь Балагуров"}
     company:
-      - {language: en, text: Uptick}
+      - {language: en, text: VKontakte}
+      - {language: ru, text: ВКонтакте}
     bio:
-      - {language: en, text: "During the last year, Igor works with automated testing in the Uptick startup. Mainly writes\
-            \ tests using Python for UI (Web + Mobile) and API (REST + GraphQL), a little bit .NET for Component and Integration\
-            \ tests. Before that Igor worked in New Cloud Technologies, where he gained experience in writing and supporting\
-            \ over one thousand web tests on Ruby, Watir, Cucumber."}
-      - {language: ru, text: "Последний год Игорь занимается автоматизированным тестированием в стартапе Uptick. В основно\
-            м пишет тесты на Python для UI (Web + Mobile) и API (REST + GraphQL) и немного на .NET (Component и Integration-т\
-            есты). До этого работал в Новых облачных технологиях, где получил опыт написания и поддержки более тысячи веб\
-            -тестов на Ruby, Watir, Cucumber."}
+      - {language: en, text: "Игорь работает во ВКонтакте, в команде инфраструктуры. Занимается автоматизаций тестирования\
+            \ и не только. Предпочитает писать тесты на Python, борется с рутиной, ищет заковыристые баги и готов поделить\
+            ся опытом написания API автотестов для VK Pay, где чуть больше чем за год появилось 2000 тестов."}
   - id: 608
     fileName: 0608.jpg
     name:
@@ -11602,7 +11621,7 @@ speakers:
       - {language: en, text: "Stepan Goncharov"}
       - {language: ru, text: "Степан Гончаров"}
     company:
-      - {language: en, text: Lyft}
+      - {language: en, text: "Level 5"}
     bio:
       - {language: en, text: "Engineering apps and games for Android since 2008. Has experience as QA, product manager, marketer,\
             \ blogger, consultant and much more. He was involved in development of apps that nobody uses and apps with millions\
@@ -12777,12 +12796,15 @@ speakers:
     company:
       - {language: en, text: Surf}
     bio:
-      - {language: en, text: "Fan of mobile technologies, neat architecture and early access programs, Eugene has done a couple\
-            \ of projects with audience of hundreds of thousands of people. Currently he's the team leader of Labirint Android,\
-            \ the first team in Russia to implement Instant App; this team can boast having a 4,8 score app in Google Play."}
-      - {language: ru, text: "Фанат мобильных технологий, хорошей архитектуры и программ раннего доступа. За спиной нескол\
-            ько проектов с аудиторией в сотни тысяч человек. На данный момент лидер команды Лабиринт Android, той самой, к\
-            оторая первой в России реализовала Instant App и может похвастаться приложением с оценкой 4,8 в Google Play."}
+      - {language: en, text: "Originally an Android developer, but a year ago switched his career to Flutter and never regretted\
+            \ it. He was inspired to stay on the dark side of cross-platform technologies so much that he founded Flutter\
+            \ Dev Podcast (the only Russian podcast about Flutter). All the day painting widgets, moving slivers, filling\
+            \ scaffolds, and doing other things. Also, Evgeny is a member of the program committee of the largest mobile conference\
+            \ in Russia — Mobius and GDG Voronezh lead, active speaker."}
+      - {language: ru, text: "Провёл 4,5 года в Android-разработке, но год назад радикально поменял свою карьеру и впервые\
+            \ соприкоснулся с кроссплатформой. Вдохновился пребыванием на тёмной стороне настолько, что основал Flutter Dev\
+            \ Podcast и с тех пор является его бессменным ведущим. Крашит виджеты, двигает сливеры, заполняет скаффолды и\
+            \ делает другие вещи. PC Mobius member, GDG Voronezh lead и активный спикер."}
     twitter: saturovv
   - id: 859
     fileName: 0859.jpg
@@ -15610,21 +15632,6 @@ speakers:
     bio:
       - {language: en, text: "Freelance designer, photographer, motorcycle traveler. Designer of Halide."}
     twitter: sdw
-  - id: 1072
-    fileName: 1072.jpg
-    name:
-      - {language: en, text: "Alexander Thissen"}
-    company:
-      - {language: en, text: Xpirit}
-    bio:
-      - {language: en, text: "Alex has been involved in application development since the late nineties and worked as a lead\
-            \ developer and architect at large enterprises and small companies. He spends his time teaching other developers\
-            \ the details of the Microsoft development platform and frameworks, and coaches architects to design and build\
-            \ modern distributed applications at cloud scale. He has received the Microsoft Most Valuable Professional award\
-            \ for Visual Studio and Development Technologies 13 times. In his spare time Alex likes to participate in all\
-            \ kinds of sport, and loves playing and programming new and retro video games."}
-    twitter: alexthissen
-    mvp: true
   - id: 1073
     fileName: 1073.jpg
     name:
@@ -15722,9 +15729,9 @@ speakers:
     bio:
       - language: en
         text: "Rajat is a Senior Software Engineer at Netflix and is passionate about building products. He enjoys writing\
-            \ code in Javascript because he believes Javascript has its complexities and imperfections that mimic the real\
+            \ code in JavaScript because he believes JavaScript has its complexities and imperfections that mimic the real\
             \ world.\n\nRajat has been involved in several engineering challenges at Netflix, including Conditional Runtime\
-            \ Bundler called Codex, Netflix’s NodeJS PaaS called NodeQuark. \n\nHe also maintains and is a core contributor\
+            \ Bundler called Codex, Netflix's NodeJS PaaS called NodeQuark. \n\nHe also maintains and is a core contributor\
             \ to <a href=\"http://restify.com\" target=\"_blank\">Restify</a>."
     twitter: rajatkumar
   - id: 1080
@@ -15918,6 +15925,7 @@ speakers:
             тов для тестирования REST API сервисов, а также сервисов, использующих протоколы прикладного уровня IMAP/POP3,\
             \ веб-интерфейсов и мобильных приложений. Является одним из основателей OpenAPI generator, а также автором swagger-coverage.\
             \ Ведет свой блог по автоматизации тестирования."}
+    gitHub: viclovsky
   - id: 1093
     fileName: 1093.jpg
     name:
@@ -15968,12 +15976,10 @@ speakers:
     company:
       - {language: en, text: Google}
     bio:
-      - {language: en, text: "Elliotte Rusty Harold is originally from New Orleans to which he returns periodically in search\
-            \ of a decent bowl of gumbo. However, he currently resides in the Prospect Heights neighborhood of Brooklyn with\
-            \ his wife Beth and dog Thor. He’s the current maintainer of the Jaxen XPath library, a committer in the Apache\
-            \ Maven project, and the creator of the XOM library for processing XML with Java. His books include Java I/O,\
-            \ Java Network Programming, XML in a Nutshell, and Refactoring HTML. He's currently tech lead for Google’s Cloud\
-            \ Tools for Eclipse."}
+      - {language: en, text: "Elliotte Rusty Harold is the current maintainer of the Jaxen XPath library, a committer in the\
+            \ Apache Maven project, and the creator of the XOM library for processing XML with Java. His books include Java\
+            \ I/O, Java Network Programming, XML in a Nutshell, and Refactoring HTML. He's currently tech lead for Google’\
+            s Cloud Tools for Eclipse."}
     twitter: elharo
   - id: 1097
     fileName: 1097.jpg
@@ -16032,18 +16038,19 @@ speakers:
       - {language: en, text: "Stanislav Vasenkov"}
       - {language: ru, text: "Станислав Васенков"}
     company:
-      - {language: en, text: Jobtoday.com}
+      - {language: en, text: performance-lab.ru}
     bio:
       - language: en
         text: "Working in IT since 2007, started with WAP-sites for first mobile phones with internet.\nStanislav was backend,\
-            \ frontend developer, product manager.\nIn love with QA since 2013, currently working as an engineer, consultant,\
-            \ and teacher in test automation.\n\nFounder of test automation community in [Telegram](https://t.me/qa_automation).\n\
-            Organized QA conference in [Cyprus](https://qa.cyprusitforum.com/ru)."
+            \ frontend developer, product manager.\nIn love with QA since 2013, currently working as a head АТ at Performance-lab.\n\
+            \nFounder of automated testing [community](https://t.me/qa_automation) in Telegram. \nFounder of [QA school](https://qa.guru).\n\
+            Organizer of [QA conference](https://qa.cyprusitforum.com/ru)."
       - language: ru
         text: "В IT с 2007 года, начинал с написания черно-белых WAP-сайтов для первых мобильных телефонов с интернетом.\n\
             Был backend-, frontend-разработчиком, product-менеджером.\nЗанимается QA с 2013 года, в настоящий момент работ\
-            ает как инженер, консультант и преподаватель по автоматизации тестирования.\n\nОснователь комьюнити по автомат\
-            изации тестирования в [Телеграме](https://t.me/qa_automation).\nОрганизовывал конференцию по [QA](https://qa.cyprusitforum.com/ru)."
+            ает руководителем направления АТ в Performance-lab.\n\nОснователь [комьюнити](https://t.me/qa_automation) по а\
+            втоматизации тестирования в телеграмме.\nОснователь [QA школы](https://qa.guru).\nОрганизовывал [конференцию](https://qa.cyprusitforum.com/ru)\
+            \ по QA."
   - id: 1102
     fileName: 1102.jpg
     name:
@@ -16780,18 +16787,16 @@ speakers:
     bio:
       - language: en
         text: "Alexey has been engaged in commercial Android development since 2013. Currently, he works as a Senior Android\
-            \ developer for \"Youla\". Major projects in his career have been \"OK.RU\", before this he took part in the development\
-            \ of banking applications until it has become mainstream.\r\nAlexey graduated from CMC MSU, where he estimated\
-            \ GPU-running DVM-programs execution time as a system programmer. Note: DVM is a technology similar to OpenMP\
-            \ and MPI.\r\nBeing a huge fan of Kotlin, DI and delegating, however, he's interested in Flutter/Dart success\
-            \ stories."
+            \ developer for Youla. Major projects in his career have been OK.RU, before this he took part in the development\
+            \ of banking applications until it has become mainstream.\nAlexey graduated from CMC MSU, where he estimated GPU-running\
+            \ DVM-programs execution time as a system programmer. Note: DVM is a technology similar to OpenMP and MPI.\nBeing\
+            \ a huge fan of Kotlin, DI and delegating, however, he's interested in Flutter/Dart success stories."
       - language: ru
-        text: "Алексей с 2013 года занимается коммерческой разработкой под OC «Android». На данный момент он Senior Android\
-            \ devepoler в команде «Юлы». Работал в таких крупных проектах, как «Одноклассники», до этого принимал участие\
-            \ в разработке банковских клиентов, пока это не стало мэйнстримом.\r\nОкончил ВМК МГУ, где на кафедре системно\
-            го программирования оценивал время исполнения параллельных DVM-программ на GPU (DVM — технология, аналогичная\
-            \ OpenMP и MPI).\r\nФанат Kotlin, DI и делегирования, однако, факультативно с удовольствием слушает истории ус\
-            пеха Flutter/Dart."
+        text: "Алексей с 2013 года занимается коммерческой разработкой под Android. На данный момент он Senior Android devepoler\
+            \ в команде Юлы. Работал в таких крупных проектах, как Одноклассники, до этого принимал участие в разработке б\
+            анковских клиентов, пока это не стало мэйнстримом.\nОкончил ВМК МГУ, где на кафедре системного программировани\
+            я оценивал время исполнения параллельных DVM-программ на GPU (DVM — технология, аналогичная OpenMP и MPI).\nФа\
+            нат Kotlin, DI и делегирования, однако, факультативно с удовольствием слушает истории успеха Flutter/Dart."
   - id: 1158
     fileName: 1158.jpg
     name:
@@ -16868,7 +16873,7 @@ speakers:
     company:
       - {language: en, text: Lyft}
     bio:
-      - {language: en, text: "Thomas is an Android Engineer. For the past 5 years he has been in Lyft’s Growth team. He previously\
+      - {language: en, text: "Thomas is an Android Engineer. For the past 5 years he has been in Lyft's Growth team. He previously\
             \ worked at Pocket and Eventbrite. He is currently based in Seattle, WA."}
     twitter: lethargicpanda
   - id: 1163
@@ -16899,7 +16904,7 @@ speakers:
       - {language: en, text: "Andrey has been developing Android applications since 2012. He's the author of the popular Transitions-Everywhere\
             \ library. having settled in Google he transferred all results from this library to the official AndroidX Transitions\
             \ library. Currently working on Jetpack Compose."}
-      - {language: ru, text: "Разрабатывает Android приложения с 2012 года. Автор популярной библиотеки Transitions-Everywhere.\
+      - {language: ru, text: "Разрабатывает Android-приложения с 2012 года. Автор популярной библиотеки Transitions-Everywhere.\
             \ Устроившись в Google, перенес все наработки из нее в официальную AndroidX Transitions-библиотеку. В данный м\
             омент работает над Jetpack Compose."}
     twitter: and_kulikov
@@ -18049,3 +18054,315 @@ speakers:
             \ IST, Dan was affiliated with ETH Zurich and Microsoft Research, Cambridge, UK. Prior to that, he was a Postdoctoral\
             \ Associate at MIT CSAIL, working with Prof. Nir Shavit. He received his PhD from the EPFL, under the guidance\
             \ of Prof. Rachid Guerraoui.\r\n\r\nHis research is supported through a 2018 ERC Starting Grant."
+  - id: 1249
+    fileName: 1249.jpg
+    name:
+      - {language: en, text: "Pavel Egorov"}
+      - {language: ru, text: "Павел Егоров"}
+    company:
+      - {language: en, text: Kontur}
+      - {language: ru, text: Контур}
+    bio:
+      - {language: en, text: "Руководитель отдела обучения разработчиков в Контуре и преподаватель в Уральском федеральном\
+            \ университете. В прошлом разработчик, тимлид и менеджер разных проектов."}
+  - id: 1250
+    fileName: 1250.jpg
+    name:
+      - {language: en, text: "Boris Shimberev"}
+      - {language: ru, text: "Борис Шимберев"}
+    company:
+      - {language: en, text: Alfa-Bank}
+      - {language: ru, text: Альфа-Банк}
+    bio:
+      - {language: en, text: "Работает ведущим разработчиком в Альфа-Банке, занимался разработкой в банковском бизнесе и н\
+            а автомобильном сегменте рынка. Увлекается музыкой и волейболом."}
+      - {language: ru, text: "Работает ведущим разработчиком в Альфа-Банке, занимался разработкой в банковском бизнесе и н\
+            а автомобильном сегменте рынка. Увлекается музыкой и волейболом"}
+  - id: 1251
+    fileName: 1251.jpg
+    name:
+      - {language: en, text: "Andrey Tichinin"}
+      - {language: ru, text: "Андрей Тычинин"}
+    company:
+      - {language: en, text: Alfa-Bank}
+      - {language: ru, text: Альфа-Банк}
+    bio:
+      - {language: en, text: "Разработчик в Альфа-Банке, занимается фулл-стек разработкой (ReactJS, .NET, MSSQLS). В прошл\
+            ом имел дело с низкоуровневыми вещами (язык C для железок), мобильной разработкой (Cordova и Xamarin) и админи\
+            стрированием Linux-серверов"}
+  - id: 1252
+    fileName: 1252.jpg
+    name:
+      - {language: en, text: "Nikita Lipilin"}
+      - {language: ru, text: "Никита Липилин"}
+    company:
+      - {language: en, text: PVS-Studio}
+    bio:
+      - {language: en, text: "Сотрудник отдела разработки C#-анализатора PVS-Studio. Профессионально делает вид, что умеет\
+            \ играть на гитаре, записывать видео и разговаривать с людьми. Всегда рад новым знакомствам и интересному обще\
+            нию"}
+  - id: 1253
+    fileName: 1253.jpg
+    name:
+      - {language: en, text: "Denis Uskov"}
+      - {language: ru, text: "Денис Усков"}
+    company:
+      - {language: en, text: Alfa-Bank}
+      - {language: ru, text: Альфа-Банк}
+    bio:
+      - {language: en, text: "Более 20 лет работал в Газпроме, сейчас руководит центром компетенций .NET в Альфа-Банке."}
+  - id: 1254
+    fileName: 1254.jpg
+    name:
+      - {language: en, text: "Andrey Ganin"}
+      - {language: ru, text: "Андрей Ганин"}
+    company:
+      - {language: en, text: "Alfa Bank"}
+      - {language: ru, text: Альфа-Банк}
+    bio:
+      - {language: en, text: "В автоматизацию перешёл из разработки, тяга к прекрасному пересилила. У Андрея богатый опыт\
+            \ построения автоматизации с нуля для backend- и UI-приложений. Руководит центром компетенций автотестирования\
+            \ в Альфа-Банке, является одним из создателей AFT.Core."}
+  - id: 1255
+    fileName: 1255.jpg
+    name:
+      - {language: en, text: "Vladimir Smirnov"}
+      - {language: ru, text: "Владимир Смирнов"}
+    company:
+      - {language: en, text: Kontur}
+      - {language: ru, text: Контур}
+    bio:
+      - {language: en, text: "Владимир почти 4 года работает в компании СКБ Контур, где занимается разработкой продукта Ко\
+            нтур.Экстерн. Любит изучать разные направления разработки. Дважды принимал участие в RuCTF, а также закончил Ш\
+            АД."}
+  - id: 1256
+    fileName: 1256.jpg
+    name:
+      - {language: en, text: "Sergey Khrenov"}
+      - {language: ru, text: "Сергей Хренов"}
+    company:
+      - {language: en, text: PVS-Studio}
+    bio:
+      - {language: en, text: "Участвует в управлении внутренними проектами, координирует работу команд по методике Kanban,\
+            \ помогает улучшать soft skills в компании. Ранее занимался C#, участвовал в разработке ядра C#-анализатора, с\
+            оздавал диагностики и DevOps-утилиты. Автор статей о проверке open source-проектов."}
+  - id: 1257
+    fileName: 1257.jpg
+    name:
+      - {language: en, text: "Denis Tarasov"}
+      - {language: ru, text: "Денис Тарасов"}
+    company:
+      - {language: en, text: Kontur}
+      - {language: ru, text: Контур}
+    bio:
+      - {language: en, text: "Денис — ведущий инженер-программист и тимлид в команде девопсов в компании Контур. Преподает\
+            \ студентам и новым сотрудникам хорошие практики бэкенд-разработки, любит говорить с людьми за чашечкой кофе в\
+            \ местной кофейне."}
+  - id: 1258
+    fileName: 1258.jpg
+    name:
+      - {language: en, text: "Dmitriy Sichev"}
+      - {language: ru, text: "Дмитрий Сычев"}
+    company:
+      - {language: en, text: Wargaming}
+    bio:
+      - {language: en, text: "Lead QA Automation. Дмитрий занимается тестированием более 7 лет (5 лет автоматизации), зани\
+            мается разработкой универсального фреймворка для автоматизации, ранее занимался автоматизацией SCADA-системы."}
+  - id: 1259
+    fileName: 1259.jpg
+    name:
+      - {language: en, text: "Yuliya Gaysina"}
+      - {language: ru, text: "Юлия Гайсина"}
+    company:
+      - {language: en, text: Kontur}
+      - {language: ru, text: Контур}
+    bio:
+      - {language: en, text: "Юлия помогает командам в Контуре делать продукты качественнее, развивая процессы безопасной\
+            \ разработки (SDLC): обучение команд, аудит продуктов, автоматизированный поиск уязвимостей и программы bug bounty.\
+            \ Занимается безопасностью более 7 лет в разных направлениях, от защиты нефтегазовых корпораций до разработки\
+            \ ПО."}
+  - id: 1260
+    fileName: 1260.jpg
+    name:
+      - {language: en, text: "Roman Romanyuk"}
+      - {language: ru, text: "Роман Романюк"}
+    company:
+      - {language: en, text: Wargaming}
+    bio:
+      - {language: en, text: "QA Automation Tech lead. Роман в тестировании уже 10 лет. В автоматизации — 8. На третьем ку\
+            рсе универа, решил попробовать себя в роли тестировщика — зашло. Уже 5 лет в Wargaming."}
+  - id: 1261
+    fileName: 1261.jpg
+    name:
+      - {language: en, text: "Sofia Selezneva"}
+      - {language: ru, text: "Софья Селезнева"}
+    company:
+      - {language: en, text: ABBYY}
+    bio:
+      - {language: en, text: "Sofia has been testing for more than three years. At ABBYY she is responsible for testing the\
+            \ TimelinePI product."}
+      - {language: ru, text: "Занимается тестированием более трех лет. В ABBYY отвечает за тестирование продукта TimelinePI."}
+  - id: 1262
+    fileName: 1262.jpg
+    name:
+      - {language: en, text: "Nikolay Konovalov"}
+      - {language: ru, text: "Николай Коновалов"}
+    company:
+      - {language: en, text: VKontakte}
+      - {language: ru, text: ВКонтакте}
+    bio:
+      - {language: en, text: "Николай работает ВКонтакте c 2017 года. Занимается тестированием раздела сообщений на платфо\
+            рмах iOS и Android. Разрабатывает утилиты для тестирования и пишет автотесты."}
+  - id: 1263
+    fileName: 1263.jpg
+    name:
+      - {language: en, text: "Sergey Belesev"}
+      - {language: ru, text: "Сергей Белесев"}
+    company:
+      - {language: en, text: "Kaspersky Lab"}
+      - {language: ru, text: "Лаборатория Касперского"}
+    bio:
+      - {language: en, text: "Начал писать на C# в 2012 году. В прошлом разрабатывал софт для автоматизации ресторанов и с\
+            истемы лояльности. Сейчас в Лаборатории Касперского является тимлидом в команде, разрабатывающей автотестовый\
+            \ конвейер."}
+  - id: 1264
+    fileName: 1264.jpg
+    name:
+      - {language: en, text: "Andrey Kuzmin"}
+      - {language: ru, text: "Андрей Кузьмин"}
+    company:
+      - {language: en, text: Space307}
+    bio:
+      - {language: en, text: "В тестировании 13 лет. Занимался автоматизацией тестирования бэкенда, мобильных и веб прилож\
+            ений. Сейчас развивает направление автоматизации тестирования в ~/.space307. Параллельно с этим участвует в со\
+            здании проекта интернатуры в компании."}
+  - id: 1265
+    fileName: 1265.jpg
+    name:
+      - {language: en, text: "Alexey Stepanov"}
+      - {language: ru, text: "Алексей Степанов"}
+    company:
+      - {language: en, text: Space307}
+    bio:
+      - {language: en, text: "QA Automation Engineer в Space307. В тестировании более 7 лет, занимается автоматизацией око\
+            ло 5 лет. Специализация — UI-автоматизация на стеке Java + Selenide + maven/gradle. Активно занимается вопроса\
+            ми оптимизации и ускорения тестов за счет параллельного подхода к запуску сценариев."}
+  - id: 1266
+    fileName: 1266.jpg
+    name:
+      - {language: en, text: "Oleg Voronov"}
+      - {language: ru, text: "Олег Воронов"}
+    company:
+      - {language: en, text: VTB}
+      - {language: ru, text: ВТБ}
+    bio:
+      - language: en
+        text: "Опыт работы в области разработки ПО более 10 лет, начинал обычным разработчиком.\r\nВ область профессиональ\
+            ных интересов входит системный анализ, разработка программного обеспечения и управление проектами."
+  - id: 1267
+    fileName: 1267.jpg
+    name:
+      - {language: en, text: "Igor Shvakov"}
+      - {language: ru, text: "Игорь Шваков"}
+    company:
+      - {language: en, text: VTB}
+      - {language: ru, text: ВТБ}
+    bio:
+      - language: en
+        text: "Более десяти лет опыта в банковском IT. Прошел путь от функционального тестировщика до руководителя управле\
+            ния. За годы своего профессионального опыта сформировал подразделение ручного функционального, автоматизирован\
+            ного, нагрузочного тестирования для нескольких крупных банков.\nСейчас руководит центром экспертизы по DevOps\
+            \ и автоматизации тестирования, занимается стримовыми разработками."
+  - id: 1268
+    fileName: 1268.jpg
+    name:
+      - {language: en, text: "Stanislav Ivanov"}
+      - {language: ru, text: "Станислав Иванов"}
+    company:
+      - {language: en, text: VTB}
+      - {language: ru, text: ВТБ}
+    bio:
+      - {language: en, text: "Начальник отдела автоматизации тестирования в ВТБ, лид команды разработки единого фреймворка\
+            . 10 лет в QA."}
+  - id: 1269
+    fileName: 1269.jpg
+    name:
+      - {language: en, text: "Ben Weiss"}
+    company:
+      - {language: en, text: Google}
+    bio:
+      - language: en
+        text: "Ben works as an Engineer in Android Developer Relations at Google.\nHis focus is on making applications compatible\
+            \ for the new app model.\nMuch of his time is spent navigating app modularization and dynamic features and structuring\
+            \ background work.\nNext to that he coordinates the Android GDE program."
+    twitter: keyboardsurfer
+  - id: 1270
+    fileName: 1270.jpg
+    name:
+      - {language: en, text: "Chet Haase"}
+    company:
+      - {language: en, text: Google}
+    bio:
+      - {language: en, text: "After years working on and leading the Android Toolkit team at Google, Chet has moved into the\
+            \ Android Developer Relations Team, where he is a Developer Advocate. He works on animations, UI, performance,\
+            \ ... and anything else that puts pixels on the screen. He's also been known to write and perform comedy."}
+    twitter: chethaase
+  - id: 1271
+    fileName: 1271.jpg
+    name:
+      - {language: en, text: "Annyce Davis"}
+    company:
+      - {language: en, text: Meetup}
+    bio:
+      - language: en
+        text: "Annyce Davis is specifically been focused on Android applications for the past several years. She's also an\
+            \ Android Google Developer Expert. \nAnnyce is currently a Director of Engineering at Meetup. At Meetup, she helps\
+            \ create the future of real community where people show up, do things, and actually talk to each other.\nPreviously,\
+            \ she was the Software Group Lead at a social impact startup, Zola Electric. She got to help impact the lives\
+            \ of people across Africa by developing a high-quality Android application that was used by the entire sales and\
+            \ service force.\nAnnyce also spent 7 years working at the Washington Post. One of her most exciting projects\
+            \ at the Post was working on the PostTV Android application."
+    twitter: brwngrldev
+  - id: 1272
+    fileName: 1272.jpg
+    name:
+      - {language: en, text: "Roman Oderov"}
+      - {language: ru, text: "Роман Одеров"}
+    company:
+      - {language: en, text: "Dell Technologies"}
+    bio:
+      - {language: en, text: "Закончил Мат-Мех СПбГУ, занимался performance engineering'ом, QA, автоматизацией. Сейчас раб\
+            отает над СХД PowerStore."}
+  - id: 1273
+    fileName: 1273.jpg
+    name:
+      - {language: en, text: "Michael Saravaysky"}
+      - {language: ru, text: "Михаил Саравайский"}
+    company:
+      - {language: en, text: "Dell Technologies"}
+    bio:
+      - {language: en, text: "Закончил Мат-Мех СПбГУ, писал на Java, .NET, сменил вид деятельности и уже пятый год занимае\
+            тся производительностью систем хранения данных. Возит в багажнике лонгборд."}
+  - id: 1274
+    fileName: 1274.jpg
+    name:
+      - {language: en, text: "Kirill Vasilev"}
+      - {language: ru, text: "Кирилл Васильев"}
+    company:
+      - {language: en, text: Luxoft}
+    bio:
+      - {language: en, text: "Кирилл работает на позиции Project Manager Automotive последние 2 года. 6 завершенных проект\
+            ов для различных OEMs и Tier 1 поставщиков. Большинство успешно вышли в серию, катаются по дорогам разных стра\
+            н, либо будут включены в новый модельный ряд автомобилей. Более 7 лет опыта работы в тестировании, из них 3 в\
+            \ рамках автомобильной индустрии."}
+  - id: 1275
+    fileName: 1275.jpg
+    name:
+      - {language: en, text: "Veronika Samohina"}
+      - {language: ru, text: "Вероника Самохина"}
+    company:
+      - {language: en, text: Kontur}
+      - {language: ru, text: Контур}
+    bio:
+      - {language: en, text: "Вероника — ведущий инженер-программист и преподаватель фронтенда в компании Контур. Любит со\
+            ревноваться и организовывать соревнования."}
