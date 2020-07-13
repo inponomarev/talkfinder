@@ -42,7 +42,7 @@ enpath: en/evttype/{{ ev_type_id }}.html
 {% endmacro %}
 
 {% macro output_talk(talk) -%}
-  {{- '' }}| {% for speakerId in talk.speakerIds %} image:small/{{ speakers[speakerId].fileName }}[img,35,35]{% endfor %} link:../talk/{{ talk.id }}.html[{{ output_i18n_text(talk.name, lang, 'text') }}]
+  {{- '' }}| {% for speakerId in talk.speakerIds %} image:small/{{ speakers[speakerId].photoFileName }}[img,35,35]{% endfor %} link:../talk/{{ talk.id }}.html[{{ output_i18n_text(talk.name, lang, 'text') }}]
 {% endmacro %}
 
 {% macro output_event(event_item) %}

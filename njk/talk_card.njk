@@ -59,7 +59,7 @@ image:events/{{ ev_types[talk.event.eventTypeId].logoFileName }}[width=80,link="
   {% endfor %}
 
 [.event-speakers]
-{% for speakerId in talk.speakerIds %}image:speakers/{{ speakers[speakerId].fileName }}[img,100,100,link="../speaker/{{ speakerId }}.html"] {% endfor %}
+{% for speakerId in talk.speakerIds %}image:speakers/{{ speakers[speakerId].photoFileName }}[img,100,100,link="../speaker/{{ speakerId }}.html"] {% endfor %}
   {{- '\n\n' }}
   {{- '' }} 
   {%- for speaker_item in talk.speakerIds -%}
