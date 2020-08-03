@@ -1,6 +1,6 @@
 title: JUG Events and Talks
 description: JUG Talks Finder
-root: /talkfinder/
+root: /
 
 exclude:
   - Gemfile
@@ -19,8 +19,8 @@ asciidoctor:
     - idseparator=_
     - source-highlighter=coderay
     - icons=font
-    - imagesdir=/talkfinder/images
+    - imagesdir=/images
 
-url: "https://jugspeakers.online/talkfinder" # the base hostname & protocol for your site
+url: "https://jugspeakers.online" # the base hostname & protocol for your site
 plugins:
   - jekyll-sitemap
