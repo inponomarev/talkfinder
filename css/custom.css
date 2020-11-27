@@ -1,0 +1,161 @@
+
+
+body {
+    background-color: #FAFAFA
+}
+
+@media screen and (max-device-width:960px) {
+    body * {
+        font-size: 0.95em;
+    }
+    body div.main-content {    
+            width: 100%;
+            max-width: inherit;
+            margin-left: inherit;
+            margin-right: inherit;
+            padding: 20px;            
+
+    }
+    body .top-bar {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }    
+
+
+    body .lang {
+        position:relative;
+    }
+
+    body nav a {
+        font-size: 0.7em !important;
+    }
+
+    body nav.top-bar .name h1 {
+        line-height: 2.3em;
+    }
+    body .top-bar .name h1 a {
+        padding: 0px 0px 0px 10px
+    }
+    body .top-bar .name h1 a:nth-of-type(1) {
+        padding: 0px 0px 0px 20px
+    }    
+
+    body .events-list.ulist {
+        column-count: 1;
+    }    
+
+}
+
+
+
+
+@media screen {
+
+    div.main-content {
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+        padding: 30px;
+        border-left: 1px dotted #E3E3E3;
+        border-right: 1px dotted #E3E3E3;
+        min-height: calc(100% - 46px);
+
+    }
+
+    table.author-list img {
+        border-radius: 500px;
+        margin-right: 10px;
+    }
+
+    table.talk-list img {
+        border-radius: 500px;
+        margin-right: 10px;
+    }
+
+    .event-speakers img {
+        border-radius: 30px;
+        margin-right: 5px;
+    }
+
+
+    .author-big-image img {
+        border-radius: 30px;
+    }
+
+    .top-bar {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 45px;
+    }
+
+    .lang {
+        position:absolute;
+        right: 0px;
+    }
+    .title-area {
+        width: 100%;
+    }
+
+    table.author-list {
+        border: none;
+    }
+
+    table.author-list td {
+        border: none;
+        background-color: white;
+    }
+
+    table.talk-list {
+        border: none;
+    }
+
+    table.talk-list td {
+        border: none;
+        background-color: white;
+    }
+
+    div.event-image-in-events:not(:first-of-type) {
+
+        border-top: 1px dotted #DDD;
+        margin-top: 80px;
+    }
+
+    div.event-image-in-events>.content img {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .talk-list td p {
+        display: flex;
+    }
+
+    .talk-list td p img {
+
+        flex-basis: 0 0;
+    }
+    .talk-list td p a {
+        flex: 1 1;
+    }
+
+    .author-list td p {
+        display: flex;
+    }
+
+    .author-list td p img {
+
+        flex-basis: 0 0;
+    }
+    .author-list td p a {
+        flex: 1 1;
+    }    
+
+    .events-list.ulist {
+        column-count: 2;
+    }
+}

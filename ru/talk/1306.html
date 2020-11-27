@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/1306.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/4.html"><img src="/images/events/holyjs.jpg" alt="holyjs" width="80"></a></span> <a href="../event/38.html">HolyJS 2019 СПб (24.05.2019)</a></p>
+</div>
+<div class="sect3">
+<h4 id="node_js_так_же_быстро_выше_сильнее_с_graalvm">Node.js: так же быстро, выше, сильнее с GraalVM</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/sKS4A9I8xb8?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/23.html"><img src="/images/speakers/0023.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/23.html">Олег Шелаев</a></em></p>
+</div>
+<div class="paragraph">
+<p>Вы узнаете о новой реализации Node.js-рантайма со всеми его плюсами и минусами и поймете, стоит ли попробовать эту реализацию сейчас или продолжить работать с вашим текущим рантаймом.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий Программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Издревле JS на сервере запускали на разных VM, но с появлением Node.js запуск не на V8 стал чем-то странным. V8 действительно очень крут, но иногда нам нужно подружить серверный JS с другим окружением, например, с Java для энтерпрайза или с Python для доступа к бесконечному источнику ML-библиотек. Кажется, GraalVM может помочь нам&#8230;&#8203;</strong></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>GraalVM — это новый рантайм для программ, написанных на разных языках, в т. ч. JS. В него входит Node.js, где V8 заменен его собственным движком JavaScript, написанным на Java 😱.</p>
+</div>
+<div class="paragraph">
+<p>Возможно, Java и не самый очевидный выбор для реализации движка, но она открывает очень интересные возможности:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>интеграция с Java-приложениями и библиотеками;</p>
+</li>
+<li>
+<p>интеграция с другими языками, которые поддерживает GraalVM: Python, Ruby, R, C/C&#43;&#43; через LLVM;</p>
+</li>
+<li>
+<p>запуск Node.js-приложений с большими memory heaps;</p>
+</li>
+<li>
+<p>улучшенная безопасная среда и другие параметры безопасности.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>В этом докладе мы поговорим о том, как в GraalVM реализована поддержка языков, как с помощью частичных вычислений и новейшего JIT-компилятора GraalVM удается достигать неплохой производительности даже в самых динамических языках. Вы узнаете об особенностях интеграции управляемых событиями сред Node.js с управляемой потоками JVM, о том, как запускать код в безопасной среде, чтобы ограничить его доступ к файловой системе или сети, и о том, как GraalVM работает с нативными расширениями модулей JavaScript.</p>
+</div>
+<div class="paragraph">
+<p>Из доклада вы узнаете о новой реализации Node.js-рантайма со всеми его плюсами и минусами и поймете, стоит ли попробовать эту реализацию сейчас или продолжить работать с вашим текущим рантаймом.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/nn534z2fqr9f/3ikVcsgxK74tvM549EUwwm/9cbc372ae901fe0f1e8c1d6896216fcf/Oleg_Shelayev_Node.js_tak_zhe_bystro_vyshe_silneye_s_GraalVM.pdf" class="bare">https://assets.ctfassets.net/nn534z2fqr9f/3ikVcsgxK74tvM549EUwwm/9cbc372ae901fe0f1e8c1d6896216fcf/Oleg_Shelayev_Node.js_tak_zhe_bystro_vyshe_silneye_s_GraalVM.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>
