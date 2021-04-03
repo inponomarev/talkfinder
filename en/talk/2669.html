@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/2669.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/4.html">C++ Russia 2020 SPb (11.11.2020&#8201;&#8212;&#8201;14.11.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="crowdsourced_bug_detection_in_production_gwp_asan_and_beyond">Crowdsourced bug detection in production: GWP-ASan and beyond</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/-RlxhU-W8dY?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1392.html"><img src="/images/speakers/1392.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1392.html">Konstantine Serebryaniy</a></em></p>
+</div>
+<div class="paragraph">
+<p>In this talk, we will explain how GWP-ASan works, what it can find, and how to deploy it. We will also speculate about future uses of the same approach for other bug classes, and other programming languages.</p>
+</div>
+<div class="paragraph">
+<p>Despite continuous efforts in testing and fuzzing, bugs creep into production code. While we need to improve our testing and fuzzing, we also need another layer of testing: bug detection in production. Production use of "sanitized" or "debug" builds, which simplify bug detection, is typically prohibitively expensive. GWP-ASan implements a sampling-based approach to bug detection in production.</p>
+</div>
+<div class="paragraph">
+<p>Specifically, GWP-ASan finds heap-use-after-free and heap-buffer-overflow bugs in C/C&#43;&#43; production binaries, with a very low probability per execution, but also with very low overhead. We beat the low probability of bug detection with a large scale of deployment.</p>
+</div>
+<div class="paragraph">
+<p>In this talk, we will explain how GWP-ASan works, what it can find, and how to deploy it. We will also speculate about future uses of the same approach for other bug classes, and other programming languages.</p>
+</div>
+<div class="paragraph">
+<p>An interesting research topic in this space is whether GWP-ASan-like tools can be seen as security mitigations. Yes, they don&#8217;t protect every execution and an attack is likely to succeed, but how will the attackers change their behavior if their attacks become discoverable with 0.1% probability per instance?</p>
+</div>
+<div class="paragraph">
+<p>Finally, we will briefly cover Arm MTE, an upcoming hardware extension that will allow to detect memory safety bugs with high probability and low overhead.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/Rq21VTBlLGneXCBHsE4L5/f33461251478e598208ac3e3c1f25896/Konstantin_Serebryanyy_Ishchem_bagi_v_prodakshene_vsem_mirom_GWP-ASan_i_chto_dalshe_2020_11_12_05_24_04.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/Rq21VTBlLGneXCBHsE4L5/f33461251478e598208ac3e3c1f25896/Konstantin_Serebryanyy_Ishchem_bagi_v_prodakshene_vsem_mirom_GWP-ASan_i_chto_dalshe_2020_11_12_05_24_04.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>

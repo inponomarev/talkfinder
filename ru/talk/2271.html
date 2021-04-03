@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/2271.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/5.html"><img src="/images/events/hydra.jpg" alt="hydra" width="80"></a></span> <a href="../event/46.html">Hydra 2020 (06.07.2020&#8201;&#8212;&#8201;09.07.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="safe_user_level_sharing_of_memory_mapped_resources">Safe user-level sharing of memory-mapped resources</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/387.html"><img src="/images/speakers/0387.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/387.html">Michael Scott</a></em></p>
+</div>
+<div class="paragraph">
+<p>This talk will present the Hodor project, which overcomes the single address space limitation by using the memory protection keys of recent Intel processors to implement a <em>protected library</em> mechanism.</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;The operating systems community has long sought to move services out of the kernel and into user space to increase modularity, facilitate rapid prototyping, and minimize I/O overhead. The need for protection, however, has generally meant that sensitive data and device registers can be mapped into only one address space at a time. &lt;/p&gt;</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;This talk will present the Hodor project, which overcomes the single address space limitation by using the memory protection keys of recent Intel processors to implement a <em>protected library</em> mechanism. Using this mechanism, a Hodor application can access shared resources quickly and safely, running its threads in a trusted library code. As a proof of concept, kernel-bypass networking in Hodor has allowed us to sustain over 3M IO ops per second while enforcing cross-application quality of service. In future work, we believe we can leverage Hodor to migrate functionality out of a monolithic kernel like Linux on an incremental basis, achieving the structuring benefits of microkernels incrementally and without a performance penalty.&lt;/p&gt;</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://downloads.ctfassets.net/oxjq45e8ilak/743M91E74dn7317glfnPD/9754e197ceb45ad8a5d28458ff8c3a33/Hydra-Hodor.pdf" class="bare">https://downloads.ctfassets.net/oxjq45e8ilak/743M91E74dn7317glfnPD/9754e197ceb45ad8a5d28458ff8c3a33/Hydra-Hodor.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

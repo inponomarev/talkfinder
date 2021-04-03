@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/201.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/3.html"><img src="/images/events/heisenbug.jpg" alt="heisenbug" width="80"></a></span> <a href="../event/31.html">Heisenbug 2019 Мск (05.12.2019&#8201;&#8212;&#8201;06.12.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="статическое_тестирование_безопасности_инструментами_из_open_source">Статическое тестирование безопасности инструментами из open source</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/911.html"><img src="/images/speakers/0911.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/911.html">Александра Сватикова</a></em></p>
+</div>
+<div class="paragraph">
+<p>В докладе рассмотрим, как организовать статическое тестирование безопасности из инструментов, доступных в open source, научимся писать новые детекторы и кастомизировать анализатор для нужд своего проекта.</p>
+</div>
+<div class="paragraph">
+<p>Необходимость поиска и исправления уязвимостей в разрабатываемом продукте сомнению уже не подвергается. Необходимость автоматизации тестирования тоже понятна — в больших системах ручное тестирование за всеми изменениями успевать не будет.</p>
+</div>
+<div class="paragraph">
+<p>Распространенным способом автоматизации поиска уязвимостей является использование разнообразных фаззеров и сканеров, про них, в том числе, уже рассказывали на Heisenbug 2018. Иногда такой подход называют Dynamic Application Security Testing (DAST). У динамического тестирования безопасности есть свои ограничения и недостатки. Существует и другой путь — можно применить статический анализ кода для поиска потенциальных уязвимостей. Такой подход называют Static Application Security Testing (SAST).</p>
+</div>
+<div class="paragraph">
+<p>Рынок SAST-решений разнообразен — там есть и коммерческие/коробочные продукты и open source проекты. В Одноклассниках требовались возможности для кастомизации, и команда при выборе конкретного решения остановилась на комбинации из SonarQube и SpotBugs+Find Security Bugs.</p>
+</div>
+<div class="paragraph">
+<p>Доклад посвящен использованию вышеупомянутых инструментов для обнаружения уязвимостей в исходном коде веб-приложения. Александра расскажет, какие возможности они предоставляют «из коробки» и как их расширить, добавив собственные правила анализа (иногда их называют детекторы). Необходимость кастомизации может возникнуть в случае, если в проекте используются фреймворки и технологии, еще не поддерживаемые в наборе стандартных правил.</p>
+</div>
+<div class="paragraph">
+<p>В качестве примеров будут рассмотрены две разновидности уязвимостей: хранимые XSS и IDOR. Для них спикер покажет, как создавать свои правила для статического анализатора.</p>
+</div>
+<div class="paragraph">
+<p>Цель доклада: рассказать о применении SonarQube и Find Security Bugs для поиска уязвимостей в своем проекте.</p>
+</div>
+<div class="paragraph">
+<p>Технологии: кастомные правила пишутся на Java, в качестве примера продемонстрируют веб-приложение на Java.</p>
+</div>
+<div class="paragraph">
+<p>Целевая аудитория: автоматизаторы тестирования, специалисты по безопасности.</p>
+</div>
+<div class="paragraph">
+<p>Люди узнают о возможности применения статического анализа кода для тестирования безопасности и увидят базовые примеры добавления собственных детекторов при анализе исходного кода.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Как можно тестировать безопасность помимо использования известных сканеров уязвимостей? Как можно настроить правила статического анализатора, чтобы дешевле и быстрее находить уязвимости на примерах? Ответы на эти вопросы вы сможете узнать на докладе.</strong></p>
+</div>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/ut4a3ciohj8i/67KghEcUpYODHsr83w6PlN/d6215b8b2f70df1521a4cb78dc864eba/100761_204227730_Aleksandra_Svatikova_Staticheskoye_testirovaniye_bezopasnosti_instrumentami_iz_open_source.pdf" class="bare">https://assets.ctfassets.net/ut4a3ciohj8i/67KghEcUpYODHsr83w6PlN/d6215b8b2f70df1521a4cb78dc864eba/100761_204227730_Aleksandra_Svatikova_Staticheskoye_testirovaniye_bezopasnosti_instrumentami_iz_open_source.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

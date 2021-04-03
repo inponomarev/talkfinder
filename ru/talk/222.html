@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/222.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/3.html"><img src="/images/events/heisenbug.jpg" alt="heisenbug" width="80"></a></span> <a href="../event/31.html">Heisenbug 2019 Мск (05.12.2019&#8201;&#8212;&#8201;06.12.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="визуализация_покрытия_автотестов">Визуализация покрытия автотестов</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/554.html"><img src="/images/speakers/0554.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/554.html">Артем Ерошенко</a></em></p>
+</div>
+<div class="paragraph">
+<p>Объём автотестов растёт. Автотесты пишутся на всех уровнях всеми участниками процесса: бэкендерами, фронтендерами, тестировщиками. Как удержать в голове всё, что покрыто? Как ничего не забыть? Как проверить себя? В докладе будет предложено несколько подходов на основе визуализации. Приходите послушать!</p>
+</div>
+<div class="paragraph">
+<p>Современные способы измерения покрытия хороши только для разработки. При этом количество полезной информации из отчетов покрытия крайне мало. С одной стороны, есть все строчки кода, которые не были задействованы в ходе выполнения тестов. С другой стороны, единственная важная информация — это процент покрытия. При этом интересно не абсолютное значение, а дельта с предыдущим.</p>
+</div>
+<div class="paragraph">
+<p>Артем представит несколько простых решений, которые позволяют оценивать покрытие тестов, написанных автоматизаторами тестирования.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>API-тесты. Есть сваггер, во время его выполнения мы тоже собираем сваггер. Считаем покрытие, как дифф двух свагеров. Видно что покрыто, что нет, и какими данными.</p>
+</li>
+<li>
+<p>Web-тесты. Во время выполнения тестов мы собираем информацию про элементы, страницы и действия. В результате получаем такой формат:</p>
+</li>
+<li>
+<p>Страница;</p>
+</li>
+<li>
+<p>Элементы;</p>
+</li>
+<li>
+<p>Действия;</p>
+</li>
+<li>
+<p>Тесты.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Все это отправляем в плагин. На странице рисуем элементы, которые были затронуты в ходе выполнения тестов. Плюс дополнительную информацию: список тестов на странице с видео.</p>
+</div>
+<div class="paragraph">
+<p>В результате можно очень быстро отвечать на следующие вопросы:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Что покрыто, а что нет.</p>
+</li>
+<li>
+<p>Как покрыто (только кликнули или проверили текст).</p>
+</li>
+<li>
+<p>Какие тесты проходят через эту страницу.</p>
+</li>
+<li>
+<p>Какие элементы наиболее часто используются. Вообще, такого лучше избегать, потому что это потенциальная точка отказа.</p>
+</li>
+<li>
+<p>Наводить на тест, увидеть видео из Selenoid.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Подключили к Selenium. Можно легко доделать для Puppeteer и для чего угодно. Будет удобно понимать, что проверяется и зачем.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Если вы помните, то Артем — тот самый человек, который постоянно пытается улучшить жизнь тестировщиков (как тех, кто автоматизирует тесты, так и тех, кто тестирует вручную). В этот раз Артем затронет необычную, но очень полезную тему: как можно визуально померить покрытие. Доклад будет полезен инженерам разного калибра.</strong></p>
+</div>
+</div>
+</div>
+</div>
+  </div>
+</body>
+</html>

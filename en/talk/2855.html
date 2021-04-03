@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/2855.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/11.html"><img src="/images/events/smartdata.jpg" alt="smartdata" width="80"></a></span> <a href="../event/85.html">SmartData 2020 (09.12.2020&#8201;&#8212;&#8201;12.12.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="cicd_for_ml_models_and_datasets">CI/CD for ML models and datasets</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1464.html"><img src="/images/speakers/1464.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1464.html">Mikhail Maryfich</a></em></p>
+</div>
+<div class="paragraph">
+<p>There is not a very high-quality DS model in production and now there is no way to retrain or update it. To avoid this, come and listen to Mikhail&#8217;s talk on this topic.</p>
+</div>
+<div class="paragraph">
+<p>Many people in the industry are familiar with the situation where you quickly deploy a DS model and a month later when it needs to be retrained with a new data/feature, it turns out that DS cannot do this.</p>
+</div>
+<div class="paragraph">
+<p>Taking a model into production means not only packing it into a conditional container but also fixing the process of its training and monitoring its work. A detailed description of how the model was obtained avoids loss of knowledge and experimental results.</p>
+</div>
+<div class="paragraph">
+<p>Odnoklassniki builds a process in which:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>all training parameters, dependencies, and artifacts are committed to git;</p>
+</li>
+<li>
+<p>models have trained automatically in a controlled environment;</p>
+</li>
+<li>
+<p>models are reviewed and entered the master;</p>
+</li>
+<li>
+<p>models fly to production.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Mikhail will tell about:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>processes and tools;</p>
+</li>
+<li>
+<p>how to organize versioned storage of data sets on dvc;</p>
+</li>
+<li>
+<p>how to organize rollouts through the repository;</p>
+</li>
+<li>
+<p>the path of the model from the task in JIRA to the production and back;</p>
+</li>
+<li>
+<p>how to organize automatic retraining.</p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/146.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/2.html"><img src="/images/events/dotnext.jpg" alt="dotnext" width="80"></a></span> <a href="../event/22.html">DotNext 2019 Мск (06.11.2019&#8201;&#8212;&#8201;07.11.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="beating_coreclrs_own_c_code_with_coreclr_3_0_intrinsics">Beating CoreCLR&#39;s own C++ code with CoreCLR 3.0 intrinsics</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1016.html"><img src="/images/speakers/1016.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1016.html">Dan Shechter</a></em></p>
+</div>
+<div class="paragraph">
+<p>During this session we will explore how developers can substantially improve performance of computationally intensive code by using CPU intrinsics, and go over the new support introduced in the recently released .NET Core 3.0.</p>
+</div>
+<div class="paragraph">
+<p>We will explore how developers can substantially improve performance of computationally intensive code by using CPU intrinsics, and go over the new support introduced in the recently released .NET Core 3.0.</p>
+</div>
+<div class="paragraph">
+<p>We&#8217;ll be taking a non-trivial algorithm that is already a part of the CoreCLR code-base that should be familiar for most devs, and (re)build an efficient intrinsics based version of it with AVX+AVX2 instructions about 7 vectorized CPU instruction that can be combined in a challenging way.</p>
+</div>
+<div class="paragraph">
+<p>We&#8217;ll discuss common hurdles/befits encountered while building/optimizing intrinsics based code such as:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>replacing scalar code with branch-less vectorized code;</p>
+</li>
+<li>
+<p>dealing with CPU branch mis-prediction;</p>
+</li>
+<li>
+<p>unrolling code to improve performance / complexity trade-off of doing so.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>By the end of the talk we&#8217;ll show how we can beat the CoreCLR&#8217;s own C&#43;&#43; code with C# Intrinsics utilizing AVX2 instructions.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>С появлением поддержки intrinsic в .NET Core 3.0 стало возможным писать очень быстрый код. Насколько быстрый? Насколько получится ускорить обычные алгоритмы, если копать глубоко в оптимизации?</strong></p>
+</div>
+</div>
+</div>
+</div>
+  </div>
+</body>
+</html>

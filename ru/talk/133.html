@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/133.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/2.html">C++ Russia 2019 СПб (31.10.2019&#8201;&#8212;&#8201;01.11.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="модули_изменения_в_core_language">Модули: Изменения в core language</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/346.html"><img src="/images/speakers/0346.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/346.html">Андрей Давыдов</a></em></p>
+</div>
+<div class="paragraph">
+<p>Доклад про модули в C&#43;&#43; и их влияние на core language.</p>
+</div>
+<div class="paragraph">
+<p>Модули — крупнейшая фича C&#43;&#43;. На ней завязаны изменения в build tools, package managers, надежды на оптимизацию времени компиляции, вопросы того, как лучше организовывать код (module per translation unit vs module per library).</p>
+</div>
+<div class="paragraph">
+<p>За всеми этими важнейшими высокоуровневыми вещами теряются технические подробности, понимание того, какое влияние оказывают модули на core language. А оно есть, и не маленькое, ведь если раньше компилятор работал с единицами трансляции по одной, то с появлением модулей правила игры поменялись.</p>
+</div>
+<div class="paragraph">
+<p>В рамках доклада мы ответим на следующие вопросы:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>что такое reachable entity и чем это отличается от visible;</p>
+</li>
+<li>
+<p>как модули влияют на ADL;</p>
+</li>
+<li>
+<p>могут ли entities с internal linkage протечь в другой модуль;</p>
+</li>
+<li>
+<p>может ли импортировать класс одновременно как complete, и как incomplete;</p>
+</li>
+<li>
+<p>что будет с inline-функциями в модульном мире.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>От слушателей ожидается общее знакомство с принципами работы модулей, и понимание зачем модули вообще нужны.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Модули — самая долгожданная и обсуждаемая (как коммитетом по стандартизации, так и сообществом) возможность нового стандарта. Но если спросить двух разработчиков на C&#43;&#43;, что же такое модуль из C&#43;&#43;20, скорее всего, получим два совершенно разных ответа. В своем докладе Андрей углубится в детали устройства модуля и рассмотрит интересные практические случаи, связанные с достижимостью определений в модулях, шаблонами, и пр.</strong></p>
+</div>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://downloads.ctfassets.net/oxjq45e8ilak/76buZHU0KEcucSJ7iLt0M0/6612f35172b8b70ce5e8c6800b53ce5a/100581_45993991_Andrey_Davydov_Moduli_izmeneniya_v_core_language.pdf" class="bare">https://downloads.ctfassets.net/oxjq45e8ilak/76buZHU0KEcucSJ7iLt0M0/6612f35172b8b70ce5e8c6800b53ce5a/100581_45993991_Andrey_Davydov_Moduli_izmeneniya_v_core_language.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

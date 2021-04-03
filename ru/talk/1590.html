@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/1590.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/7.html"><img src="/images/events/jpoint.jpg" alt="jpoint" width="80"></a></span> <a href="../event/52.html">JPoint 2015 (20.04.2015&#8201;&#8212;&#8201;20.04.2015)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="выражаемся_регулярно">Выражаемся регулярно</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/pLKrKFy1t1Y?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/25.html"><img src="/images/speakers/0025.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/25.html">Владимир Ситников</a></em></p>
+</div>
+<div class="paragraph">
+<p>Регулярные выражения прочно вошли в обиход программистов. Однако если вы собираетесь решать свою проблему с помощью регулярных выражений, то к первоначальной проблеме сразу прибавляется еще одна — сами регулярные выражения.</p>
+</div>
+<div class="paragraph">
+<p>В докладе мы разберемся с тем, что делать, если регулярное выражение работает 30 секунд на строке в 50'000 символов? Как предотвратить StackOverflowError из RegExp&#8217;а на стадии code review? Например, мы разберемся почему в коде ниже:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>String schedule;</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>StringBuilder sb = new StringBuilder();</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>for (int count = 1; count &lt;= 2015; count++) {</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>sb.append("JokerJPoint");</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>}</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>schedule = sb.toString();</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>boolean nirvana = schedule.matches("(Joker|JPoint)*");</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Может произойти вот такая ошибка:</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>java.lang.StackOverflowError</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>at java.util.regex.Pattern$BranchConn.match(Pattern.java:4568)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>at java.util.regex.Pattern$Slice.match(Pattern.java:3972)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>at java.util.regex.Pattern$Branch.match(Pattern.java:4604)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>at java.util.regex.Pattern$GroupHead.match(Pattern.java:4658)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>at java.util.regex.Pattern$Loop.match(Pattern.java:4785)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>at java.util.regex.Pattern$GroupTail.match(Pattern.java:4717)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>at java.util.regex.Pattern$BranchConn.match(Pattern.java:4568)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>at java.util.regex.Pattern$Slice.match(Pattern.java:3972)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>at java.util.regex.Pattern$Branch.match(Pattern.java:4604)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Мы также научимся обходить узкие места стандартной библиотеки java.util.regex, рассмотрим альтернативные реализации, и научимся с первого взгляда отличать плохое выражение от хорошего.</p>
+</div>
+<div class="paragraph">
+<p>Не останутся без ответа и вопросы из серии RegExp vs. XPath:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Стоит ли парcить xml и использовать xpath, если нужно выбрать всего одно простое поле? А если 2 или 5?</p>
+</li>
+<li>
+<p>RegExp vs. SQL: Мы кратко пройдемся по некоторым проблемам с регулярными выражениями в других языках (например, SQL, Python).</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://2015.jpoint.ru/presentations/JPoint2015_Sitnikov.pdf" class="bare">https://2015.jpoint.ru/presentations/JPoint2015_Sitnikov.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

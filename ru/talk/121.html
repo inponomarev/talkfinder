@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/121.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/2.html">C++ Russia 2019 СПб (31.10.2019&#8201;&#8212;&#8201;01.11.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="применение_slab_аллокаторов_в_высоконагруженных_сетевых_приложениях">Применение slab-аллокаторов в высоконагруженных сетевых приложениях</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/991.html"><img src="/images/speakers/0991.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/991.html">Николай Белобородов</a></em></p>
+</div>
+<div class="paragraph">
+<p>Николай расскажет о том, как он и его команда решили проблему фрагментации памяти, и с какими ограничениями им пришлось столкнуться в процессе.</p>
+</div>
+<div class="paragraph">
+<p>Николай работает в компании, которая занимается защитой бизнеса от различных угроз в сети Интернет. Речь идет о парсинге, DDoS-атаках, скликивании и многом другом. Подобные решения представляют собой высоконагруженные сетевые приложения, которые способны пропускать через себя большие объемы трафика в единицу времени. Несмотря на все минусы, которые свойственны C&#43;&#43; в предприятии, возможно, современный C&#43;&#43; — это наиболее подходящий язык программирования для данных задач. Не только из-за того, что он может обеспечить желаемую производительность и сам по себе является мощным инструментом, но и потому, что вкупе с новыми стандартами и такими библиотеками как boost, порог вхождения в него не так и высок, как может казаться на первый взгляд.</p>
+</div>
+<div class="paragraph">
+<p>Большинство сетевых приложений для работы с http-трафиком имеют классическую архитектуру. В них вы можете встретить сервер, клиент, сессии, пулы, парсеры и сериализаторы. Это стандартный набор классов, который на сегодняшний день очень удобно разрабатывать на boost.asio и boost.beast. Но, если мы говорим о серьезном объеме трафика, то примеры, которые каждый из нас копирует из документации boost.asio и развивает далее под свои задачи, могут оказаться далеко не настолько хороши, как кажется на первый взгляд. В серьезном продукте они требуют тщательной доработки.</p>
+</div>
+<div class="paragraph">
+<p>Внутри команды Николая проделан большой путь по разработке похожего кода. Поддержали многие фичи из rfc для http 1.1. Реализовали свои строки и стрим-буферы, совместимые с boost.asio.streambuf, которые позволили минимизировать копирования памяти между сервер- и клиент- сессиями в момент проксирования трафика. Как итог, на выходе было получено хорошо работающее в продакшене сетевое приложение, способное выдерживать большие нагрузки и с лихвой решать поставленную перед бизнесом задачу.</p>
+</div>
+<div class="paragraph">
+<p>Но ничто не совершенно. Одна из проблем, с которой Николай и его команда столкнулись на поздней стадии, — это фрагментация памяти, вызываемая постоянным созданием сервер-сессий для обработки входящих соединений. Проблема, которую не удалось решить с помощью tcmalloc и jemalloc, получилось победить за счет slab-аллокаторов (собственной C&#43;&#43; обертки поверх библиотеки libsmall из состава tarantool), которые сократили время пребывания приложения в функции malloc и операторе new более чем в два раза, и избавили нас от фрагментации памяти. Такое решение наложило определенные ограничения на архитектуру приложения, добавив свои сложности в написании асинхронного и многопоточного кода на boost.asio, но дало на выходе ожидаемый результат.</p>
+</div>
+<div class="paragraph">
+<p>О том, как Николай и его команда преодолевали возникшие трудности и пойдет речь в этом докладе. Спикер также упомянет об архитектуре приложения, которое потребовало таких непростых оптимизаций, а далее перейдет непосредственно к использованию slab-аллокаторов в паре с boost.asio. Николай рассчитывает, что данная тема может быть полезна для разработчиков любых высоконагруженных сетевых приложений.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Стараясь выжать до последнего всю возможную производительность из наших программ, мы быстро можем дойти и до собственной реализации аллокаторов. Николай расскажет, как они дошли до этого в своём проекте и преодолели возникшие на пути сложности.</strong></p>
+</div>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/2fI4wLgo2MmwDRsj0Gjod7/5ed8bde194c04345f5c78c80550b48c4/100690_1341752961_Nikolay_Beloborodov_Primeneniye_slab-allokatorov_v_vysokonagruzhennykh_setevykh_prilozheniyakh.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/2fI4wLgo2MmwDRsj0Gjod7/5ed8bde194c04345f5c78c80550b48c4/100690_1341752961_Nikolay_Beloborodov_Primeneniye_slab-allokatorov_v_vysokonagruzhennykh_setevykh_prilozheniyakh.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

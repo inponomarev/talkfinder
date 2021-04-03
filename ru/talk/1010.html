@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/1010.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/8.html"><img src="/images/events/jokerconf.jpg" alt="jokerconf" width="80"></a></span> <a href="../event/67.html">Joker 2018 (19.10.2018&#8201;&#8212;&#8201;20.10.2018)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="spring_boot_2_чего_не_пишут_в_release_notes">Spring Boot 2: чего не пишут в release notes</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/8jNXZXdb3no?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/86.html"><img src="/images/speakers/0086.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/86.html">Владимир Плизга</a></em></p>
+</div>
+<div class="paragraph">
+<p>Доклад-«грабледайджест» — сборник заметок о том, на какие грабли можно наступить в ходе обновления фреймворка Spring Boot до версии 2.*, а также о способах их устранения или обхода.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий Программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Очень актуально и может спасти слушателям дни времени и пряди седых волос.</strong></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Обновляя у себя какой-либо фреймворк, ты, конечно, всегда внимательно читаешь его release notes и migration guide;) Но даже если это правда, тебя может поджидать множество сюрпризов, особенно если это мажорное обновление такого базового фреймворка, как Spring Boot. Помимо себя, он привносит обновления для своего BOM, а это ~150 транзитивных зависимостей на все случаи жизни — такой upgrade не может пройти без накладок&#8230;&#8203;</p>
+</div>
+<div class="paragraph">
+<p>В этом докладе («грабледайджесте») Владимир расскажет о своем опыте перевода микросервисного приложения на Spring Boot 2, проведет по многим собранным в ходе этого граблям и покажет для каждого случая решение или обходной путь. В частности, он расскажет:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>как поддержка реактивного стека ломает обратную совместимость на уровне исходного кода;</p>
+</li>
+<li>
+<p>почему переписанный с нуля Gradle-плагин может портить сборку составного проекта и содержимое выходного JAR;</p>
+</li>
+<li>
+<p>как новые правила relax binding параметров могут помешать запуску приложения;</p>
+</li>
+<li>
+<p>как сломать старт микросервиса, ненароком поссорив мониторинг с пулом коннектов;</p>
+</li>
+<li>
+<p>причем тут движок Micrometer, если отвалились задания по расписанию;</p>
+</li>
+<li>
+<p>как замешан новый режим проксирования в исчезновении некоторых MBean из JMX;</p>
+</li>
+<li>
+<p>как рефакторинг настроек WebMVC может своротить определение Content-Type при отдаче файлов;</p>
+</li>
+<li>
+<p>какие новшества Mockito не дают тестам скомпилироваться и проваливают надежно проходившие тесты;</p>
+</li>
+<li>
+<p>а также о ряде других мелких, но неприятных «спецэффектов».</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Доклад ориентирован на разработчиков, планирующих или уже внедряющих Spring Boot 2 поверх старой версии или с нуля.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/5DuTVbUv4cwCIoMocUoK2q/14aac11f2bd37e0fef8cec673bc832cb/Vladimir_Plizga_Spring_Boot_2_what_they_do_not_write_in_release_notes.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/5DuTVbUv4cwCIoMocUoK2q/14aac11f2bd37e0fef8cec673bc832cb/Vladimir_Plizga_Spring_Boot_2_what_they_do_not_write_in_release_notes.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

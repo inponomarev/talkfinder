@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/2364.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/5.html"><img src="/images/events/hydra.jpg" alt="hydra" width="80"></a></span> <a href="../event/46.html">Hydra 2020 (06.07.2020&#8201;&#8212;&#8201;09.07.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="new_locks_for_the_old_kernel">New locks for the old kernel</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1244.html"><img src="/images/speakers/1244.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1244.html">Alex Kogan</a></em></p>
+</div>
+<div class="paragraph">
+<p>In this talk Alex will describe recent efforts to modernize Linux kernel locks, focusing on two concrete ideas.</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;Locks remain the main synchronization mechanism in userspace applications as well as in OS kernels. Despite significant progress in the design and implementation of efficient locks in userspace, kernel locks fail to keep up. Part of the reason is the unique nature of the kernel environment in which such locks are deployed.</p>
+</div>
+<div class="paragraph">
+<p>For instance, the Linux kernel requires spinlocks that use just 4 bytes of memory, significantly less than many of the modern locks need.&lt;/p&gt;
+&lt;p&gt;In this talk Alex will describe recent efforts to modernize Linux kernel locks, focusing on two concrete ideas.</p>
+</div>
+<div class="paragraph">
+<p>The first one is called CNA, which introduces a compact lock designed for efficient synchronization on multi-node machines. CNA is applied in the kernel to enhance spinlocks, one of the kernel&#39;s most important synchronization constructs.</p>
+</div>
+<div class="paragraph">
+<p>The second idea is called BRAVO, which is a wrapper intended to facilitate the scalability of reader-writer locks in mostly-read workloads without inflating the memory footprint of such locks. In the kernel, BRAVO is used to enhance the rw-semaphore, a well-known contention bottleneck for data-intensive applications.&lt;/p&gt;
+&lt;p&gt;The target audience for the talk is practitioners who have some experience with writing concurrent code that employs locks. While the focus of the talk will be on the Linux kernel, user-level application developers can benefit from the presented ideas. The key takeaways include the understanding of how some of the key synchronization mechanisms work, how they can be improved, and what are the challenges in porting ideas from user space into the kernel space.&lt;/p&gt;</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/8r79fzaLa7GlgFmaAYPHR/5e4f7db6af3e78cc2a1135f5c8329d76/new-lock-old-kernel-hydra-20__1_.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/8r79fzaLa7GlgFmaAYPHR/5e4f7db6af3e78cc2a1135f5c8329d76/new-lock-old-kernel-hydra-20__1_.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>

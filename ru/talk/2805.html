@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/2805.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/2.html"><img src="/images/events/dotnext.jpg" alt="dotnext" width="80"></a></span> <a href="../event/24.html">DotNext 2020 Мск (02.12.2020&#8201;&#8212;&#8201;05.12.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="делаем_zero_allocation_код_на_примере_оптимизации_крупной_библиотеки">Делаем zero-allocation код на примере оптимизации крупной библиотеки</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/520.html"><img src="/images/speakers/0520.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/520.html">Станислав Сидристый</a></em></p>
+</div>
+<div class="paragraph">
+<p>На примере оптимизации библиотеки SMBLibrary мы попробуем свести выделения памяти к минимуму, используя ряд выработанных техник, и увидим, насколько тяжелыми могут быть самые простейшие операции.</p>
+</div>
+<div class="paragraph">
+<p>Результаты оптимизации:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Использование памяти: -99%;</p>
+</li>
+<li>
+<p>Срабатывания GC: -99,9%;</p>
+</li>
+<li>
+<p>Время работы: -39%.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Иногда возникают ситуации, когда код написан хорошо и стабильно. И кода этого очень много: переписывать будет крайне тяжело. Еще в этом коде есть проблема: он выделяет очень много памяти. Память выделяется и освобождается ввиду возросшей нагрузки и как результат — GC молотит на полную катушку.</p>
+</div>
+<div class="paragraph">
+<p>На примере библиотеки SMBLibrary мы попробуем свести выделения памяти к минимуму, используя ряд выработанных техник, и увидим, насколько тяжелыми могут быть самые простейшие операции.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://downloads.ctfassets.net/9n3x4rtjlya6/6iRGa5yZ1sWnIR9VuEWRKC/e171b5f92bf4e480fca8e3abd8cbf78a/Stanislav_Sidristyy_Delayem_zero-allocation_kod_na_primere_optimizatsii_krupnoy_biblioteki_2020_12_02_16_28_14.pdf" class="bare">https://downloads.ctfassets.net/9n3x4rtjlya6/6iRGa5yZ1sWnIR9VuEWRKC/e171b5f92bf4e480fca8e3abd8cbf78a/Stanislav_Sidristyy_Delayem_zero-allocation_kod_na_primere_optimizatsii_krupnoy_biblioteki_2020_12_02_16_28_14.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

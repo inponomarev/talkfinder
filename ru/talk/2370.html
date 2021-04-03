@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/2370.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/10.html"><img src="/images/events/sptdc.jpg" alt="sptdc" width="80"></a></span> <a href="../event/83.html">SPTDC 2020 (06.07.2020&#8201;&#8212;&#8201;09.07.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="a_recoverable_lock_that_meets_the_mcs_gold_standard">A recoverable lock that meets the MCS gold-standard</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1203.html"><img src="/images/speakers/1203.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1203.html">Prasad Jayanti</a></em></p>
+</div>
+<div class="paragraph">
+<p>In this course, Prasad will describe the ongoing research that has led to the first recoverable algorithm that meets the gold standard set by MCS.</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;The efficient design of a mutex lock is a fundamental problem that attracted a great deal of research, which culminated in the MCS algorithm that satisfies three important properties. First, unlike many algorithms that require a knowledge of the maximum number N of processes that access the algorithm and require their names to be from the set {1, 2, &#8230;&#8203; , N}, the MCS algorithm can support an arbitrary number of processes of arbitrary names. Second, the MCS algorithm guarantees that, of the memory references that a process makes while acquiring and releasing the lock, the number of references not satisfied by the cache is bounded by a small constant. Third, the MCS algorithm is also space-efficient: M locks shared by N processes require only O(M+N) words of memory to implement (as opposed to O(MN)).&lt;/p&gt;
+&lt;p&gt;However, traditional algorithms, such as MCS, are not fault-tolerant: if the system crashes due to a power outage and subsequently restarts, the processes start over from the protocol&#8217;s initial configuration. The more attractive alternative of letting the restarted processes "recover" their state at the time of the crash and resume from there became a possibility with the recent advent of non-volatile random access memory. In particular, research over the past four years has led to a number of such "recoverable" algorithms, but none of them meet the gold standard set by MCS in the sense that they lack at least two of the three properties described above.&lt;/p&gt;
+&lt;p&gt;In this course, Prasad will describe the ongoing research that has led to the first recoverable algorithm that meets the gold standard set by MCS.&lt;/p&gt;</p>
+</div>
+</div>
+  </div>
+</body>
+</html>

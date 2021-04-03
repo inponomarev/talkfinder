@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/2188.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/14.html"><img src="/images/events/jugru.jpg" alt="jugru" width="80"></a></span> <a href="../event/168.html">JUG.ru Meetup #34 (24.06.2014&#8201;&#8212;&#8201;25.06.2014)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="training_spring_under_the_hood">Training «Spring under the hood»</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1.html"><img src="/images/speakers/0001.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1.html">Evgeny Borisov</a></em></p>
+</div>
+<div class="paragraph">
+<p>В рамках этого тренинга мы рассмотрим все основные внутренности фреймворка Spring для того, чтобы иметь возможность адаптировать его под нужды вашего проекта. Мы сравним преимущества и недостатки всех видов контекстов, от XML до конфигурации на Groovy, который появился вместе со Spring 4, и обсудим, когда и чем правильнее пользоваться.</p>
+</div>
+<div class="paragraph">
+<p>В процессе тренинга мы столкнёмся с рядом нетривиальных проблем и займёмся так называемым троблешутингом. Мы будем писать кастомные аннотации, квалифаеры, бин пост процессоры, бин фактори пост процессоры, контекст листенеры. Мы будем генерить классы на лету при помощи динамических прокси и CGLIB.</p>
+</div>
+<div class="paragraph">
+<p>Для того, чтобы ваш код был максимально читабельный и бизнес-логика была бы отделена от иных аспектов, таких, как транзакции, бенчмарк обработка исключений и т.п., мы разберем, как правильно использовать Spring AOP.</p>
+</div>
+<div class="paragraph">
+<p>Данный тренинг затронет использование груви для написание бинов, а также груви скриптов для самообновляющихся компонентов. Мы рассмотрим наиболее лаконичные и эффективные способы создания различных конфигураций при работе в множественной среде. Я покажу как при помощи новых фишек четвёртого спринга, не меняя ни одной строчки кода или конфигурации, можно заставить спринг инициализировать различные имплементации бинов в зависимости от того, в каком окружении бежит ваш код (test / production)</p>
+</div>
+<div class="paragraph">
+<p>И наконец, если останется время и силы, можно будет поговорить про дополнительные темы, такие как скеджулеры, работа с кварцом, Spring RMI и Spring validations.</p>
+</div>
+<div class="paragraph">
+<p><strong>День 1</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Основные концепции, шаблоны проектирования и философия Spring, продвинутый Reflection</p>
+</li>
+<li>
+<p>Различные виды контекстов (XML, Annotations, Java Config, Groovy script)</p>
+</li>
+<li>
+<p>BeanPostProcessors</p>
+</li>
+<li>
+<p>Dynamic Proxy</p>
+</li>
+<li>
+<p>BeanFactoryPostProcessors</p>
+</li>
+<li>
+<p>Аннотации Spring и написания собственных аннотаций</p>
+</li>
+<li>
+<p>Как адаптировать свой framework под Spring</p>
+</li>
+<li>
+<p>Qualifiers</p>
+</li>
+<li>
+<p>Factory Bean и наследование бинов в XML-e*</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>*- Java Config + CGLIB</p>
+</div>
+<div class="paragraph">
+<p><strong>День 2</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Best practices: смешанные контексты и когда чем пользоваться, обновление прототипов в singleton бинах, двойные прокси, поиск метаданных оригинального класса в прокси</p>
+</li>
+<li>
+<p>Spring AOP</p>
+</li>
+<li>
+<p>Написание аспектов</p>
+</li>
+<li>
+<p>Обработка исключений через аспекты, решение проблемы Stack trace и утечки памяти</p>
+</li>
+<li>
+<p>Что нового в Spring 4</p>
+</li>
+<li>
+<p>Динамические контексты</p>
+</li>
+<li>
+<p>Самообновляющиеся Бины на Groovy</p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

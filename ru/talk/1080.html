@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/1080.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/4.html"><img src="/images/events/holyjs.jpg" alt="holyjs" width="80"></a></span> <a href="../event/40.html">HolyJS 2018 Мск (24.11.2018&#8201;&#8212;&#8201;25.11.2018)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="paranoid_service_worker">Paranoid Service Worker</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/lXQTSXfGfbo?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/699.html"><img src="/images/speakers/0699.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/699.html">Всеволод Родионов</a></em></p>
+</div>
+<div class="paragraph">
+<p>Это рассказ о том, что за последние несколько лет в браузерах появилось множество новых API, которые можно так замечательно использовать, чтобы перестать доверять и серверу, и браузеру, и даже сетевому подключению и окончательно стать параноиком.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий Программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Всеволод продемонстрирует, пожалуй, самое неординарное использование Service Worker в сочетании с некоторыми современными и старыми API браузера в целях качественного повышения безопасности при работе с данными на стороне клиента.</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Всеволод погрузится так глубоко, что поможет обойти проблему браузерных расширений. Перед докладом стоит собраться и сконцентрироваться, ибо будет жарко.</strong></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Эта история начинается не так давно.</p>
+</div>
+<div class="paragraph">
+<p>Шел 2018-й год. Интернет полнился историями о взломах: ломали аккаунты Фейсбука, дверные ручки Гугла и плагины в браузерах, китайские телефоны продавались сразу с бесплатным подключением к ботнетам, расположение секретных баз вычисляли через фитнес-трекеры (strava), через HTTPS на части серверов еще можно было прочитать содержимое оперативной памяти (heartbleed), а через деление — прочитать память в других процессах (meltdown и spectre), при желании — даже из «защищенной зоны» в памяти процессора (foreshadow). Интернет полнился слухами, которые оказались не слухами, что в процессорах есть еще один маленький компьютер, на котором можно запустить DOOM (предположительно). Ну и вишенкой на торте было то, что технически возможно вывести из строя сервера, отправляя по сети единицы и нули так, что электроны начинали выпрыгивать из оперативной памяти (nethammer/throwhammer).</p>
+</div>
+<div class="paragraph">
+<p>И в воздухе висел вопрос: можно ли вообще хранить хоть какие-то данные в браузерах без страха, что их украдут?</p>
+</div>
+<div class="paragraph">
+<p>Понемногу приходило понимание, что вроде бы можно. Но доверять нельзя никому, ни себе, ни другим. Нужно, чтобы клиент проверял сервер, а сервер — клиент, чтобы ничего не происходило просто так, а песочница внутри себя держала еще одну песочницу, но поперек. Понемногу это превращалось в самую настоящую паранойю, но закончилось рядом уникальных находок, о которых и будет этот доклад.</p>
+</div>
+</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/516.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/2.html"><img src="/images/events/dotnext.jpg" alt="dotnext" width="80"></a></span> <a href="../event/17.html">DotNext 2017 СПб (19.05.2017&#8201;&#8212;&#8201;20.05.2017)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="профилирование_приложений_net_core_на_linux">Профилирование приложений .NET Core на Linux</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/490.html"><img src="/images/speakers/0490.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/490.html">Алексей Верещагин</a></em></p>
+</div>
+<div class="paragraph">
+<p>Об опыте создания инструмента удалённого профилирования C#-кода из Microsoft Visual Studio, исполняемого в runtime-среде .NET CoreCLR на Linux ARM, а также о подходах к профилированию приложений CoreCLR в целом.</p>
+</div>
+<div class="paragraph">
+<p>В докладе будет рассказано о технологиях профилирования C# кода на на платформе .NET Core Linux: таких инструментах как Linux perf, LTTng, а также о разработанном нами профайлере для Visual Studio Tools for Tizen.</p>
+</div>
+<div class="paragraph">
+<p>Как известно, компания Microsoft разрабатывает среду выполнения CoreCLR, обеспечивая поддержку разных архитектур и систем, включая Linux. Однако, в настоящее время, наиболее полная поддержка профилирования для .NET Core обеспечивается только для операционных систем семейства Windows. В то время как для других операционных систем существующая поддержка профилирования CoreCLR ограничена, ее реализация не полноценна. На Linux вы можете напрямую использовать perf и LTTng, либо собирать информацию об исполнении приложений с помощью скрипта perfcollect с последующим просмотром на Windows в утилите PerfView. Но такой подход неудобен для решения повседневных задач, а также ощущается нехватка инструментов для анализа собранных данных.</p>
+</div>
+<div class="paragraph">
+<p>Таким образом, важные параметры исполнения приложения, имеющие значение для анализа производительности и его оптимизации, могут быть недоступны для пользователя.</p>
+</div>
+<div class="paragraph">
+<p>Разработанный нами инструмент, в свою очередь, является альтернативным решением и ориентирован на широкую аудиторию разработчиков. Профилирование приложений для Tizen и анализ результатов возможен непосредственно из IDE Microsoft Visual Studio 2015. Пользователь может получить информацию о «горячих» по времени работы и выделяемой памяти методах, о горячем пути (hot path), о нагрузке на CPU, о работе JIT и GC. При этом разработанная для взаимодействия с CoreCLR библиотека профилирования не имеет привязки к платформе Tizen и будет выложена в открытый доступ.</p>
+</div>
+<div class="paragraph">
+<p>Мы продемонстрируем возможные сценарии профилирования приложений .NET Core на Linux, расскажем о различных инструментах, а также о подходах, которые мы использовали в своей реализации. Эта информация может быть интересна как тем, кто ищет готовые решения для профилирования кода, так и тем, кто хочет больше узнать о том, какие средства профилирования предоставляет среда выполнения .NET Core и как они могут быть использованы при реализации собственного инструментария.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/9n3x4rtjlya6/1hNV1stWwQEGUO0eigASQ4/1395e039cf6c53d6602a0ce6344c8192/Aleksei_Vereshchagin_Profiling_.NET_Core_Applications_on_Linux.pdf" class="bare">https://assets.ctfassets.net/9n3x4rtjlya6/1hNV1stWwQEGUO0eigASQ4/1395e039cf6c53d6602a0ce6344c8192/Aleksei_Vereshchagin_Profiling_.NET_Core_Applications_on_Linux.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

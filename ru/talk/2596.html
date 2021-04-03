@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/2596.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/3.html"><img src="/images/events/heisenbug.jpg" alt="heisenbug" width="80"></a></span> <a href="../event/33.html">Heisenbug 2020 Мск (04.11.2020&#8201;&#8212;&#8201;07.11.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="воркшоп_встраивание_в_ci_тестирования_производительности">Воркшоп: Встраивание в CI тестирования производительности</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1350.html"><img src="/images/speakers/1350.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1350.html">Сергей Чепкасов</a></em></p>
+</div>
+<div class="paragraph">
+<p>Сергей и Максим покажут, как встроить тестирование производительности в ваш CI на основе GitLab CI.</p>
+</div>
+<div class="paragraph">
+<p>Сергей и Максим покажут, как встроить тестирование производительности в ваш CI на основе GitLab CI. Для этого они напишут скрипты на Gatling по различным протоколам и поднимут всё необходимое для тестирование окружение (Vector, Loki и т.д.). Также ребята произведут быстрый анализ результатов производительности и поиск bottleneck в приложениях.</p>
+</div>
+<div class="paragraph">
+<p>[Ссылка](<a href="https://gitlab.com/tinkoffperfworkshop/before-start" class="bare">https://gitlab.com/tinkoffperfworkshop/before-start</a>) на инструкции по установке + рекомендации + как проверить что все установилось.</p>
+</div>
+<div class="paragraph">
+<p>Вам понадобятся:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>свободные 4Гб RAM и 2 CPU на компьютере;</p>
+</li>
+<li>
+<p>установить git-клиент;</p>
+</li>
+<li>
+<p>установить docker и docker-compose;</p>
+</li>
+<li>
+<p>установить Java 11 версии;</p>
+</li>
+<li>
+<p>установить [sbt](<a href="https://www.scala-sbt.org/1.x/docs/Setup.html" class="bare">https://www.scala-sbt.org/1.x/docs/Setup.html</a>);</p>
+</li>
+<li>
+<p>установить [IntellijIDEA Community и Scala plugin](<a href="https://plugins.jetbrains.com/plugin/1347-scala" class="bare">https://plugins.jetbrains.com/plugin/1347-scala</a>);</p>
+</li>
+<li>
+<p>завести учетную запись на <a href="https://gitlab.com/" class="bare">https://gitlab.com/</a>;</p>
+</li>
+<li>
+<p>выполнить в консоли команды: git clone</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>[cd gatling-sandbox](<a href="https://gitlab.com/tinkoffperfworkshop/part-1/gatling-sandbox.git" class="bare">https://gitlab.com/tinkoffperfworkshop/part-1/gatling-sandbox.git</a>)</p>
+</div>
+<div class="paragraph">
+<p>docker-compose pull</p>
+</div>
+<div class="paragraph">
+<p>docker pull hseeberger/scala-sbt:11.0.8_1.3.13_2.12.12</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/ut4a3ciohj8i/55zrO4WB5C8jWx1zV7ZXn9/bd86192119649c6d2ae237942b21cb6b/Sergey__Chepkasov_Vorkshop_chast_1_Vstraivaniye_v_CI_testirovaniya_proizvoditelnosti_2020_11_17_15_54_53.pdf" class="bare">https://assets.ctfassets.net/ut4a3ciohj8i/55zrO4WB5C8jWx1zV7ZXn9/bd86192119649c6d2ae237942b21cb6b/Sergey__Chepkasov_Vorkshop_chast_1_Vstraivaniye_v_CI_testirovaniya_proizvoditelnosti_2020_11_17_15_54_53.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

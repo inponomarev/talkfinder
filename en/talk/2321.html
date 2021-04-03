@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/2321.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/5.html"><img src="/images/events/hydra.jpg" alt="hydra" width="80"></a></span> <a href="../event/46.html">Hydra 2020 (06.07.2020&#8201;&#8212;&#8201;09.07.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="wait_free_memory_reclamation_and_data_structures">Wait-free memory reclamation and data structures</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1225.html"><img src="/images/speakers/1225.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1225.html">Ruslan Nikolaev</a></em></p>
+</div>
+<div class="paragraph">
+<p>In this talk, we will discuss the memory reclamation problem, existing techniques, and how a recent wait-free WFE technique is constructed. We discuss what key challenges WFE solves so that it can be universally applied regardless of the data structure organization.</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;As the number of cores grows, efficient concurrent data structures have become increasingly important because they reduce sequential execution times, and thereby yield scalable performance.&lt;/p&gt;</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;Non-blocking data structures have received particular attention in practice due to their synchronization properties that are relevant in multi-threaded environments, especially their platform-independent progress guarantees — i.e., the ability for threads to make progress without depending on the OS or VM schedulers.</p>
+</div>
+<div class="paragraph">
+<p>A number of concurrency libraries for programming languages such as C&#43;&#43; and Java have been developed. However, efficient non-blocking memory reclamation is still a challenge, especially in languages with manual memory management such as C&#43;&#43;. In such settings, not only memory has to be safely reclaimed, but also memory usage must remain bounded. Otherwise, memory can be exhausted, which violates progress properties.&lt;/p&gt;</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;Wait-free data structures are critical in latency-sensitive applications, as they offer the strongest progress property: all threads make progress in a bounded number of steps. Although they were historically slower and more tedious to implement than their lock-free counterparts, they are now gaining more traction due to a number of techniques such as Kogan and Petrank&#8217;s fast-path-slow-path methodology.&lt;/p&gt;</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;Wait-free memory reclamation, until recently, remained a challenge since existing methodologies cannot be directly applied to the memory reclamation problem. One way to address the challenge is to use non-blocking techniques such as Hazard Pointers or Hazard Eras but modify data structures, e.g., use a "normalized" Timnat and Petrank&#8217;s form. The "normalized" form guarantees that any operation that does not make progress can be restarted. The process of normalization has several limitations, e.g., requires that only CAS (compare-and-swap) operations are used by data structures. However, there is a growing interest in using specialized instructions such as FAA (fetch-and-add) for which no general normalization methodology exists.&lt;/p&gt;</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;What if there was a more general way to organize reclamation in wait-free data structures regardless of their presentation? A recent algorithm, WFE (Wait-Free Eras), achieves exactly that by extending (lock-free) Hazard Eras.&lt;/p&gt;</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;In this talk, we discuss the memory reclamation problem, existing techniques, and how a recent wait-free WFE technique is constructed. We discuss what key challenges WFE solves so that it can be universally applied regardless of the data structure organization.&lt;/p&gt;</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/5lqvdeIpbuWcpVdg7DIAWP/a6f78aba6cc6426eed178e18b3e1b86a/present__1_.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/5lqvdeIpbuWcpVdg7DIAWP/a6f78aba6cc6426eed178e18b3e1b86a/present__1_.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>

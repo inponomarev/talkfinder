@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/2678.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/4.html">C++ Russia 2020 СПб (11.11.2020&#8201;&#8212;&#8201;14.11.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="simd_производительность_за_которую_вы_уже_заплатили">SIMD. Производительность, за которую вы уже заплатили</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/998.html"><img src="/images/speakers/0998.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/998.html">Ашот Варданян</a></em></p>
+</div>
+<div class="paragraph">
+<p>В прошлом году Ашот рассказывал, как ускорять обработку данных на видеокартах, а в этом сделает то же самое, но не выводя данные из регистров процессора.</p>
+</div>
+<div class="paragraph">
+<p>В прошлом году Ашот рассказывал о способах программирования для видеокарт. Они могут обсчитать большую data-parallel задачу существенно быстрее центрального процессора, но их едва ли можно назвать универсальным решением. Когда данные приходят маленькими пакетами или задача имеет суб-линейную сложность, их слишком долго пересылать по PCI-E шине.</p>
+</div>
+<div class="paragraph">
+<p>Что делать? Использовать SIMD-инструкции. Они есть в большинстве современных процессоров и вы уже заплатили за их наличие высокую цену. В железе появились большие регистры, раздулся CISC-RISC транслятор, да и планировщик задач стал сложнее&#8230;&#8203; А компиляторы так и не научились самостоятельно подставлять сложные инструкции. Значит, будем писать руками!</p>
+</div>
+<div class="paragraph">
+<p>Ашот расскажет о ключевых правилах использования векторизованных инструкций, покажет несколько примеров оптимизаций и «анти-оптимизаций», с которыми ему пришлось столкнуться при работе над &lt;a href="https://unum.xyz"&gt;Unum&lt;/a&gt;.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/4LVSTrr0cggoEKQNPau9Av/71c8a14d24700dfa9f84f9915753f549/Ashot_Vardanyan_SIMD._Proizvoditelnost_za_kotoruyu_vy_uzhe_zaplatili_2020_11_13_17_13_26.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/4LVSTrr0cggoEKQNPau9Av/71c8a14d24700dfa9f84f9915753f549/Ashot_Vardanyan_SIMD._Proizvoditelnost_za_kotoruyu_vy_uzhe_zaplatili_2020_11_13_17_13_26.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

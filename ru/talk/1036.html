@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/1036.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/8.html"><img src="/images/events/jokerconf.jpg" alt="jokerconf" width="80"></a></span> <a href="../event/67.html">Joker 2018 (19.10.2018&#8201;&#8212;&#8201;20.10.2018)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="fuzzing_для_тестирования_jvm_зачем_и_как">Fuzzing для тестирования JVM: зачем и как</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/KwoQz__K9iM?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/64.html"><img src="/images/speakers/0064.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/64.html">Максим Казанцев</a></em></p>
+</div>
+<div class="paragraph">
+<p>Мы расскажем о том, как и почему используем генератор случайных Java-программ, об устройстве таких генераторов, а также о дальнейших шагах по генерации программ на Scala, Kotlin и других языках, компилируемых в Java-байткод.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий Программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Полезная идея фаззинга, которую нужно нести в массы. Макс занял первое место на JBreak, и его будет интересно послушать.</strong></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Пользователи ждут от Java-машин в первую очередь корректной и стабильной работы. Наша компания занимается разработкой собственной VM и активно развивает оптимизирующий JIT-компилятор, основанный на LLVM. При этом каждая новая оптимизация несёт в себе опасность внесения новых функциональных багов, а также может привести к тому, что начнут проявлять себя древние проблемы, спрятанные в старом коде и до сих пор не дававшие о себе знать.</p>
+</div>
+<div class="paragraph">
+<p>Так как же обеспечить своевременный поиск таких багов в условиях, когда в наш компилятор еженедельно интегрируются десятки и сотни тысяч строк кода? Абсолютного ответа на этот вопрос не знает никто, но у нас есть успешный опыт использования Fuzzer — генератора случайных тестов, которые сконструированы таким образом, чтобы с хорошей вероятностью находить возможные проблемы в компиляторе. При этом мы получаем стабильный детерминированный способ воспроизводить проблемы на тесте, для которого у нас есть исходники.</p>
+</div>
+<div class="paragraph">
+<p>В этом докладе мы расскажем о том, как и почему используем генератор случайных Java-программ, об устройстве таких генераторов, а также о дальнейших шагах по генерации программ на Scala, Kotlin и других языках, компилируемых в Java-байткод.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/NATjlh5MA0uI8wEm86YKa/9590c67087c1aedcd6f83d5b1b1f8af0/Maxim_Kazantsev_Fuzzing_for_JVM_testing_how_and_why.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/NATjlh5MA0uI8wEm86YKa/9590c67087c1aedcd6f83d5b1b1f8af0/Maxim_Kazantsev_Fuzzing_for_JVM_testing_how_and_why.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

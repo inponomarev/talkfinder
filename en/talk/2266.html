@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/2266.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/5.html"><img src="/images/events/hydra.jpg" alt="hydra" width="80"></a></span> <a href="../event/46.html">Hydra 2020 (06.07.2020&#8201;&#8212;&#8201;09.07.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="programming_language_memory_models_problems_solutions_and_directions">Programming language memory models: Problems, solutions, and directions</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1223.html"><img src="/images/speakers/1223.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1223.html">Anton Podkopaev</a></em></p>
+</div>
+<div class="paragraph">
+<p>We consider ups and downs of modern memory models for programming languages and requirements imposed on them by languages' pragmatics.</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;Due to compiler and hardware optimizations, modern programming languages (PLs) do not provide sequential consistent memory model (SC,[Lamport:TC79]), which guarantees that all concurrent behaviors of a program could be explained as a sequential execution of some interleaving of program&#8217;s threads. Instead, they have weak memory models which allow more behaviors.&lt;/p&gt;
+&lt;p&gt;Such memory models have to balance between performance and guarantees provided to software developers, or, as one may say, the balance is actually between performance and sanity. That is, performance forces a memory model to allow more optimizations and, therefore, more program behaviors, whereas sanity forces a memory model to provide guarantees like data-race-freedom (DRF) that a program without races has only sequentially consistent executions which restricts the set of allowed executions.&lt;/p&gt;
+&lt;p&gt;In this talk, we introduce weak memory concurrency, consider requirements imposed on PL memory models, and examine ones used by industry (C11 [Batty-al:POPL11] and Java [Manson-al:POPL05]) and their drawbacks. Then, we explore new memory models (RC11 [Lahav-al:PLDI17], MRD [Paviotti-al:ESOP20], Promising 1.0 [Kang-al:POPL17], Promising 2.0 [Hwan-al:PLDI20], Weakestmo [Chakraborty-Vafeiadis:POPL19]) proposed as a solution for the drawbacks: what these models provide, which compromises they take, how expensive performance-wise, if at all, these compromises are, and how hard is to adapt the models for mainstream languages. We conclude with a discussion on how to choose a memory model for your language or VM depending on your desiderata.&lt;/p&gt;
+&lt;p&gt;Target audience:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;folks interested in low-level concurrency mechanics;&lt;/li&gt;
+&lt;li&gt;language and VM developers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Audience takeaway:</p>
+</div>
+<div class="paragraph">
+<p>1) Memory models of mainstream languages (C/C&#43;&#43; and Java) have major issues.</p>
+</div>
+<div class="paragraph">
+<p>2) There are solutions making different compromises.</p>
+</div>
+<div class="paragraph">
+<p>3) There are guidelines for choosing or modifying a memory model for your language or VM.&lt;/p&gt;</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/6rxl4aNmTM7ulpab9d3lHi/4fb83368b4262327b2923e118acccfd1/presentation.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/6rxl4aNmTM7ulpab9d3lHi/4fb83368b4262327b2923e118acccfd1/presentation.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>

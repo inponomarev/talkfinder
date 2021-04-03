@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/1021.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/8.html"><img src="/images/events/jokerconf.jpg" alt="jokerconf" width="80"></a></span> <a href="../event/67.html">Joker 2018 (19.10.2018&#8201;&#8212;&#8201;20.10.2018)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="реактивный_хардкор_как_построить_свой_publisher">Реактивный хардкор: как построить свой Publisher&lt;?&gt;</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/qmuNAWKNJWs?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/33.html"><img src="/images/speakers/0033.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/33.html">Олег Докука</a></em></p>
+</div>
+<div class="paragraph">
+<p>C появлением Reactive-Streams спецификации к нам пришли как замечательные возможности по стандартизации реактивных библиотек, так и более широкий спектр новых хардкорных проблем. Во время доклада мы рассмотрим шаги имплементации центрального интерфейса из RS — Publisher&lt;?&gt; в Java. Более того, основная цель этого доклада — осознание того, как же построить ПРАВИЛЬНУЮ имплементацию данного интерфейса, как это протестировать и убедиться, что оно также работает и в других аналогичных библиотеках, таких как Project Reactor!</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий Программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Комиттер в Reactor 3, активно продвигающий стек Spring и предлагающий публике различные реактивные решения на их основе. Автор книги «Reactive Programming with Spring 5» и просто известный спикер и практикующий инженер.</strong></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Разрабатываете свою библиотеку? Решили поддерживать Reactive-Streams specification? Хотите понять, что творится под капотом у RxJava 2 или Reactor 3? Либо же вы любитель хардкора? Тогда этот доклад для вас!</p>
+</div>
+<div class="paragraph">
+<p>Во время доклада мы затронем причины создания спецификации Reactive-Streams и сложность в работе с ней. Как первый шаг — создадим наивную реализацию интерфейсов, посмотрим, где же напортачили, как протестить корректность. Шаг за шагом мы доберемся до правды и пройдем через все испытания в разработке операторов. В результате вынесем лучшие практики в реализации таких зверей, разберем, что, как и зачем, на пальцах и убедимся, что именно так всё и работает в модерных библиотеках, таких как RxJava 2 и Reactor 3.</p>
+</div>
+<div class="paragraph">
+<p>После этого доклада у вас будет понимание того, как создать и протестировать свой оператор. Вдобавок у вас будет более четкое понимание того, как устроены реактивные библиотеки. Также вы увидите сложности конкуретной разработки и поймете, как с этим жить.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/lmgssZTDcyKq2wO2MQWWg/91e481b40f731e9bb5e56eb2569954a5/Oleh_Dokuka_Reactive_hardcore_how_to_implement_own_Publisher___.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/lmgssZTDcyKq2wO2MQWWg/91e481b40f731e9bb5e56eb2569954a5/Oleh_Dokuka_Reactive_hardcore_how_to_implement_own_Publisher___.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

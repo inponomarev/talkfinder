@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/2277.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/5.html"><img src="/images/events/hydra.jpg" alt="hydra" width="80"></a></span> <a href="../event/46.html">Hydra 2020 (06.07.2020&#8201;&#8212;&#8201;09.07.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="oak_a_scalable_off_heap_allocated_key_value_map">Oak: A scalable off-heap allocated key-value map</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1228.html"><img src="/images/speakers/1228.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1228.html">Anastasia Braginsky</a></em></p>
+</div>
+<div class="paragraph">
+<p>OakMap is part of the open source Oak library. It is a concurrent Key-Value Map that may keep all keys and values off-heap. OakMap decreases the memory requirements up to 3 times and experiments show that OakMap is often 2x faster than Java’s state-of-the-art concurrent skip-list. We will discuss OakMap technology and working with the off-heap memory: updating and concurrency.</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;About Oak:</p>
+</div>
+<div class="paragraph">
+<p>Efficient ordered in-memory key-value (KV-) maps are paramount for the scalability of modern data platforms. In managed languages like Java, KV-maps face unique challenges due to the high overhead of garbage collection (GC). We present Oak, a scalable concurrent KV-map for environments with managed memory. Oak offloads data from the managed heap, thereby reducing GC overheads and improving memory utilization. An important consideration in this context is the programming model since a standard object-based API entails moving data between the on- and off-heap spaces. In order to avoid the cost associated with such movement, we introduce a novel zero-copy(ZC) API. It provides atomic get, put, remove, and various conditional put operations such as compute (in-situ update). We have released an open-source Java version of Oak. We further present a prototype Oak-based implementation of the internal multidimensional index in Apache Druid. Our experiments show that Oak is often 2x faster than Java&#8217;s state-of-the-art concurrent skip-list.&lt;/p&gt;
+&lt;p&gt;About the Talk:</p>
+</div>
+<div class="paragraph">
+<p>The Oak paper and the talk were part of the PPOPP20 conference (one of the top conferences in parallel programming). The Oak is a combination of practical and academic novelties such as (1) techniques for working with off-heap memory, (2) new zero-copy API, (3) concurrency techniques for maps and off-heap accesses, (4) scalability and performance, (5) backward and forward scanning, etc. Talk may include a further work that was done on Oak since PPOPP20. The talk is presented with good background so it can target any audience with some computer science background.&lt;/p&gt;</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/4mIcjE0UfEAzQt3i1DB9C2/c2e859d3bdebb9e68c2a05195c818ac5/OakVerizon4Hydra20.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/4mIcjE0UfEAzQt3i1DB9C2/c2e859d3bdebb9e68c2a05195c818ac5/OakVerizon4Hydra20.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>

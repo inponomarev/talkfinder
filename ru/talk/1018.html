@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/1018.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/8.html"><img src="/images/events/jokerconf.jpg" alt="jokerconf" width="80"></a></span> <a href="../event/67.html">Joker 2018 (19.10.2018&#8201;&#8212;&#8201;20.10.2018)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="профилируем_черного_лебедя_с_помощью_intel_processor_trace_или_что_делать_если_иногда_код_выполняется_20_мс_вместо_2_мс">Профилируем черного лебедя с помощью Intel Processor Trace, или Что делать, если иногда код выполняется 20 мс вместо 2 мс</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/Cn4bw7cE68w?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/53.html"><img src="/images/speakers/0053.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/53.html">Сергей Мельников</a></em></p>
+</div>
+<div class="paragraph">
+<p>Доклад посвящен профилированию небольших участков кода и выявлению причин, почему иногда код работает ощутимо медленнее среднего. Сергей расскажет, как из подручных средств сделать небольшой профилировщик, использующий технологию Intel Processor Trace, которая позволяет восстановить трассу выполнения приложения.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий Программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Доклад-продолжение нашумевшего выступления на JPoint 2018 про профилирование с точностью до микросекунд. На этот раз Сергей расскажет, как использовать новейшие фичи процессоров Intel для сверхточного профилирования прямо из приложения.</strong></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>В начале мы посмотрим, почему быстродействие совсем небольшого участка кода может напрямую влиять на успех приложения. Далее попробуем профилировать этот участок кода с помощью профилировщика perf. Мы научимся собирать нужный профиль, но ценой ощутимых накладных расходов.</p>
+</div>
+<div class="paragraph">
+<p>Далее мы рассмотрим, как можно сделать небольшой профилировщик из подручных средств, используя интерфейс ядра ОС Linux. Созданный профилировщик будет использовать технологию Intel Processor Trace, которая позволяет восстановить трассу выполнения приложения. Мы пройдем через все шаги, необходимые для создания профилировщика: сбор и декодирование трассы, добавление информации о методах и аггрегация профиля. В итоге у нас получится небольшой профилировщик. Мы его применим для профилирования разбора JSON и посмотрим на результаты.</p>
+</div>
+<div class="paragraph">
+<p>Затем мы увидим, что зачастую средних метрик для описания производительности кода недостаточно и необходимы метрики, которые описывают, насколько медленно иногда работает наш код. И оказывается, эти редкие замедления встречаются нашим пользователям намного чаще, чем мы думаем и чем бы нам хотелось.</p>
+</div>
+<div class="paragraph">
+<p>Мы посмотрим, почему иногда наш код может работать медленнее среднего, и неожиданно увидим, что все профилировщики, которыми мы пользовались ранее, не очень помогают нам находить причины этих замедлений. На базе разработанного только что профилировщика мы сделаем инструмент, который позволит нам заглянуть в эти редкие замедления с небывалой точностью и понять, в чем же причина замедления. И только в самом конце мы узнаем, какая же связь черных лебедей и профилирования приложений на Java.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/6gOWJNce7CaEkaEsgCG8qu/3d870a4868fdf2fb8585eab6d8c9a35f/Sergey_Melnikov_Profiling_a_black_swan_using_Intel_Processor_Trace__or_what_to_do_when_your_code_takes_20_ms_to_run_instead_.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/6gOWJNce7CaEkaEsgCG8qu/3d870a4868fdf2fb8585eab6d8c9a35f/Sergey_Melnikov_Profiling_a_black_swan_using_Intel_Processor_Trace__or_what_to_do_when_your_code_takes_20_ms_to_run_instead_.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

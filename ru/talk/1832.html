@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/1832.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/2.html"><img src="/images/events/dotnext.jpg" alt="dotnext" width="80"></a></span> <a href="../event/13.html">DotNext 2015 Мск (11.12.2015&#8201;&#8212;&#8201;11.12.2015)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="net_generics_under_the_hood_and_a_jitter_bug_for_dessert">.NET Generics under the hood and a JITter bug for dessert</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/Yp4yQQqb2VI?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/509.html"><img src="/images/speakers/0509.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/509.html">Александр Никитин</a></em></p>
+</div>
+<div class="paragraph">
+<p>Generics – старая и хорошо известная парадигма программирования. Все мы знаем, как их использовать и какие преимущества они нам дают. Но знаете ли вы как они работают изнутри? Думаете, что тут замешена магия? Есть внутренне чувство, что все на костылях? Интересно, почему один и тот же метод может работать в 3-5 раз медленнее? Например, вот этот:</p>
+</div>
+<div class="paragraph">
+<p>  new DerivedClass().Run(); // 3-5x slower</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  new BaseClass&lt;object&gt;().Run();</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  ...</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  public class BaseClass&lt;T&gt; {</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    private List&lt;T&gt; _list = new List&lt;T&gt;();</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    public BaseClass() {</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>      foreach (var _ in _list) {}</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    }</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    public void Run() {</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>      for (var i = 0; i &lt; 8000000; i++)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>        if (_list.Any(_ =&gt; true)) return;</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>    }</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  }</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Попробуем вместе в этом разобраться. Доклад про то, как это все работает изнутри. Вспомним про .NET Memory Layout, позапускаем WinDbg, посмотрим как .NET generics устроены изнутри, какие оптимизации CLR предпринимает, чтобы они были быстрыми, и, что самое интересное, чаще всего такими же быстрыми, как и обычные методы.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Будет десерт – баг в Джиттере! Только хардкор! Еще больше хардкора в обсуждениях. Приходите те, кто интересуется внутренностями .NET, будет интересно.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://alexandrnikitin.github.io/slides/generics-under-the-hood-dotnext/#/" class="bare">https://alexandrnikitin.github.io/slides/generics-under-the-hood-dotnext/#/</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

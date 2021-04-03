@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/1185.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/1.html">C++ Russia 2019 Msc (19.04.2019&#8201;&#8212;&#8201;20.04.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="concepts_simplifying_implementation_of_std_utility_classes">Concepts: simplifying implementation of std utility classes</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/vYzjV0xSqJE?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/346.html"><img src="/images/speakers/0346.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/346.html">Andrey Davydov</a></em></p>
+</div>
+<div class="paragraph">
+<p>We&#8217;ll discuss concepts in general a little and how it simplifies the implementation of generic classes.</p>
+</div>
+<div class="paragraph">
+<p>Concepts appearing in C&#43;&#43;20 have for a long time been the subject of a wide discussion. Despite lots of information accumulated through the years (including speeches given by world-class experts), among the application developers (those who do not fall asleep cuddling up to the standard every night) there still isn&#8217;t clear understanding on what exactly C&#43;&#43;20 concepts are and do we really need them when we&#8217;ve got good old enable_if. Part of the blame is on concepts' evolution in 15 years (Concepts Full + Concept Map &#8594; Concepts Lite), and part is on their dissimilarity to the corresponding tools in other languages (Java/С# generic bounds, Rust traits, &#8230;&#8203;).</p>
+</div>
+<div class="paragraph">
+<p>This talk will begin with a brief overview of concept-related changes in C&#43;&#43;20. Then we&#8217;ll explore implementation of several STL classes and functions, comparing C&#43;&#43;17 и C&#43;&#43;20 solutions. For example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>to implement std::optional, today we have to use inheritance hierarchy with a depth of 7. In C&#43;&#43;20, there will be no need for that;</p>
+</li>
+<li>
+<p>for the default constructor std::pair today two template functions are required, in C&#43;&#43;20 — one non-template;</p>
+</li>
+<li>
+<p>template classes often have partial specialization; if template parameters have some special properties, it is easier and more correct to use concepts.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The audience is expected to have basic understanding of concepts and SFINAE. Knowledge of C&#43;&#43; standard library will also be useful, but you don&#8217;t need to know all the implementation intricacies and details.</p>
+</div>
+</div>
+  </div>
+</body>
+</html>

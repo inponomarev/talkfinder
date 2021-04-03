@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/123.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/2.html">C++ Russia 2019 SPb (31.10.2019&#8201;&#8212;&#8201;01.11.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="c_tricks_from_yandex_taxi">C++ tricks from Yandex.Taxi</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/332.html"><img src="/images/speakers/0332.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/332.html">Antony Polukhin</a></em></p>
+</div>
+<div class="paragraph">
+<p>Atypical and effective solutions for typical tasks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Pimpl — but without dynamic allocations;</p>
+</li>
+<li>
+<p>Fast logging — but usually without std::ostream and std::locale;</p>
+</li>
+<li>
+<p>Conversions from JSON/XML/YAML/&#8230;&#8203; to user-defined types  — but with code reuse (almost a function overloading by result type);</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>When writing large frameworks, one has to face typical problems, solutions for which have long been known. However, these solutions are not effective enough and can be implemented much better.</p>
+</div>
+<div class="paragraph">
+<p>We will talk about such effective tricks!</p>
+</div>
+<div class="paragraph">
+<p>1) There is a famous Pimpl pattern:</p>
+</div>
+<div class="paragraph">
+<p>&lt;code&gt;
+struct something {</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>int foo ();</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>private:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>struct impl;</pre>
+</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">std </dt>
+<dd>
+<p>unique_ptr &lt; const impl&gt; impl_; // dynamic allocation :(</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>};</p>
+</div>
+<div class="paragraph">
+<p>&lt;/code&gt;</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s remove the dynamic allocation from it and add cache friendliness.</p>
+</div>
+<div class="paragraph">
+<p>2) Logging of user types:</p>
+</div>
+<div class="paragraph">
+<p>&lt;code&gt;
+std :: ostream &amp; operator &lt;&lt; (std :: ostream &amp; os, const user_data_type &amp; udt);</p>
+</div>
+<div class="paragraph">
+<p>my_debug_logger &lt;&lt; user_data_type {"foo", "bar"};</p>
+</div>
+<div class="paragraph">
+<p>&lt;/code&gt;</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s do it without std::ostream and without calculating the values of variables for the records that we do not log.</p>
+</div>
+<div class="paragraph">
+<p>3) Conversion from JSON/XML/YAML/&#8230;&#8203; into user-provided types:</p>
+</div>
+<div class="paragraph">
+<p>&lt;code&gt;</p>
+</div>
+<div class="paragraph">
+<p>user_data_type1 Parse (const Json &amp; value);</p>
+</div>
+<div class="paragraph">
+<p>user_data_type2 Parse (const Json &amp; value);</p>
+</div>
+<div class="paragraph">
+<p>template &lt; class T&gt; T Parse (const Json &amp; value);</p>
+</div>
+<div class="paragraph">
+<p>template &lt;&gt; user_data_type1 Parse (const Json &amp; value);</p>
+</div>
+<div class="paragraph">
+<p>template &lt;&gt; user_data_type2 Parse (const Json &amp; value);</p>
+</div>
+<div class="paragraph">
+<p>&lt;/code&gt;</p>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s make it beautiful.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/4rkoaQV6ancsfvzYx1fOCF/087dda7d63101cc225d706d03d7c5075/100566_2093066332_Anton_Polukhin_C_tryuki_iz_Taksi.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/4rkoaQV6ancsfvzYx1fOCF/087dda7d63101cc225d706d03d7c5075/100566_2093066332_Anton_Polukhin_C_tryuki_iz_Taksi.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>

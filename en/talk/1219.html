@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/1219.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/2.html"><img src="/images/events/dotnext.jpg" alt="dotnext" width="80"></a></span> <a href="../event/21.html">DotNext 2019 SPb (15.05.2019&#8201;&#8212;&#8201;16.05.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="pitfalls_of_relational_db_access_in_net_rethinking_micro_orms">Pitfalls of relational DB access in .NET: rethinking micro-ORMs</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/VTQF19KNtgM?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/412.html"><img src="/images/speakers/0412.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/412.html">Stan Drapkin</a></em></p>
+</div>
+<div class="paragraph">
+<p>ADO.NET and Entity Framework (EF): one is 17-years-old and archaic; the other is painfully slow and barely functional for anything more complex than "select * from Foo". But you just use Dapper, or a similar micro-ORM. Have you chosen wisely?</p>
+</div>
+<div class="paragraph">
+<div class="title">NET ecosystem has a void in the data-access-layer space: on one side there is 17-year-old ADO.NET — a powerful but archaic and inconvenient API; on the other side there are various flavors of Microsoft&#8217;s Entity Framework (EF) which appeals to beginners and those scared of SQL, but breaks down for anything non-trivial or complicated, and is also painfully slow.</div>
+<p>This void between ADO.NET and EF has been ignored by Microsoft, which has led to proliferation of third-party libraries which all try to come up with the best mix of simple APIs and data-access-patterns delivering the power and speed of ADO.NET. One example of such micro-ORM library is Dapper. When neither ADO.NET nor EF are fit for the task at hand, how does one decide what micro-ORM to choose? "For every complex problem there is an answer that is clear, simple, and wrong."</p>
+</div>
+<div class="paragraph">
+<p>We&#8217;ll rethink what makes a good micro-ORM library, and compare ADO.NET, EF, and most existing state-of-the-art micro-ORM libraries, considering not only performance benchmarks but also architecture, design, APIs, and advanced features.</p>
+</div>
+<div class="paragraph">
+<p>You will come away with a deep understanding of tradeoffs and optimizations involved in building a good micro-ORM library, which will help you not only make the right micro-ORM decision for your tasks and teams, but perhaps even write your own micro-ORM, or contribute to existing OSS libraries.</p>
+</div>
+<div class="paragraph">
+<p>This is an advanced-level talk which covers low-level ADO.NET, various micro-optimizations &amp; tricks, connection, transaction, and query patterns, etc. as well as high-level architectural concepts and advanced micro-ORM features. While you&#8217;re dreaming about a Raspberry Pi IoT with a custom-GC running Apache Kafka, come to learn about what you <em>actually</em> do at work.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/9n3x4rtjlya6/6aoCpoQMWrdusIKTiUI1I9/5fcc52bfcec50b076f4089dc1890ec7b/Stan_Drapkin_Pitfalls_of_relational_DB_access_in_.NET_rethinking_micro-ORMs.pdf" class="bare">https://assets.ctfassets.net/9n3x4rtjlya6/6aoCpoQMWrdusIKTiUI1I9/5fcc52bfcec50b076f4089dc1890ec7b/Stan_Drapkin_Pitfalls_of_relational_DB_access_in_.NET_rethinking_micro-ORMs.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>

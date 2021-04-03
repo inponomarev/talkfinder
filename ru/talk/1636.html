@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/1636.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/3.html"><img src="/images/events/heisenbug.jpg" alt="heisenbug" width="80"></a></span> <a href="../event/32.html">Heisenbug 2020 СПб (15.06.2020&#8201;&#8212;&#8201;18.06.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="программирование_с_grafana_и_influxdb_сборник_рецептов">Программирование с Grafana и InfluxDB: Сборник рецептов</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/7bhPIndtgeg?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/541.html"><img src="/images/speakers/0541.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/541.html">Вячеслав Смирнов</a></em></p>
+</div>
+<div class="paragraph">
+<p>Вячеслав по пунктам расскажет, как формировать доску Grafana для InfluxDB, и объяснит, почему так важно это уметь.</p>
+</div>
+<div class="paragraph">
+<p>Grafana является стандартным инструментом для визуализации метрик во всех сферах деятельности. InfluxDB является стандартным инструментом для сбора результатов тестов производительности.</p>
+</div>
+<div class="paragraph">
+<p>И разработка доски Grafana — частая и актуальная задача. Кто-то может называть это отчетом, кто-то витриной данных, но так или иначе, нужно уметь подготовить доску Grafana.</p>
+</div>
+<div class="paragraph">
+<p>При обновлении доски Grafana для инструмента Gatling удалось успешно решить разные технические задачи. Решения сложные, но красивые.</p>
+</div>
+<div class="paragraph">
+<p>Вячеслав составил сборник рецептов для формирования доски Grafana 6.5.2 (актуальная) для InfluxDB 1.7 (актуальная) с применением лишь стандартных компонентов Grafana и функций InfluxDB:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>фильтрация метрик;</p>
+</li>
+<li>
+<p>фильтрация фильтров по времени и по другим фильтрам и тегам;</p>
+</li>
+<li>
+<p>применение опциональных фильтров к данным, у которых нет нужных тегов;</p>
+</li>
+<li>
+<p>выбор значений по умолчанию для агрегирующих функций при пустом наборе данных;</p>
+</li>
+<li>
+<p>использование переменных Grafana для сохранения промежуточных значений при вычислениях InfluxDB;</p>
+</li>
+<li>
+<p>создание сводных таблиц с помощью Grafana Table Panel;</p>
+</li>
+<li>
+<p>задание порядка вывода колонок в таблицах;</p>
+</li>
+<li>
+<p>применение стилей к строкам сводной таблицы в зависимости от тега, а не от значения;</p>
+</li>
+<li>
+<p>вывод сгруппированных метрик на графики и таблицы;</p>
+</li>
+<li>
+<p>заполнение пустот в разряженных данных и для разной гранулярности;</p>
+</li>
+<li>
+<p>и много других неочевидных моментов работы с InfluxDB и Grafana.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Уровень доклада: сложный, для практикующих инженеров.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://downloads.ctfassets.net/ut4a3ciohj8i/2JaDVPstm5tseew4M4JY4t/501b947c2719df7afbbb2b9e4a680c17/Vyacheslav_Smirnov_Programmirovaniye_s_Grafana_i_InfluxDB_Sbornik_retseptov_2020_06_17_22_08_23.pdf" class="bare">https://downloads.ctfassets.net/ut4a3ciohj8i/2JaDVPstm5tseew4M4JY4t/501b947c2719df7afbbb2b9e4a680c17/Vyacheslav_Smirnov_Programmirovaniye_s_Grafana_i_InfluxDB_Sbornik_retseptov_2020_06_17_22_08_23.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

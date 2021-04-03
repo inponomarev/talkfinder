@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/1070.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/2.html"><img src="/images/events/dotnext.jpg" alt="dotnext" width="80"></a></span> <a href="../event/20.html">DotNext 2018 Msc (22.11.2018&#8201;&#8212;&#8201;23.11.2018)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="building_your_own_debugging_toolbox_with_clrmd">Building your own debugging toolbox with ClrMD</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/O8c5WwfbGFU?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/405.html"><img src="/images/speakers/0405.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/405.html">Christophe Nasarre-Soulier</a></em></p>
+</div>
+<div class="paragraph">
+<p>You have to investigate problems live or post-mortem on tens of GB of application memory by browsing complex structures, such as the threadpool or the timer queue and… you start to spend your life typing tons of SOS commands in WinDbg… and you abandon it. Here comes ClrMD to the rescue!</p>
+</div>
+<div class="paragraph">
+<p>Join us to learn how to write your own tools and WinDbg extensions in C# to automate your future investigations.</p>
+</div>
+<div class="paragraph">
+<p>You have to investigate problems live or post-mortem on tens of GB of application memory by browsing complex structures, such as the threadpool or the timer queue and… you start to spend your life typing and typing tons of SOS commands in WinDbg. You think about scripting WinDbg and… you abandon it. Here comes ClrMD to the rescue!</p>
+</div>
+<div class="paragraph">
+<p>Imagine. You&#8217;re investigating an issue on a 20GB memory dump. You navigate around memory structures with WinDbg and SOS, trying to figure out what&#8217;s going on. You start to get a grasp of the overall problem, but to validate the hypothesis you need to figure out the number of scheduled timers and their respective intervals.</p>
+</div>
+<div class="paragraph">
+<p>What are your options? You could spend hours browsing them one by one with !dumpheap and !do. You also could try to use the WinDbg scripting API to automate the process, given that you&#8217;re one of the lucky few who were ever able to use it efficiently. Or you could write a simple C# program in a few minutes and get the result. What would you do?</p>
+</div>
+<div class="paragraph">
+<p>This talk is aimed at those who, like us, have a strong preference for the last option. ClrMD is a .NET library from Microsoft to introspect live processes and memory dumps. It allows you to do everything you could do with SOS in WinDbg: list threads, navigate into the managed heaps and dig into the instances of .NET types. It also allows you to go the extra mile: writing your own debugging tools, adding new commands to WinDbg, and all this in plain C#.</p>
+</div>
+<div class="paragraph">
+<p>This session will show you how to achieve real world debugging goals:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>load a dump or attach a live process with symbols, sos and mscordac tricks and tips;</p>
+</li>
+<li>
+<p>iterate on object instances in the managed heap;</p>
+</li>
+<li>
+<p>get static and instance field values;</p>
+</li>
+<li>
+<p>leverage C# dynamic to make coding even easier;</p>
+</li>
+<li>
+<p>create a WinDbg extension and transform your code into ninja-friendly commands.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>After the session, you will know how to write code to list duplicated strings, list running timers, whatever you would need in your next investigation.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/9n3x4rtjlya6/1Hyze0icAwKQS2s4WgMWa0/aeda74ceaebee6397ca622c15d36115d/Christophe_Nasarre_Building_your_own_debugging_toolbox_with_ClrMD.pdf" class="bare">https://assets.ctfassets.net/9n3x4rtjlya6/1Hyze0icAwKQS2s4WgMWa0/aeda74ceaebee6397ca622c15d36115d/Christophe_Nasarre_Building_your_own_debugging_toolbox_with_ClrMD.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>

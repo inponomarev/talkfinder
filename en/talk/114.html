@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/114.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/2.html">C++ Russia 2019 SPb (31.10.2019&#8201;&#8212;&#8201;01.11.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="c_exceptions_through_the_prism_of_compiler_optimizations">C++ exceptions through the prism of compiler optimizations</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/996.html"><img src="/images/speakers/0996.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/996.html">Roman Rusyaev</a></em></p>
+</div>
+<div class="paragraph">
+<p>Roman&#8217;s talk will demonstrate when building your application with -fno-exceptions makes sense and when you can enjoy C ++ exceptions, knowing that the code has not lost performance.</p>
+</div>
+<div class="paragraph">
+<p>21 century is outside, non-productive implementation of C&#43;&#43; exception handling based on setjmp/longjmp is a past. Modern compilers such as gcc and clang use an advanced implementation of C&#43;&#43; exceptions called zero-cost exception handling. But is this real zero-cost? Yes, we pay by increasing the size of binary file and also in the case when the exception is thrown starting the stack unwinding process calling destructors for local objects, etc. But do we lose performance if an exception isn&#8217;t thrown? Are there any restrictions on compiler optimizations?</p>
+</div>
+<div class="paragraph">
+<p>This talk describes how C&#43;&#43; exceptions affect compiler optimizations. Which optimizations can&#8217;t be applied if the function can throw exceptions and which optimizations become more difficult to apply.</p>
+</div>
+<div class="paragraph">
+<p>Examples of exceptions implementations and compiler optimizations are considered based on LLVM.</p>
+</div>
+<div class="paragraph">
+<p>Talk aims to give an understanding of when it makes sense to build your application with -fno-exceptions and when you can enjoy C ++ exceptions, knowing that the code has not significantly lost performance compared to code where exceptions are disabled.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/6Q09SPvX2Rsveiayc1VkcC/ce9e2b8eb22d6693eb4c3b06968bedc0/100693_477384438_Roman_Rusyayev_Isklyucheniya_C_cherez_prizmu_kompilyatornykh_optimizatsiy.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/6Q09SPvX2Rsveiayc1VkcC/ce9e2b8eb22d6693eb4c3b06968bedc0/100693_477384438_Roman_Rusyayev_Isklyucheniya_C_cherez_prizmu_kompilyatornykh_optimizatsiy.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>

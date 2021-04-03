@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/1034.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/8.html"><img src="/images/events/jokerconf.jpg" alt="jokerconf" width="80"></a></span> <a href="../event/67.html">Joker 2018 (19.10.2018&#8201;&#8212;&#8201;20.10.2018)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="ходячие_объекты_мертвецы_или_gc_всегда_прав">Ходячие объекты-мертвецы, или GC всегда прав</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/XtijbFcQxyw?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/29.html"><img src="/images/speakers/0029.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/29.html">Иван Углянский</a></em></p>
+</div>
+<div class="paragraph">
+<p>Расскажем об особенностях работы алгоритмов GC, из-за которых одни объекты могут быть собраны раньше, чем вы планировали, а другие, наоборот, осядут в памяти надолго и превратятся в настоящих зомби. Обсудим, чем такое грозит вашему приложению и как с этим жить.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий Программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Рассказ о внутренностях GC, но не о том, «как», а о том, «когда», что особенно важно пользователям weak references. Речь не о конкретном алгоритме GC, а о требованиях стандарта и о том, как он фактически воплощен.</strong></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Автоматическое управление памятью — одна из основных особенностей Java и других managed языков. При этом в спецификации про GC написано очень мало: как именно собирать мусор каждой конкретной реализации JVM, предлагается решать самостоятельно. В результате для сборки мусора существует огромное количество стратегий и степеней свободы. Например, когда именно GC должен приходить за мертвым объектом? Ответ не так очевиден, а любое решение может повлиять на ход исполнения пользовательской программы.</p>
+</div>
+<div class="paragraph">
+<p>В докладе обсудим, зачем коллектору оставлять мертвые объекты в памяти, как это сказывается на вашем приложении и как выжить во время нашествия ходячих объектов-мертвецов.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/ItUi3ddFeKUAcsMGYiwAw/4797f279bcd532a5374da61bb8d12dce/Ivan_Ugliansky_Walking_Dead_Objects_or_GC_is_always_right.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/ItUi3ddFeKUAcsMGYiwAw/4797f279bcd532a5374da61bb8d12dce/Ivan_Ugliansky_Walking_Dead_Objects_or_GC_is_always_right.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

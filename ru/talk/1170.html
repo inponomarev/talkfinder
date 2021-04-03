@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/1170.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/1.html">C++ Russia 2019 Мск (19.04.2019&#8201;&#8212;&#8201;20.04.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="text_formatting_for_a_future_range_based_standard_library">Text formatting for a future range-based standard library</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/EJRpJ3ae_28?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/335.html"><img src="/images/speakers/0335.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/335.html">Valentin Ziegler</a></em></p>
+</div>
+<div class="paragraph">
+<p>Valentin intends to convince you that the combination of ranges with a bit of metaprogramming makes for a very elegant solution to the text formatting problem.</p>
+</div>
+<div class="paragraph">
+<p>Text formatting has been a favorite problem of C&#43;&#43; library authors for a long time. The standard C&#43;&#43; iostreams have been criticized for being difficult to use due to their statefulness and slow due to runtime polymorphism. Despite its age, printf is still popular because of simplicity and speed. The Boost library offers two more alternatives, Boost.Format and Boost.LexicalCast. And finally, the P0645 standard proposal sponsored by Facebook is currently finding its way through the C&#43;&#43; committee. All these approaches are still firmly based on standard containers and iterators. But the Standard Library is changing radically with the advent of ranges, range adaptors and functional style programming in C&#43;&#43;. Generating optimized code with metaprogramming is becoming standard fare.</p>
+</div>
+<div class="paragraph">
+<p>In this talk, Valentin intends to convince you that the combination of ranges with a bit of metaprogramming makes for a very elegant solution to the text formatting problem. He introduces a form of ranges with internal iteration, which are generating their elements one by one rather than exposing external iterators. You can use these generator ranges to represent the values to be formatted, conceptually turning them into lazily evaluated strings. These can be used just like regular strings are used today: in function returns; as standard algorithm input; embedded into other, equally lazily evaluated strings; and so on, before they are finally expanded for display. By choosing the right interfaces, you can optimize this expansion at compile-time, making it no less pretty to write, but more efficient to expand than any text formatting approaches that rely on format strings that must be parsed at runtime. Valentin believes that this approach is the natural extension of a range-based future standard library to text formatting.</p>
+</div>
+</div>
+  </div>
+</body>
+</html>

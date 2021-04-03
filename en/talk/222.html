@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/222.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/3.html"><img src="/images/events/heisenbug.jpg" alt="heisenbug" width="80"></a></span> <a href="../event/31.html">Heisenbug 2019 Msc (05.12.2019&#8201;&#8212;&#8201;06.12.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="autotest_coverage_visualization">Autotest coverage visualization</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/554.html"><img src="/images/speakers/0554.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/554.html">Artem Eroshenko</a></em></p>
+</div>
+<div class="paragraph">
+<p>The volume of autotests is growing. Autotests are written at all levels by all participants: backend, frontend, QA. How to hold in your mind everything that was covered? How not to forget anything? How to check yourself? During this talk, you will hear several visualization based approaches. Come hear it!</p>
+</div>
+<div class="paragraph">
+<p>Modern methods for coverage measuring are good only for development. However, the amount of useful information from coverage reports is extremely small. One the one hand all code lines weren&#8217;t involved during tests. On the other hand, the only important information is the percentage of coverage. And we are not interested in the absolute value, but we want a delta with the previous one.</p>
+</div>
+<div class="paragraph">
+<p>Artem will present some simple solutions that allow you to evaluate the coverage of tests written by test automation.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>API tests. There is a swagger and during his execution, we also collect a swagger. We count coverage as a diff of two swaggers. We can see what is covered, what is not and what data.</p>
+</li>
+<li>
+<p>Web tests. During the execution of tests, we collect information about elements, pages and actions. As a result, we have such format:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha">
+<li>
+<p>page;</p>
+</li>
+<li>
+<p>elements;</p>
+</li>
+<li>
+<p>actions;</p>
+</li>
+<li>
+<p>tests.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>All this is sent to the plugin. We draw elements on the page that were affected during these tests. Plus additional information: the list of tests on the video page.</p>
+</div>
+<div class="paragraph">
+<p>As a result, we can answer the next questions very quick:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>What is covered and what isn&#8217;t.</p>
+</li>
+<li>
+<p>How it was covered (just clicked or checked the text).</p>
+</li>
+<li>
+<p>What tests go through the page.</p>
+</li>
+<li>
+<p>Which elements are most commonly used? In general, we should avoid it because it&#8217;s a potential point of failure.</p>
+</li>
+<li>
+<p>Point to the test, see the Selenoid video.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Connected to Selenium. It can be easily completed for the puppeteer and for anything else. It will be convenient to understand what is being checked and why.</p>
+</div>
+</div>
+  </div>
+</body>
+</html>

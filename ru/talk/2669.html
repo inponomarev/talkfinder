@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/2669.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/4.html">C++ Russia 2020 СПб (11.11.2020&#8201;&#8212;&#8201;14.11.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="ищем_баги_в_продакшене_всем_миром_gwp_asan_и_что_дальше">Ищем баги в продакшене всем миром: GWP-ASan и что дальше</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/-RlxhU-W8dY?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1392.html"><img src="/images/speakers/1392.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1392.html">Константин Серебряный</a></em></p>
+</div>
+<div class="paragraph">
+<p>В этом докладе мы обсудим, как работает GWP-ASan, что он может найти и как его развернуть. Также мы поразмышляем о будущем использовании того же подхода для других классов ошибок и других языков программирования.</p>
+</div>
+<div class="paragraph">
+<p>Несмотря на продолжительные усилия по тестированию и фаззингу, ошибки продолжают пробираться в продакшн код. Улучшая тестирование и фаззинг, нам необходим еще слой тестирования: обнаружение ошибок в продакшене.</p>
+</div>
+<div class="paragraph">
+<p>Использование «очищенных» или «отладочных» сборок, упрощающих нахождение ошибок, обычно чрезмерно дорогостоящее предприятие. GWP-ASan использует основанный на выборке подход в обнаружении ошибок в продакшене.</p>
+</div>
+<div class="paragraph">
+<p>В частности, GWP-ASan обнаруживает ошибки heap-use-after-free и heap-buffer-overflow в бинарниках C/C&#43;&#43; с очень низкой вероятностью, но также с небольшой затратой. Мы преодолеваем низкую вероятность обнаружения ошибок при большом масштабе развертывания.</p>
+</div>
+<div class="paragraph">
+<p>В этом докладе мы обсудим, как работает GWP-ASan, что он может найти и как его развернуть. Также мы поразмышляем о будущем использовании того же подхода для других классов ошибок и других языков программирования.</p>
+</div>
+<div class="paragraph">
+<p>Интересная тема для исследования в этой области — могут ли GWP-ASan подобные инструменты рассматриваться как средства защиты. Да, они не защищают каждое выполнение, но что будут делать злоумышленники, если их атаки будут обнаруживать с вероятностью в 0.1% на каждый инстанс?</p>
+</div>
+<div class="paragraph">
+<p>В конце мы коротко обсудим Arm MTE — ожидаемое хардварное расширение, которое позволит обнаруживать ошибки использования памяти с высокой вероятностью и низкими накладными расходами.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/Rq21VTBlLGneXCBHsE4L5/f33461251478e598208ac3e3c1f25896/Konstantin_Serebryanyy_Ishchem_bagi_v_prodakshene_vsem_mirom_GWP-ASan_i_chto_dalshe_2020_11_12_05_24_04.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/Rq21VTBlLGneXCBHsE4L5/f33461251478e598208ac3e3c1f25896/Konstantin_Serebryanyy_Ishchem_bagi_v_prodakshene_vsem_mirom_GWP-ASan_i_chto_dalshe_2020_11_12_05_24_04.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

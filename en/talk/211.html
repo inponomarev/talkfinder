@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/211.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/3.html"><img src="/images/events/heisenbug.jpg" alt="heisenbug" width="80"></a></span> <a href="../event/31.html">Heisenbug 2019 Msc (05.12.2019&#8201;&#8212;&#8201;06.12.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="crashmonkey_ace_systematically_testing_file_system_crash_consistency">CrashMonkey &amp; Ace: Systematically Testing File-System Crash Consistency</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1045.html"><img src="/images/speakers/1045.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1045.html">Jayashree Mohan</a></em></p>
+</div>
+<div class="paragraph">
+<p>The talk discusses the importance of crash-consistency in storage systems and how we build an efficient infrastructure to find crash-consistency bugs.</p>
+</div>
+<div class="paragraph">
+<p>Problem description: Crash-consistency is the ability of a storage system to recover to a correct state after a crash due to power loss or a kernel panic. What we mean by a correct state is to check if the internal metadata structures are consistent, and that the files and directories persisted before the crash are not lost or contain corrupt data. The potential consequences of crash-consistency bugs could be disastrous, leading to loss of user data or resulting in unusable system state after recovery. However, there is little to no crash-consistency testing today for widely-used Linux file systems such as ext4, xfs, btrfs, and F2FS. Linux file-system developers use xfstests, an ad-hoc collection of correctness tests, to perform regression testing. xfstests contains a total of around 500 correctness tests that are applicable to all POSIX file systems. Of these tests, only about 30 (5%) are crash-consistency tests. Thus, file-system developers have no easy way of systematically testing the crash consistency of their file systems.</p>
+</div>
+<div class="paragraph">
+<p>Solution: We present a new approach to testing file-system crash consistency: bounded black-box crash testing (B3). B3 tests the file system in a black-box manner using workloads of file-system operations. Since the space of possible workloads is infinite, B3 bounds this space based on parameters such as the number of file-system operations or which operations to include, and exhaustively generates workloads within this bounded space. Each workload is tested on the target file system by simulating power-loss crashes while the workload is being executed and checking automatically if the file system recovers to a correct state after each crash. B3 builds upon insights derived from our study of crash-consistency bugs reported in Linux file systems in the last five years. We observed that most reported bugs can be reproduced using small workloads of three or fewer file-system operations on a newly-created file system, and that all reported bugs result from crashes after fsync() related system calls. We built the tool CrashMonkey to demonstrate the effectiveness of this approach. CrashMonkey revealed 10 new crash-consistency bugs in widely-used, mature Linux file systems, seven of which existed in the kernel since 2014. It also revealed a data loss bug in a verified file system, FSCQ. The new bugs result in severe consequences like broken rename atomicity and loss of persisted files.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/ut4a3ciohj8i/2tV2mXxNhbR0J3fEsEOlTz/4f062709f7e2c7a87f7878430d035cd4/100658_2143169083_Jayashree_Mohan_Mohan_CrashMonkey__Ace_Systematically_Testing_File-System_Crash_Consistency.pdf" class="bare">https://assets.ctfassets.net/ut4a3ciohj8i/2tV2mXxNhbR0J3fEsEOlTz/4f062709f7e2c7a87f7878430d035cd4/100658_2143169083_Jayashree_Mohan_Mohan_CrashMonkey__Ace_Systematically_Testing_File-System_Crash_Consistency.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>

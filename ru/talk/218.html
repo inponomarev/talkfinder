@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/218.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/3.html"><img src="/images/events/heisenbug.jpg" alt="heisenbug" width="80"></a></span> <a href="../event/31.html">Heisenbug 2019 Мск (05.12.2019&#8201;&#8212;&#8201;06.12.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="не_ждите_сообщений_получайте_их_асинхронное_тестирование_производительности">Не ждите сообщений, получайте их: Асинхронное тестирование производительности</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/541.html"><img src="/images/speakers/0541.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/541.html">Вячеслав Смирнов</a></em></p>
+</div>
+<div class="paragraph">
+<p>Доклад о разработке плагинов для Gatling и тестировании производительности через RabbitMQ, и решении технических проблем и создании новых.</p>
+</div>
+<div class="paragraph">
+<p>Доклад о разработке плагинов для Gatling и тестировании производительности через RabbitMQ, и решении технических проблем и создании новых.</p>
+</div>
+<div class="paragraph">
+<p>Доклад основан на опыте команды Raiffeisen Business Platform по тестированию производительности асинхронных микросервисов, которые принимают запросы через RabbitMQ по протоколу AMQP и отвечают в RabbitMQ.</p>
+</div>
+<div class="paragraph">
+<p>В качестве инструмента для подачи нагрузки был выбран Gatling. И в ходе написания тестов были решены следующие технические проблемы:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>как подать нагрузку через RabbitMQ, когда нет плагина для AMQP;</p>
+</li>
+<li>
+<p>как написать оптимальный Gatling-сценарий, который не будет потреблять гигабайты оперативной памяти;</p>
+</li>
+<li>
+<p>как эффективно замерить длительность от момента отправки сообщения в одну очередь, до момента появления сообщения в другой очереди, и не забыть момент появления сообщения во временной очереди;</p>
+</li>
+<li>
+<p>как логировать асинхронные операции, какой подход выбрать для разделения десятка сценариев в рамках одного Gatling-теста.</p>
+</li>
+</ul>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Вячеслав нагружал много разных систем, и его рекомендации к тестированию очередей могут пригодиться многим.</strong></p>
+</div>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://downloads.ctfassets.net/ut4a3ciohj8i/5DuiJityCzOwqYMq8QytW2/c2e939e7f85f0f613c1cb06f9d4c5782/100799_191519134_Vyacheslav_Smirnov_Ne_zhdite_soobshcheniy_poluchayte_ikh_asinkhronnoye_testirovaniye_proizvoditelnosti.pdf" class="bare">https://downloads.ctfassets.net/ut4a3ciohj8i/5DuiJityCzOwqYMq8QytW2/c2e939e7f85f0f613c1cb06f9d4c5782/100799_191519134_Vyacheslav_Smirnov_Ne_zhdite_soobshcheniy_poluchayte_ikh_asinkhronnoye_testirovaniye_proizvoditelnosti.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

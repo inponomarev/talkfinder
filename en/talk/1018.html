@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/1018.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/8.html"><img src="/images/events/jokerconf.jpg" alt="jokerconf" width="80"></a></span> <a href="../event/67.html">Joker 2018 (19.10.2018&#8201;&#8212;&#8201;20.10.2018)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="profiling_a_black_swan_using_intel_processor_trace_or_what_to_do_when_your_code_takes_20_ms_to_run_instead_of_2_ms">Profiling a black swan using Intel Processor Trace, or what to do when your code takes 20 ms to run instead of 2 ms</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/Cn4bw7cE68w?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/53.html"><img src="/images/speakers/0053.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/53.html">Sergey Melnikov</a></em></p>
+</div>
+<div class="paragraph">
+<p>This talk deals with profiling small parts of code and learning why sometimes code works really slow. Sergey will show how to improvise a small profiler which will use Intel Processor Trace technology.</p>
+</div>
+<div class="paragraph">
+<p>In the beginning we&#8217;ll see why performance of a really small part of code can directly affect an application&#8217;s success. Then we&#8217;ll try to profile this small part using the perf profiler and get the profile that we wanted, but with great additional charges.</p>
+</div>
+<div class="paragraph">
+<p>Then we&#8217;ll try to improvise a small profiler based on interface of the Linux kernel. The profiler will be using Intel Processor Trace technology, which allows us to reconstruct the application running trace. We&#8217;ll walk through all the steps of creating this profiler: trace collecting and decoding, adding information about methods and profile aggregation. At the end, we&#8217;ll get a small profiler. We&#8217;ll use it to profile JSON review and study the results.</p>
+</div>
+<div class="paragraph">
+<p>Then we&#8217;ll see that average metrics often aren&#8217;t enough to describe the code performance, and we need metrics that describe how slow our code works. It appears that our users have to face these rare delays much more often than we thought and wish.</p>
+</div>
+<div class="paragraph">
+<p>We&#8217;ll try to learn why sometimes our code works slower than average and find out that all the profilers we used before don&#8217;t really help us to find reasons for these delays. So we&#8217;ll make a tool based on the profiler we just built, and this tool will allow us to see into these rare delays with unprecedented precision and understand what causes them. And in the very end we&#8217;ll finally learn the connection between black swans and profiling Java applications.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/6gOWJNce7CaEkaEsgCG8qu/3d870a4868fdf2fb8585eab6d8c9a35f/Sergey_Melnikov_Profiling_a_black_swan_using_Intel_Processor_Trace__or_what_to_do_when_your_code_takes_20_ms_to_run_instead_.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/6gOWJNce7CaEkaEsgCG8qu/3d870a4868fdf2fb8585eab6d8c9a35f/Sergey_Melnikov_Profiling_a_black_swan_using_Intel_Processor_Trace__or_what_to_do_when_your_code_takes_20_ms_to_run_instead_.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>

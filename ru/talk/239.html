@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/239.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/5.html"><img src="/images/events/hydra.jpg" alt="hydra" width="80"></a></span> <a href="../event/45.html">Hydra 2019 (11.07.2019&#8201;&#8212;&#8201;12.07.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="wait_free_data_structures_and_wait_free_transactions">Wait-free data structures and wait-free transactions</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/oDfr9w9p8XY?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/392.html"><img src="/images/speakers/0392.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/392.html">Pedro Ramalhete</a></em></p>
+</div>
+<div class="paragraph">
+<p>Learn how to make a wait-free data structure.</p>
+</div>
+<div class="paragraph">
+<p>Concurrent data structures are at the heart of most multi-threaded applications, from queues that pass messages between actors, to indexing data structures in Key/Value stores. The Java JDK has had several for many years, and C&#43;&#43; is on track to add a few as well.</p>
+</div>
+<div class="paragraph">
+<p>The easiest way to implement a concurrent data structure is to take a sequential implementation (single-threaded) and protect its methods with a mutual exclusion lock. This approach is easy enough to be done correctly by a novice software engineer, however, it has low scalability and is subject to large latencies.</p>
+</div>
+<div class="paragraph">
+<p>Apart from being resilient to failures, lock-free and wait-free data structures can have a better latency profile, but it takes significant expertise to implement or modify them to suit specific application needs. Changing a single line of code in a lock-free data structure is likely to cause it to become incorrect.</p>
+</div>
+<div class="paragraph">
+<p>What if there was a way to allow a non-expert software developer to design and implement correct wait-free data structures? And what if these data structures could scale, have low tail latency, be resilient to failures and have integrated memory reclamation?</p>
+</div>
+<div class="paragraph">
+<p>Perhaps surprisingly, at the exception of one of these things, it is possible to have this today using an Universal Construction or a Software Transactional Memory.</p>
+</div>
+<div class="paragraph">
+<p>In this talk we&#8217;re going to explain what are and how to use Universal Constructions and Software Transactional Memories, and how we can use their wait-free transactions to make wait-free data structures.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/3HI169Td52g546fSu3u4sY/569ab945154cfae37149dfd036b28a11/100531_2034081103_Pedro_Ramalhete__Wait-free_data_structures_and_wait-free_transactions.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/3HI169Td52g546fSu3u4sY/569ab945154cfae37149dfd036b28a11/100531_2034081103_Pedro_Ramalhete__Wait-free_data_structures_and_wait-free_transactions.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

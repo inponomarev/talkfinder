@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/2673.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/4.html">C++ Russia 2020 SPb (11.11.2020&#8201;&#8212;&#8201;14.11.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="windows_macos_and_the_web_lessons_from_cross_platform_development_at_think_cell">Windows, macOS and the Web: Lessons from cross-platform development at think-cell</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1395.html"><img src="/images/speakers/1395.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1395.html">Sebastian Theophil</a></em></p>
+</div>
+<div class="paragraph">
+<p>Cross-platform development is hard because operating systems provide very different primitives. Sebastian would like to share the experiences his team made moving to a cross-platform codebase with students interested in programming, especially those interested in C&#43;&#43;.</p>
+</div>
+<div class="paragraph">
+<p>For twelve years, think-cell had been a Windows-only software company and their codebase of approximately 700k lines of code had accumulated many unintentional platform dependencies. Six years ago, the company decided to port their application to the Mac. This change has affected every part of the development process: the project organization, build system, and the way they program in C&#43;&#43; today.</p>
+</div>
+<div class="paragraph">
+<p>The commonly used cross-platform libraries such as Qt and boost were good tools to build on, but by themselves were not enough. For many concepts, such as mutexes, semaphores, or shared memory, they only offer a common interface to platform-specific objects with very different semantics and lifetimes. The team wanted light-weight, platform-independent C&#43;&#43; abstractions with identical semantics for rendering, internationalization, file I/O, mouse event handling, RPC calls, and error reporting. Developing these was challenging, firstly, because they had to define which semantics application needed and, secondly, the team had to implement them on each platform. This was not an easy process but Sebastian would argue it has improved the quality of code very much.</p>
+</div>
+<div class="paragraph">
+<p>By now, think-cell has moved on to the next challenge and has started to move some functionality to web applications. They wanted to reuse the existing code-base of course, and that meant writing web applications in expressive, type-safe C&#43;&#43;. Definitely an advantage in the book! They have built web applications using emscripten, but thanks to a student intern, they generate type-safe C&#43;&#43; bindings, beyond those provided by emscripten, from any TypeScript interface definition.</p>
+</div>
+<div class="paragraph">
+<p>In this talk, Sebastian will give you an overview of the C&#43;&#43; abstractions think-cell have implemented, focusing on the cross-platform problem areas where common semantics were hard to define due to limitations of either one of the operating systems, and of course, Sebastian will show you tools that let the company write a web application in C&#43;&#43;.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/4sKKbsDJRTce7SDUEbN2z1/740a81b9d0eb348639117e40ce9425fc/Sebastian_Theophil_Windows_macOS_and_the_Web_Lessons_from_cross-platform_development_at_think-cell_2020_11_12_17_30_47.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/4sKKbsDJRTce7SDUEbN2z1/740a81b9d0eb348639117e40ce9425fc/Sebastian_Theophil_Windows_macOS_and_the_Web_Lessons_from_cross-platform_development_at_think-cell_2020_11_12_17_30_47.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>

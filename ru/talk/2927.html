@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/2927.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/3.html"><img src="/images/events/heisenbug.jpg" alt="heisenbug" width="80"></a></span> <a href="../event/34.html">Heisenbug 2021 СПб (06.04.2021&#8201;&#8212;&#8201;09.04.2021)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="проблемы_и_решения_при_тестировании_тяжелого_энтерпрайза">Проблемы и решения при тестировании тяжелого энтерпрайза</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1357.html"><img src="/images/speakers/1357.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1357.html">Сергей Разуваев</a></em></p>
+</div>
+<div class="paragraph">
+<p>Доклад про автоматизацию тестирования и успешную борьбу с сопутствующими автоматизации проблемами: скорость тестов, стабильность тестов и организационные проблемы.</p>
+</div>
+<div class="paragraph">
+<p>Кейс автоматизации тестирования и успешной борьбы с сопутствующими автоматизации проблемами: скорость тестов, стабильность тестов и организационные проблемы. Данный доклад будет полезен как аудитории, которая только приступает к автоматизации процесса тестирования, так и достаточно опытным специалистам, а также тем, кто экспериментирует с новыми подходами.</p>
+</div>
+<div class="paragraph">
+<p>Тестирование очень крупного проекта никогда не бывает простым. Этому способствуют несколько факторов:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Специфика: тесты в цифровом банке для бизнеса сложные. Там работают не с задачами вроде корректности заполнения поля, а со сложными и зачастую длинными бизнес-кейсами, например, заполнение платежного поручения.</p>
+</li>
+<li>
+<p>Объем: тестов много, изменений, на которых нужно запускать тесты тоже много.</p>
+</li>
+<li>
+<p>Анализ: огромное количество отчетов и тестовых результатов усложняет анализ проблемных тестов.</p>
+</li>
+<li>
+<p>Структура: команд, пишущих тесты, также много и они разбросаны по разным подразделениям банка.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Это приводило к огромному количеству проблем:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>долгая и нестабильная работа тестов;</p>
+</li>
+<li>
+<p>позднее обнаружение дефектов (уже после попадания их в код релизной ветки);</p>
+</li>
+<li>
+<p>починка одних тестов ломала другие, прогонка всех тестов на ПР-чеках была, в принципе, невозможна.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Решение этих проблем заняло несколько лет и привело к созданию и внедрению ряда инструментов и технологий. Например, в Сбере появился фреймворк тестирования со своим механизмом поиска элементов и выполнения логики проверок на стороне браузера. Также возник портал с детальной статистикой по результатам тестов, харвестер — инструмент для анализа влияния изменений кода ПР на тесты и т.д.</p>
+</div>
+<div class="paragraph">
+<p>Внедрение этих инструментов существенно помогло, но обнажило еще ряд организационных и качественных проблем (скорость и стабильность). Но с ними Сбер тоже успешно справился. Как? Сергей расскажет в этом докладе.</p>
+</div>
+</div>
+  </div>
+</body>
+</html>

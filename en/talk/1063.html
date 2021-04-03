@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/1063.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/2.html"><img src="/images/events/dotnext.jpg" alt="dotnext" width="80"></a></span> <a href="../event/20.html">DotNext 2018 Msc (22.11.2018&#8201;&#8212;&#8201;23.11.2018)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="behind_the_burst_compiler_converting_net_il_to_highly_optimized_native_code_by_using_llvm">Behind the burst compiler, converting .NET IL to highly optimized native code by using LLVM</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/LKpyaVrby04?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/429.html"><img src="/images/speakers/0429.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/429.html">Alexandre Mutel</a></em></p>
+</div>
+<div class="paragraph">
+<p>In this talk you will discover the work behind the burst compiler done at Unity Technologies: a solution to compile a subset of the C# language to highly optimized native code using the LLVM compiler infrastructure.</p>
+</div>
+<div class="paragraph">
+<p>From mobile to console, games are often trying to push the limit of our hardware to provide a better gaming experience, in a very constrained time, the famous 60 FPS or even at a higher framerate, while still saving power consumption. With a budget of 16.6ms per frame, a game has to perform lots of complex calculations in different programming domains including physics, rendering, audio, machine learning.</p>
+</div>
+<div class="paragraph">
+<p>We believe that .NET and specially C# for games can provide a fantastic balance between productivity, safety and performance. But for certain critical code, we know also that C# is currently not able to deliver the performance that some games are looking for.</p>
+</div>
+<div class="paragraph">
+<p>In order to lower the gap between the performance of C# games versus a more optimized language like C&#43;&#43;, and even to go beyond what we can achieve with C&#43;&#43;, we have been developing for the past year at Unity Technologies the "burst" compiler: a solution to compile a subset of the C# language to highly optimized native code using the LLVM compiler infrastructure.</p>
+</div>
+<div class="paragraph">
+<p>In this talk, we will go through the details behind this challenge and how we were able to unlock it:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The challenges of generating better native code from IL/.NET than existing solutions like RyuJIT</p>
+</li>
+<li>
+<p>The subset of the C# language used to maximize the performance</p>
+</li>
+<li>
+<p>How to allow auto-vectorizing IL code?</p>
+</li>
+<li>
+<p>Using data-oriented programming in C# without a GC</p>
+</li>
+<li>
+<p>Integrate dedicated optimizations for mathematic functions</p>
+</li>
+<li>
+<p>Developing an automatic Structure-Of-Array (SOA) approach into the compiler</p>
+</li>
+<li>
+<p>How much difference between JIT and AOT in this solution?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Attendees will learn about Unity Technologies' approach to deliver a new JIT/AOT compiler for a subset of the C# language to unlock performance in games.</p>
+</div>
+<div class="paragraph">
+<p>The target audience consists of people interested in low-level optimizations, native code generation, compilers, IL bytecode, .NET JIT and AOT, and LLVM.</p>
+</div>
+</div>
+  </div>
+</body>
+</html>

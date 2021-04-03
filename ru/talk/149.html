@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/149.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/2.html"><img src="/images/events/dotnext.jpg" alt="dotnext" width="80"></a></span> <a href="../event/22.html">DotNext 2019 Мск (06.11.2019&#8201;&#8212;&#8201;07.11.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="roslyn_mастерство_статического_анализа">Roslyn: Mастерство статического анализа</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1011.html"><img src="/images/speakers/1011.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1011.html">Владимир Панченко</a></em></p>
+</div>
+<div class="paragraph">
+<p>В своем докладе Владимир расскажет о том, как улучшить качество кода, сократить время на решение типовых проблем при работе с фреймворками и поделится примерами из собственной практики.</p>
+</div>
+<div class="paragraph">
+<p>Используемые технологии: Roslyn, Visual Studio SDK (VSIX).</p>
+</div>
+<div class="paragraph">
+<p>Целевая аудитория: разработчики и билд-инженеры, особенно те, кто занимаются разработкой собственных фреймворков или работают с чужими, где готовый статический анализ кода отсутствует.</p>
+</div>
+<div class="paragraph">
+<p>Основные проблемы и их решения: улучшить качество кода, сократить время на решение типовых проблем при работе с фреймворками (особенно самописными).</p>
+</div>
+<div class="paragraph">
+<p>Что слушатели узнают из доклада:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>в каких случаях стоит писать свой собственный анализ кода, а в каких не стоит;</p>
+</li>
+<li>
+<p>сколько это стоит в терминах трудозатрат;</p>
+</li>
+<li>
+<p>введение в Roslyn: как создать новый анализатор, как его протестировать, как создать code fix;</p>
+</li>
+<li>
+<p>как сделать полноценную интеграцию в процесс разработки: работа с legacy-кодом, интеграция в CI/CD, пулл-реквесты;</p>
+</li>
+<li>
+<p>подводные камни: версионность и обратная совместимость Roslyn SDK, особенности интеграции с Visual Studio;</p>
+</li>
+<li>
+<p>как ещё ускорить процесс разработки, используя Roslyn для рефакторинга, форматирования, улучшения читаемости кода и т.п.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Какой опыт спикер имеет в этой области: уже полтора года команда Владимира разрабатывает средства статического анализа и extension к Visual Studio с использованием Roslyn. Данный проект родился как решение следующей проблемы: компания имеет масштабную платформу (Acumatica xRP Framework), на которой прикладные разработчики внутри самой компании и в компаниях-партнёрах пишут бизнес-логику (ERP и различные расширения к ней). Поэтому перед компанией спикера встала задача улучшения качества кода, написанного на платформе компании, проверки его на соответствие гайдлайнам компании, сертификации решений партнёров, сокращения затрачиваемого на разработку времени за счёт избегания наиболее распространённых ошибок ещё на этапе написания кода (т.к. ошибки сразу показываются во время статического анализа), и ускорения разработки за счёт дополнительного тулинга (кастомная подсветка синтаксиса, кастомная навигация по коду, форматирование, рефакторинги и т.п.).</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Roslyn с нами уже давно и не раз на DotNext были доклады «как написать свой анализатор». Но Владимир и его команда подошли к вопросу основательно и в докладе будут озвучены не только простые соображения «как писать анализатор», но и то сколько это стоит, как его поставлять команде, какие подводные камни можно встретить.</strong></p>
+</div>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/9n3x4rtjlya6/5NUCLWWohm5Lj2kODAzYyS/c10dcd2e75df10acf3042c6645473b7a/100745_1750911309_Vladimir_Panchenko_Roslyn_Masterstvo_staticheskogo_analiza.pdf" class="bare">https://assets.ctfassets.net/9n3x4rtjlya6/5NUCLWWohm5Lj2kODAzYyS/c10dcd2e75df10acf3042c6645473b7a/100745_1750911309_Vladimir_Panchenko_Roslyn_Masterstvo_staticheskogo_analiza.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

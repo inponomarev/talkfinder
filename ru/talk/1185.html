@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/1185.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/1.html">C++ Russia 2019 Мск (19.04.2019&#8201;&#8212;&#8201;20.04.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="концепты_упрощаем_реализацию_классов_std_utility">Концепты: упрощаем реализацию классов std utility</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/vYzjV0xSqJE?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/346.html"><img src="/images/speakers/0346.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/346.html">Андрей Давыдов</a></em></p>
+</div>
+<div class="paragraph">
+<p>Поговорим немного о концептах в общем и о том, как они упрощают реализацию generic-классов.</p>
+</div>
+<div class="paragraph">
+<p>Появляющиеся в C&#43;&#43;20 концепты — давно и широко обсуждаемая тема. Несмотря на избыток материала, накопившегося за годы (в т. ч. выступления экспертов мирового уровня), среди прикладных программистов (не засыпающих ежедневно в обнимку со стандартом) все еще остается неразбериха, что же такое C&#43;&#43;20-концепты и так ли они нам нужны, если есть проверенный годами enable_if. Частично виной тому то, как концепты эволюционировали за ~15 лет (Concepts Full + Concept Map &#8594; Concepts Lite), а частично то, что концепты получились непохожими на аналогичные средства в других языках (Java/С# generic bounds, Rust traits, &#8230;&#8203;).</p>
+</div>
+<div class="paragraph">
+<p>Доклад начнется с краткого обзора concept-related нововведений C&#43;&#43;20, после чего мы посмотрим на реализацию некоторых классов и функций STL, сравнивая C&#43;&#43;17 и C&#43;&#43;20-решения. К примеру:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>для реализации std::optional сейчас приходится использовать иерархию наследования глубины 7, в C&#43;&#43;20 это будет не нужно;</p>
+</li>
+<li>
+<p>для default-конструктора std::pair сейчас требуется 2 шаблонные функции, в C&#43;&#43;20 — 1 нешаблонная;</p>
+</li>
+<li>
+<p>часто шаблонные классы частично специализируются, в случае, когда у шаблонных параметров есть какие-то специальные свойства, c концептами это делать удобнее и правильнее.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>От слушателей предполагается общее представление, что такое концепты и SFINAE. Также будет полезно знакомство со стандартной библиотекой C&#43;&#43;, знание тонкостей и деталей реализации не требуется.</p>
+</div>
+</div>
+  </div>
+</body>
+</html>

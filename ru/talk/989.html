@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/989.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/1.html"><img src="/images/events/devoops.jpg" alt="devoops" width="80"></a></span> <a href="../event/6.html">DevOops 2018 (14.10.2018&#8201;&#8212;&#8201;14.10.2018)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="чему_мы_научились_пока_делали_собственную_систему_уведомлений_о_нештатных_ситуациях">Чему мы научились, пока делали собственную систему уведомлений о нештатных ситуациях</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/t_tk-Ewp4V0?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/369.html"><img src="/images/speakers/0369.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/369.html">Алексей Кирпичников</a></em></p>
+</div>
+<div class="paragraph">
+<p>Когда разрабатываешь систему алертинга, нужно принимать решения, которые находятся на стыке разработки, администрирования и дизайна (в хорошем смысле каждого из этих слов). Об этом и поговорим.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий Программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Один из авторов отличной опенсорсной системы мониторинга делится размышлениями на тему, почему оно именно так устроено — завораживающие байки прилагаются!</strong></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>Иногда искусственный интеллект должен принять решение, от которого зависит здоровье человека. Наверняка вы подумали о беспилотных автомобилях, но наша история проще: мы делаем систему, которая будит людей по ночам.</p>
+</div>
+<div class="paragraph">
+<p>Представьте, что система мониторинга следит за состоянием десяти сервисов и в какой-то момент понимает, что пропали метрики всех сервисов. Кого нужно разбудить? Админов всех сервисов? Это ошибка. Скорее всего, сломалась сама система мониторинга. А что делать, если пропали метрики пяти сервисов? А если трех?</p>
+</div>
+<div class="paragraph">
+<p>Другой пример. Если на диске 90% свободного места — это хорошо. Если 1% — наверное, плохо. А если нет данных? Пожалуй, это хуже, чем если свободного места много. Но лучше ли это, чем если его совсем нет?</p>
+</div>
+<div class="paragraph">
+<p>Обычно в системе алертинга можно через веб-интерфейс или файлы конфигурации настроить правила отправки уведомлений. А что, если у системы алертинга будет API, через который можно автоматически создавать тысячи правил? Приведет ли это к качественному изменению поведения пользователей или только слегка облегчит однотипные операции?</p>
+</div>
+<div class="paragraph">
+<p>Когда разрабатываешь систему алертинга, нужно принимать решения, которые находятся на стыке разработки, администрирования и дизайна (в хорошем смысле каждого из этих слов). Об этом и поговорим в докладе. Все решения были выстраданы и опробованы при разработке системы [Moira](<a href="https://github.com/moira-alert" class="bare">https://github.com/moira-alert</a>), которая используется в Контуре, Avito и Яндекс.Деньгах.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://downloads.ctfassets.net/oxjq45e8ilak/55koGPSUoUiguAYS6Sw6ME/ba89d588965743eda9308baddd0dfcee/Alexey_Kirpichnikov_What_did_we_learn_while_making_our_own_alerting_system.pdf" class="bare">https://downloads.ctfassets.net/oxjq45e8ilak/55koGPSUoUiguAYS6Sw6ME/ba89d588965743eda9308baddd0dfcee/Alexey_Kirpichnikov_What_did_we_learn_while_making_our_own_alerting_system.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

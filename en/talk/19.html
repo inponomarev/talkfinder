@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/19.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/8.html"><img src="/images/events/jokerconf.jpg" alt="jokerconf" width="80"></a></span> <a href="../event/68.html">Joker 2019 (25.10.2019&#8201;&#8212;&#8201;26.10.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="a_race_of_two_compilers_graalvm_jit_versus_hotspot_jit_c2_which_one_offers_better_runtime_performance">A race of two compilers: GraalVM JIT versus HotSpot JIT C2. Which one offers better runtime performance?</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/126.html"><img src="/images/speakers/0126.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/126.html">Ionut Balosin</a></em></p>
+</div>
+<div class="paragraph">
+<p>Checking the efficiency of the new, state of the art, GraalVM JIT Compiler in comparison to JIT C2. A side by side comparison from a performance standpoint on the same source code.</p>
+</div>
+<div class="paragraph">
+<p>The talk reveals how traditional Just In Time Compiler (e.g. JIT C2) from HotSpot/OpenJDK internally manages runtime optimizations for hot methods in comparison to the new, state of the art, GraalVM JIT Compiler on the same source code, emphasizing the internals and strategies used by each Compiler to achieve better performance in most common situations (or code patterns). For each optimization, there is Java source code and the corresponding generated assembly code to prove what happens under the hood. Each test is covered by a dedicated benchmark (JMH), timings and conclusions.</p>
+</div>
+<div class="paragraph">
+<p>Few topics of the agenda:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>[Parcial] Scalar replacement;</p>
+</li>
+<li>
+<p>Virtual calls;</p>
+</li>
+<li>
+<p>Vectorization and Loop optimizations (few cases).</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The tools used during my research study are JITWatch, Java Measurement Harness, and perf. All test scenarios will be launched against the latest official Java release (e.g. version 12).</p>
+</div>
+<div class="paragraph">
+<p>Target audience:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>senior developers;</p>
+</li>
+<li>
+<p>performance engineers.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The talk is based on Ionut&#8217;s <a href="https://ionutbalosin.com/2019/04/jvm-jit-compilers-benchmarks-report-19-04/">article</a> which raised a lot of interest across Compiler guys and he got in contact with few of them.</p>
+</div>
+<div class="paragraph">
+<p>This is a kind of interesting talk speaker would like to share with you at JokerConf.</p>
+</div>
+</div>
+  </div>
+</body>
+</html>

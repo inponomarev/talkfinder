@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/121.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/2.html">C++ Russia 2019 SPb (31.10.2019&#8201;&#8212;&#8201;01.11.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="using_slab_allocators_in_high_performance_network_applications">Using slab allocators in high performance network applications</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/991.html"><img src="/images/speakers/0991.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/991.html">Nikolay Beloborodov</a></em></p>
+</div>
+<div class="paragraph">
+<p>Nikolay will tell how he and his team solved the problem of memory fragmentation and what limitation they had to face in the process.</p>
+</div>
+<div class="paragraph">
+<p>Nikolay works for the company that protects the business from various threats on the Internet. This means parsing, DDoS attacks, click frauds and much more. Such solutions are high performance network applications that can pass large traffic volume through itself per unit time. Despite all the disadvantages that are typical for C&#43;&#43; in the enterprise perhaps modern C&#43;&#43; is the most suitable programming language for such tasks. Not only because he can provide suitable performance and is itself a powerful tool, but also because with new standards and such frameworks as boost the learning curve is not as high as it might seem first.</p>
+</div>
+<div class="paragraph">
+<p>A lot of network applications for work with HTTP traffic have classic architecture. There you meet a server, client, sessions, pools, parsers, and serializers. It&#8217;s a common set of classes that is very convenient to develop on boost.asio and boost.beast today. But if we&#8217;re talking about a serious traffic volume examples that each of us copies from boost.asio documentation and develops further for tasks may not be as good as it might seem. They require careful improvement in a serious product.</p>
+</div>
+<div class="paragraph">
+<p>Inside of Nikolay&#8217;s team, a long way has been done to develop similar code. They supported many features from rfc for http 1.1. They implemented their lines and stream buffers compatible with boost.asio.streambuf which allowed minimizing memory copying between server and client sessions in the moment of traffic proxying. As a result, we got a network application that works well in production and can withstand heavy loads and solve the business task.</p>
+</div>
+<div class="paragraph">
+<p>But nothing is perfect. A problem which Nikolay and his team encountered at a late stage is memory fragmentation caused by the constant creation of server sessions to handle incoming connections. Problem that could not be solved with help of tcmalloc and jemalloc was solved due to slab allocators (C&#43;&#43; covering over the small framework from Tarantool) which reduced the time application spent in malloc and new by more than two times and saved us from memory fragmentation. This decision imposed certain restrictions on the application architecture adding its difficulties in writing asynchronous and multi-threaded code on boost.asio, but it gave the expected result.</p>
+</div>
+<div class="paragraph">
+<p>In this talk will be discussed how Nikolay and his team overcame the difficulties. Speaker will also mention the application architecture which required such difficult optimizations and proceeds to slab allocators and boost.asio. Nikolay expects that this topic may be useful for developers of high performance network applications.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/2fI4wLgo2MmwDRsj0Gjod7/5ed8bde194c04345f5c78c80550b48c4/100690_1341752961_Nikolay_Beloborodov_Primeneniye_slab-allokatorov_v_vysokonagruzhennykh_setevykh_prilozheniyakh.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/2fI4wLgo2MmwDRsj0Gjod7/5ed8bde194c04345f5c78c80550b48c4/100690_1341752961_Nikolay_Beloborodov_Primeneniye_slab-allokatorov_v_vysokonagruzhennykh_setevykh_prilozheniyakh.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>

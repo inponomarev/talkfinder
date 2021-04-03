@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/2647.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/9.html"><img src="/images/events/mobius.jpg" alt="mobius" width="80"></a></span> <a href="../event/80.html">Mobius 2020 Мск (11.11.2020&#8201;&#8212;&#8201;14.11.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="kotlin_multiplatform_в_мобильных_яндекс_картах_с_позиции_ios_разработчика">Kotlin multiplatform в мобильных Яндекс.Картах с позиции iOS-разработчика</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1375.html"><img src="/images/speakers/1375.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1375.html">Михаил Куренков</a></em></p>
+</div>
+<div class="paragraph">
+<p>Зачем Яндекс.Картам мультиплатформа? Зачем использовать Kotlin, когда есть другие кроссплатформенные решения? Об этом и многом другом вы узнаете из доклада Михаила.</p>
+</div>
+<div class="paragraph">
+<p>Яндекс.Карты — огромное приложение с большим функционалом.</p>
+</div>
+<div class="paragraph">
+<p>Долгие годы команда Яндекса дублировала этот функционал на iOS и Android — они разъезжались в логике. Чинили одни и те же баги. Страдали от невозможности переиспользовать код.</p>
+</div>
+<div class="paragraph">
+<p>Перед Михаилом и его коллегами стояла задача — плавно и безболезненно создать мультиплаформенный компонент внутри приложения.</p>
+</div>
+<div class="paragraph">
+<p>Они посчитали, что самое перспективное решение в данных условиях — Kotlin Multiplatform, и начали свой путь внедрения этой технологии.</p>
+</div>
+<div class="paragraph">
+<p>Добавление мультиплатформенного модуля таило в себе не только технические сложности, но и организационные. Добавив общий компонент, получили место из которого можно сломать сразу оба клиента.</p>
+</div>
+<div class="paragraph">
+<p>В ходе внедрения Kotlin Multiplatform команда Яндекса:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>создала схему подключения мультиплатформенного модуля;</p>
+</li>
+<li>
+<p>адаптировала процессы, перестроила CI;</p>
+</li>
+<li>
+<p>написала свои скрипты и плагины для Cocoapods и Gradle;</p>
+</li>
+<li>
+<p>решила множество технических и архитектурных проблем.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Цель доклада:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>показать пользу от мультиплатформенного решения в большей продуктовой команде;</p>
+</li>
+<li>
+<p>показать сложности подключения Kotlin Multiplatform в команде, где не все знакомы с Kotlin;</p>
+</li>
+<li>
+<p>показать один из способов перенастройки процессов с учетом мультиплатформенной разработки.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Слушатель узнает:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>что Kotlin Multiplatform возможно подружить с нативной разработкой;</p>
+</li>
+<li>
+<p>о сложностях разработки мультиплатформенного компонента. Не только со стороны кода и инструментов, но и со стороны процессов.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Целевая аудитория: iOS и Android разработчики.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/2grufn031spf/5gNiNjGmuV7NIa40xP32eq/3b84c983ebcf7048d39fc2b16f954e29/Mobius_2020_Kurenkov_KotlinNative_in_YandexMaps_v3_5__1_.pdf" class="bare">https://assets.ctfassets.net/2grufn031spf/5gNiNjGmuV7NIa40xP32eq/3b84c983ebcf7048d39fc2b16f954e29/Mobius_2020_Kurenkov_KotlinNative_in_YandexMaps_v3_5__1_.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

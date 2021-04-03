@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/231.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/5.html"><img src="/images/events/hydra.jpg" alt="hydra" width="80"></a></span> <a href="../event/45.html">Hydra 2019 (11.07.2019&#8201;&#8212;&#8201;12.07.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="reduce_your_storage_costs_with_transient_replication_and_cheap_quorums">Reduce your storage costs with Transient Replication and Cheap Quorums</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/pEtRBid5oeA?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/393.html"><img src="/images/speakers/0393.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/393.html">Alex Petrov</a></em></p>
+</div>
+<div class="paragraph">
+<p>We discuss Witness Replicas, a replication scheme used in Spanner and Megastore, and Apache Cassandra implementation of this concept, called Transient Replication and Cheap Quorums.</p>
+</div>
+<div class="paragraph">
+<p>In eventually consistent systems, when a node failures or network partition occurs, we&#8217;re presented with a trade-off: to execute a request and sacrifice consistency or reject execution and sacrifice availability. In such system, quorums, overlapping node subsets guaranteeing at least one node to hold the most recent value, can be a good middle-ground. We can tolerate failures and loss of connectivity for some nodes while still serving latest results.</p>
+</div>
+<div class="paragraph">
+<p>Quorum-based replication schemes incur high storage costs: we have to store redundant values on several nodes to guarantee enough copies are going to be available in case of failure. It turns out that we do not have to store data on each replica. We can reduce storage and compute resources by storing the data only a subset of nodes, and only use the other nodes (Transient Replicas), for redundancy in failure scenarios.</p>
+</div>
+<div class="paragraph">
+<p>In this talk, we discuss Witness Replicas, a replication scheme used in Spanner and Megastore, and Apache Cassandra implementation of this concept, called Transient Replication and Cheap Quorums.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/yJJsCdzUSsEjxB5JVnoUz/39e07a79e69280c72df53be0acce9615/100530_1995736422_Alex_Petrov_Reduce_your_storage_costs_with_Transient_Replication_and_Cheap_Quorums.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/yJJsCdzUSsEjxB5JVnoUz/39e07a79e69280c72df53be0acce9615/100530_1995736422_Alex_Petrov_Reduce_your_storage_costs_with_Transient_Replication_and_Cheap_Quorums.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

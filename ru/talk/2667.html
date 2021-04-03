@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/2667.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/4.html">C++ Russia 2020 СПб (11.11.2020&#8201;&#8212;&#8201;14.11.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="unique_pseudofunction_n_overloads_for_the_price_of_one">Unique_pseudofunction — N overloads for the price of one</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1390.html"><img src="/images/speakers/1390.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1390.html">Filipp Gelman</a></em></p>
+</div>
+<div class="paragraph">
+<p>This talk will present a class template that behaves almost like <code>any_invocable</code>, but lacks one of its key restrictions: having just one overload of <code>operator()</code>.</p>
+</div>
+<div class="paragraph">
+<p>This talk will present a class template that behaves almost like <code>any_invocable</code>, but lacks one of its key restrictions: having just one overload of <code>operator()</code>.</p>
+</div>
+<div class="paragraph">
+<p><code>std::function</code> is an excellent tool for interface design. It encapsulates almost any object that is invocable the right way. <code>any_invocable</code> is an even better tool. It can encapsulate some types that <code>std::function</code> can&#8217;t — the ones that are move-only. Unfortunately, it is still invocable in just one way. You get one list of argument types and that&#8217;s what you must pass.</p>
+</div>
+<div class="paragraph">
+<p>What if the object you want to pass is invocable in more than one way? What if it&#8217;s <code>operator()</code> is a template that you will instantiate with N different types? What if it is a variadic template to which you will pass 0-N arguments? What if you use tag dispatch to do N different things?</p>
+</div>
+<div class="paragraph">
+<p>If you want these things, as well as the type erasure offered by <code>std::function</code> and the move-only support offered by <code>any_invocable</code>, then <code>unique_pseudofunction</code> is the class for you.</p>
+</div>
+<div class="paragraph">
+<p>Follow the path Filipp took towards realizing that <code>unique_pseudofunction</code> is the solution to most problems. We&#8217;ll break this down into the following steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>building a simple non-generic <code>any_invocable</code>;</p>
+</li>
+<li>
+<p>making it generic;</p>
+</li>
+<li>
+<p>adding a small buffer optimization;</p>
+</li>
+<li>
+<p>extending it to support more than one overload of <code>operator()</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>We will also look in close detail at several problems solved along the way, and several others that are still unsolved.</p>
+</div>
+<div class="paragraph">
+<p>This talk involves small amounts of C&#43;&#43;17 and large amounts of template metaprogramming, function references, and type erasure.</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/5nkk6m99j4Xh2zVahxHcwG/a989ebb62bcba6cb8ec74173f21078ff/Filipp_Gelman_Unique_pseudofunction__N_overloads_for_the_price_of_one_2020_11_13_12_58_32.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/5nkk6m99j4Xh2zVahxHcwG/a989ebb62bcba6cb8ec74173f21078ff/Filipp_Gelman_Unique_pseudofunction__N_overloads_for_the_price_of_one_2020_11_13_12_58_32.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/2469.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/4.html"><img src="/images/events/holyjs.jpg" alt="holyjs" width="80"></a></span> <a href="../event/43.html">HolyJS 2020 СПб (22.06.2020&#8201;&#8212;&#8201;26.06.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="оборачиваем_существующее_rest_api_в_graphql_методология_за_1000000_рублей">Оборачиваем существующее REST API в GraphQL (методология за 1000000 рублей)</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/CA_ZVf5lbWI?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/660.html"><img src="/images/speakers/0660.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/660.html">Павел Черторогов</a></em></p>
+</div>
+<div class="paragraph">
+<p>Вам нужен GraphQL, но ваш бэкенд уже лет как 10 написан на REST API, и переписать его просто нереально? Не беда! Вы можете обернуть его в GraphQL. GraphQL как бы станет удобной проксей для доступа к вашему «старому» API.</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;А реально обернуть REST API в GraphQL? И как сделать R&amp;D для этой технологии?</p>
+</div>
+<div class="paragraph">
+<p>Обычно обкатку технологии принято делать на TodoMVC. Так и поступим.&lt;/p&gt;
+&lt;p&gt;А коль Павел человек непростой, то придется брать и непростое Todo-приложение, к примеру, систему управления проектами Wrike.&lt;/p&gt;
+&lt;p&gt;Возьмем &lt;a href="https://developers.wrike.com/api/v4"&gt;REST API&lt;/a&gt; от Wrike:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;22 entity;&lt;/li&gt;
+&lt;li&gt;87 методов.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;И потратим 160 часов на:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;134 GraphQL-типа;&lt;/li&gt;
+&lt;li&gt;1002 поля и аргумента;&lt;/li&gt;
+&lt;li&gt;51 явную прямую связь между entity по id;&lt;/li&gt;
+&lt;li&gt;26 неявных обратных связей через фильтры.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Весь полученный опыт Павел сожмет в часовой доклад. Он поделится наработками, набитыми шишками, идеями и мыслями о том, как хорошо и качественно обернуть REST API в GraphQL. Приходите посмотреть, будет интересно!&lt;/p&gt;
+&lt;p&gt;А перед докладом можно посмотреть на то, что получилось, и о чем спикер будет рассказывать:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Живой &lt;a href="https://graphql-wrike.herokuapp.com/"&gt;GraphQL-прокси&lt;/a&gt;;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://graphql-wrike.herokuapp.com/voyager"&gt;Диаграмма связей&lt;/a&gt; настоящего «волосатого» GraphQL;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/nodkz/wrike-graphql"&gt;Репозитарий&lt;/a&gt; с кодом.&lt;/li&gt;
+&lt;/ul&gt;</p>
+</div>
+</div>
+  </div>
+</body>
+</html>

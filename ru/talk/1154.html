@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/1154.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/9.html"><img src="/images/events/mobius.jpg" alt="mobius" width="80"></a></span> <a href="../event/76.html">Mobius 2018 Мск (08.12.2018&#8201;&#8212;&#8201;09.12.2018)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="стриминг_и_воспроизведение_видео_поверх_голых_сокетов_и_кодеков">Стриминг и воспроизведение видео поверх голых сокетов и кодеков</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/e1JYFRwHzkQ?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/206.html"><img src="/images/speakers/0206.jpg" alt="img" width="100" height="100"></a></span> <span class="image"><a class="image" href="../speaker/815.html"><img src="/images/speakers/0815.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/206.html">Александр Тоболь</a></em>, <em><a href="../speaker/815.html">Иван Григорьев</a></em></p>
+</div>
+<div class="paragraph">
+<p>Поговорим про стриминг и воспроизведение видео в реальном времени, поборем задержки и утилизацию CPU и научимся писать свои плееры.</p>
+</div>
+<div class="paragraph">
+<p>Многие разработчики воспринимают видеоплеер как данность (AVPlayer или ExoPlayer/MediaPlayer). Это хорошие решения, однако можно добиться лучших результатов, используя голые сокет и кодек.</p>
+</div>
+<div class="paragraph">
+<p>В этом докладе мы посмотрим, как уменьшить задержку старта видео, задержку между стримером и зрителем и утилизацию CPU при стриминге и воспроизведении. Сначала улучшим AVPlayer, а потом заменим его на свой DASH-плеер. Расскажем, как правильно готовить ExoPlayer, и сделаем свой RTMP-плеер на Android. Рассмотрим протоколы стриминга HLS/DASH/RTMP/webRTC/rawUDP.</p>
+</div>
+<div class="paragraph">
+<p>Все будет рассказано на примере мобильного клиента Одноклассников и приложения OK Live — первого Android-приложения для мобильного стриминга в качестве 1080p.</p>
+</div>
+</div>
+  </div>
+</body>
+</html>

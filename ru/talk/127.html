@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/127.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/0.html"><img src="/images/events/cpprussia.jpg" alt="cpprussia" width="80"></a></span> <a href="../event/2.html">C++ Russia 2019 СПб (31.10.2019&#8201;&#8212;&#8201;01.11.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="the_c20_synchronization_library">The C++20 synchronization library</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/985.html"><img src="/images/speakers/0985.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/985.html">Bryce Adelstein Lelbach</a></em></p>
+</div>
+<div class="paragraph">
+<p>C&#43;&#43;20 introduces a range of number of new synchronization primitives designed for the modern era; in this talk, you&#8217;ll learn how to use these new tools to write scalable C&#43;&#43; software.</p>
+</div>
+<div class="paragraph">
+<p>In the decade since C&#43;&#43;11 shipped, the hardware landscape has changed drastically. 10 years ago, we were still in the early stages of the concurrent processing revolution; 2 to 4 hardware threads were common and more than 10 was "many". Our tolerance for synchronization latency was greater; we were willing to pay microseconds and milliseconds.</p>
+</div>
+<div class="paragraph">
+<p>Today, dozens and hundreds of threads are common, and "many" means hundreds of thousands. Concurrent applications are plagued by contention challenges that were unimaginable a decade ago. With the traditional tools we have today, programmers often have to choose between unacceptable contention and unacceptable high latency when synchronizing between threads.</p>
+</div>
+<div class="paragraph">
+<p>The C&#43;&#43;20 synchronization library brings solutions — new lightweight synchronization primitives that can efficiently marshall hundreds of thousands of threads:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>std::atomic::wait</code>/<code>std::atomic::notify_*</code>: Efficient atomic waiting.</p>
+</li>
+<li>
+<p><code>std::atomic_ref</code>: Atomic operations on non-<code>std::atomic</code> objects.</p>
+</li>
+<li>
+<p><code>std::counting_semaphore</code>: Lightweight access coordination.*</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>*- <code>std::latch</code> and <code>std::barrier</code>: Marshalling groups of threads.</p>
+</div>
+<div class="paragraph">
+<p>In this example-oriented talk, you&#8217;ll learn how and when to use these new tools to build scalable, modern C&#43;&#43; applications that can run in parallel on virtually any hardware, from embedded controllers to server CPUs to modern GPUs.</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>Комментарий программного комитета:</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Брайс рассказывает о скором будущем: C&#43;&#43;20 уже совсем близко и в докладе хорошо показаны проблемы текущих примитивов синхронизации, и продемонстрированы решения в C&#43;&#43;20.</strong></p>
+</div>
+</div>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/4PZyUejd9S2WhlBThEpXn4/4e0fef39cc71ee23fb482d7f4396fc05/100543_449723386_Bryce_Adelstein_Lelbach_The_C20_synchronization_library.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/4PZyUejd9S2WhlBThEpXn4/4e0fef39cc71ee23fb482d7f4396fc05/100543_449723386_Bryce_Adelstein_Lelbach_The_C20_synchronization_library.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

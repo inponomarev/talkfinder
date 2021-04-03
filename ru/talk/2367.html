@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/2367.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/10.html"><img src="/images/events/sptdc.jpg" alt="sptdc" width="80"></a></span> <a href="../event/83.html">SPTDC 2020 (06.07.2020&#8201;&#8212;&#8201;09.07.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="reasoning_about_data_consistency_in_distributed_systems">Reasoning about data consistency in distributed systems</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1201.html"><img src="/images/speakers/1201.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1201.html">Alexey Gotsman</a></em></p>
+</div>
+<div class="paragraph">
+<p>We will present modern methods for formally specifying consistency models of distributed systems and reasoning about how their choice affects system correctness.</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;Modern distributed systems often partition and replicate the data they manage across a large number of nodes and a wide geographical span. A key challenge that such systems have to address is maintaining data consistency in the presence of concurrent modifications at different nodes and despite inevitable failures. There is a spectrum of consistency models that a system can provide, and navigating it is far from trivial. Strong consistency models give the programmer the illusion that all nodes are always in sync, but hinder system scalability.</p>
+</div>
+<div class="paragraph">
+<p>In contrast, weak consistency models expose the programmer to the effects of replication in exchange for more scalable implementations. We will present modern methods for formally specifying consistency models of distributed systems and reasoning about how their choice affects system correctness. &lt;/p&gt;
+&lt;p&gt;References&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/final-printversion-10-5-14.pdf"&gt;Sebastian Burckhardt. Principles of Eventual Consistency. Now Publishers, 2014.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pages.lip6.fr/Marc.Shapiro/papers/Comprehensive-CRDTs-RR7506-2011-01.pdf"&gt;Marc Shapiro, Nuno Preguiça, Carlos Baquero, Marek Zawirski. A comprehensive study of Convergent and Commutative Replicated Data Types. INRIA Technical Report, 2011.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://software.imdea.org/~gotsman/papers/distrmm-popl14.pdf"&gt;Sebastian Burckhardt, Alexey Gotsman, Hongseok Yang, and Marek Zawirski. Replicated data types: specification, verification, optimality. POPL&#39;14.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://software.imdea.org/~gotsman/papers/logic-popl16.pdf"&gt;Alexey Gotsman, Hongseok Yang, Carla Ferreira, Mahsa Najafzadeh, and Marc Shapiro. &#39;Cause I&#39;m strong enough: reasoning about consistency choices in distributed systems. POPL&#39;16.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</p>
+</div>
+</div>
+  </div>
+</body>
+</html>

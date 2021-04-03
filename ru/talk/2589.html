@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/ru/events.html">События</a>
+          <a href="/ru/speakers.html">Спикеры</a>
+          <a href="/ru/search.html">Поиск</a>
+          <a href="/ru/about.html">О проекте</a>
+          <a class="lang" href="/en/talk/2589.html">EN</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/3.html"><img src="/images/events/heisenbug.jpg" alt="heisenbug" width="80"></a></span> <a href="../event/33.html">Heisenbug 2020 Мск (04.11.2020&#8201;&#8212;&#8201;07.11.2020)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="автоматизация_cicd_управление_ордой_jenkins_джобов">Автоматизация CI/CD. Управление ордой Jenkins джобов</h4>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/1346.html"><img src="/images/speakers/1346.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/1346.html">Вячеслав Лукашевич</a></em></p>
+</div>
+<div class="paragraph">
+<p>Навыки работы с CI позволяют автоматизаторам тестирования выстраивать более эффективные и продвинутые инструменты для проверок. Доклад будет вокруг этих возможностей, используя Jenkins и Gitlab.</p>
+</div>
+<div class="paragraph">
+<p>&lt;p&gt;В наши дни, когда мы говорим о запуске автотестов, мы чаще всего подразумеваем их выполнение в контексте Continuous Integration (CI).</p>
+</div>
+<div class="paragraph">
+<p>Обычно QA-инженеры концентрируются на подготовке самих тестов и тестового фреймворка, а инструменты CI рассматриваются как что-то, куда надо просто вставить тесты. Зачастую CI-инструменты отданы на откуп DevOps-инженерам и разработчикам.</p>
+</div>
+<div class="paragraph">
+<p>Тем не менее навыки и понимание работы на уровне CI позволяют QA-инженерам улучшать подходы управлением автоматизацией.&lt;/p&gt;
+&lt;p&gt;В Evolution Engineering используют Jenkins — популярную open source-систему, в которой много функциональности реализовано через плагины. Раньше было много настроенных вручную Jenkins-билдов для регрессионных тестов и их поддержка, и расширение были неудобным, неэффективным. В компании Вячеслава внедрили автоматизацию Jenkins, которая позволила полностью настраивать его через код. Это позволило ускорить создание новых билдов и улучшило их поддержку, а также подтолкнуло развитие экспертизы CI/CD среди QA-инженеров.&lt;/p&gt;
+&lt;p&gt;Сейчас Evolution Engineering активно двигается в сторону Continuous Delivery (CD) и старый подход с регрессионными E2E-тестами их уже не устраивает. Одним из самых сложных мест с большими потребностями автоматизации был фронтенд, который хранится в монорепозитории, над которым работает около 200 инженеров. Чтобы улучшить и ускорить тестирование, команда сконцентрировалась на проверках конкретных изменений кода и интеграции автоматизации с процессом ревью кода в GitLab. У Jenkins есть Gitlab Plugin, обеспечивающий базовую интеграцию, а еще GitLab предоставляет богатый API-интерфейс. Команда подключила разнообразные Jenkins-билды (тесты и не только) к Merge Requests: они запускаются на разные события и дают уверенность в том, что код был достаточно хорошо проверен. Комментарии в Merge Request используются как интерфейс вывода всей информации по проверкам, так и чтобы запускать и перезапускать билды.</p>
+</div>
+<div class="paragraph">
+<p>В итоге получилась экосистема автоматизации вокруг возможностей Gitlab и Jenkins, которую в Evolution Engineering постоянно наращивают и улучшают, и это позволяет выпускать новые версии игрового фронтенда в продукцию на ежедневной основе.&lt;/p&gt;</p>
+</div>
+<div class="ulist">
+<div class="title">Ссылки:</div>
+<ul>
+<li>
+<p><a href="https://downloads.ctfassets.net/ut4a3ciohj8i/4ljz2XPBZalMKE8l12c0di/e62bfbfeae732144a15b6bb1eebbae62/Vyacheslav_Lukashevich_Avtomatizatsiya_CICD._Upravleniye_ordoy_Jenkins_dzhobov_2020_11_05_11_23_34.pdf" class="bare">https://downloads.ctfassets.net/ut4a3ciohj8i/4ljz2XPBZalMKE8l12c0di/e62bfbfeae732144a15b6bb1eebbae62/Vyacheslav_Lukashevich_Avtomatizatsiya_CICD._Upravleniye_ordoy_Jenkins_dzhobov_2020_11_05_11_23_34.pdf</a></p>
+</li>
+</ul>
+</div>
+</div>
+  </div>
+</body>
+</html>

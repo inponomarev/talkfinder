@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+
+  <meta name="description" content="JUG Talks Finder">
+  <meta name="author" content="Ivan Ponomarev">
+  <link rel="stylesheet" href="/css/foundation.css">
+  <link rel="stylesheet" href="/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/coderay.css">
+  <link rel="stylesheet" href="/css/asciidoctor.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(64729483, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64729483" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+  <script src="/js/vendor/modernizr.js"></script>
+  <script src="/js/toc.js"></script>
+  <script src="/js/simple-jekyll-search.min.js"></script>
+</head>
+<body>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="/en/events.html">Events</a>
+          <a href="/en/speakers.html">Speakers</a>
+          <a href="/en/search.html">Search</a>
+          <a href="/en/about.html">About</a>
+          <a class="lang" href="/ru/talk/226.html">RU</a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <div class="paragraph">
+<p><span class="image"><a class="image" href="../evttype/5.html"><img src="/images/events/hydra.jpg" alt="hydra" width="80"></a></span> <a href="../event/45.html">Hydra 2019 (11.07.2019&#8201;&#8212;&#8201;12.07.2019)
+</a></p>
+</div>
+<div class="sect3">
+<h4 id="the_azul_hardware_transactional_memory_experience">The Azul Hardware Transactional Memory experience</h4>
+<div class="videoblock">
+<div class="content">
+<iframe width="645" height="430" src="https://www.youtube.com/embed/GEkeOHw87Sg?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+<div class="paragraph event-speakers">
+<p><span class="image"><a class="image" href="../speaker/233.html"><img src="/images/speakers/0233.jpg" alt="img" width="100" height="100"></a></span></p>
+</div>
+<div class="paragraph">
+<p><em><a href="../speaker/233.html">Cliff Click</a></em></p>
+</div>
+<div class="paragraph">
+<p>Azul made a really strong Hardware Transactional Memory, and yet in practice it was not good enough to run Java synchronized blocks concurrently — and Cliff will tell you why it didn&#8217;t work and why HTM/STM in general will not allow concurrent execution in practice.</p>
+</div>
+<div class="paragraph">
+<p>Back in 2006-2010 Azul made custom hardware for running Big Business Java — basically a super-computer for running e.g. web portals written in Java. The hardware had many innovations, and most were geared towards Java&#8217;s special needs (read barriers for low-latency GC, support range-checked array operations, virtual calls). Probably the most innovative hardware was the Hardware Transactional Memory — the entire L1 of every one of the 864 cores could do a transactional update! This was specifically designed to allow transactional update of Java locks — to allow concurrent execution of Java synchronized blocks as long as there was no actual memory update conflict.</p>
+</div>
+<div class="paragraph">
+<p>The HTM was really strong — transactions could be as large as the entire L1 cache — yet in practice it was not good enough to run Java synchronized blocks concurrently. Cliff will tell you why it didn&#8217;t work and why HTM/STM in general will not allow concurrent execution in practice.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Links
+:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://assets.ctfassets.net/oxjq45e8ilak/6sKzieda7fGIQrNXZsR0cZ/bf48435803b5cac81cb4e3c729a581d6/2019_Azul_HTM.pdf" class="bare">https://assets.ctfassets.net/oxjq45e8ilak/6sKzieda7fGIQrNXZsR0cZ/bf48435803b5cac81cb4e3c729a581d6/2019_Azul_HTM.pdf</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+  </div>
+</body>
+</html>
