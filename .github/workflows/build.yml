@@ -1,0 +1,41 @@
+---
+name: build
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.5'
+          bundler-cache: true
+      - name: Set up node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Set up graphicsmagick
+        run: sudo apt-get install -y graphicsmagick
+      - name: install dependencies
+        run: |
+          gem install bundler
+          bundle install
+          npm install
+      - name: Build the site
+        run: ./_compile_doc.sh 
+        
+      - name: Deploy to GitHub Pages
+        if: success() && github.ref == 'refs/heads/master'
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: slides/target/generated-slides
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
