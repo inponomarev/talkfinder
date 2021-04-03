@@ -6,6 +6,7 @@ const chalk = require('chalk').default;
 const yaml = require('js-yaml');
 const gm = require('gm');
 
+
 console.log('Image resizing');
 mkdirp.sync(`./jugdata/assets/images/small`);
 
@@ -19,6 +20,7 @@ for (img of files) {
     });
 }
 console.log('Resizing done');
+
 
 console.log('Подготовка json-файлов с нужной иерархией');
 
@@ -115,6 +117,8 @@ const transform = (template, dataFile, mapFunc = x => x) => {
   return nunjucksEnv.render(template, mapFunc(data));
 }
 
+const companies = yaml.loadAll(readFileSync(`./jugdata/descriptions/companies.yml`, 'utf8'))[0].companies;
+
 /* During the parsing we collect speaker -> talks map */
 const speakerTalks = {};
 const talks = JSON.parse(transform('talk2id.njk', 'talks.yml',
@@ -164,7 +168,13 @@ const places = yaml.loadAll(readFileSync('./jugdata/descriptions/places.yml', 'u
 
 /* Group speaker talks by type */
 for (speaker of Object.values(speakers.speakers)) {
-  speaker.talks = {}
+  speaker.talks = {};
+  speaker.companies = [];
+  for (companyId of speaker.companyIds){
+    if (companies[companyId]){
+      speaker.companies.push(companies[companyId].name);
+    }
+  }
   if (speakerTalks[speaker.id])
     for (talk_id of speakerTalks[speaker.id]) {
       const event = talks.talks[talk_id].event;

@@ -120,6 +120,6 @@ enpath: en/speakers.html
 [.author-list]
 |===
 {% for speaker_id, speaker in speakers %}
-  {{- '' }}|image:small/{{ speaker.photoFileName }}[img,35,35] link:speaker/{{ speaker.id }}.html[{{ output_i18n_text(speaker.name, lang, 'text') }} {% if speaker.company.length %}({{ output_i18n_text(speaker.company, lang, 'text')}}){% endif %}]  
+  {{- '' }}|image:small/{{ speaker.photoFileName }}[img,35,35] link:speaker/{{ speaker.id }}.html[{{ output_i18n_text(speaker.name, lang, 'text') }} {% if speaker.companies.length %}({{ output_i18n_text(speaker.companies[0], lang, 'text')}}){% endif %}]
 {% endfor %}
 |===
