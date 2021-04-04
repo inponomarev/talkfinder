@@ -12,3 +12,5 @@ jekyll/.jekyll-cache/
 jekyll/en/
 jekyll/ru/
 .idea/
+/deploy_rsa.pub
+/password.txt
