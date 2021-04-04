@@ -29,11 +29,9 @@ jobs:
       - name: Build the site
         run: ./_compile_doc.sh 
         
-      - name: Deploy to GitHub Pages
+      - name: Deploy to jugspeakers.online
         if: success() && github.ref == 'refs/heads/master'
-        uses: crazy-max/ghaction-github-pages@v2
-        with:
-          target_branch: gh-pages
-          build_dir: jekyll/_site
+        run: ./deploy.sh
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DECYPHER_KEY: ${{ secrets.DECYPHER_KEY }}
+          GH_BUILD_NUMBER: ${{ github.run_number }}
