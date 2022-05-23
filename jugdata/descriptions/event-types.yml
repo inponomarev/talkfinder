@@ -32,6 +32,7 @@ eventTypes:
     facebookLink: https://www.facebook.com/cppugrussia/
     youtubeLink: https://www.youtube.com/channel/UCJ9v015sPgEi0jJXe_zanjA
     telegramLink: https://t.me/cpprussia
+    habrLink: https://habr.com/ru/company/jugru
     timeZone: Europe/Moscow
   - id: 1
     conference: DEV_OOPS
@@ -77,6 +78,7 @@ eventTypes:
     facebookLink: https://www.facebook.com/devoopsconf
     youtubeLink: https://www.youtube.com/channel/UCjnQreLMbpKsfJwDnHGZLxg
     telegramLink: https://t.me/devOopsconf
+    habrLink: https://habr.com/ru/company/jugru
     timeZone: Europe/Moscow
   - id: 2
     conference: DOT_NEXT
@@ -112,6 +114,7 @@ eventTypes:
     facebookLink: https://www.facebook.com/dotnextconf/
     youtubeLink: https://www.youtube.com/channel/UCNPwMPudMEw-gnAT4zh_UZg
     telegramLink: https://t.me/dotnextconf
+    habrLink: https://habr.com/ru/company/jugru
     timeZone: Europe/Moscow
   - id: 3
     conference: HEISENBUG
@@ -150,6 +153,7 @@ eventTypes:
     facebookLink: https://www.facebook.com/heisenbugconf/
     youtubeLink: https://www.youtube.com/channel/UCX6fjZa167tSy_4ryTLcOBw
     telegramLink: https://t.me/heisenbugconf
+    habrLink: https://habr.com/ru/company/jugru
     timeZone: Europe/Moscow
   - id: 4
     conference: HOLY_JS
@@ -185,6 +189,7 @@ eventTypes:
     facebookLink: https://www.facebook.com/holyjs/
     youtubeLink: https://www.youtube.com/channel/UC2Jwo4Q0s-ucjGseHP8XUSQ
     telegramLink: https://t.me/holyjsconf
+    habrLink: https://habr.com/ru/company/jugru
     timeZone: Europe/Moscow
   - id: 5
     conference: HYDRA
@@ -225,6 +230,7 @@ eventTypes:
     facebookLink: https://www.facebook.com/hydraconf
     youtubeLink: https://www.youtube.com/channel/UCcwI0q9tsGZYZDvz5mLsXZA/featured
     telegramLink: https://t.me/hydraconf
+    habrLink: https://habr.com/ru/company/jugru
     timeZone: Europe/Moscow
   - id: 6
     conference: JBREAK
@@ -252,8 +258,9 @@ eventTypes:
     vkLink: https://vk.com/jbreakconf
     twitterLink: https://twitter.com/JUGru
     facebookLink: https://www.facebook.com/jbreakconf/
-    youtubeLink: https://www.youtube.com/channel/UCYrGYT7BswsJGkmG7-IAF8g
+    youtubeLink: https://www.youtube.com/c/JUGru
     telegramLink: https://telegram.me/jbreak
+    habrLink: https://habr.com/ru/company/jugru
     inactive: true
     timeZone: Europe/Moscow
   - id: 8
@@ -293,6 +300,7 @@ eventTypes:
     facebookLink: https://www.facebook.com/jokerconf
     youtubeLink: https://www.youtube.com/user/JUGRuVideo
     telegramLink: https://t.me/jokerconf
+    habrLink: https://habr.com/ru/company/jugru
     timeZone: Europe/Moscow
   - id: 7
     conference: JPOINT
@@ -301,10 +309,8 @@ eventTypes:
     name:
       - {language: en, text: JPoint}
     shortDescription:
-      - language: en
-        text: "The largest Java conference in Russia"
-      - language: ru
-        text: "Международная Java-конференция для опытных разработчиков"
+      - {language: en, text: "The largest Java conference in Russia"}
+      - {language: ru, text: "Международная Java-конференция для опытных разработчиков"}
     longDescription:
       - language: en
         text: "JPoint (Moscow) is hardcore technical Java-conference only for experienced Java-developers and only about R&D.\n\
@@ -328,8 +334,9 @@ eventTypes:
     vkLink: https://vk.com/jpoint
     twitterLink: https://twitter.com/JUGru
     facebookLink: https://www.facebook.com/jpointconf/
-    youtubeLink: https://www.youtube.com/user/JUGRuVideo/
+    youtubeLink: https://www.youtube.com/user/JUGRuVideo
     telegramLink: https://telegram.me/jpointconf
+    habrLink: https://habr.com/ru/company/jugru
     timeZone: Europe/Moscow
   - id: 9
     conference: MOBIUS
@@ -338,10 +345,8 @@ eventTypes:
     name:
       - {language: en, text: Mobius}
     shortDescription:
-      - language: en
-        text: "Conference for professional mobile developers"
-      - language: ru
-        text: "Конференция для мобильных разработчиков"
+      - {language: en, text: "Conference for professional mobile developers"}
+      - {language: ru, text: "Конференция для мобильных разработчиков"}
     longDescription:
       - language: en
         text: "Mobius is a conference for mobile apps developers, which takes place in Moscow and St. Petersburg, gathering\
@@ -355,13 +360,14 @@ eventTypes:
             оводители проектов.\n\nГлавные темы докладов Mobius:\n- Large-scale architecture;\n- Performance;\n- Security;\n\
             - ML in Mobile;\n- Functional and reactive programming;\n- Kotlin, Swift, Flutter."
     siteLink:
-      - {language: en, text: "https://mobiusconf.ru/en/"}
-      - {language: ru, text: "https://mobiusconf.ru/"}
+      - {language: en, text: "https://mobiusconf.com/en/"}
+      - {language: ru, text: "https://mobiusconf.com"}
     vkLink: https://vk.com/mobiusconf
     twitterLink: https://twitter.com/MobiusConf
     facebookLink: https://www.facebook.com/mobiusconf/
     youtubeLink: https://www.youtube.com/c/MobiusConf
     telegramLink: https://t.me/mobiusconf
+    habrLink: https://habr.com/ru/company/jugru
     timeZone: Europe/Moscow
   - id: 11
     conference: SMART_DATA
@@ -387,6 +393,7 @@ eventTypes:
     facebookLink: https://www.facebook.com/smartdataconf
     youtubeLink: https://www.youtube.com/channel/UCfCOJWNC_ipu34-LVvPUeCg
     telegramLink: https://t.me/smartdataconf
+    habrLink: https://habr.com/ru/company/jugru
     timeZone: Europe/Moscow
   - id: 10
     conference: SPTDC
@@ -402,6 +409,8 @@ eventTypes:
             \ systems given by renowned experts in the field."}
     siteLink:
       - {language: en, text: "https://sptdc.ru/"}
+    youtubeLink: https://www.youtube.com/channel/UCYoIFJ96Kn_Ziayw8av-IAA
+    habrLink: https://habr.com/ru/company/jugru
     timeZone: Europe/Moscow
   - id: 12
     conference: TECH_TRAIN
@@ -442,6 +451,7 @@ eventTypes:
     facebookLink: https://www.facebook.com/techtrainfest/
     youtubeLink: https://www.youtube.com/channel/UCJoerW5eDOz5qu7I2CYi7xg
     telegramLink: https://t.me/techtrainfest
+    habrLink: https://habr.com/ru/company/jugru
     timeZone: Europe/Moscow
   - id: 13
     logoFileName: jugmsk.jpg
@@ -458,6 +468,7 @@ eventTypes:
     vkLink: https://vk.com/jugmsk
     twitterLink: https://twitter.com/mskjug
     youtubeLink: https://www.youtube.com/playlist?list=PLojTLDAO4jjIRjDPIQjc4iG7CfR6m8pfc
+    speakerdeckLink: https://speakerdeck.com/jugmsk
     timeZone: Europe/Moscow
   - id: 14
     logoFileName: jugru.jpg
@@ -473,7 +484,8 @@ eventTypes:
       - {language: en, text: "https://jug.ru"}
     vkLink: https://vk.com/jugru
     twitterLink: https://twitter.com/jugru
-    youtubeLink: https://www.youtube.com/channel/UCYrGYT7BswsJGkmG7-IAF8g
+    youtubeLink: https://www.youtube.com/c/JUGru
+    habrLink: https://habr.com/ru/company/jugru
     timeZone: Europe/Moscow
   - id: 15
     logoFileName: jugnsk.jpg
@@ -491,6 +503,7 @@ eventTypes:
     twitterLink: https://twitter.com/jugnsk
     youtubeLink: https://www.youtube.com/c/JUGNsk
     telegramLink: https://t.me/jugnsk
+    speakerdeckLink: https://speakerdeck.com/jugnsk
     timeZone: Asia/Novosibirsk
   - id: 16
     conference: SNOW_ONE
@@ -514,3 +527,37 @@ eventTypes:
     twitterLink: https://twitter.com/snowone_conf
     youtubeLink: https://www.youtube.com/c/JUGNsk
     timeZone: Asia/Novosibirsk
+  - id: 17
+    conference: VIDEO_TECH
+    logoFileName: videotech.jpg
+    organizerId: 0
+    name:
+      - {language: en, text: VideoTech}
+    shortDescription:
+      - language: en
+        text: "Video and streaming technologies conference"
+      - language: ru
+        text: "Конференция по технологиям видео и стриминга"
+    longDescription:
+      - language: en
+        text: "VideoTech is an tech conference dedicated to matters of video streaming. At the conference, specialists in\
+            \ technologies for streaming share their knowledge and experience with colleagues from all over the world. The\
+            \ conference's mission is to create a professional community for developers and engineers working on streaming\
+            \ platforms, players, content delivery and other aspects of this field.\n\nKey topics:\n- WebRTC;\n- Video delivery;\n- \
+            Audio and video codecs;\n- Devices and players;\n- Storage and packaging;\n- Video quality;\n- Monitoring;\n- ML/AI."
+      - language: ru
+        text: "VideoTech — это техническая конференция, посвященная вопросам потоковой передачи видео. На ней специалисты\
+            \ по технологиям из области стриминга делятся знаниями и опытом с коллегами. Миссия конференции — сформировать\
+            \ профессиональное сообщество разработчиков и инженеров, работающих над стриминговыми платформами, плеерами, д\
+            оставкой контента и другими аспектами этой сферы.\n\nОсновные темы конференции:\n- WebRTC;\n- Раздача видео;\n- Ко\
+            деки аудио и видео;\n- Устройства и плееры;\n- Хранение и упаковка;\n- Качество видео;\n- Мониторинг;\n- ML/AI."
+    siteLink:
+      - {language: en, text: "https://vtconf.com/en/"}
+      - {language: ru, text: "https://vtconf.com/"}
+    vkLink: https://vk.com/vt_conference
+    twitterLink: https://twitter.com/videotech_conf
+    facebookLink: https://www.facebook.com/videotechconf/
+    youtubeLink: https://www.youtube.com/channel/UC16ztwLQMXcS4aqCWvbkj3Q
+    telegramLink: https://t.me/videotech_conf
+    habrLink: https://habr.com/ru/company/jugru
+    timeZone: Europe/Moscow

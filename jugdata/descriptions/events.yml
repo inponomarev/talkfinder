@@ -35,7 +35,7 @@ events:
     siteLink:
       - {language: en, text: "https://cppconf-moscow.ru/en/"}
       - {language: ru, text: "https://cppconf-moscow.ru/"}
-    youtubeLink: https://live.jugru.org/online/100067r10004337
+    youtubeLink: https://www.youtube.com/playlist?list=PLZN9ZGiWZoZruMY-MlkAd-nHzdP9TfLRC
     placeId: 24
     talkIds: [1438, 1440, 2520, 1449, 2521, 2522, 1445, 1460, 2353, 2354, 2399, 1451, 1446, 1453, 2524, 2525, 1459, 1461,
               1456, 1441, 1455, 1452, 1443, 2526, 2527, 2528, 1450, 2112, 1442, 1447, 2400, 1463, 2529, 2530, 2401, 1464]
@@ -47,10 +47,23 @@ events:
     endDate: "2020-11-14"
     siteLink:
       - {language: ru, text: "https://cppconf-piter.ru/"}
-    youtubeLink: https://live.jugru.org/events/cpprussia
+    youtubeLink: https://www.youtube.com/playlist?list=PLZN9ZGiWZoZpzXS_y_1tZJW0OaL-HrU1F
     placeId: 24
     talkIds: [2659, 2660, 2661, 2662, 2663, 2664, 2838, 2665, 2666, 2667, 2668, 2669, 2670, 2671, 2672, 2673, 2674, 2675,
               2676, 2677, 2678, 2679, 2680, 2681, 2682]
+  - eventTypeId: 0
+    name:
+      - {language: en, text: "C++ Russia 2021"}
+    startDate: "2021-11-15"
+    endDate: "2021-11-18"
+    siteLink:
+      - {language: en, text: "https://cppconf.ru/en/"}
+      - {language: ru, text: "https://cppconf.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLZN9ZGiWZoZq6RXvLRlA8kQpU45RxSVtX
+    placeId: 24
+    talkIds: [3389, 3565, 3392, 3391, 3403, 3566, 3393, 3390, 3395, 3396, 3398, 3397, 3567, 3568, 3399, 3400, 3401, 3570,
+              3394, 3402, 3404, 3405, 3406, 3407, 3571, 3572, 3408, 3409, 3410, 3573, 3574, 3592, 3411, 3412, 3413, 3575, 3576,
+              3577, 3578, 3414, 3415, 3416, 3569]
   # DevOops
   - eventTypeId: 1
     name:
@@ -76,8 +89,7 @@ events:
     talkIds: [983, 984, 985, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999]
   - eventTypeId: 1
     name:
-      - {language: en, text: "DevOops 2019 SPb"}
-      - {language: ru, text: "DevOops 2019 СПб"}
+      - {language: en, text: "DevOops 2019"}
     startDate: "2019-10-29"
     endDate: "2019-10-30"
     siteLink:
@@ -96,7 +108,7 @@ events:
     siteLink:
       - {language: en, text: "https://devoops-moscow.ru/en/"}
       - {language: ru, text: "https://devoops-moscow.ru/"}
-    youtubeLink: https://live.jugru.org/online/100068r10004323/
+    youtubeLink: https://www.youtube.com/playlist?list=PL-ety8gh7rToQPAGEJh0t3QkWClxvx_ql
     placeId: 24
     talkIds: [2119, 2115, 2116, 2548, 2549, 2550, 2551, 2118, 2131, 2552, 2122, 2553, 2125, 2554, 2567, 2555, 2568, 2128,
               2556, 2127, 2130, 2117, 2143, 2557, 2558, 2559, 2402, 2135, 2133, 2138, 2357, 2139, 2560, 2561, 2126, 2142, 2569,
@@ -110,10 +122,23 @@ events:
     siteLink:
       - {language: en, text: "https://devoops-piter.ru/en/"}
       - {language: ru, text: "https://devoops-piter.ru/"}
-    youtubeLink: https://live.jugru.org/events/devoops
+    youtubeLink: https://www.youtube.com/playlist?list=PL-ety8gh7rTqlHs8YSt4C-Epx9nJuxBfQ
     placeId: 24
     talkIds: [2761, 2762, 2763, 2835, 2765, 2766, 2767, 2768, 2769, 2770, 2771, 2772, 2773, 2836, 2774, 2775, 2776, 2777,
               2778, 2779, 2780, 2781, 2782, 2783, 2784, 2785, 2786, 2787, 2788, 2789, 2790, 2791, 2792, 2794, 2795, 2796, 2797]
+  - eventTypeId: 1
+    name:
+      - {language: en, text: "DevOops 2021"}
+    startDate: "2021-11-08"
+    endDate: "2021-11-11"
+    siteLink:
+      - {language: en, text: "https://devoops.ru/en/"}
+      - {language: ru, text: "https://devoops.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PL-ety8gh7rTphdgZQwQ7v5zTmMnNj93dJ
+    placeId: 24
+    talkIds: [3367, 3476, 3368, 3526, 3553, 3384, 3477, 3370, 3373, 3374, 3372, 3527, 3554, 3376, 3375, 3478, 3503, 3555,
+              3479, 3379, 3380, 3556, 3381, 3382, 3377, 3504, 3557, 3536, 3558, 3505, 3385, 3383, 3366, 3528, 3559, 3387, 3480,
+              3388, 3506, 3560, 3378, 3482, 3481]
   # DotNext
   - eventTypeId: 2
     name:
@@ -286,7 +311,7 @@ events:
     siteLink:
       - {language: en, text: "https://dotnext-piter.ru/en/"}
       - {language: ru, text: "https://dotnext-piter.ru/"}
-    youtubeLink: https://live.jugru.org/online/100064r10004297
+    youtubeLink: https://www.youtube.com/playlist?list=PLtWrKx3nUGBe8Fm_3Mp6dtdQnet5GuHFu
     placeId: 24
     talkIds: [1371, 1632, 1362, 2221, 2411, 2412, 2309, 1349, 1352, 1358, 1347, 1374, 1361, 2413, 2414, 2415, 2339, 1845,
               1351, 1366, 1348, 1356, 1350, 2574, 2454, 2416, 2417, 2418, 2422, 1367, 1375, 2419, 2420, 1359, 1355, 1369, 2421,
@@ -299,10 +324,37 @@ events:
     endDate: "2020-12-05"
     siteLink:
       - {language: ru, text: "https://dotnext-moscow.ru/"}
-    youtubeLink: https://live.jugru.org/events/dotnext
+    youtubeLink: https://www.youtube.com/playlist?list=PLtWrKx3nUGBfRvrRmicKedShARUrDU3sj
     placeId: 24
     talkIds: [2798, 2799, 2800, 2801, 2802, 2831, 2803, 2804, 2805, 2832, 2807, 2808, 2809, 2810, 2811, 2812, 2813, 2814,
-              2833, 2815, 2816, 2817, 2818, 2819, 2820, 2821, 2822, 2823, 2824, 2825, 2826, 2827, 2828, 2829, 2830, 2834]
+              2833, 2815, 2816, 2817, 2818, 2819, 2820, 2821, 2822, 2823, 2824, 2825, 2826, 2827, 2829, 2830, 2834]
+  - eventTypeId: 2
+    name:
+      - {language: en, text: "DotNext 2021 SPb"}
+      - {language: ru, text: "DotNext 2021 СПб"}
+    startDate: "2021-04-20"
+    endDate: "2021-04-23"
+    siteLink:
+      - {language: en, text: "https://dotnext-piter.ru/en/"}
+      - {language: ru, text: "https://dotnext-piter.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLtWrKx3nUGBe28FDxQP2hsF2nG4NQG5_5
+    placeId: 24
+    talkIds: [3062, 3063, 3064, 3065, 3110, 3112, 3066, 3067, 3068, 3069, 3070, 3071, 3072, 3073, 3120, 3074, 3075, 3076,
+              3077, 3078, 3079, 3080, 3081, 3111, 3082, 3083, 3113, 3085, 3086, 3087, 3088, 3121, 3089, 3090, 3091, 3092]
+  - eventTypeId: 2
+    name:
+      - {language: en, text: "DotNext 2021 Msc"}
+      - {language: ru, text: "DotNext 2021 Мск"}
+    startDate: "2021-10-21"
+    endDate: "2021-10-22"
+    siteLink:
+      - {language: en, text: "https://dotnext-moscow.ru/en/"}
+      - {language: ru, text: "https://dotnext-moscow.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLtWrKx3nUGBdGcaQkj8edhvH7MHbS_iM-
+    placeId: 24
+    talkIds: [3433, 3334, 3267, 3268, 3434, 3269, 3270, 3271, 3435, 3330, 3331, 3272, 3273, 3274, 3436, 3437, 3281, 3276,
+              3277, 3438, 3439, 3279, 3278, 3280, 3440, 3441, 3275, 3282, 3283, 3442, 3284, 3286, 3285, 3443, 3332, 3333, 3287,
+              3288, 3289, 3444, 3445, 3290, 3291, 3292, 3446, 3447, 3335, 3294, 3295]
   # Heisenbug
   - eventTypeId: 3
     name:
@@ -402,11 +454,11 @@ events:
     siteLink:
       - {language: en, text: "https://heisenbug-piter.ru/en/"}
       - {language: ru, text: "https://heisenbug-piter.ru/"}
-    youtubeLink: https://live.jugru.org/online/100065r10004285
+    youtubeLink: https://www.youtube.com/playlist?list=PLsVTVVvrKX9tzwh6Y1-D1-_Bg1PTjOvsQ
     placeId: 24
     talkIds: [1379, 1382, 1383, 1385, 2423, 2449, 2424, 2432, 2450, 1381, 2223, 1384, 1392, 1754, 1840, 1399, 1841, 2451,
               2452, 2427, 2425, 2433, 2429, 2340, 1638, 1637, 2310, 2428, 1636, 2341, 2388, 2430, 2431, 2455, 1397, 2342, 2224,
-              1635, 1395, 2343, 2453, 1398, 1390, 2389, 2344]
+              1635, 1395, 2343, 2453, 1398, 1390, 2389, 2344, 3639]
   - eventTypeId: 3
     name:
       - {language: en, text: "Heisenbug 2020 Msc"}
@@ -415,7 +467,7 @@ events:
     endDate: "2020-11-07"
     siteLink:
       - {language: ru, text: "https://heisenbug-moscow.ru/"}
-    youtubeLink: https://live.jugru.org/events/heisenbug
+    youtubeLink: https://www.youtube.com/playlist?list=PLsVTVVvrKX9tBV0_LSkAoSZge3C8qb0ec
     placeId: 24
     talkIds: [2595, 2575, 2615, 2616, 2618, 2619, 2620, 2579, 2609, 2610, 2607, 2581, 2617, 2583, 2621, 2622, 2608, 2588,
               2611, 2612, 2623, 2587, 2596, 2613, 2624, 2585, 2589, 2590, 2614, 2591, 2593, 2597, 2592, 2625, 2594]
@@ -426,11 +478,26 @@ events:
     startDate: "2021-04-06"
     endDate: "2021-04-09"
     siteLink:
+      - {language: en, text: "https://heisenbug-piter.ru/en/"}
       - {language: ru, text: "https://heisenbug-piter.ru/"}
-    youtubeLink: https://live.jugru.org/events/heisenbug/
+    youtubeLink: https://www.youtube.com/playlist?list=PLsVTVVvrKX9td9Zm_4nF6Ywlz6gC5_e7K
     placeId: 24
     talkIds: [2921, 2922, 2923, 2924, 2925, 2926, 2927, 2928, 2929, 2930, 2931, 2955, 2932, 2933, 2951, 2934, 2952, 2935,
-              2936, 2937, 2938, 2939, 2940, 2953, 2941, 2942, 2943, 2944, 2945, 2946, 2947, 2954, 2948, 2949, 2950]
+              2936, 2937, 2938, 2939, 3022, 2953, 2941, 2942, 2943, 2944, 2945, 2946, 2947, 2954, 2948, 2949, 2950, 3093]
+  - eventTypeId: 3
+    name:
+      - {language: en, text: "Heisenbug 2021 Msc"}
+      - {language: ru, text: "Heisenbug 2021 Мск"}
+    startDate: "2021-10-05"
+    endDate: "2021-10-07"
+    siteLink:
+      - {language: en, text: "https://heisenbug-moscow.ru/en/"}
+      - {language: ru, text: "https://heisenbug-moscow.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLsVTVVvrKX9t5C4zJn4kPBVMxt3fpC2hP
+    placeId: 24
+    talkIds: [3167, 3168, 3169, 3216, 3170, 3217, 3171, 3172, 3173, 3174, 3175, 3218, 3176, 3177, 3178, 3179, 3180, 3181,
+              3182, 3183, 3184, 3185, 3186, 3187, 3188, 3189, 3190, 3191, 3192, 3193, 3194, 3195, 3196, 3197, 3198, 3199, 3200,
+              3201, 3202, 3203, 3204, 3205, 3206, 3211, 3207, 3208, 3209, 3210, 3219, 3212, 3213, 3214, 3215, 3221]
   # HolyJS
   - eventTypeId: 4
     name:
@@ -444,7 +511,7 @@ events:
     youtubeLink: https://www.youtube.com/playlist?list=PL8sJahqnzh8JST_ZwTcGG1FHGgKBMcpn6
     placeId: 4
     talkIds: [1869, 1870, 1871, 1872, 1873, 1874, 1875, 1876, 1877, 1878, 1879, 1880, 1881, 1882, 1883, 1884, 1885, 1886,
-              1887, 1888, 1889]
+              1887, 1888, 1889, 3640, 3641]
   - eventTypeId: 4
     name:
       - {language: en, text: "HolyJS 2016 Msc"}
@@ -495,7 +562,7 @@ events:
     youtubeLink: https://www.youtube.com/playlist?list=PL8sJahqnzh8Jy7ZwExrn1bayUuy5xB3uJ
     placeId: 4
     talkIds: [908, 909, 910, 911, 912, 913, 914, 915, 916, 917, 918, 919, 920, 921, 922, 923, 924, 925, 926, 927, 928, 929,
-              930, 931, 932, 933, 934, 935, 936]
+              930, 931, 932, 933, 934, 935, 936, 3642]
   - eventTypeId: 4
     name:
       - {language: en, text: "HolyJS 2018 Msc"}
@@ -521,7 +588,7 @@ events:
     youtubeLink: https://www.youtube.com/playlist?list=PL8sJahqnzh8JJD7xahG5zXkjfM5GOgcPA
     placeId: 4
     talkIds: [1279, 1280, 1281, 1282, 1283, 1284, 1285, 1286, 1287, 1288, 1289, 1290, 1291, 1292, 1293, 1294, 1295, 1296,
-              1297, 1298, 1299, 1300, 1301, 1302, 1303, 1304, 1305, 1306, 1307, 1308]
+              1297, 1298, 1299, 1300, 1301, 1302, 1303, 1304, 1305, 1306, 1307, 1308, 3643, 3644]
   - eventTypeId: 4
     name:
       - {language: en, text: "HolyJS 2019 Msc"}
@@ -534,7 +601,7 @@ events:
     youtubeLink: https://www.youtube.com/playlist?list=PL8sJahqnzh8KXjvw3i0bY-fCn1abQMbv8
     placeId: 7
     talkIds: [170, 171, 172, 1345, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190,
-              191, 192, 193, 194, 195, 1346, 196, 197, 198]
+              191, 192, 193, 194, 195, 1346, 196, 197, 198, 3627, 3628]
   - eventTypeId: 4
     name:
       - {language: en, text: "HolyJS 2020 SPb"}
@@ -544,7 +611,7 @@ events:
     siteLink:
       - {language: en, text: "https://holyjs-piter.ru/en/"}
       - {language: ru, text: "https://holyjs-piter.ru"}
-    youtubeLink: https://live.jugru.org/online/100066r10004348
+    youtubeLink: https://www.youtube.com/playlist?list=PL8sJahqnzh8KY2RD2eJIrbdSSljJ49QVm
     placeId: 24
     talkIds: [1957, 1432, 1434, 2456, 2457, 2458, 2459, 2460, 2461, 2462, 1756, 1433, 2463, 1409, 1415, 1757, 1405, 2464,
               2465, 2466, 2467, 1414, 1428, 1435, 2468, 2469, 1643, 2470, 1422, 2471, 2472, 2473, 2391, 2434, 1406, 2435, 2392,
@@ -559,10 +626,38 @@ events:
     siteLink:
       - {language: en, text: "https://holyjs-moscow.ru/en/"}
       - {language: ru, text: "https://holyjs-moscow.ru/"}
-    youtubeLink: https://live.jugru.org/events/holyjs
+    youtubeLink: https://www.youtube.com/playlist?list=PL8sJahqnzh8KkFDsx3tAM8t1kOMn89CwU
     placeId: 24
     talkIds: [2723, 2724, 2725, 2726, 2727, 2728, 2729, 2730, 2731, 2732, 2733, 2734, 2735, 2736, 2737, 2757, 2738, 2739,
               2740, 2741, 2742, 2743, 2744, 2745, 2758, 2746, 2747, 2748, 2749, 2750, 2751, 2752, 2753]
+  - eventTypeId: 4
+    name:
+      - {language: en, text: "HolyJS 2021 SPb"}
+      - {language: ru, text: "HolyJS 2021 СПб"}
+    startDate: "2021-04-20"
+    endDate: "2021-04-23"
+    siteLink:
+      - {language: en, text: "https://holyjs-piter.ru/en/"}
+      - {language: ru, text: "https://holyjs-piter.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PL8sJahqnzh8JyUetDcVI5iHzGP8pfKjcl
+    placeId: 24
+    talkIds: [3031, 3032, 3033, 3034, 3115, 3116, 3035, 3036, 3037, 3038, 3106, 3039, 3040, 3122, 3042, 3118, 3117, 3043,
+              3044, 3045, 3061, 3046, 3060, 3048, 3049, 3107, 3119, 3050, 3123, 3052, 3053, 3054, 3055, 3056, 3057, 3108, 3109,
+              3058, 3059, 3047]
+  - eventTypeId: 4
+    name:
+      - {language: en, text: "HolyJS 2021 Msc"}
+      - {language: ru, text: "HolyJS 2021 Мск"}
+    startDate: "2021-11-02"
+    endDate: "2021-11-05"
+    siteLink:
+      - {language: en, text: "https://holyjs-moscow.ru/en/"}
+      - {language: ru, text: "https://holyjs-moscow.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PL8sJahqnzh8IYDYRieNB0axR-8siPTVuh
+    placeId: 24
+    talkIds: [3336, 3337, 3338, 3513, 3529, 3514, 3499, 3339, 3340, 3515, 3341, 3342, 3343, 3530, 3516, 3517, 3518, 3344,
+              3345, 3346, 3519, 3500, 3520, 3473, 3348, 3474, 3352, 3351, 3350, 3531, 3521, 3532, 3353, 3354, 3355, 3522, 3523,
+              3501, 3357, 3533, 3358, 3359, 3360, 3524, 3534, 3361, 3362, 3363, 3535, 3525, 3364, 3502, 3365]
   # Hydra
   - eventTypeId: 5
     name:
@@ -581,10 +676,21 @@ events:
     endDate: "2020-07-09"
     siteLink:
       - {language: en, text: "https://hydraconf.com/"}
-    youtubeLink: https://live.jugru.org/online/100070r10004451/
+    youtubeLink: https://www.youtube.com/playlist?list=PLC5OGTO4dWxZId5x2ZRFmujuef_-jP-c7
     placeId: 24
     talkIds: [2445, 2266, 2282, 2407, 2277, 2362, 2271, 2444, 2321, 2536, 2564, 2447, 2319, 2275, 2269, 2537, 2278,
               2535, 2364, 2409, 2274, 2281, 2410, 2366]
+  - eventTypeId: 5
+    name:
+      - {language: en, text: "Hydra 2021"}
+    startDate: "2021-06-15"
+    endDate: "2021-06-18"
+    siteLink:
+      - {language: en, text: "https://hydraconf.com/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLC5OGTO4dWxbxpZWsvWWeBxUQWVqGXeBB
+    placeId: 24
+    talkIds: [3124, 3125, 3132, 3154, 3141, 3149, 3133, 3129, 3134, 3143, 3127, 3135, 3150, 3130, 3136, 3151, 3152, 3137,
+              3153, 3138, 3148, 3140, 3131]
   # JBreak
   - eventTypeId: 6
     name:
@@ -717,24 +823,26 @@ events:
     startDate: "2020-06-29"
     endDate: "2020-07-03"
     siteLink:
-      - {language: en, text: "https://jpoint.ru/en/"}
-      - {language: ru, text: "https://jpoint.ru/"}
-    youtubeLink: https://live.jugru.org/online/100063r10004435
+      - {language: en, text: "https://2020.jpoint.ru/en/"}
+      - {language: ru, text: "https://2020.jpoint.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8xrR08NRQoUW4XRCBByRf2
     placeId: 24
     talkIds: [2440, 2232, 2243, 2258, 2503, 2504, 2505, 2542, 2441, 2231, 2235, 2236, 2442, 2255, 2240, 2241, 2508, 2509,
               2510, 2543, 2512, 2513, 2237, 2242, 2260, 2253, 2249, 2239, 2248, 2230, 2544, 2514, 2397, 2244, 2245, 2398, 2254,
-              2545, 2257, 2256, 2516, 2546, 2517, 2443, 2261, 2250, 2247, 2314, 2251, 2233, 2518, 2547, 2234, 2259]
+              2545, 2257, 2256, 2516, 2546, 2443, 2261, 2250, 2247, 2314, 2251, 2233, 2518, 2547, 2234, 2259]
   - eventTypeId: 7
     name:
       - {language: en, text: "JPoint 2021"}
     startDate: "2021-04-13"
     endDate: "2021-04-17"
     siteLink:
+      - {language: en, text: "https://jpoint.ru/en/"}
       - {language: ru, text: "https://jpoint.ru/"}
-    youtubeLink: https://live.jugru.org/events/jpoint/
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-weU5FB9NslU-dmOJnsLW2
     placeId: 24
-    talkIds: [2987, 2988, 2989, 2990, 2991, 2992, 2993, 2994, 2995, 2996, 2997, 2998, 2999, 3000, 3001, 3002, 3003, 3004,
-              3005, 3006, 3007, 3008, 3009, 3018, 3010, 3011, 3012, 3013, 3014, 3015, 3016, 3019, 3017, 3020]
+    talkIds: [2987, 2988, 2989, 2990, 3101, 3023, 2991, 2992, 2993, 3102, 3103, 2995, 2996, 2997, 2998, 3024, 3025, 2999,
+              3000, 3001, 3002, 3026, 3003, 3004, 3005, 3006, 3027, 3028, 3007, 3008, 3009, 3018, 3010, 3011, 3012, 3013, 3104,
+              3030, 3014, 3015, 3016, 3019, 3017, 3105, 3020]
   # Joker
   - eventTypeId: 8
     name:
@@ -754,9 +862,9 @@ events:
     endDate: "2014-10-21"
     youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-izaJuCD9VhEQeHCtOxp0C
     placeId: 4
-    talkIds: [1531, 1532, 1533, 1534, 1535, 1536, 1537, 1538, 1539, 1540, 1541, 1542, 1543, 1544, 1545, 1546, 1547, 1548,
-              1668, 1549, 1550, 1551, 1552, 1553, 1554, 1555, 1556, 1557, 1558, 1559, 1560, 1561, 1562, 1563, 1564, 1565,
-              1566]
+    talkIds: [3158, 1531, 1532, 1533, 1534, 1535, 1536, 1537, 1538, 1539, 1540, 1541, 1542, 1543, 1544, 1545, 1546, 1547,
+              1548, 1668, 1549, 1550, 1551, 1552, 1553, 1554, 1555, 1556, 1557, 1558, 1559, 1560, 1561, 1562, 1563, 1564,
+              1565, 1566]
   - eventTypeId: 8
     name:
       - {language: en, text: "Joker 2015"}
@@ -842,11 +950,24 @@ events:
     siteLink:
       - {language: en, text: "https://jokerconf.com/en/"}
       - {language: ru, text: "https://jokerconf.com/"}
-    youtubeLink: https://live.jugru.org/events/joker
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_bCEiqcpNwoB0xT6wlIofb
     placeId: 24
     talkIds: [2684, 2685, 2686, 2687, 2688, 2689, 2690, 2691, 2692, 2693, 2754, 2694, 2695, 2759, 2697, 2698, 2755, 2699,
               2700, 2701, 2756, 2703, 2704, 2705, 2706, 2707, 2708, 2709, 2710, 2711, 2712, 2713, 2714, 2715, 2716, 2717, 2760,
               2718, 2719, 2720, 2721]
+  - eventTypeId: 8
+    name:
+      - {language: en, text: "Joker 2021"}
+    startDate: "2021-10-25"
+    endDate: "2021-10-28"
+    siteLink:
+      - {language: en, text: "https://jokerconf.com/en/"}
+      - {language: ru, text: "https://jokerconf.com/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_Zoqsu504tjSRM115Cfhcm
+    placeId: 24
+    talkIds: [3296, 3448, 3449, 3450, 3297, 3298, 3299, 3451, 3465, 3301, 3300, 3302, 3303, 3452, 3305, 3453, 3454, 3455,
+              3466, 3306, 3307, 3308, 3467, 3468, 3456, 3469, 3309, 3310, 3311, 3312, 3313, 3314, 3470, 3457, 3471, 3459, 3315,
+              3316, 3317, 3460, 3318, 3319, 3320, 3321, 3322, 3323, 3461, 3472, 3324, 3325, 3462, 3463, 3464, 3327, 3328, 3329]
   # Mobius
   - eventTypeId: 9
     name:
@@ -970,10 +1091,10 @@ events:
     siteLink:
       - {language: en, text: "https://mobius-piter.ru/en/"}
       - {language: ru, text: "https://mobius-piter.ru/"}
-    youtubeLink: https://live.jugru.org/online/100069r10004305
+    youtubeLink: https://www.youtube.com/playlist?list=PLb1A91j1236pxEWPQUlg98OYU2O1WRw1e
     placeId: 24
     talkIds: [2393, 2489, 1965, 1972, 2490, 2491, 2437, 2492, 2104, 2109, 2394, 1973, 2350, 2493, 2494, 2495, 2438, 2496,
-              1971, 1964, 2395, 1961, 2107, 2108, 2497, 2396, 1967, 1966, 2105, 2227, 1974, 2226, 1969, 2498, 2499, 2500, 2352,
+              1971, 1964, 2395, 1961, 2107, 2108, 2497, 2396, 1967, 1966, 2105, 2227, 1974, 2226, 1969, 2498, 2500, 2352,
               1962, 2229, 2110, 2439]
   - eventTypeId: 9
     name:
@@ -984,7 +1105,7 @@ events:
     siteLink:
       - {language: en, text: "https://mobius-moscow.ru/en/"}
       - {language: ru, text: "https://mobius-moscow.ru/"}
-    youtubeLink: https://live.jugru.org/events/mobius
+    youtubeLink: https://www.youtube.com/playlist?list=PLb1A91j1236p4NcChx-G-aWNuiXgce80d
     placeId: 24
     talkIds: [2627, 2628, 2629, 2630, 2631, 2632, 2633, 2634, 2635, 2636, 2637, 2638, 2639, 2640, 2641, 2642, 2643, 2644,
               2645, 2646, 2647, 2648, 2649, 2650, 2651, 2652, 2653, 2654, 2683, 2655, 2656, 2837, 2657]
@@ -995,11 +1116,28 @@ events:
     startDate: "2021-04-13"
     endDate: "2021-04-16"
     siteLink:
+      - {language: en, text: "https://mobius-piter.ru/en/"}
       - {language: ru, text: "https://mobius-piter.ru/"}
-    youtubeLink: https://live.jugru.org/events/mobius/
+    youtubeLink: https://www.youtube.com/playlist?list=PLb1A91j1236pTGG5WIbozH3B3nyhYCyjN
     placeId: 24
-    talkIds: [2956, 2957, 2958, 2959, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2969, 2970, 2971, 2972, 2973,
-              2974, 2975, 2976, 2977, 2978, 2979, 2980, 2981, 2982, 2983, 2984, 2985, 2986]
+    talkIds: [2956, 2957, 2958, 2959, 3094, 3095, 2960, 2961, 2962, 2963, 3097, 2964, 2965, 2966, 2967, 3096, 3098, 2968,
+              2969, 2970, 2971, 2972, 2973, 2974, 2975, 3099, 3100, 2976, 2977, 2978, 2986, 2980, 2981, 2982, 2983, 3114, 2984,
+              2979, 2985, 3021]
+  - eventTypeId: 9
+    name:
+      - {language: en, text: "Mobius 2021 Msc"}
+      - {language: ru, text: "Mobius 2021 Мск"}
+    startDate: "2021-11-22"
+    endDate: "2021-11-25"
+    siteLink:
+      - {language: en, text: "https://mobius-moscow.ru/en/"}
+      - {language: ru, text: "https://mobius-moscow.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLb1A91j1236oZ4du7eVrwtzUiJ4kfc3TZ
+    placeId: 24
+    talkIds: [3417, 3537, 3419, 3538, 3593, 3594, 3483, 3484, 3425, 3539, 3595, 3616, 3596, 3422, 3485, 3579, 3423, 3597,
+              3617, 3598, 3421, 3428, 3424, 3599, 3600, 3601, 3486, 3540, 3488, 3489, 3490, 3508, 3602, 3496, 3492, 3509, 3603,
+              3604, 3510, 3495, 3541, 3511, 3580, 3618, 3426, 3420, 3432, 3605, 3606, 3607, 3608, 3429, 3493, 3431, 3609, 3610,
+              3497]
   # SPTDC
   - eventTypeId: 10
     name:
@@ -1018,9 +1156,9 @@ events:
     endDate: "2020-07-09"
     siteLink:
       - {language: en, text: "https://sptdc.ru/"}
-    youtubeLink: https://live.jugru.org/online/100078r10004705/
+    youtubeLink: https://www.youtube.com/playlist?list=PL_5iU_mKtf3uFget7xsc6CueBQO3EfB_r
     placeId: 24
-    talkIds: [2367, 2538, 2368, 2369, 2370, 2371, 2539, 2566]
+    talkIds: [2367, 2368, 2369, 2370, 2371, 2539, 2566]
   # SmartData
   - eventTypeId: 11
     name:
@@ -1039,12 +1177,25 @@ events:
     startDate: "2020-12-09"
     endDate: "2020-12-12"
     siteLink:
-      - {language: en, text: "https://smartdataconf.ru/en/"}
-      - {language: ru, text: "https://smartdataconf.ru/"}
-    youtubeLink: https://live.jugru.org/events/smartdata
+      - {language: en, text: "https://2020.smartdataconf.ru/en/"}
+      - {language: ru, text: "https://2020.smartdataconf.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLeN_80lmoMY1ugdDLg2mWht5eQDq6CoNQ
     placeId: 24
     talkIds: [2839, 2840, 2841, 2842, 2843, 2844, 2845, 2846, 2847, 2848, 2849, 2850, 2851, 2852, 2853, 2854, 2855, 2856,
               2868, 2858, 2859, 2860, 2861, 2862, 2863, 2864, 2865, 2866, 2867]
+  - eventTypeId: 11
+    name:
+      - {language: en, text: "SmartData 2021"}
+    startDate: "2021-10-11"
+    endDate: "2021-10-14"
+    siteLink:
+      - {language: en, text: "https://smartdataconf.ru/en/"}
+      - {language: ru, text: "https://smartdataconf.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLeN_80lmoMY37-33D7Jbq09x9wt5BcdBb
+    placeId: 24
+    talkIds: [3222, 3223, 3224, 3225, 3226, 3227, 3228, 3229, 3230, 3231, 3232, 3233, 3234, 3235, 3236, 3237, 3238, 3239,
+              3240, 3241, 3242, 3243, 3244, 3245, 3246, 3247, 3248, 3249, 3250, 3251, 3252, 3253, 3254, 3255, 3256, 3257, 3258,
+              3259, 3260, 3261, 3262, 3263, 3264, 3265]
   # TechTrain
   - eventTypeId: 12
     name:
@@ -1066,6 +1217,7 @@ events:
     siteLink:
       - {language: en, text: "https://techtrain.ru/en/"}
       - {language: ru, text: "https://techtrain.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLmJD_ICvgPy1_10seBA-6QSkkRXPsgeLR
     placeId: 2
     talkIds: [1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325, 1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333, 1334,
               1335, 1336, 1337, 1338, 1339, 1340, 1341, 1342, 1343, 1344]
@@ -1077,7 +1229,7 @@ events:
     siteLink:
       - {language: en, text: "https://techtrain.ru/en/"}
       - {language: ru, text: "https://techtrain.ru/"}
-    youtubeLink: https://live.jugru.org/online/100081r10004282
+    youtubeLink: https://www.youtube.com/playlist?list=PLmJD_ICvgPy1PRJtciEtdjANJWUZjN8zb
     placeId: 24
     talkIds: [2374, 2375, 2376, 2377, 2386, 2378, 2379, 2380, 2384]
   - eventTypeId: 12
@@ -1087,7 +1239,7 @@ events:
     endDate: "2020-10-24"
     siteLink:
       - {language: ru, text: "https://techtrain.ru/"}
-    youtubeLink: https://live.jugru.org/events/techtrain
+    youtubeLink: https://www.youtube.com/playlist?list=PLmJD_ICvgPy3Gn-f5Qv36bGGY4GcrVrGo
     placeId: 24
     talkIds: [2598, 2599, 2600, 2601, 2602, 2603, 2604, 2605, 2606]
   - eventTypeId: 12
@@ -1097,9 +1249,19 @@ events:
     endDate: "2021-03-27"
     siteLink:
       - {language: ru, text: "https://techtrain.ru/"}
-    youtubeLink: https://live.jugru.org/events/techtrain/
+    youtubeLink: https://www.youtube.com/playlist?list=PLmJD_ICvgPy3OCnmvg7_Np_oROSikO0-4
     placeId: 24
     talkIds: [2912, 2913, 2914, 2916, 2918, 2915, 2919, 2917, 2920]
+  - eventTypeId: 12
+    name:
+      - {language: en, text: "TechTrain 2021 Autumn"}
+    startDate: "2021-09-18"
+    endDate: "2021-09-18"
+    siteLink:
+      - {language: en, text: "https://techtrain.ru/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLmJD_ICvgPy2B-NAFiwN0WuzIPgH-KPwg
+    placeId: 24
+    talkIds: [3159, 3160, 3161, 3162, 3163, 3164, 3165, 3166]
   # JUG.MSK
   - eventTypeId: 13
     name:
@@ -1460,6 +1622,7 @@ events:
       - {language: ru, text: "Митап #1 JUG.ru"}
     startDate: "2012-02-25"
     endDate: "2012-02-25"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-GZibt2sbg8kIUVJ1WxkRx
     placeId: 0
     talkIds: [2001]
   - eventTypeId: 14
@@ -1468,6 +1631,7 @@ events:
       - {language: ru, text: "Митап #2 JUG.ru"}
     startDate: "2012-04-20"
     endDate: "2012-04-20"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-GZibt2sbg8kIUVJ1WxkRx
     placeId: 0
     talkIds: [2002]
   - eventTypeId: 14
@@ -1476,6 +1640,7 @@ events:
       - {language: ru, text: "Митап #3 JUG.ru"}
     startDate: "2012-04-26"
     endDate: "2012-04-26"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-GZibt2sbg8kIUVJ1WxkRx
     placeId: 0
     talkIds: [2003]
   - eventTypeId: 14
@@ -1484,6 +1649,7 @@ events:
       - {language: ru, text: "Митап #4 JUG.ru"}
     startDate: "2012-05-31"
     endDate: "2012-05-31"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-GZibt2sbg8kIUVJ1WxkRx
     placeId: 0
     talkIds: [2004]
   - eventTypeId: 14
@@ -1492,6 +1658,7 @@ events:
       - {language: ru, text: "Митап #5 JUG.ru"}
     startDate: "2012-06-14"
     endDate: "2012-06-14"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-GZibt2sbg8kIUVJ1WxkRx
     placeId: 0
     talkIds: [2005]
   - eventTypeId: 14
@@ -1500,6 +1667,7 @@ events:
       - {language: ru, text: "Митап #6 JUG.ru"}
     startDate: "2012-07-25"
     endDate: "2012-07-25"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-GZibt2sbg8kIUVJ1WxkRx
     placeId: 0
     talkIds: [2006]
   - eventTypeId: 14
@@ -1508,6 +1676,7 @@ events:
       - {language: ru, text: "Митап #7 JUG.ru"}
     startDate: "2012-08-23"
     endDate: "2012-08-23"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-GZibt2sbg8kIUVJ1WxkRx
     placeId: 0
     talkIds: [2007, 2008, 2009]
   - eventTypeId: 14
@@ -1516,6 +1685,7 @@ events:
       - {language: ru, text: "Митап #8 JUG.ru"}
     startDate: "2012-09-11"
     endDate: "2012-09-11"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-GZibt2sbg8kIUVJ1WxkRx
     placeId: 0
     talkIds: [2010]
   - eventTypeId: 14
@@ -1524,6 +1694,7 @@ events:
       - {language: ru, text: "Митап #9 JUG.ru"}
     startDate: "2012-09-29"
     endDate: "2012-09-29"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-GZibt2sbg8kIUVJ1WxkRx
     placeId: 18
     talkIds: [2011]
   - eventTypeId: 14
@@ -1532,6 +1703,7 @@ events:
       - {language: ru, text: "Митап #10 JUG.ru"}
     startDate: "2012-10-17"
     endDate: "2012-10-17"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-GZibt2sbg8kIUVJ1WxkRx
     placeId: 0
     talkIds: [2012]
   - eventTypeId: 14
@@ -1540,6 +1712,7 @@ events:
       - {language: ru, text: "Митап #11 JUG.ru"}
     startDate: "2012-11-22"
     endDate: "2012-11-22"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-GZibt2sbg8kIUVJ1WxkRx
     placeId: 0
     talkIds: [2013]
   - eventTypeId: 14
@@ -1548,6 +1721,7 @@ events:
       - {language: ru, text: "Митап #12 JUG.ru"}
     startDate: "2012-12-24"
     endDate: "2012-12-24"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-GZibt2sbg8kIUVJ1WxkRx
     placeId: 0
     talkIds: [2014]
   - eventTypeId: 14
@@ -1556,6 +1730,7 @@ events:
       - {language: ru, text: "Митап #13 JUG.ru"}
     startDate: "2013-01-24"
     endDate: "2013-01-24"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 0
     talkIds: [2015]
   - eventTypeId: 14
@@ -1564,6 +1739,7 @@ events:
       - {language: ru, text: "Митап #14 JUG.ru"}
     startDate: "2013-02-28"
     endDate: "2013-02-28"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 0
     talkIds: [2016]
   - eventTypeId: 14
@@ -1572,6 +1748,7 @@ events:
       - {language: ru, text: "Митап #15 JUG.ru"}
     startDate: "2013-03-28"
     endDate: "2013-03-28"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 0
     talkIds: [2017, 2018, 2019]
   - eventTypeId: 14
@@ -1580,6 +1757,7 @@ events:
       - {language: ru, text: "Митап #16 JUG.ru"}
     startDate: "2013-04-16"
     endDate: "2013-04-16"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 0
     talkIds: [2020]
   - eventTypeId: 14
@@ -1588,6 +1766,7 @@ events:
       - {language: ru, text: "Митап #17 JUG.ru"}
     startDate: "2013-05-30"
     endDate: "2013-05-30"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 0
     talkIds: [2021]
   - eventTypeId: 14
@@ -1596,6 +1775,7 @@ events:
       - {language: ru, text: "Митап #18 JUG.ru"}
     startDate: "2013-06-27"
     endDate: "2013-06-27"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 0
     talkIds: [2022]
   - eventTypeId: 14
@@ -1604,6 +1784,7 @@ events:
       - {language: ru, text: "Митап #19 JUG.ru"}
     startDate: "2013-07-11"
     endDate: "2013-07-11"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 0
     talkIds: [2023, 2024]
   - eventTypeId: 14
@@ -1612,6 +1793,7 @@ events:
       - {language: ru, text: "Митап #20 JUG.ru"}
     startDate: "2013-08-07"
     endDate: "2013-08-07"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 0
     talkIds: [2025]
   - eventTypeId: 14
@@ -1619,6 +1801,7 @@ events:
       - {language: en, text: "OpenJDK TestFest Russia 2013 (#21)"}
     startDate: "2013-08-17"
     endDate: "2013-08-17"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9Duj3y3XohCraugG8nv0XG
     placeId: 0
     talkIds: [2177, 2178, 2179, 2180]
   - eventTypeId: 14
@@ -1627,6 +1810,7 @@ events:
       - {language: ru, text: "Митап #22 JUG.ru"}
     startDate: "2013-08-31"
     endDate: "2013-08-31"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 1
     talkIds: [2026, 2027, 2028, 2029]
   - eventTypeId: 14
@@ -1635,6 +1819,7 @@ events:
       - {language: ru, text: "Митап #23 JUG.ru"}
     startDate: "2013-09-02"
     endDate: "2013-09-05"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 0
     talkIds: [2175]
   - eventTypeId: 14
@@ -1643,6 +1828,7 @@ events:
       - {language: ru, text: "Митап #24 JUG.ru"}
     startDate: "2013-10-14"
     endDate: "2013-10-14"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 5
     talkIds: [2176, 2181, 2182, 2183, 2184, 2185]
   - eventTypeId: 14
@@ -1651,6 +1837,7 @@ events:
       - {language: ru, text: "Митап #25 JUG.ru"}
     startDate: "2013-10-17"
     endDate: "2013-10-17"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 0
     talkIds: [2030]
   - eventTypeId: 14
@@ -1659,6 +1846,7 @@ events:
       - {language: ru, text: "Митап #26 JUG.ru"}
     startDate: "2013-11-20"
     endDate: "2013-11-20"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 0
     talkIds: [2031]
   - eventTypeId: 14
@@ -1667,6 +1855,7 @@ events:
       - {language: ru, text: "Митап #27 JUG.ru"}
     startDate: "2013-12-12"
     endDate: "2013-12-12"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8T9aw7AaAj-Kir3CKABg55
     placeId: 0
     talkIds: [2032, 2033]
   - eventTypeId: 14
@@ -1675,6 +1864,7 @@ events:
       - {language: ru, text: "Митап #28 JUG.ru"}
     startDate: "2014-02-06"
     endDate: "2014-02-06"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 0
     talkIds: [2034]
   - eventTypeId: 14
@@ -1683,6 +1873,7 @@ events:
       - {language: ru, text: "Митап #29 JUG.ru"}
     startDate: "2014-02-26"
     endDate: "2014-02-26"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 0
     talkIds: [2035]
   - eventTypeId: 14
@@ -1690,6 +1881,7 @@ events:
       - {language: en, text: "Java 8 Launch Party (#30)"}
     startDate: "2014-04-03"
     endDate: "2014-04-03"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_hFLa4n-9exJxaS7De73Lx
     placeId: 0
     talkIds: [2036, 2037, 2038, 2039, 2040, 2041]
   - eventTypeId: 14
@@ -1698,6 +1890,7 @@ events:
       - {language: ru, text: "Митап #31 JUG.ru"}
     startDate: "2014-04-10"
     endDate: "2014-04-10"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 0
     talkIds: [2042]
   - eventTypeId: 14
@@ -1706,6 +1899,7 @@ events:
       - {language: ru, text: "Митап #32 JUG.ru"}
     startDate: "2014-04-17"
     endDate: "2014-04-17"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 11
     talkIds: [2186, 2187]
   - eventTypeId: 14
@@ -1714,6 +1908,7 @@ events:
       - {language: ru, text: "Митап #33 JUG.ru"}
     startDate: "2014-06-05"
     endDate: "2014-06-05"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 0
     talkIds: [2043]
   - eventTypeId: 14
@@ -1722,6 +1917,7 @@ events:
       - {language: ru, text: "Митап #34 JUG.ru"}
     startDate: "2014-06-24"
     endDate: "2014-06-25"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 26
     talkIds: [2188, 2189]
   - eventTypeId: 14
@@ -1730,6 +1926,7 @@ events:
       - {language: ru, text: "Митап #35 JUG.ru"}
     startDate: "2014-06-26"
     endDate: "2014-06-26"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 19
     talkIds: [2044]
   - eventTypeId: 14
@@ -1738,6 +1935,7 @@ events:
       - {language: ru, text: "Митап #36 JUG.ru"}
     startDate: "2014-07-24"
     endDate: "2014-07-24"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 20
     talkIds: [2045]
   - eventTypeId: 14
@@ -1746,6 +1944,7 @@ events:
       - {language: ru, text: "Митап #37 JUG.ru"}
     startDate: "2014-08-07"
     endDate: "2014-08-07"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 19
     talkIds: [2046, 2047]
   - eventTypeId: 14
@@ -1754,6 +1953,7 @@ events:
       - {language: ru, text: "Митап #38 JUG.ru"}
     startDate: "2014-09-17"
     endDate: "2014-09-17"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 0
     talkIds: [2048]
   - eventTypeId: 14
@@ -1762,6 +1962,7 @@ events:
       - {language: ru, text: "Митап #39 JUG.ru"}
     startDate: "2014-10-18"
     endDate: "2014-10-19"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 4
     talkIds: [2190]
   - eventTypeId: 14
@@ -1770,6 +1971,7 @@ events:
       - {language: ru, text: "Митап #40 JUG.ru"}
     startDate: "2014-10-22"
     endDate: "2014-10-22"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 4
     talkIds: [2191, 2049]
   - eventTypeId: 14
@@ -1778,6 +1980,7 @@ events:
       - {language: ru, text: "Митап #41 JUG.ru"}
     startDate: "2014-10-23"
     endDate: "2014-10-24"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 4
     talkIds: [2192, 2193]
   - eventTypeId: 14
@@ -1786,6 +1989,7 @@ events:
       - {language: ru, text: "Митап #42 JUG.ru"}
     startDate: "2014-12-22"
     endDate: "2014-12-22"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9SyrcnuaLmwfP-rLURwjy-
     placeId: 0
     talkIds: [2050]
   - eventTypeId: 14
@@ -1794,6 +1998,7 @@ events:
       - {language: ru, text: "Митап #43 JUG.ru"}
     startDate: "2015-02-05"
     endDate: "2015-02-05"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9ykOPSwpgcyLXIj1dI83uO
     placeId: 19
     talkIds: [2051]
   - eventTypeId: 14
@@ -1802,6 +2007,7 @@ events:
       - {language: ru, text: "Митап #44 JUG.ru"}
     startDate: "2015-03-11"
     endDate: "2015-03-11"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9ykOPSwpgcyLXIj1dI83uO
     placeId: 0
     talkIds: [2052]
   - eventTypeId: 14
@@ -1810,6 +2016,7 @@ events:
       - {language: ru, text: "Митап #45 JUG.ru"}
     startDate: "2015-04-22"
     endDate: "2015-04-22"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9ykOPSwpgcyLXIj1dI83uO
     placeId: 19
     talkIds: [2053]
   - eventTypeId: 14
@@ -1826,6 +2033,7 @@ events:
       - {language: ru, text: "Java: 20 лет инноваций (#47)"}
     startDate: "2015-06-30"
     endDate: "2015-06-30"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b886ocQEhfwQy3ARvH3kj0e
     placeId: 0
     talkIds: [2055, 2056, 2057, 2058, 2059]
   - eventTypeId: 14
@@ -1834,6 +2042,7 @@ events:
       - {language: ru, text: "Митап #48 JUG.ru"}
     startDate: "2015-10-14"
     endDate: "2015-10-14"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9ykOPSwpgcyLXIj1dI83uO
     placeId: 0
     talkIds: [2060]
   - eventTypeId: 14
@@ -1842,6 +2051,7 @@ events:
       - {language: ru, text: "Митап #49 JUG.ru"}
     startDate: "2015-10-14"
     endDate: "2015-10-15"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9ykOPSwpgcyLXIj1dI83uO
     placeId: 4
     talkIds: [2194]
   - eventTypeId: 14
@@ -1850,6 +2060,7 @@ events:
       - {language: ru, text: "Митап #50 JUG.ru"}
     startDate: "2015-10-18"
     endDate: "2015-10-18"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9ykOPSwpgcyLXIj1dI83uO
     placeId: 4
     talkIds: [2195]
   - eventTypeId: 14
@@ -1858,6 +2069,7 @@ events:
       - {language: ru, text: "Митап #51 JUG.ru"}
     startDate: "2015-12-03"
     endDate: "2015-12-03"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9ykOPSwpgcyLXIj1dI83uO
     placeId: 0
     talkIds: [2061]
   - eventTypeId: 14
@@ -1866,6 +2078,7 @@ events:
       - {language: ru, text: "Митап #52 JUG.ru"}
     startDate: "2015-12-17"
     endDate: "2015-12-17"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9ykOPSwpgcyLXIj1dI83uO
     placeId: 19
     talkIds: [2062]
   - eventTypeId: 14
@@ -1874,6 +2087,7 @@ events:
       - {language: ru, text: "Митап #53 JUG.ru"}
     startDate: "2016-01-21"
     endDate: "2016-01-21"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b801EhIQQZEh5EWUf_FiIBb
     placeId: 20
     talkIds: [2063]
   - eventTypeId: 14
@@ -1882,6 +2096,7 @@ events:
       - {language: ru, text: "Митап #54 JUG.ru"}
     startDate: "2016-02-26"
     endDate: "2016-02-26"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b801EhIQQZEh5EWUf_FiIBb
     placeId: 0
     talkIds: [2064, 2065, 2066, 2067]
   - eventTypeId: 14
@@ -1890,6 +2105,7 @@ events:
       - {language: ru, text: "Митап #55 JUG.ru"}
     startDate: "2016-05-26"
     endDate: "2016-05-26"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b801EhIQQZEh5EWUf_FiIBb
     placeId: 19
     talkIds: [2068]
   - eventTypeId: 14
@@ -1898,6 +2114,7 @@ events:
       - {language: ru, text: "Митап #56 JUG.ru"}
     startDate: "2016-06-30"
     endDate: "2016-06-30"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b801EhIQQZEh5EWUf_FiIBb
     placeId: 19
     talkIds: [2069]
   - eventTypeId: 14
@@ -1906,6 +2123,7 @@ events:
       - {language: ru, text: "Митап #57 JUG.ru"}
     startDate: "2016-07-06"
     endDate: "2016-07-06"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b801EhIQQZEh5EWUf_FiIBb
     placeId: 0
     talkIds: [2070]
   - eventTypeId: 14
@@ -1914,6 +2132,7 @@ events:
       - {language: ru, text: "Митап #58 JUG.ru"}
     startDate: "2016-08-31"
     endDate: "2016-08-31"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b801EhIQQZEh5EWUf_FiIBb
     placeId: 21
     talkIds: [2071]
   - eventTypeId: 14
@@ -1922,6 +2141,7 @@ events:
       - {language: ru, text: "Митап #59 JUG.ru"}
     startDate: "2016-09-14"
     endDate: "2016-09-14"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b801EhIQQZEh5EWUf_FiIBb
     placeId: 21
     talkIds: [2072]
   - eventTypeId: 14
@@ -1930,6 +2150,7 @@ events:
       - {language: ru, text: "Митап #60 JUG.ru"}
     startDate: "2016-10-12"
     endDate: "2016-10-12"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b801EhIQQZEh5EWUf_FiIBb
     placeId: 19
     talkIds: [2073]
   - eventTypeId: 14
@@ -1938,6 +2159,7 @@ events:
       - {language: ru, text: "Митап #61 JUG.ru"}
     startDate: "2016-12-01"
     endDate: "2016-12-01"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b801EhIQQZEh5EWUf_FiIBb
     placeId: 21
     talkIds: [2074]
   - eventTypeId: 14
@@ -1946,6 +2168,7 @@ events:
       - {language: ru, text: "Митап #62 JUG.ru"}
     startDate: "2016-12-22"
     endDate: "2016-12-22"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b801EhIQQZEh5EWUf_FiIBb
     placeId: 0
     talkIds: [2075]
   - eventTypeId: 14
@@ -1954,6 +2177,7 @@ events:
       - {language: ru, text: "Митап #63 JUG.ru"}
     startDate: "2017-02-25"
     endDate: "2017-02-25"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_MZvZqk7vTPRPgpwIA5lYj
     placeId: 0
     talkIds: [2076, 2077, 2078]
   - eventTypeId: 14
@@ -1962,6 +2186,7 @@ events:
       - {language: ru, text: "Митап #64 JUG.ru"}
     startDate: "2017-04-19"
     endDate: "2017-04-19"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_MZvZqk7vTPRPgpwIA5lYj
     placeId: 0
     talkIds: [2079]
   - eventTypeId: 14
@@ -1970,6 +2195,7 @@ events:
       - {language: ru, text: "Митап #65 JUG.ru"}
     startDate: "2017-07-06"
     endDate: "2017-07-06"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_MZvZqk7vTPRPgpwIA5lYj
     placeId: 22
     talkIds: [2080]
   - eventTypeId: 14
@@ -1978,6 +2204,7 @@ events:
       - {language: ru, text: "Митап #66 JUG.ru"}
     startDate: "2017-08-02"
     endDate: "2017-08-02"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_MZvZqk7vTPRPgpwIA5lYj
     placeId: 21
     talkIds: [2081]
   - eventTypeId: 14
@@ -1986,6 +2213,7 @@ events:
       - {language: ru, text: "Митап #67 JUG.ru"}
     startDate: "2017-08-30"
     endDate: "2017-08-30"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_MZvZqk7vTPRPgpwIA5lYj
     placeId: 0
     talkIds: [2082]
   - eventTypeId: 14
@@ -1994,6 +2222,7 @@ events:
       - {language: ru, text: "Митап #68 JUG.ru"}
     startDate: "2017-10-11"
     endDate: "2017-10-11"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_MZvZqk7vTPRPgpwIA5lYj
     placeId: 0
     talkIds: [2083]
   - eventTypeId: 14
@@ -2002,6 +2231,7 @@ events:
       - {language: ru, text: "Митап #69 JUG.ru"}
     startDate: "2017-10-25"
     endDate: "2017-10-25"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_MZvZqk7vTPRPgpwIA5lYj
     placeId: 23
     talkIds: [2084]
   - eventTypeId: 14
@@ -2010,6 +2240,7 @@ events:
       - {language: ru, text: "Митап #70 JUG.ru"}
     startDate: "2017-11-02"
     endDate: "2017-11-02"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_MZvZqk7vTPRPgpwIA5lYj
     placeId: 23
     talkIds: [2085]
   - eventTypeId: 14
@@ -2018,6 +2249,7 @@ events:
       - {language: ru, text: "Митап #71 JUG.ru"}
     startDate: "2017-12-04"
     endDate: "2017-12-04"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_MZvZqk7vTPRPgpwIA5lYj
     placeId: 0
     talkIds: [2086]
   - eventTypeId: 14
@@ -2026,6 +2258,7 @@ events:
       - {language: ru, text: "Митап #72 JUG.ru"}
     startDate: "2017-12-25"
     endDate: "2017-12-25"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_MZvZqk7vTPRPgpwIA5lYj
     placeId: 0
     talkIds: [2087]
   - eventTypeId: 14
@@ -2034,6 +2267,7 @@ events:
       - {language: ru, text: "Митап #73 JUG.ru"}
     startDate: "2018-02-28"
     endDate: "2018-02-28"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8UsxWVA3e9J2wWVO2jSgeb
     placeId: 20
     talkIds: [2088]
   - eventTypeId: 14
@@ -2042,6 +2276,7 @@ events:
       - {language: ru, text: "Митап #74 JUG.ru"}
     startDate: "2018-04-11"
     endDate: "2018-04-11"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8UsxWVA3e9J2wWVO2jSgeb
     placeId: 20
     talkIds: [2089]
   - eventTypeId: 14
@@ -2050,6 +2285,7 @@ events:
       - {language: ru, text: "Митап #75 JUG.ru"}
     startDate: "2018-05-15"
     endDate: "2018-05-15"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8UsxWVA3e9J2wWVO2jSgeb
     placeId: 20
     talkIds: [2090]
   - eventTypeId: 14
@@ -2058,6 +2294,7 @@ events:
       - {language: ru, text: "Митап #76 JUG.ru"}
     startDate: "2018-06-05"
     endDate: "2018-06-05"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8UsxWVA3e9J2wWVO2jSgeb
     placeId: 0
     talkIds: [2091]
   - eventTypeId: 14
@@ -2066,6 +2303,7 @@ events:
       - {language: ru, text: "Митап #77 JUG.ru"}
     startDate: "2018-08-09"
     endDate: "2018-08-09"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8UsxWVA3e9J2wWVO2jSgeb
     placeId: 0
     talkIds: [2092]
   - eventTypeId: 14
@@ -2074,6 +2312,7 @@ events:
       - {language: ru, text: "Митап #78 JUG.ru"}
     startDate: "2018-10-18"
     endDate: "2018-10-18"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b8UsxWVA3e9J2wWVO2jSgeb
     placeId: 0
     talkIds: [2093]
   - eventTypeId: 14
@@ -2082,6 +2321,7 @@ events:
       - {language: ru, text: "Митап #79 JUG.ru"}
     startDate: "2019-01-29"
     endDate: "2019-01-29"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_zMSFLOKrXFrG1p40IlBky
     placeId: 0
     talkIds: [2094]
   - eventTypeId: 14
@@ -2090,6 +2330,7 @@ events:
       - {language: ru, text: "Митап #80 JUG.ru"}
     startDate: "2019-03-21"
     endDate: "2019-03-21"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_zMSFLOKrXFrG1p40IlBky
     placeId: 0
     talkIds: [2095, 2096]
   - eventTypeId: 14
@@ -2098,6 +2339,7 @@ events:
       - {language: ru, text: "Митап #81 JUG.ru"}
     startDate: "2019-05-30"
     endDate: "2019-05-30"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_zMSFLOKrXFrG1p40IlBky
     placeId: 0
     talkIds: [2097]
   - eventTypeId: 14
@@ -2106,6 +2348,7 @@ events:
       - {language: ru, text: "Митап #82 JUG.ru"}
     startDate: "2019-07-09"
     endDate: "2019-07-09"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_zMSFLOKrXFrG1p40IlBky
     placeId: 4
     talkIds: [2098]
   - eventTypeId: 14
@@ -2114,6 +2357,7 @@ events:
       - {language: ru, text: "Митап #83 JUG.ru"}
     startDate: "2019-08-27"
     endDate: "2019-08-27"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_zMSFLOKrXFrG1p40IlBky
     placeId: 0
     talkIds: [2099]
   - eventTypeId: 14
@@ -2122,6 +2366,7 @@ events:
       - {language: ru, text: "Митап #84 JUG.ru"}
     startDate: "2019-09-05"
     endDate: "2019-09-05"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_zMSFLOKrXFrG1p40IlBky
     placeId: 27
     talkIds: [2196]
   - eventTypeId: 14
@@ -2130,6 +2375,7 @@ events:
       - {language: ru, text: "Митап #85 JUG.ru"}
     startDate: "2019-10-23"
     endDate: "2019-10-24"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_zMSFLOKrXFrG1p40IlBky
     placeId: 27
     talkIds: [2198]
   - eventTypeId: 14
@@ -2138,6 +2384,7 @@ events:
       - {language: ru, text: "Митап #86 JUG.ru"}
     startDate: "2020-04-17"
     endDate: "2020-04-17"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9o5OgRDjdny_K4wWVDPVpb
     placeId: 24
     talkIds: [2100]
   - eventTypeId: 14
@@ -2146,6 +2393,7 @@ events:
       - {language: ru, text: "Митап #87 JUG.ru"}
     startDate: "2020-05-11"
     endDate: "2020-05-11"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9o5OgRDjdny_K4wWVDPVpb
     placeId: 24
     talkIds: [2197]
   - eventTypeId: 14
@@ -2154,8 +2402,54 @@ events:
       - {language: ru, text: "Митап #88 JUG.ru"}
     startDate: "2020-05-22"
     endDate: "2020-05-22"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b9o5OgRDjdny_K4wWVDPVpb
     placeId: 24
     talkIds: [2308]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru Meetup #89"}
+      - {language: ru, text: "Митап #89 JUG.ru"}
+    startDate: "2021-06-24"
+    endDate: "2021-06-24"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-3KKwJFzRNArrXE_wY-BlT
+    placeId: 24
+    talkIds: [3157]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru Meetup #90"}
+      - {language: ru, text: "Митап #90 JUG.ru"}
+    startDate: "2021-10-23"
+    endDate: "2021-10-23"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-3KKwJFzRNArrXE_wY-BlT
+    placeId: 24
+    talkIds: [3498]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru Meetup #91"}
+      - {language: ru, text: "Митап #91 JUG.ru"}
+    startDate: "2021-12-20"
+    endDate: "2021-12-20"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b-3KKwJFzRNArrXE_wY-BlT
+    placeId: 24
+    talkIds: [3624]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru Meetup #92"}
+      - {language: ru, text: "Митап #92 JUG.ru"}
+    startDate: "2022-01-27"
+    endDate: "2022-01-27"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_tD5oTvBCL_0XSjMzHb8-c
+    placeId: 24
+    talkIds: [3625]
+  - eventTypeId: 14
+    name:
+      - {language: en, text: "JUG.ru Meetup #93"}
+      - {language: ru, text: "Митап #93 JUG.ru"}
+    startDate: "2022-02-15"
+    endDate: "2022-02-15"
+    youtubeLink: https://www.youtube.com/playlist?list=PLVe-2wcL84b_tD5oTvBCL_0XSjMzHb8-c
+    placeId: 24
+    talkIds: [3626]
   # JUGNsk
   - eventTypeId: 15
     name:
@@ -2163,6 +2457,7 @@ events:
       - {language: ru, text: "Митап #1 JUGNsk"}
     startDate: "2018-05-24"
     endDate: "2018-05-24"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S7Z0WXGoAmZXknVyULUrGcY
     placeId: 12
     talkIds: [2144, 2145]
   - eventTypeId: 15
@@ -2171,6 +2466,7 @@ events:
       - {language: ru, text: "Митап #2 JUGNsk"}
     startDate: "2018-06-21"
     endDate: "2018-06-21"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S7n2w54t8Ye2c3_Q58anHhC
     placeId: 12
     talkIds: [2146, 2147]
   - eventTypeId: 15
@@ -2179,6 +2475,7 @@ events:
       - {language: ru, text: "Митап #3 JUGNsk"}
     startDate: "2018-08-23"
     endDate: "2018-08-23"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S5BVjwHmc9smMEhKa5o0D5v
     placeId: 16
     talkIds: [2148, 2149]
   - eventTypeId: 15
@@ -2187,6 +2484,7 @@ events:
       - {language: ru, text: "Митап #4 JUGNsk"}
     startDate: "2018-10-11"
     endDate: "2018-10-11"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S6CES8ww4quzh8ygbJW-vir
     placeId: 12
     talkIds: [2150, 2151]
   - eventTypeId: 15
@@ -2195,6 +2493,7 @@ events:
       - {language: ru, text: "Митап #5 JUGNsk"}
     startDate: "2018-12-15"
     endDate: "2018-12-15"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S6mGoa81iZ34iuMbHVBQO6E
     placeId: 12
     talkIds: [2152, 2153, 2154, 2155]
   - eventTypeId: 15
@@ -2203,6 +2502,7 @@ events:
       - {language: ru, text: "Митап #6 JUGNsk"}
     startDate: "2019-02-27"
     endDate: "2019-02-27"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S7BRj5_0nlC6zUSGOM9Tyz1
     placeId: 12
     talkIds: [2156, 2157, 2158, 2159]
   - eventTypeId: 15
@@ -2211,6 +2511,7 @@ events:
       - {language: ru, text: "Митап #7 JUGNsk"}
     startDate: "2019-03-29"
     endDate: "2019-03-29"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S4cPK-jle8yxkNUManjlPIY
     placeId: 16
     talkIds: [2160, 2161]
   - eventTypeId: 15
@@ -2219,6 +2520,7 @@ events:
       - {language: ru, text: "Митап #8 JUGNsk"}
     startDate: "2019-05-16"
     endDate: "2019-05-16"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S7giOAirGdKrXMi1cW21q3d
     placeId: 12
     talkIds: [2162, 2163]
   - eventTypeId: 15
@@ -2227,6 +2529,7 @@ events:
       - {language: ru, text: "Митап #9 JUGNsk"}
     startDate: "2019-06-13"
     endDate: "2019-06-13"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S7CMr1_4ELVTint6Lp6e-V8
     placeId: 17
     talkIds: [2164, 2165, 2166]
   - eventTypeId: 15
@@ -2235,6 +2538,7 @@ events:
       - {language: ru, text: "Митап #10 JUGNsk"}
     startDate: "2019-08-27"
     endDate: "2019-08-27"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S6kYi9Ys41MBMZlJDWwrr15
     placeId: 12
     talkIds: [2167, 2168]
   - eventTypeId: 15
@@ -2243,6 +2547,7 @@ events:
       - {language: ru, text: "Митап #11 JUGNsk"}
     startDate: "2019-10-29"
     endDate: "2019-10-29"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S6YNLneo-m8y6DNOvIoAIMR
     placeId: 25
     talkIds: [2169, 2170]
   - eventTypeId: 15
@@ -2251,6 +2556,7 @@ events:
       - {language: ru, text: "Митап #12 JUGNsk"}
     startDate: "2019-11-19"
     endDate: "2019-11-19"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S6Qh_R_CwDDDz_0vhAqLDx3
     placeId: 12
     talkIds: [2171, 2172]
   - eventTypeId: 15
@@ -2259,6 +2565,7 @@ events:
       - {language: ru, text: "Митап #13 JUGNsk"}
     startDate: "2020-02-28"
     endDate: "2020-02-28"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S7_O-yW3We4VBjUgDSoRgoG
     placeId: 12
     talkIds: [2173]
   - eventTypeId: 15
@@ -2267,6 +2574,7 @@ events:
       - {language: ru, text: "Митап #14 JUGNsk"}
     startDate: "2020-04-24"
     endDate: "2020-04-24"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S7wNBcq4QMwfh-RPJ_ucHMK
     placeId: 24
     talkIds: [2174]
   - eventTypeId: 15
@@ -2275,6 +2583,7 @@ events:
       - {language: ru, text: "Митап #15 JUGNsk"}
     startDate: "2020-07-17"
     endDate: "2020-07-17"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S6VjdtGCtZnhWNFLRNgnQwB
     placeId: 24
     talkIds: [2571]
   - eventTypeId: 15
@@ -2293,6 +2602,24 @@ events:
     endDate: "2021-01-28"
     placeId: 24
     talkIds: [2882, 2883]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #18"}
+      - {language: ru, text: "Митап #18 JUGNsk"}
+    startDate: "2021-06-02"
+    endDate: "2021-06-02"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S5ov52MuLEOPfs_Jl6mDs65
+    placeId: 12
+    talkIds: [3155, 3156]
+  - eventTypeId: 15
+    name:
+      - {language: en, text: "JUGNsk Meetup #19"}
+      - {language: ru, text: "Митап #19 JUGNsk"}
+    startDate: "2021-10-07"
+    endDate: "2021-10-07"
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S5k9Z1H_FecIbXOvS5N55SH
+    placeId: 12
+    talkIds: [3220]
   # SnowOne
   - eventTypeId: 16
     name:
@@ -2313,6 +2640,31 @@ events:
     siteLink:
       - {language: en, text: "https://snowone.ru/en"}
       - {language: ru, text: "https://snowone.ru"}
+    youtubeLink: https://www.youtube.com/playlist?list=PLecWId-JT7S5cqUiY7ixWcZgjdRV4upnw
     placeId: 24
     talkIds: [2890, 2885, 2886, 2887, 2888, 2889, 2884, 2891, 2892, 2893, 2894, 2895, 2896, 2897, 2898, 2899, 2900, 2901,
               2902, 2903, 2904, 2905, 2906, 2907, 2908, 2909, 2910, 2911]
+  - eventTypeId: 16
+    name:
+      - {language: en, text: "SnowOne 2022"}
+      - {language: ru, text: "SnowOne 2022"}
+    startDate: "2022-04-08"
+    endDate: "2022-04-09"
+    siteLink:
+      - {language: en, text: "https://snowone.ru/en"}
+      - {language: ru, text: "https://snowone.ru"}
+    placeId: 13
+    talkIds: [3629, 3630, 3631, 3632, 3638, 3633, 3635, 3636, 3637, 3634, 3645, 3646, 3647, 3648, 3649, 3650, 3651, 3652,
+              3653, 3654]
+  # VideoTech
+  - eventTypeId: 17
+    name:
+      - {language: en, text: "VideoTech 2021"}
+    startDate: "2021-12-01"
+    endDate: "2021-12-03"
+    siteLink:
+      - {language: en, text: "https://vtconf.com/"}
+    youtubeLink: https://www.youtube.com/playlist?list=PL0TQFzykgJj97EwKkUop3krdQoZQ90-ps
+    placeId: 24
+    talkIds: [3543, 3562, 3581, 3619, 3588, 3582, 3564, 3584, 3611, 3585, 3561, 3586, 3545, 3622, 3614, 3612, 3587, 3620,
+              3613, 3583, 3548, 3549, 3589, 3550, 3621, 3623, 3590, 3546, 3591, 3552, 3615]
